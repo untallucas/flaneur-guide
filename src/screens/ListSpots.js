@@ -1,16 +1,44 @@
 import React from 'react'
 // import SpotCard from '../../components/SpotCard/SpotCard'
 import Navigation from '../components/Navigation/Navigation'
+import Separator from '../components/Separator/Separator'
 
-// import DataItems from '../../data/DataItems.js'
-// import DataTaxonomies from '../../data/DataTaxonomies.js'
+import DataItems from '../data/DataItems.js'
+import DataTaxonomies from '../data/DataTaxonomies.js'
 // const DataCategories = DataTaxonomies.categories
 
+let initItems = DataItems
+let initCats = DataTaxonomies.categories
+
 const ListSpots = props => {
+  console.log(initItems)
   return (
     <div>
       <Navigation/>
-      <h1 className="page-heading">ListSpots</h1>
+      <h1 className="page-heading">Lugares</h1>
+      <div>
+      <h2>Categorias</h2>
+        {
+          initCats.map(function (spot, i) {
+            return (
+              <span key={ i }>{ spot.title } | </span>
+            )
+          })
+        }
+      </div>
+
+      <Separator/>
+
+      <h2>Lugares</h2>
+      <ul>
+        {
+          initItems.map(function (spot, i) {
+            return (
+              <li key={ i }>{ spot.title }<br/>{ spot.address }<br/><br/></li>
+            )
+          })
+        }
+      </ul>
     </div>
   )
 }
