@@ -6,7 +6,7 @@ import Navigation from '../components/Navigation/Navigation'
 import Separator from '../components/Separator/Separator'
 // import MapCard from '../../components/MapCard/MapCard'
 
-// import DataItems from '../../data/DataItems.js'
+import DataItems from '../data/DataItems.js'
 
 /*
 const SingleSpot = props => {
@@ -47,11 +47,39 @@ const SingleSpot = props => {
 }
 
 */
+
 const SingleSpot = props => {
+  let Spot = DataItems.filter(function (spot) {
+    return spot.slug === props.match.params.slug
+  })
+
   return (
     <div>
       <Navigation/>
-      <h1 className="page-heading">SingleSpot</h1>
+        { Boolean(!Spot.length) && (
+          <h1>Ups, me parece que no hay nada con ese nombre por acá</h1>
+        )}
+
+        { Boolean(Spot.length) && (
+          <div>
+            {Spot.map((spot, i) => (
+              <div key={i}>
+                <img src={spot.poster} description={spot.title} />
+                <p>{spot.title}</p>
+                <p>{spot.text}</p>
+                <p>{spot.info_tickets}</p>
+                <p>{spot.info_timetable}</p>
+                <p>{spot.info_more}</p>
+                <p>{spot.address} / {spot.hood} / {spot.lat} / {spot.lon}</p>
+
+                <p>Categorias: {spot.categories}</p>
+                <p>Tags: {spot.tags}</p>
+                <p>Authors: {spot.authors}</p>
+                <p>Highlight: {spot.highlight}</p>
+              </div>
+            ))}
+          </div>
+        )}
     </div>
   )
 }

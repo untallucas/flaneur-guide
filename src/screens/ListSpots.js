@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 // import SpotCard from '../../components/SpotCard/SpotCard'
 import Navigation from '../components/Navigation/Navigation'
 import Separator from '../components/Separator/Separator'
@@ -33,8 +34,11 @@ const ListSpots = props => {
       <ul>
         {
           initItems.map(function (spot, i) {
+            let url = '/lugares/' + spot.slug
             return (
-              <li key={ i }>{ spot.title }<br/>{ spot.address }<br/><br/></li>
+              <Link to={ url }>
+                <li key={ i }>{ spot.title }<br/>{ spot.address }<br/><br/></li>
+              </Link>
             )
           })
         }
@@ -44,6 +48,7 @@ const ListSpots = props => {
 }
 
 export default ListSpots
+
 
 /*
 class ListSpots2 extends React.Component {
