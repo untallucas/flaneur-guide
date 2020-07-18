@@ -1,6 +1,6 @@
 import React from 'react'
 
-// import './Separator.scss'
+import './Separator.scss'
 
 const Separator = props => {
   return (
