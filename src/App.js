@@ -17,7 +17,7 @@ import SingleTrack from './screens/SingleTrack'
 
 import Test from './screens/Test'
 
-import './App.css';
+import './App.scss';
 
 const App = () => (
   <Router>

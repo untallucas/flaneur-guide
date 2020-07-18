@@ -1,11 +1,11 @@
-// @import './../../_theme.scss';
+@import './../../_theme.scss';
 
 .Separator {
   hr {
     margin: 0;
     padding: 0;
     border: 0;
-    height: 2px;
-    background-color: red;
+    height: $border-width-hairline;
+    background-color: $color-border-separator-on-light;
   }
 }

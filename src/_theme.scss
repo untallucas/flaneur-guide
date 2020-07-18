@@ -1,0 +1,200 @@
+// ----------------------------------------------------------------
+// THEME
+// Design tokens for current theme
+// ----------------------------------------------------------------
+
+
+// Font Import
+@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+
+
+// Font Families
+$font-title: 'Merriweather', 'Playfair Display', TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+$font-text: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-code: 'IBM Plex Mono', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+
+// Font Scale
+$font-size-core: 16px;
+$font-size-level-1: $font-size-core * 4;
+$font-size-level-2: $font-size-core * 3;
+$font-size-level-3: $font-size-core * 2.5;
+$font-size-level-4: $font-size-core * 2;
+$font-size-level-5: $font-size-core * 1.5;
+$font-size-overhead: $font-size-core * 0.75;
+$font-size-body: $font-size-core * 1.125;
+$font-size-small: $font-size-core * 0.75;
+
+
+// Lineheight scale
+$line-height-core: 16px;
+$line-height-level-1: $line-height-core * 4.5;
+$line-height-level-2: $line-height-core * 3.5;
+$line-height-level-3: $line-height-core * 3;
+$line-height-level-4: $line-height-core * 2.5;
+$line-height-level-5: $line-height-core * 2;
+$line-height-overhead: $line-height-core * 0.75;
+$line-height-body: $line-height-core * 1.75;
+$line-height-small: $line-height-core * 1;
+
+
+// Letterspacing
+$letter-space-tight: -0.4px;
+$letter-space-normal: 0;
+$letter-space-cozy: 0.2px;
+$letter-space-loose: 0.8px;
+
+
+// Brand Colors
+$color-brand-primary: #3444E3;
+$color-brand-secondary: #FCE408;
+$color-brand-tertiary: #00FF00;
+
+
+// Neutral Colors
+$color-neutrals-01: #FFFFFF;
+$color-neutrals-02: #F9F9F9;
+$color-neutrals-03: #DDDDDD;
+$color-neutrals-04: #CCCCCC;
+$color-neutrals-05: #BBBBBB;
+$color-neutrals-06: #000000;
+
+
+// Support Colors
+$color-support-error-background: lighten(#FF0000, 40%);
+$color-support-error-area: #FF0000;
+$color-support-error-text: darken(#FF0000, 40%);
+$color-support-info-background: lighten(#0000FF, 40%);
+$color-support-info-area: #0000FF;
+$color-support-info-text: darken(#0000FF, 40%);
+$color-support-sucess-background: lighten(#00FF00, 40%);
+$color-support-sucess-area: #00FF00;
+$color-support-sucess-text: darken(#00FF00, 40%);
+$color-support-warning-background: lighten(#FFFF00, 40%);
+$color-support-warning-area: #FFFF00;
+$color-support-warning-text: darken(#FFFF00, 40%);
+
+
+// Background Colors
+$color-background-light-primary: #FFFFFF;
+$color-background-light-secondary: #F8F8F8;
+$color-background-dark-primary: #000000;
+$color-background-dark-secondary: #111111;
+
+
+// Text Colors
+$color-text-primary-on-light: #333333;
+$color-text-secondary-on-light: #888888;
+$color-text-tertiary-on-light: #AAAAAA;
+$color-text-primary-on-dark: #FFFFFF;
+$color-text-secondary-on-dark: #DDDDDD;
+$color-text-tertiary-on-dark: #BBBBBB;
+
+
+// Interactive Colors
+$color-interactive-on-light: darken($color-brand-secondary, 15%);
+$color-interactive-on-dark: lighten($color-brand-secondary, 15%);
+$color-interactive-link-on-light: darken($color-brand-secondary, 10%);
+$color-interactive-link-on-dark: lighten($color-brand-secondary, 10%);
+
+
+// Border Colors
+$color-border-separator-on-light: #DEDEDE;
+$color-border-separator-on-dark: #AAAAAA;
+
+
+// Spacing
+$spacing-core: 16px;
+$spacing-xxxs: $spacing-core * 0.125;
+$spacing-xxs: $spacing-core * 0.25;
+$spacing-xs: $spacing-core * 0.50;
+$spacing-sm: $spacing-core * 0.75;
+$spacing-md: $spacing-core * 1;
+$spacing-lg: $spacing-core * 1.50;
+$spacing-xl: $spacing-core * 2;
+$spacing-xxl: $spacing-core * 2.50;
+$spacing-xxxl: $spacing-core * 3;
+
+
+// Layout
+$layout-core: 20px;
+$layout-xxs: $layout-core * 1;
+$layout-xs: $layout-core * 1.50;
+$layout-sm: $layout-core * 2;
+$layout-md: $layout-core * 3;
+$layout-lg: $layout-core * 4;
+$layout-xl: $layout-core * 6;
+$layout-xxl: $layout-core * 10;
+
+
+// Border Width
+$border-width-core: 2px;
+$border-width-hairline: $border-width-core * 0.5;
+$border-width-narrow: $border-width-core;
+$border-width-thick: $border-width-core * 2;
+
+
+// Elevation
+$elevation-low: 0 0 0 1px rgba(0,0,0,0.08), 0 1px 2px rgba(0, 0, 0, 0.2);
+$elevation-medium: 0 4px 8px rgba(0,0,0,0.15);
+$elevation-high: 0 10px 16px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.2);
+$elevation-higher: 0 16px 24px rgba(0, 0, 0, 0.20);
+$elevation-highest: 0 20px 32px rgba(0,0,0,0.22);
+
+
+// Border Radius
+$border-radius-core: 4px;
+$border-radius-sharp: 0;
+$border-radius-subtle: $border-radius-core * 0.50;
+$border-radius-normal: $border-radius-core * 1;
+$border-radius-blunt: $border-radius-core * 2;
+$border-radius-round: $border-radius-core * 2.5;
+$border-radius-circle: 50%;
+
+
+// Icon Size
+$icon-core: 16px;
+$icon-xs: $icon-core * 0.5;
+$icon-sm: $icon-core * 1;
+$icon-md: $icon-core * 1.5;
+$icon-lg: $icon-core * 2;
+$icon-xl: $icon-core * 3;
+$icon-xxl: $icon-core * 4;
+$icon-xxxl: $icon-core * 6;
+
+
+// Transition Time
+$transition-fast: 200ms;
+$transition-normal: 300ms;
+$transition-slow: 600ms;
+
+
+// Breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 400px;
+$breakpoint-md: 600px;
+$breakpoint-lg: 800px;
+$breakpoint-xl: 1000px;
+$breakpoint-xxl: 1200px;
+$xs-min-width: $breakpoint-xs;
+$xs-max-width: $breakpoint-sm - 1;
+$sm-min-width: $breakpoint-sm;
+$sm-max-width: $breakpoint-md - 1;
+$md-min-width: $breakpoint-md;
+$md-max-width: $breakpoint-lg - 1;
+$lg-min-width: $breakpoint-lg;
+$lg-max-width: $breakpoint-xl - 1;
+$xl-min-width: $breakpoint-xl;
+$xl-max-width: $breakpoint-xxl - 1;
+$xxl-min-width: $breakpoint-xxl;
+$xxl-max-width: auto;

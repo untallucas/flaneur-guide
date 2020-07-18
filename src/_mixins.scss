@@ -1,0 +1,96 @@
+// ----------------------------------------------------------------
+// MIXINS
+// Tools and general reusable styles
+// ----------------------------------------------------------------
+
+
+// Tokens Import
+@import './_theme.scss';
+
+
+// Card
+@mixin card() {
+  border-radius: $border-radius-blunt;
+  box-shadow: $elevation-higher;
+  background-color: $color-background-light-primary;
+  transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+  overflow: hidden;
+  width: calc(100% - 48px);
+  margin: 32px auto;
+  line-height: 0;
+
+  &:hover {
+    box-shadow: $elevation-highest;
+    transform: translateY(-10px);
+    filter: saturate(1.5);
+  }
+}
+
+
+// Text styles
+@mixin TextHeading1() {
+  font-family: $font-title;
+  // font-size: $font-size-level-1;
+  font-size: 30px;
+  font-weight: $font-weight-regular;
+  // line-height: $line-height-level-1;
+  line-height: 34px;
+  letter-spacing: $letter-space-tight;
+  color: $color-text-primary-on-light;
+}
+
+@mixin TextHeading2() {
+  font-family: $font-title;
+  // font-size: $font-size-level-2;
+  font-size: 20px;
+  font-weight: $font-weight-regular;
+  // line-height: $line-height-level-2;
+  line-height: 28px;
+  letter-spacing: $letter-space-tight;
+  color: $color-text-primary-on-light;
+}
+
+@mixin TextHeading3() {
+  font-family: $font-title;
+  // font-size: $font-size-level-3;
+  font-size: 20px;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-level-3;
+  letter-spacing: $letter-space-tight;
+  color: $color-text-tertiary-on-light;
+}
+
+@mixin TextHeading4() {}
+
+@mixin TextHeading5() {}
+
+@mixin TextHeading6() {}
+
+@mixin TextBody() {
+  font-family: $font-text;
+  // font-size: $font-size-body;
+  font-size: 16px;
+  font-weight: $font-weight-regular;
+  // line-height: $line-height-body;
+  line-height: 28px;
+  letter-spacing: $letter-space-normal;
+  color: $color-text-secondary-on-light;
+  text-align: left;
+}
+
+@mixin TextBodyHighlight() {
+  @include TextBody()
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-text-secondary-on-light;
+}
+
+@mixin TextLabel() {
+  @include TextBody()
+  font-size: $font-size-small;
+  font-weight: $font-weight-semibold;
+  line-height: $line-height-small;
+  letter-spacing: $letter-space-loose;
+  text-transform: uppercase;
+  color: $color-text-tertiary-on-light;
+}

@@ -1,0 +1,57 @@
+// ----------------------------------------------------------------
+// APP STYLES
+// General common styles
+// ----------------------------------------------------------------
+
+
+// Tokens and mixins import
+@import './_theme.scss';
+@import './_mixins.scss';
+
+
+// Layout styles
+body {
+  @include TextBody()
+  background-color: $color-background-light-secondary;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+
+// Text styles reset
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  font-style: normal;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Text styles
+h1 {
+  @include TextHeading1()
+}
+
+h2 {
+  @include TextHeading2()
+}
+
+h3 {
+  @include TextHeading3()
+}
+
+h4 {
+  @include TextHeading4()
+}
+
+h5 {
+  @include TextHeading5()
+}
+
+
+// Links
+a {
+  text-decoration: none;
+}
