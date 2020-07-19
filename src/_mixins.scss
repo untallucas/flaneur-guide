@@ -27,70 +27,91 @@
 }
 
 
-// Text styles
-@mixin TextHeading1() {
+// Text presets
+// Headline
+@mixin text-preset-1 {
   font-family: $font-title;
-  // font-size: $font-size-level-1;
-  font-size: 30px;
-  font-weight: $font-weight-regular;
-  // line-height: $line-height-level-1;
-  line-height: 34px;
-  letter-spacing: $letter-space-tight;
-  color: $color-text-primary-on-light;
-}
-
-@mixin TextHeading2() {
-  font-family: $font-title;
-  // font-size: $font-size-level-2;
-  font-size: 20px;
-  font-weight: $font-weight-regular;
-  // line-height: $line-height-level-2;
-  line-height: 28px;
-  letter-spacing: $letter-space-tight;
-  color: $color-text-primary-on-light;
-}
-
-@mixin TextHeading3() {
-  font-family: $font-title;
-  // font-size: $font-size-level-3;
-  font-size: 20px;
-  font-weight: $font-weight-semibold;
-  line-height: $line-height-level-3;
-  letter-spacing: $letter-space-tight;
-  color: $color-text-tertiary-on-light;
-}
-
-@mixin TextHeading4() {}
-
-@mixin TextHeading5() {}
-
-@mixin TextHeading6() {}
-
-@mixin TextBody() {
-  font-family: $font-text;
-  // font-size: $font-size-body;
-  font-size: 16px;
-  font-weight: $font-weight-regular;
-  // line-height: $line-height-body;
-  line-height: 28px;
-  letter-spacing: $letter-space-normal;
-  color: $color-text-secondary-on-light;
-  text-align: left;
-}
-
-@mixin TextBodyHighlight() {
-  @include TextBody()
-  font-size: 18px;
-  line-height: 28px;
-  color: $color-text-secondary-on-light;
-}
-
-@mixin TextLabel() {
-  @include TextBody()
-  font-size: $font-size-small;
-  font-weight: $font-weight-semibold;
-  line-height: $line-height-small;
-  letter-spacing: $letter-space-loose;
+  font-size: $font-scale-1;
+  font-weight: $font-weight-black;
   text-transform: uppercase;
-  color: $color-text-tertiary-on-light;
+}
+
+// Heading level 1
+@mixin text-preset-2 {
+  font-family: $font-title;
+  font-size: $font-scale-4;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Heading level 2
+@mixin text-preset-3 {
+  font-family: $font-title;
+  font-size: $font-scale-6;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Heading level 3
+@mixin text-preset-4 {
+  font-family: $font-title;
+  font-size: $font-scale-7;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Heading level 4
+@mixin text-preset-5 {
+  font-family: $font-title;
+  font-size: $font-scale-8;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Heading level 5
+@mixin text-preset-6 {
+  font-family: $font-title;
+  font-size: $font-scale-9;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Heading level 6
+@mixin text-preset-7 {
+  font-family: $font-title;
+  font-size: $font-scale-10;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Body text large
+@mixin text-preset-8 {
+  font-family: $font-text;
+  font-size: $font-scale-7;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Body text medium
+@mixin text-preset-9 {
+  font-family: $font-text;
+  font-size: $font-scale-8;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Body text small
+@mixin text-preset-10 {
+  font-family: $font-text;
+  font-size: $font-scale-9;
+  font-weight: $font-weight-regular;
+  text-transform: none;
+}
+
+// Eyebrow
+@mixin text-preset-11 {
+  font-family: $font-text;
+  font-size: $font-scale-10;
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
 }

@@ -5,47 +5,65 @@
 
 
 // Font Import
-@import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 
 
 // Font Families
-$font-title: 'Merriweather', 'Playfair Display', TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
-$font-text: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$font-code: 'IBM Plex Mono', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+$font-serif: 'Libre Baskerville', TimesNewRoman, 'Times New Roman', Times, Baskerville, Georgia, serif;
+$font-sans: 'Poppins', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font-mono: 'IBM Plex Mono', 'Courier New', Courier, 'Lucida Sans Typewriter', 'Lucida Typewriter', monospace;
+
+
+// Font assignation
+$font-title: $font-sans;
+$font-text: $font-sans;
+$font-accent: $font-serif;
+$font-code: $font-mono;
 
 
 // Font Weights
+$font-weight-thin: 100;
+$font-weight-extralight: 200;
+$font-weight-light: 300;
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
+$font-weight-extrabold: 800;
+$font-weight-black: 900;
 
 
 // Font Scale
-$font-size-core: 16px;
-$font-size-level-1: $font-size-core * 4;
-$font-size-level-2: $font-size-core * 3;
-$font-size-level-3: $font-size-core * 2.5;
-$font-size-level-4: $font-size-core * 2;
-$font-size-level-5: $font-size-core * 1.5;
-$font-size-overhead: $font-size-core * 0.75;
-$font-size-body: $font-size-core * 1.125;
-$font-size-small: $font-size-core * 0.75;
+$font-scale-core: 8px;
+$font-scale-1: $font-scale-core * 12;
+$font-scale-2: $font-scale-core * 9.5;
+$font-scale-3: $font-scale-core * 8;
+$font-scale-4: $font-scale-core * 6;
+$font-scale-5: $font-scale-core * 5;
+$font-scale-6: $font-scale-core * 4;
+$font-scale-7: $font-scale-core * 3;
+$font-scale-8: $font-scale-core * 2.5;
+$font-scale-9: $font-scale-core * 2;
+$font-scale-10: $font-scale-core * 1.5;
+$font-scale-11: $font-scale-core * 1;
 
 
 // Lineheight scale
-$line-height-core: 16px;
-$line-height-level-1: $line-height-core * 4.5;
-$line-height-level-2: $line-height-core * 3.5;
-$line-height-level-3: $line-height-core * 3;
-$line-height-level-4: $line-height-core * 2.5;
-$line-height-level-5: $line-height-core * 2;
-$line-height-overhead: $line-height-core * 0.75;
-$line-height-body: $line-height-core * 1.75;
-$line-height-small: $line-height-core * 1;
+$line-height-core: 8px;
+$line-height-1: $line-height-core * 12;
+$line-height-2: $line-height-core * 9.5;
+$line-height-3: $line-height-core * 8;
+$line-height-4: $line-height-core * 6;
+$line-height-5: $line-height-core * 5;
+$line-height-6: $line-height-core * 4;
+$line-height-7: $line-height-core * 3;
+$line-height-8: $line-height-core * 2.5;
+$line-height-9: $line-height-core * 2;
+$line-height-10: $line-height-core * 1.5;
+$line-height-11: $line-height-core * 1;
 
 
 // Letterspacing

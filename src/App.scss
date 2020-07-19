@@ -11,7 +11,7 @@
 
 // Layout styles
 body {
-  @include TextBody()
+  @include text-preset-9()
   background-color: $color-background-light-secondary;
   padding: 0;
   margin: 0;
@@ -23,37 +23,54 @@ body {
 // Text styles reset
 h1, h2, h3, h4, h5, h6, p, ul, li {
   font-style: normal;
+  font-weight: normal;
   text-align: left;
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 
 
 // Text styles
 h1 {
-  @include TextHeading1()
+  @include text-preset-2()
 }
 
 h2 {
-  @include TextHeading2()
+  @include text-preset-3()
 }
 
 h3 {
-  @include TextHeading3()
+  @include text-preset-4()
 }
 
 h4 {
-  @include TextHeading4()
+  @include text-preset-5()
 }
 
 h5 {
-  @include TextHeading5()
+  @include text-preset-6()
+}
+
+h6 {
+  @include text-preset-7()
 }
 
 p {
-  margin-bottom: 20px;
+  @include text-preset-9()
+
+  a {
+    &:hover {
+    }
+  }
 }
 
+.headline {
+  @include text-preset-1()
+}
+
+.eyebrow {
+  @include text-preset-11()
+}
 
 // Links
 a {
