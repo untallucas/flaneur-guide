@@ -18,6 +18,27 @@ class Test extends Component {
           <p>BODY · I pledge my life and honor to the Night's Watch, for this night and all the nights to come. When you play the game of thrones, you win or you die. What is dead may never die. Bastards are born of passion, aren't they?</p>
           <p>The wolf and the lion. The bear and the maiden fair. A good act does not wash out the bad, nor a bad act the good. Each should have its own reward. As High as Honor. Pay the iron price. The Knight of Lemonwood. Dunc the Lunk, thick as a castle wall.</p>
         </div>
+
+        <div class="Grid">
+          <div class="Grid-cell">The wolf and the lion. The bear and the maiden fair. A good act does not wash out the bad, nor a bad act the good.</div>
+          <div class="Grid-cell">Each should have its own reward. As High as Honor. Pay the iron price. The Knight of Lemonwood. Dunc the Lunk, thick as a castle wall.</div>
+          <div class="Grid-cell">As High as Honor. Pay the iron price. The Knight of Lemonwood. Dunc the Lunk, thick as a castle wall.</div>
+          <div class="Grid-cell">The wolf and the lion. The bear and the maiden fair. A good act does not wash out the bad, nor a bad act the good.</div>
+          <div class="Grid-cell">Each should have its own reward. As High as Honor. Pay the iron price. The Knight of Lemonwood. Dunc the Lunk, thick as a castle wall.</div>
+          <div class="Grid-cell">As High as Honor. Pay the iron price. The Knight of Lemonwood. Dunc the Lunk, thick as a castle wall.</div>
+          <div class="Grid-cell">The wolf and the lion. The bear and the maiden fair. A good act does not wash out the bad, nor a bad act the good.</div>
+          <div class="Grid-cell">A good act does not wash out the bad, nor a bad act the good. Each should have its own reward. As High as Honor. Pay the iron price. The Knight of Lemonwood. Dunc the Lunk, thick as a castle wall.</div>
+          <div class="Grid-cell">As High as Honor. Pay the iron price. The Knight of Lemonwood. Dunc the Lunk, thick as a castle wall.</div>
+          <div class="Grid-cell">As High as Honor. Pay the iron price. The Knight of Lemonwood. Dunc the Lunk, thick as a castle wall.</div>
+          <div class="Grid-cell">The wolf and the lion. The bear and the maiden fair. A good act does not wash out the bad, nor a bad act the good.</div>
+        </div>
+
+        <StackGrid>
+          <div key="key1">Item 1</div>
+          <div key="key2">Item 2</div>
+          <div key="key3">Item 3</div>
+        </StackGrid>
+
       </div>
     )
   }

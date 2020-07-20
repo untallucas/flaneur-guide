@@ -72,7 +72,27 @@ p {
   @include text-preset-11()
 }
 
-// Links
 a {
   text-decoration: none;
 }
+
+
+// Grid
+.Grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-gap: 32px;
+  // grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-rows: auto;
+  // grid-auto-rows: minmax(100px, auto);
+  background-color: gray;
+}
+ 
+ 
+.Grid-cell {
+  background-color: lime;
+}
+
