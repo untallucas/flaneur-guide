@@ -33,12 +33,6 @@ class Test extends Component {
           <div class="Grid-cell">The wolf and the lion. The bear and the maiden fair. A good act does not wash out the bad, nor a bad act the good.</div>
         </div>
 
-        <StackGrid>
-          <div key="key1">Item 1</div>
-          <div key="key2">Item 2</div>
-          <div key="key3">Item 3</div>
-        </StackGrid>
-
       </div>
     )
   }

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import SpotCard from '../../components/SpotCard/SpotCard'
+import SpotCard from '../components/SpotCard/SpotCard'
 import Navigation from '../components/Navigation/Navigation'
 import Separator from '../components/Separator/Separator'
 
@@ -31,18 +31,18 @@ const ListSpots = props => {
       <Separator/>
 
       <h2>Lugares</h2>
-      <ul>
+      <div class="Grid">
         {
           initItems.map(function (spot, i) {
             let url = '/lugares/' + spot.slug
             return (
-              <Link to={ url }>
-                <li key={ i }>{ spot.title }<br/>{ spot.address }<br/><br/></li>
-              </Link>
+              <div class="Grid-cell" key={ i }>
+                <SpotCard key={ i } spot={ spot }  />
+              </div>
             )
           })
         }
-      </ul>
+      </div>
     </div>
   )
 }
