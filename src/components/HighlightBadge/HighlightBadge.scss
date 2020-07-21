@@ -1,0 +1,15 @@
+@import './../../_theme.scss';
+
+.HighlightBadge {
+  width: $layout-lg;
+  height: $layout-lg;
+  background-color: $color-background-light-primary;
+  position: absolute;
+  top: $spacing-xs;
+  right: $spacing-xs;
+  border-radius: $border-radius-circle;
+  text-align: center;
+  font-size: 32px;
+  line-height: $layout-lg;
+  box-shadow: $elevation-medium;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import Navigation from '../components/Navigation/Navigation'
 // import HeroImage from '../../components/HeroImage/HeroImage'
 // import PageHeading from '../../components/PageHeading/PageHeading'
@@ -64,14 +65,14 @@ const SingleSpot = props => {
           <div>
             {Spot.map((spot, i) => (
               <div key={i}>
-                <img src={spot.poster} description={spot.title} />
+                <img src={spot.poster} description={spot.title} alt={spot.title} />
                 <p>{spot.title}</p>
                 <p>{spot.text}</p>
                 <p>{spot.info_tickets}</p>
                 <p>{spot.info_timetable}</p>
                 <p>{spot.info_more}</p>
                 <p>{spot.address} / {spot.hood} / {spot.lat} / {spot.lon}</p>
-
+                <Separator />
                 <p>Categorias: {spot.categories}</p>
                 <p>Tags: {spot.tags}</p>
                 <p>Authors: {spot.authors}</p>

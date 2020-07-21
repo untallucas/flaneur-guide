@@ -7,18 +7,29 @@
   img {
     width: 100%;
     filter: saturate(1.2);
+    transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
   }
 
-  /*
-
-  h2 {
-    @include TextHeading2()
-    padding: 16px 32px 8px 16px;
+  h3 {
+    @include text-preset-5()
+    color: $color-text-primary-on-light;
+    margin: $spacing-lg $spacing-xl $spacing-lg $spacing-lg;
+    height: 44px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 
   p {
-    @include TextLabel()
-    padding: 0 16px 16px 16px;
+    @include text-preset-11()
+    color: $color-text-tertiary-on-light;
+    padding: 0 $spacing-xl $spacing-lg $spacing-lg;
   }
-  */
+
+  &:hover {
+    img {
+      filter: saturate(1.8);
+    }
+  }
 }

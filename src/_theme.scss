@@ -6,7 +6,7 @@
 
 // Font Import
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 
@@ -53,17 +53,17 @@ $font-scale-11: $font-scale-core * 1;
 
 // Lineheight scale
 $line-height-core: 8px;
-$line-height-1: $line-height-core * 12;
-$line-height-2: $line-height-core * 9.5;
-$line-height-3: $line-height-core * 8;
-$line-height-4: $line-height-core * 6;
-$line-height-5: $line-height-core * 5;
-$line-height-6: $line-height-core * 4;
-$line-height-7: $line-height-core * 3;
-$line-height-8: $line-height-core * 2.5;
-$line-height-9: $line-height-core * 2;
-$line-height-10: $line-height-core * 1.5;
-$line-height-11: $line-height-core * 1;
+$line-height-1: $line-height-core * 12 + 2;
+$line-height-2: $line-height-core * 9.5 + 2;
+$line-height-3: $line-height-core * 8 + 2;
+$line-height-4: $line-height-core * 6 + 2;
+$line-height-5: $line-height-core * 5 + 2;
+$line-height-6: $line-height-core * 4 + 2;
+$line-height-7: $line-height-core * 3 + 2;
+$line-height-8: $line-height-core * 2.5 + 2;
+$line-height-9: $line-height-core * 2 + 2;
+$line-height-10: $line-height-core * 1.5 + 2;
+$line-height-11: $line-height-core * 1 + 2;
 
 
 // Letterspacing
@@ -111,9 +111,9 @@ $color-background-dark-secondary: #111111;
 
 
 // Text Colors
-$color-text-primary-on-light: #333333;
-$color-text-secondary-on-light: #888888;
-$color-text-tertiary-on-light: #AAAAAA;
+$color-text-primary-on-light: #171428;
+$color-text-secondary-on-light: #737082;
+$color-text-tertiary-on-light: #A29FB0;
 $color-text-primary-on-dark: #FFFFFF;
 $color-text-secondary-on-dark: #DDDDDD;
 $color-text-tertiary-on-dark: #BBBBBB;
@@ -145,7 +145,7 @@ $spacing-xxxl: $spacing-core * 3;
 
 
 // Layout
-$layout-core: 20px;
+$layout-core: 16px;
 $layout-xxs: $layout-core * 1;
 $layout-xs: $layout-core * 1.50;
 $layout-sm: $layout-core * 2;

@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import SpotCard from '../components/SpotCard/SpotCard'
+
+import ItemsGrid from '../components/ItemsGrid/ItemsGrid'
 import Navigation from '../components/Navigation/Navigation'
 import Separator from '../components/Separator/Separator'
+import SpotCard from '../components/SpotCard/SpotCard'
 
 import DataItems from '../data/DataItems.js'
 import DataTaxonomies from '../data/DataTaxonomies.js'
@@ -12,7 +13,6 @@ let initItems = DataItems
 let initCats = DataTaxonomies.categories
 
 const ListSpots = props => {
-  console.log(initItems)
   return (
     <div>
       <Navigation/>
@@ -31,24 +31,12 @@ const ListSpots = props => {
       <Separator/>
 
       <h2>Lugares</h2>
-      <div class="Grid">
-        {
-          initItems.map(function (spot, i) {
-            let url = '/lugares/' + spot.slug
-            return (
-              <div class="Grid-cell" key={ i }>
-                <SpotCard key={ i } spot={ spot }  />
-              </div>
-            )
-          })
-        }
-      </div>
+      <ItemsGrid items={initItems} />
     </div>
   )
 }
 
 export default ListSpots
-
 
 /*
 class ListSpots2 extends React.Component {
@@ -196,4 +184,19 @@ class ListSpots2 extends React.Component {
       taxonomies = DataTaxonomies.year
       currentTaxonomy = 'anio'
     }
+*/
+
+/*
+      <div class="Grid">
+        {
+          initItems.map(function (spot, i) {
+            let url = '/lugares/' + spot.slug
+            return (
+              <div class="Grid-cell" key={ i }>
+                <SpotCard key={ i } spot={ spot }  />
+              </div>
+            )
+          })
+        }
+      </div>
 */
