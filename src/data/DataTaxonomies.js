@@ -78,7 +78,7 @@ export default {
       title: 'Museos'
     }
   ],
-  architects: [
+  author: [
     {
       id: 1,
       type: 'author',

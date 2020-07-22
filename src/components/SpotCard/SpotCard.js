@@ -22,7 +22,7 @@ const SpotCard = function ({ spot }) {
   let url = '/lugares/' + spot.slug
   let printname = spot.shorttitle ? spot.shorttitle : spot.title
   // let image = { spot.poster }
-  let image = 'http://lorempixel.com/400/300/city/' + spot.id
+  let image = 'http://lorempixel.com/400/300/city/' + (Math.round(10 * Math.random()))
   let highlight 
   if(spot.highlight){
     highlight = <HighlightBadge/>

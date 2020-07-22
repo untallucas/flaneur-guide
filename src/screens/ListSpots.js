@@ -2,86 +2,105 @@ import React from 'react'
 
 import ItemsGrid from '../components/ItemsGrid/ItemsGrid'
 import Navigation from '../components/Navigation/Navigation'
-import Separator from '../components/Separator/Separator'
 
 import DataItems from '../data/DataItems.js'
 import DataTaxonomies from '../data/DataTaxonomies.js'
-// const DataCategories = DataTaxonomies.categories
 
-let initItems = DataItems
-let initCats = DataTaxonomies.categories
+const DataCategories = DataTaxonomies.categories
 
-const ListSpots = props => {
-  return (
-    <div>
-      <Navigation/>
-      <h1 className="page-heading">Lugares</h1>
-      <div>
-      <h2>Categorias</h2>
-        {
-          initCats.map(function (spot, i) {
-            return (
-              <span key={ i }>{ spot.title } | </span>
-            )
-          })
-        }
-      </div>
-
-      <Separator/>
-
-      <h2>Lugares</h2>
-      <ItemsGrid items={initItems} />
-    </div>
-  )
-}
-
-export default ListSpots
-
-/*
-class ListSpots2 extends React.Component {
+class ListSpots extends React.Component {
   constructor (props) {
     super(props)
     this.triggerFilter = this.triggerFilter.bind(this)
 
-    let initTaxonomySlug
-    let initTaxonomyData
-    let initFilterSlug
-    let initFilterTitle = 'Todos'
-    let initUrl = props.match.url
     let initItems = DataItems
+    let initFilterTitle = 'Todos'
+    let initFilterSlug
+    let initTaxonomyTitle
+    let initTaxonomySlug
+    let initTaxonomyItems
+    let initTaxonomyData
+    let knownTaxonomy
+    let initUrl = '/lugares'
 
-    if( props.match.params.filter ){
-      initFilterSlug = props.match.params.filter
+    if( props.match.params.taxonomy === 'categoria' ){
+      knownTaxonomy = true
+      initTaxonomyItems = DataTaxonomies.categories
+      initTaxonomySlug = 'categoria'
+      initTaxonomyTitle = 'Categoría'
+    }
 
-      // Gets the complete data of the current filter (we need the id)
-      initTaxonomyData = DataCategories.filter(function (taxonomy) {
-        return taxonomy.slug === initFilterSlug
+    else if( props.match.params.taxonomy === 'autor' ){
+      knownTaxonomy = true
+      initTaxonomyItems = DataTaxonomies.author
+      initTaxonomySlug = 'autor'
+      initTaxonomyTitle = 'Autor'
+    }
+
+    else if( props.match.params.taxonomy === 'tag' ){
+      knownTaxonomy = true
+      initTaxonomyItems = DataTaxonomies.tags
+      initTaxonomySlug = 'tag'
+      initTaxonomyTitle = 'Tag'
+    }
+
+    else if( props.match.params.taxonomy === 'anio' ){
+      knownTaxonomy = true
+      initTaxonomyItems = DataTaxonomies.year
+      initTaxonomySlug = 'anio'
+      initTaxonomyTitle = 'Año'
+    }
+
+    if( props.match.params.filter && knownTaxonomy ){
+      let filterSlug = props.match.params.filter
+
+      // Gets the complete data of the current filter slug
+      initTaxonomyData = initTaxonomyItems.filter(function (taxonomy) {
+        return taxonomy.slug === filterSlug
       })
 
+      // If we find a filter that matches the slug
       if(initTaxonomyData.length) {
+        // Filters the items list based on the filter id
+        initItems = initItems.filter(function (item) {
+          return item.categories.includes(initTaxonomyData[0]['id'])
+        })
+
         // Gets filter title
         initFilterTitle = initTaxonomyData[0]['title']
 
-        // Filters the items list based on the filter id
-        initItems = DataItems.filter(function (item) {
-          return item.categories.includes(initTaxonomyData[0]['id'])
-        })
+        // Sets filter slug
+        initFilterSlug = filterSlug
+
+        // Sets url
+        initUrl = '/lugares' + initTaxonomySlug + '/' + initFilterSlug
       }
+
+      // No filter match, resets page
       else {
+        knownTaxonomy = false
+        initTaxonomyItems = null
+        initTaxonomySlug = null
+        initTaxonomyTitle = null
         this.props.history.replace('/lugares')
       }
     }
 
+    else {
+      this.props.history.replace('/lugares')
+    }
+
     this.state = {
-      currentTaxonomySlug: initTaxonomySlug,
-      currentFilterSlug: initFilterSlug,
+      currentItems: initItems,
       currentFilterTitle: initFilterTitle,
+      currentFilterSlug: initFilterSlug,
+      currentTaxonomyTitle: initTaxonomyTitle,
+      currentTaxonomySlug: initTaxonomySlug,
       currentUrl: initUrl,
-      currentItems: initItems
     }
   }
 
-  triggerFilter(updateFilterSlug, updateFilterTitle, updateFilterId){
+  triggerFilter(updateTaxonomySlug, updateTaxonomyTitle, updateFilterSlug, updateFilterTitle, updateFilterId){
     let updateItems
     let updateUrl
 
@@ -90,9 +109,10 @@ class ListSpots2 extends React.Component {
       updateItems = DataItems.filter(function (item) {
         return item.categories.includes(updateFilterId)
       })
-      updateUrl = '/lugares/categoria/' + updateFilterSlug
+      updateUrl = '/lugares/' + updateTaxonomySlug + '/' + updateFilterSlug
     }
-    // Resets list to original state
+
+    // Or resets list to original state
     else {
       updateItems = DataItems
       updateUrl = '/lugares'
@@ -100,42 +120,32 @@ class ListSpots2 extends React.Component {
 
     this.setState(
       {
-        // currentTaxonomySlug: initTaxonomySlug,
-        currentFilterSlug: updateFilterSlug,
+        currentItems: updateItems,
         currentFilterTitle: updateFilterTitle,
-        currentUrl: updateUrl,
-        currentItems: updateItems
+        currentFilterSlug: updateFilterSlug,
+        currentTaxonomyTitle: updateTaxonomyTitle,
+        currentTaxonomySlug: updateTaxonomySlug,
+        currentUrl: updateUrl
       },
       () => this.props.history.replace( this.state.currentUrl )
     )
   }
 
   render () {
-
-    // Taxonomy: Categories
-    // esto no tendria q estar en el state???? >> NO PQ ESTO DIBUJA EL MENU SOLAMENTE ???
-    if( this.props.match.params.taxonomy === 'categoria' ){
-      taxonomies = DataTaxonomies.categories
-      currentTaxonomySlug = 'categoria'
-    }
-    // end comment
-
     return (
       <div>
         <Navigation/>
         <h1 className="page-heading">Lugares</h1>
-        <p className="label">{ this.state.currentFilterTitle }</p>
+        <p className="label">{ this.state.currentTaxonomyTitle } | { this.state.currentFilterTitle }</p>
 
         <ul>
           {
             DataCategories.map(function (filter, i) {
-              let url = '/lugares/' + this.state.currentTaxonomySlug + '/' + filter.slug
               return (
                 <li 
                   key={ i } 
-                  onClick={(e) => this.triggerFilter(filter.slug, filter.title, filter.id, e)} 
-                  style={ this.state.currentFilterSlug === filter.slug ? { 'margin': 16, 'cursor': 'pointer', 'color': 'red' } : { 'margin': 16, 'cursor': 'pointer', 'color': 'gray' } }
-                  className={ this.state.currentFilterSlug === filter.slug ? 'item active' : 'item' }
+                  onClick={(e) => this.triggerFilter('categoria', 'Categoría', filter.slug, filter.title, filter.id, e)} 
+                  className={ this.state.currentFilterSlug === filter.slug ? 'filterItem active' : 'filterItem' }
                 >
                   { filter.title }
                 </li>
@@ -144,58 +154,17 @@ class ListSpots2 extends React.Component {
           }
           <li 
             key='0'
-            onClick={(e) => this.triggerFilter(null, 'Todos', 0, e)} 
+            onClick={(e) => this.triggerFilter(null, null, null, 'Todos', null, e)} 
             style={ this.state.currentFilterSlug ? { 'display': 'inline', 'margin': 16, 'cursor': 'pointer', 'background': 'red', 'color': 'white', 'padding': 10 } : { 'display': 'none' } }
           >
             (X Sacar filtros)
           </li>
         </ul>
-        <div>
-        {
-          this.state.currentItems.map(function (spot, i) {
-            return (
-              <SpotCard key={ i } spot={ spot }  />
-            )
-          })
-        }
-        </div>
+
+        <ItemsGrid items={ this.state.currentItems } />
       </div>
     )
   }
 }
-*/
 
-/*
-    // Taxonomy: Authors
-    if( this.props.match.params.taxonomy === 'autor' ){
-      taxonomies = DataTaxonomies.architects
-      currentTaxonomy = 'autor'
-    }
-
-    // Taxonomy: Tags
-    if( this.props.match.params.taxonomy === 'tag' ){
-      taxonomies = DataTaxonomies.tags
-      currentTaxonomy = 'tag'
-    }
-
-    // Taxonomy: Year
-    if( this.props.match.params.taxonomy === 'anio' ){
-      taxonomies = DataTaxonomies.year
-      currentTaxonomy = 'anio'
-    }
-*/
-
-/*
-      <div class="Grid">
-        {
-          initItems.map(function (spot, i) {
-            let url = '/lugares/' + spot.slug
-            return (
-              <div class="Grid-cell" key={ i }>
-                <SpotCard key={ i } spot={ spot }  />
-              </div>
-            )
-          })
-        }
-      </div>
-*/
+export default ListSpots
