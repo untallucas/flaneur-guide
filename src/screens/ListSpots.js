@@ -3,7 +3,6 @@ import React from 'react'
 import ItemsGrid from '../components/ItemsGrid/ItemsGrid'
 import Navigation from '../components/Navigation/Navigation'
 import Separator from '../components/Separator/Separator'
-import SpotCard from '../components/SpotCard/SpotCard'
 
 import DataItems from '../data/DataItems.js'
 import DataTaxonomies from '../data/DataTaxonomies.js'

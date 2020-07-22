@@ -12,7 +12,8 @@ const Home = props => {
   return (
     <div>
       <Navigation/>
-
+        <h1>{ PageHeadingTitle }</h1>
+        <p>{ PageHeadingText }</p>
       <Separator />
 
       <h2 className="text-level-2">
