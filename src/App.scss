@@ -77,32 +77,63 @@ a {
 }
 
 
+// Filters
+.Filters {
+  display: grid;
+  justify-content: flex-start;
+  margin: 24px auto 32px;
+  max-width: $breakpoint-xxl;
+  grid-column-gap: $layout-sm;
+  grid-row-gap: $layout-md;
+  padding: 0 $layout-xs;
+  grid-template-columns: repeat(auto-fill, 100%);
+  grid-auto-rows: auto;
 
+  .filterItem {
+    transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px black solid;
+    color: black;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin: 0 4px 4px 0;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0.2;
+    background-color: transparent;
 
+    &.active {
+      opacity: 1;
+      color: royalblue;
+      border-color: royalblue;
+      background-color: #d6e9ff;
+    }
 
-
-.filterItem {
-  transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
-  font-size: 14px;
-  text-transform: uppercase;
-  border: 1px black solid;
-  color: black;
-  border-radius: 4px;
-  padding: 6px 12px;
-  margin: 24px 4px 24px 4px;
-  display: inline-block;
-  cursor: pointer;
-  opacity: 0.2;
-  background-color: transparent;
-
-  &.active {
-    opacity: 1;
-    color: royalblue;
-    border-color: royalblue;
-    background-color: #d6e9ff;
+    &:hover {
+      opacity: 0.6;
+    }
   }
 
-  &:hover {
-    opacity: 0.6;
+  .filterClear {
+    transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px #d20c0c solid;
+    color: white;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin: 0 4px 4px 0;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 1;
+    background-color: red;
+
+    &.hidden {
+      display: none;
+    }
+
+    &:hover {
+    }
   }
 }

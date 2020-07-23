@@ -138,28 +138,30 @@ class ListSpots extends React.Component {
         <h1 className="page-heading">Lugares</h1>
         <p className="label">{ this.state.currentTaxonomyTitle } | { this.state.currentFilterTitle }</p>
 
-        <ul>
-          {
-            DataCategories.map(function (filter, i) {
-              return (
-                <li 
-                  key={ i } 
-                  onClick={(e) => this.triggerFilter('categoria', 'Categoría', filter.slug, filter.title, filter.id, e)} 
-                  className={ this.state.currentFilterSlug === filter.slug ? 'filterItem active' : 'filterItem' }
-                >
-                  { filter.title }
-                </li>
-              )
-            }, this)
-          }
-          <li 
-            key='0'
-            onClick={(e) => this.triggerFilter(null, null, null, 'Todos', null, e)} 
-            style={ this.state.currentFilterSlug ? { 'display': 'inline', 'margin': 16, 'cursor': 'pointer', 'background': 'red', 'color': 'white', 'padding': 10 } : { 'display': 'none' } }
-          >
-            (X Sacar filtros)
-          </li>
-        </ul>
+        <div class="Filters">
+          <ul>
+            {
+              DataCategories.map(function (filter, i) {
+                return (
+                  <li 
+                    key={ i } 
+                    onClick={(e) => this.triggerFilter('categoria', 'Categoría', filter.slug, filter.title, filter.id, e)} 
+                    className={ this.state.currentFilterSlug === filter.slug ? 'filterItem active' : 'filterItem' }
+                  >
+                    { filter.title }
+                  </li>
+                )
+              }, this)
+            }
+            <li 
+              key='0'
+              onClick={(e) => this.triggerFilter(null, null, null, 'Todos', null, e)} 
+              className={ this.state.currentFilterSlug ? 'filterClear' : 'filterClear hidden' }
+            >
+              (X Sacar filtros)
+            </li>
+          </ul>
+        </div>
 
         <ItemsGrid items={ this.state.currentItems } />
       </div>

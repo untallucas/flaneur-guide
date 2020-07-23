@@ -13,8 +13,8 @@
   h3 {
     @include text-preset-5()
     color: $color-text-primary-on-light;
-    margin: $spacing-lg $spacing-xl $spacing-lg $spacing-lg;
-    height: 44px;
+    margin: $spacing-md $spacing-lg $spacing-md $spacing-md;
+    height: 48px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -24,7 +24,7 @@
   p {
     @include text-preset-11()
     color: $color-text-tertiary-on-light;
-    padding: 0 $spacing-xl $spacing-lg $spacing-lg;
+    padding: 0 $spacing-lg $spacing-md $spacing-md;
   }
 
   &:hover {
