@@ -22,14 +22,13 @@ const SpotCard = function ({ spot }) {
   let url = '/lugares/' + spot.slug
   let printname = spot.shorttitle ? spot.shorttitle : spot.title
   // let image = { spot.poster }
-  let image = 'http://lorempixel.com/400/300/city/' + (Math.round(10 * Math.random()))
+  let image = 'https://picsum.photos/400/300?random=' + spot.id
   let highlight 
   if(spot.highlight){
     highlight = <HighlightBadge/>
   } 
 
   return (
-    // <div className='SpotCard' categories={ spot.categories }>
     <div className="SpotCard">
       <Link to={ url }>
         <img src={ image } alt={ spot.printname } />

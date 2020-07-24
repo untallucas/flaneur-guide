@@ -138,7 +138,7 @@ class ListSpots extends React.Component {
         <h1 className="page-heading">Lugares</h1>
         <p className="label">{ this.state.currentTaxonomyTitle } | { this.state.currentFilterTitle }</p>
 
-        <div class="Filters">
+        <div className="Filters">
           <ul>
             {
               DataCategories.map(function (filter, i) {

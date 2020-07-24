@@ -108,6 +108,10 @@ a {
       color: royalblue;
       border-color: royalblue;
       background-color: #d6e9ff;
+
+      &:hover {
+        opacity: 1;
+      }
     }
 
     &:hover {
@@ -119,21 +123,22 @@ a {
     transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
     font-size: 14px;
     text-transform: uppercase;
-    border: 1px #d20c0c solid;
-    color: white;
+    border: 1px #d80101 solid;
+    color: #d80101;
     border-radius: 4px;
     padding: 6px 12px;
     margin: 0 4px 4px 0;
     display: inline-block;
     cursor: pointer;
-    opacity: 1;
-    background-color: red;
+    background-color: #ffe2e7;
+    opacity: 0.5;
 
     &.hidden {
       display: none;
     }
 
     &:hover {
+      opacity: 1;
     }
   }
 }
