@@ -77,6 +77,39 @@ a {
 }
 
 
+// Grid
+.Layout {
+  display: grid;
+  justify-content: flex-start;
+  margin: 0 auto;
+  max-width: $breakpoint-xxl;
+  grid-column-gap: $layout-sm;
+  grid-row-gap: $layout-md;
+  padding: 0 $layout-xs;
+  grid-auto-rows: auto;
+
+  &--Col-1 {
+    grid-template-columns: repeat(1, minmax(10px, 1fr))
+  }
+
+  &--Col-2 {
+    grid-template-columns: repeat(2, minmax(10px, 1fr))
+  }
+
+  &--Col-3 {
+    grid-template-columns: repeat(3, minmax(10px, 1fr))
+  }
+
+  &--Col-6 {
+    grid-template-columns: repeat(6, minmax(10px, 1fr))
+  }
+
+  &--Col-12 {
+    grid-template-columns: repeat(12, minmax(10px, 1fr))
+  }
+}
+
+
 // Filters
 .Filters {
   display: grid;

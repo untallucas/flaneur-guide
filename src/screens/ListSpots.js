@@ -135,9 +135,12 @@ class ListSpots extends React.Component {
     return (
       <div>
         <Navigation/>
-        <h1 className="page-heading">Lugares</h1>
-        <p className="label">{ this.state.currentTaxonomyTitle } | { this.state.currentFilterTitle }</p>
-
+        <div className="Layout Layout--Col-1">
+          <h1>Lugares</h1>
+        </div>
+        <div className="Layout Layout--Col-1">
+          <p>{ this.state.currentTaxonomyTitle } | { this.state.currentFilterTitle }</p>
+        </div>
         <div className="Filters">
           <ul>
             {

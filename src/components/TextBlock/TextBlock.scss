@@ -1,0 +1,17 @@
+@import './../../_theme.scss';
+
+.TextBlock {
+  h2 {
+    color: blue;
+    padding: 32px 24px 0;
+  }
+
+  ul {
+    padding: 8px 24px 32px;
+  }
+
+  li {
+    color: gold;
+    list-style: none;
+  }
+}

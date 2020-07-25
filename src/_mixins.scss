@@ -44,10 +44,11 @@
 @mixin text-preset-2 {
   font-family: $font-title;
   font-size: $font-scale-4;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-light;
   line-height: $line-height-4;
-  letter-spacing: normal;
+  letter-spacing: -1.5px;
   text-transform: none;
+  color: $color-text-primary-on-light;
 }
 
 // Heading level 2
