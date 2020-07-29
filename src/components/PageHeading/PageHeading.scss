@@ -1,0 +1,16 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.PageHeading {
+  h1 {
+    @include text-preset-2()
+    padding: 120px 0 64px 0;
+  }
+
+  p {
+    @include text-preset-8()
+    color: $color-text-tertiary-on-light;
+    line-height: 56px;
+    padding: 0 0 120px 0;
+  }
+}

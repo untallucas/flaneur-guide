@@ -1,17 +1,25 @@
 @import './../../_theme.scss';
+@import './../../_mixins.scss';
 
 .TextBlock {
+  padding: 0 0 64px;
+
   h2 {
-    color: blue;
-    padding: 32px 24px 0;
+    @include text-preset-11()
+    color: $color-text-tertiary-on-light;
+    padding: 0 0 16px 0;
   }
 
   ul {
-    padding: 8px 24px 32px;
+    padding: 0;
   }
 
   li {
-    color: gold;
     list-style: none;
+    margin-bottom: 8px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }

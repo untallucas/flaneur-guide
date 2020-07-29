@@ -1,12 +1,13 @@
 import React from 'react'
-import Separator from '../Separator/Separator'
 
 import './TextBlock.scss'
 
 const TextBlock = props => {
   if (props.content) {
+    const TagName = 'RiTicketLine'
     return (
       <div className="TextBlock">
+        <h2>{ props.icon }</h2>
         <h2>{ props.title }</h2>
         <ul>
           {
@@ -15,7 +16,6 @@ const TextBlock = props => {
             })
           }
         </ul>
-        <Separator />
       </div>
     )
   }

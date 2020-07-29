@@ -1,17 +1,15 @@
 import React from 'react'
 
 import Navigation from '../components/Navigation/Navigation'
-// import HeroImage from '../../components/HeroImage/HeroImage'
-// import PageHeading from '../../components/PageHeading/PageHeading'
+import SpotImage from '../components/SpotImage/SpotImage'
+import PageHeading from '../components/PageHeading/PageHeading'
 import TextBlock from '../components/TextBlock/TextBlock'
 import Separator from '../components/Separator/Separator'
-// import MapCard from '../../components/MapCard/MapCard'
+// import MapCard from '../components/MapCard/MapCard'
 
 import DataItems from '../data/DataItems.js'
 
 /*
-  <HeroImage image={spot.poster} description={spot.title} />
-  <PageHeading title={spot.title} text={spot.text} />
   <MapCard address={spot.address} hood={spot.hood} lat={spot.lat} lon={spot.lon} title={spot.title} />
 */
 
@@ -33,10 +31,12 @@ const SingleSpot = props => {
         { Boolean(Spot.length) && (
           <div>
             {Spot.map((spot, i) => (
-              <div key={ i }>
-                <img src='https://picsum.photos/400/300' description={ spot.title } alt={ spot.title } />
-                <h1>{ spot.title }</h1>
-                <p>{ spot.text }</p>
+              <div key={ i } className="Layout Layout--Col-2" style={{ 'gridTemplateColumns' : '300px auto' }}>
+                <div>
+                <SpotImage image={spot.poster} description={spot.title} />
+                </div>
+                <div>
+                <PageHeading title={ spot.title } text={ spot.text } />
                 <TextBlock title='Entradas' content={ spot.info_tickets } />
                 <TextBlock title='Horarios' content={ spot.info_timetable } />
                 <TextBlock title='Más información' content={ spot.info_more } />
@@ -46,6 +46,7 @@ const SingleSpot = props => {
                 <p>Tags: { spot.tags }</p>
                 <p>Authors: { spot.authors }</p>
                 <p>Highlight: { spot.highlight }</p>
+                </div>
               </div>
             ))}
           </div>

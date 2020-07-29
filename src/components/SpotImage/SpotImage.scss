@@ -1,0 +1,15 @@
+@import './../../_theme.scss';
+
+.SpotImage {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  font-size: 0;
+  letter-spacing: 0;
+  line-height: 0;
+
+  img {
+    width: 100%;
+    filter: saturate(1.2);
+  }
+}
