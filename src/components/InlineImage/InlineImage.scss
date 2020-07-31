@@ -1,8 +1,8 @@
 @import './../../_theme.scss';
 
-.SpotImage {
+.InlineImage {
   width: 100%;
-  border-radius: 10px;
+  border-radius: $border-radius-blunt;
   overflow: hidden;
   font-size: 0;
   letter-spacing: 0;

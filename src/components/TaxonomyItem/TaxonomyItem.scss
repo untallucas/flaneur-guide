@@ -1,0 +1,22 @@
+@import './../../_theme.scss';
+
+.taxonomyitem {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 0.4px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: darken(#0c7fe6, 10%);
+  background-color: lighten(#0c7fe6, 40%);
+  padding: 10px 20px;
+  display: inline-block;
+  margin: 0 10px 20px 0;
+  border-radius: 50px;
+  border: 1px lighten(#0c7fe6, 20%) solid;
+
+  &:hover {
+    background-color: lighten(#0c7fe6, 30%);
+    color: darken(#0c7fe6, 20%);
+  }
+}

@@ -63,17 +63,17 @@ export default {
   ],
   tags: [
     {
-      id: 1,
+      id: 5,
       slug: 'cultura',
       title: 'Cultura'
     },
     {
-      id: 2,
+      id: 8,
       slug: 'parques',
       title: 'Parques'
     },
     {
-      id: 3,
+      id: 9,
       slug: 'museos',
       title: 'Museos'
     }

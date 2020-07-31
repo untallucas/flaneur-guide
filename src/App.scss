@@ -12,7 +12,7 @@
 // Layout styles
 body {
   @include text-preset-9()
-  background-color: $color-background-light-primary;
+  background-color: $color-background-light-secondary;
   color: $color-text-primary-on-light;
   padding: 0;
   margin: 0;
@@ -107,6 +107,10 @@ a {
 
   &--Col-12 {
     grid-template-columns: repeat(12, minmax(10px, 1fr))
+  }
+
+  &--Inset {
+    padding: 0;
   }
 }
 

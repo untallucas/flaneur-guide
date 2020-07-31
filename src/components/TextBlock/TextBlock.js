@@ -4,7 +4,6 @@ import './TextBlock.scss'
 
 const TextBlock = props => {
   if (props.content) {
-    const TagName = 'RiTicketLine'
     return (
       <div className="TextBlock">
         <h2>{ props.icon }</h2>

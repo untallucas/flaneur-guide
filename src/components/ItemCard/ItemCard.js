@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 import HighlightBadge from '../HighlightBadge/HighlightBadge'
 
-import './SpotCard.scss'
+import './ItemCard.scss'
 
-const SpotCard = function ({ spot }) {
+const ItemCard = function ({ spot }) {
   if(!spot){
     spot = {
       id: 0,
@@ -29,7 +29,7 @@ const SpotCard = function ({ spot }) {
   } 
 
   return (
-    <div className="SpotCard">
+    <div className="ItemCard">
       <Link to={ url }>
         <img src={ image } alt={ spot.printname } />
         <h3>{ printname }</h3>
@@ -40,4 +40,4 @@ const SpotCard = function ({ spot }) {
   )
 }
 
-export default SpotCard
+export default ItemCard

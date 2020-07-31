@@ -1,25 +1,33 @@
 import React from 'react'
 
 import Navigation from '../components/Navigation/Navigation'
-import SpotImage from '../components/SpotImage/SpotImage'
+import InlineImage from '../components/InlineImage/InlineImage'
 import PageHeading from '../components/PageHeading/PageHeading'
 import TextBlock from '../components/TextBlock/TextBlock'
 import Separator from '../components/Separator/Separator'
-// import MapCard from '../components/MapCard/MapCard'
+import MapCard from '../components/MapCard/MapCard'
+import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
 
 import DataItems from '../data/DataItems.js'
+import DataTaxonomies from '../data/DataTaxonomies.js'
 
-/*
-  <MapCard address={spot.address} hood={spot.hood} lat={spot.lat} lon={spot.lon} title={spot.title} />
-*/
+const DataCategories = DataTaxonomies.categories
+const DataTags = DataTaxonomies.tags
 
 const SingleSpot = props => {
   let Spot = DataItems.filter(function (spot) {
     return spot.slug === props.match.params.slug
   })
 
+  let printname
+  let address
+  if(Spot.length){
+    printname = Spot[0].shorttitle ? Spot[0].shorttitle : Spot[0].title
+    address = Spot[0].address + '\n' + Spot[0].hood
+  }
+
   return (
-    <div>
+    <div style={{ 'background':'white' }}>
       <Navigation/>
       <div className="Layout Layout--Col-1">
         { /* No coincidence between URL slug and saved spots */ }
@@ -30,25 +38,16 @@ const SingleSpot = props => {
         { /* Positive coincidence between URL slug and saved spots */ }
         { Boolean(Spot.length) && (
           <div>
-            {Spot.map((spot, i) => (
-              <div key={ i } className="Layout Layout--Col-2" style={{ 'gridTemplateColumns' : '300px auto' }}>
-                <div>
-                <SpotImage image={spot.poster} description={spot.title} />
-                </div>
-                <div>
-                <PageHeading title={ spot.title } text={ spot.text } />
-                <TextBlock title='Entradas' content={ spot.info_tickets } />
-                <TextBlock title='Horarios' content={ spot.info_timetable } />
-                <TextBlock title='Más información' content={ spot.info_more } />
-                <p>{ spot.address } / { spot.hood } / { spot.lat } / { spot.lon }</p>
-                <Separator />
-                <p>Categorias: { spot.categories }</p>
-                <p>Tags: { spot.tags }</p>
-                <p>Authors: { spot.authors }</p>
-                <p>Highlight: { spot.highlight }</p>
-                </div>
-              </div>
-            ))}
+            <PageHeading title={ Spot[0].title } text={ Spot[0].text } />
+            <div className="Layout Layout--Col-2 Layout--Inset">
+              <InlineImage image={ Spot[0].poster } description={ Spot[0].title } />
+              <MapCard address={ Spot[0].address } hood={ Spot[0].hood } lat={ Spot[0].lat } lon={ Spot[0].lon } title={ printname } />
+            </div>
+            <TaxonomiesList list={ Spot[0].categories } scope={ DataCategories } />
+            <TextBlock title='Dirección' content={ address } />
+            <TextBlock title='Entradas' content={ Spot[0].info_tickets } />
+            <TextBlock title='Horarios' content={ Spot[0].info_timetable } />
+            <TextBlock title='Más información' content={ Spot[0].info_more } />
           </div>
         )}
       </div>
