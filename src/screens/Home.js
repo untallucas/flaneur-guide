@@ -10,7 +10,7 @@ let PageHeadingText = 'Córdoba se encuentra ubicada en la región central del p
 
 const Home = props => {
   return (
-    <div>
+    <div className="PageList">
       <Navigation/>
         <h1>{ PageHeadingTitle }</h1>
         <p>{ PageHeadingText }</p>

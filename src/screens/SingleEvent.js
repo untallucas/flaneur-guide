@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation/Navigation'
 
 const SingleEvent = props => {
   return (
-    <div>
+    <div className="PageSingle">
       <Navigation/>
       <h1>
         SingleEvent

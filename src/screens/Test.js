@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation/Navigation'
 class Test extends Component {
   render () {
     return (
-      <div>
+      <div className="PageSingle">
         <Navigation/>
         <div>
           <p class="headline">HEADLINE · Alta Córdoba</p>

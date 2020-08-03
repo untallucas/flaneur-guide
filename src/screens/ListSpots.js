@@ -133,7 +133,7 @@ class ListSpots extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="PageList">
         <Navigation/>
         <div className="Layout Layout--Col-1">
           <h1>Lugares</h1>
@@ -141,30 +141,28 @@ class ListSpots extends React.Component {
         <div className="Layout Layout--Col-1">
           <p>{ this.state.currentTaxonomyTitle } | { this.state.currentFilterTitle }</p>
         </div>
-        <div className="Filters">
-          <ul>
-            {
-              DataCategories.map(function (filter, i) {
-                return (
-                  <li 
-                    key={ i } 
-                    onClick={(e) => this.triggerFilter('categoria', 'Categoría', filter.slug, filter.title, filter.id, e)} 
-                    className={ this.state.currentFilterSlug === filter.slug ? 'filterItem active' : 'filterItem' }
+
+        <ul className="FiltersList">
+          {
+            DataCategories.map(function (filter, i) {
+              return (
+                <li 
+                  key={ i } 
+                  onClick={(e) => this.triggerFilter('categoria', 'Categoría', filter.slug, filter.title, filter.id, e)} 
+                  className={ this.state.currentFilterSlug === filter.slug ? 'FiltersListItem FiltersListItem__Active' : 'FiltersListItem' }
                   >
                     { filter.title }
-                  </li>
-                )
-              }, this)
-            }
-            <li 
-              key='0'
-              onClick={(e) => this.triggerFilter(null, null, null, 'Todos', null, e)} 
-              className={ this.state.currentFilterSlug ? 'filterClear' : 'filterClear hidden' }
-            >
-              (X Sacar filtros)
-            </li>
-          </ul>
-        </div>
+                </li>
+              )
+            }, this)
+          }
+          <li 
+            onClick={(e) => this.triggerFilter(null, null, null, 'Todos', null, e)}
+            className={ this.state.currentFilterSlug ? 'FiltersListItem FiltersListItem--Clear' : 'FiltersListItem FiltersListItem--Clear FiltersListItem--Clear__Hidden' }
+          >
+            × Quitar filtros
+          </li>
+        </ul>
 
         <ItemsGrid items={ this.state.currentItems } />
       </div>

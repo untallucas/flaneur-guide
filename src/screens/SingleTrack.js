@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation/Navigation'
 
 const SingleTrack = props => {
   return (
-    <div>
+    <div className="PageSingle">
       <Navigation/>
       <h1>
         SingleTrack

@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation/Navigation'
 
 const ListTracks = props => {
   return (
-    <div>
+    <div className="PageList">
       <Navigation/>
       <h1>
         ListTracks

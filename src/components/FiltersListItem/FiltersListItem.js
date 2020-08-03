@@ -1,13 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import './FilterListItem.scss'
+import './FiltersListItem.scss'
 
-const FilterListItem = function (props) {
+const FiltersListItem = function (props) {
+  console.log( props.current )
   let url = '../lugares/categoria/' + props.slug
   return (
-    <Link className='FilterListItem' to={ url }>{ props.content }</Link>
+    <li className='FiltersListItem' onClick= { props.onClick }>
+      { props.content }
+    </li>
   )
 }
 
-export default FilterListItem
+export default FiltersListItem
+
+// onClick={(e) => this.triggerFilter('categoria', 'Categoría', taxonomy.slug, taxonomy.title, taxonomy.id, e)}
+// onClick={(e) => triggerFilter('categoria', 'Categoría', props.slug, props.title, props.id, e)}

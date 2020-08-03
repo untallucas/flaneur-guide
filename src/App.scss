@@ -10,16 +10,24 @@
 
 
 // Layout styles
+html,
 body {
-  @include text-preset-9()
-  background-color: $color-background-light-secondary;
-  color: $color-text-primary-on-light;
-  padding: 0;
-  margin: 0;
+  height: 100%;
   min-height: 100%;
   min-width: 100%;
 }
 
+body {
+  @include text-preset-9()
+  color: $color-text-primary-on-light;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+  min-height: 100%;
+}
 
 // Text styles reset
 h1, h2, h3, h4, h5, h6, p, ul, li {
@@ -78,6 +86,78 @@ a {
 }
 
 
+// Pages
+.PageList {
+  background-color: $color-background-light-secondary;
+  height: 100%;
+  min-height: 100%;
+}
+
+.PageSingle {
+  background-color: $color-background-light-primary;
+  height: 100%;
+  min-height: 100%;
+}
+
+
+//FiltersList
+.FiltersList {
+  display: flex;
+  justify-content: flex-start;
+  margin: 24px auto 32px;
+  max-width: $breakpoint-xxl;
+}
+
+
+//FiltersListItem
+.FiltersListItem {
+  $filterColor: $color-brand-secondary;
+  font-family: $font-title;
+  font-size: 14px;
+  font-weight: $font-weight-semibold;
+  line-height: 14px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  padding: $spacing-xs $spacing-md;
+  margin: 0 $spacing-xs $spacing-xs 0;
+  display: inline-block;
+  cursor: pointer;
+  transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+  white-space: nowrap;
+  border: 2px $color-text-tertiary-on-light solid;
+  color: $color-text-tertiary-on-light;
+  background-color: transparentize($color-text-tertiary-on-light, 0.9);
+  border-radius: 30px;
+
+  &:hover {
+    color: $color-text-secondary-on-light;
+    border-color: $color-text-secondary-on-light;
+  }
+
+  &__Active {
+    color: darken($filterColor, 15%);
+    border-color: darken($filterColor, 15%);
+    background-color: transparentize(darken($filterColor, 15%), 0.8);
+    pointer-events: none;
+  }
+
+  &--Clear {
+    color: $color-support-error-area;
+    border-color: $color-support-error-area;
+    background-color: $color-support-error-background;
+
+    &__Hidden {
+      display: none;
+    }
+
+    &:hover {
+      color: darken($color-support-error-area, 10%);
+      border-color: darken($color-support-error-area, 10%);
+    }
+  }
+}
+
+
 // Grid
 .Layout {
   display: grid;
@@ -114,69 +194,3 @@ a {
   }
 }
 
-
-// Filters
-.Filters {
-  display: grid;
-  justify-content: flex-start;
-  margin: 24px auto 32px;
-  max-width: $breakpoint-xxl;
-  grid-column-gap: $layout-sm;
-  grid-row-gap: $layout-md;
-  padding: 0 $layout-xs;
-  grid-template-columns: repeat(auto-fill, 100%);
-  grid-auto-rows: auto;
-
-  .filterItem {
-    transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
-    font-size: 14px;
-    text-transform: uppercase;
-    border: 1px black solid;
-    color: black;
-    border-radius: 4px;
-    padding: 6px 12px;
-    margin: 0 4px 4px 0;
-    display: inline-block;
-    cursor: pointer;
-    opacity: 0.2;
-    background-color: transparent;
-
-    &.active {
-      opacity: 1;
-      color: royalblue;
-      border-color: royalblue;
-      background-color: #d6e9ff;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    &:hover {
-      opacity: 0.6;
-    }
-  }
-
-  .filterClear {
-    transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
-    font-size: 14px;
-    text-transform: uppercase;
-    border: 1px #d80101 solid;
-    color: #d80101;
-    border-radius: 4px;
-    padding: 6px 12px;
-    margin: 0 4px 4px 0;
-    display: inline-block;
-    cursor: pointer;
-    background-color: #ffe2e7;
-    opacity: 0.5;
-
-    &.hidden {
-      display: none;
-    }
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-}

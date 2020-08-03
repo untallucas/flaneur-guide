@@ -27,7 +27,7 @@ const SingleSpot = props => {
   }
 
   return (
-    <div style={{ 'background':'white' }}>
+    <div className="PageSingle">
       <Navigation/>
       <div className="Layout Layout--Col-1">
         { /* No coincidence between URL slug and saved spots */ }
