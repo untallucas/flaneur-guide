@@ -3,7 +3,7 @@ import React from 'react'
 import Navigation from '../components/Navigation/Navigation'
 // import HeroImage from '../../components/HeroImage/HeroImage'
 // import PageHeading from '../../components/PageHeading/PageHeading'
-import Separator from '../components/Separator/Separator'
+import PageLayoutSeparator from '../components/PageLayoutSeparator/PageLayoutSeparator'
 
 let PageHeadingTitle = 'Córdoba'
 let PageHeadingText = 'Córdoba se encuentra ubicada en la región central del país, a ambas orillas del río Suquía. Es la segunda ciudad más poblada después de Buenos Aires y la más extensa del país.'
@@ -14,7 +14,7 @@ const Home = props => {
       <Navigation/>
         <h1>{ PageHeadingTitle }</h1>
         <p>{ PageHeadingText }</p>
-      <Separator />
+      <PageLayoutSeparator />
 
       <h2 className="text-level-2">
         A dónde ir
@@ -23,7 +23,7 @@ const Home = props => {
         (Slider de Spots)
       </p>
 
-      <Separator />
+      <PageLayoutSeparator />
 
       <h2 className="text-level-2">
         Dónde comer
@@ -32,7 +32,7 @@ const Home = props => {
         (Slider de Restaurants)
       </p>
 
-      <Separator />
+      <PageLayoutSeparator />
 
       <h2 className="text-level-2">
         Dónde comprar
@@ -41,7 +41,7 @@ const Home = props => {
         (Slider de Shopping)
       </p>
 
-      <Separator />
+      <PageLayoutSeparator />
 
       <h2 className="text-level-2">
         Qué hacer
@@ -50,7 +50,7 @@ const Home = props => {
         (Slider de Eventos)
       </p>
 
-      <Separator />
+      <PageLayoutSeparator />
 
       <h2 className="text-level-2">
         Recorrer
@@ -59,7 +59,7 @@ const Home = props => {
         (Slider de Tracks)
       </p>
 
-      <Separator />
+      <PageLayoutSeparator />
 
       <h2 className="text-level-2">
         Guía de viaje

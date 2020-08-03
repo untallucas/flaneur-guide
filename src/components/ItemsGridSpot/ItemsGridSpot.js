@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 import HighlightBadge from '../HighlightBadge/HighlightBadge'
 
-import './ItemCard.scss'
+import './ItemsGridSpot.scss'
 
-const ItemCard = function ({ spot }) {
+const ItemsGridSpot = function ({ spot }) {
   if(!spot){
     spot = {
       id: 0,
@@ -29,7 +29,7 @@ const ItemCard = function ({ spot }) {
   } 
 
   return (
-    <div className="ItemCard">
+    <div className="ItemsGridSpot">
       <Link to={ url }>
         <img src={ image } alt={ spot.printname } />
         <h3>{ printname }</h3>
@@ -40,4 +40,4 @@ const ItemCard = function ({ spot }) {
   )
 }
 
-export default ItemCard
+export default ItemsGridSpot

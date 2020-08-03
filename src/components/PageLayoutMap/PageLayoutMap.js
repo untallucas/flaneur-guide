@@ -4,15 +4,15 @@ import Map from 'pigeon-maps'
 import Marker from 'pigeon-marker'
 import Overlay from 'pigeon-overlay'
 
-import './MapCard.scss'
+import './PageLayoutMap.scss'
 
-const MapCard = props => {
+const PageLayoutMap = props => {
   if (props) {
     let lat = parseFloat(props.lat)
     let lon = parseFloat(props.lon)
-console.log( props.title )
+
     return (
-      <div className="MapCard">
+      <div className="PageLayoutMap">
         <Map center={ [lat + 0.005, lon] } zoom={ 14 } height={ 438 }>
           <Marker className='MapMarker' anchor={ [lat, lon] } payload={ 1 } onClick={ ({ event, anchor, payload }) => {  } } />
           <Overlay className='MapOverlay' anchor={ [lat, lon] } offset={ [80, 220] }>{ props.title }</Overlay>
@@ -25,7 +25,7 @@ console.log( props.title )
   }
 }
 
-export default MapCard
+export default PageLayoutMap
 
 /*
   <div className="Card">

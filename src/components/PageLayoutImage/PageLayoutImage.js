@@ -1,14 +1,14 @@
 import React from 'react'
 
-import './InlineImage.scss'
+import './PageLayoutImage.scss'
 
-const InlineImage = props => {
+const PageLayoutImage = props => {
   let fixture = 'https://picsum.photos/400/300'
   return (
-    <div className="InlineImage">
+    <div className="PageLayoutImage">
       <img src={ fixture } alt={ props.description } />
     </div>
   )
 }
 
-export default InlineImage
+export default PageLayoutImage

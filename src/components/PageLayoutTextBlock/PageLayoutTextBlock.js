@@ -1,11 +1,11 @@
 import React from 'react'
 
-import './TextBlock.scss'
+import './PageLayoutTextBlock.scss'
 
-const TextBlock = props => {
+const PageLayoutTextBlock = props => {
   if (props.content) {
     return (
-      <div className="TextBlock">
+      <div className="PageLayoutTextBlock">
         <h2>{ props.icon }</h2>
         <h2>{ props.title }</h2>
         <ul>
@@ -23,4 +23,4 @@ const TextBlock = props => {
   }
 }
 
-export default TextBlock
+export default PageLayoutTextBlock
