@@ -4,7 +4,7 @@ import Navigation from '../components/Navigation/Navigation'
 import PageLayoutImage from '../components/PageLayoutImage/PageLayoutImage'
 import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
 import PageLayoutTextBlock from '../components/PageLayoutTextBlock/PageLayoutTextBlock'
-// import PageLayoutSeparator from '../components/PageLayoutSeparator/PageLayoutSeparator'
+import PageLayoutLinksBlock from '../components/PageLayoutLinksBlock/PageLayoutLinksBlock'
 import PageLayoutMap from '../components/PageLayoutMap/PageLayoutMap'
 import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
 
@@ -43,11 +43,11 @@ const SingleSpot = props => {
               <PageLayoutImage image={ Spot[0].poster } description={ Spot[0].title } />
               <PageLayoutMap address={ Spot[0].address } hood={ Spot[0].hood } lat={ Spot[0].lat } lon={ Spot[0].lon } title={ printname } />
             </div>
-            <TaxonomiesList list={ Spot[0].categories } scope={ DataCategories } />
+            <TaxonomiesList list={ Spot[0].categories } title="Categorías" scope={ DataCategories } />
             <PageLayoutTextBlock title='Dirección' content={ address } />
             <PageLayoutTextBlock title='Entradas' content={ Spot[0].info_tickets } />
             <PageLayoutTextBlock title='Horarios' content={ Spot[0].info_timetable } />
-            <PageLayoutTextBlock title='Más información' content={ Spot[0].info_more } />
+            <PageLayoutLinksBlock title='Más información' content={ Spot[0].info_more } />
           </div>
         )}
       </div>

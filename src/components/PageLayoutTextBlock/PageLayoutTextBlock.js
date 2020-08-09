@@ -6,7 +6,6 @@ const PageLayoutTextBlock = props => {
   if (props.content) {
     return (
       <div className="PageLayoutTextBlock">
-        <h2>{ props.icon }</h2>
         <h2>{ props.title }</h2>
         <ul>
           {

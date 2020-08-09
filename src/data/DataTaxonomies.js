@@ -4,61 +4,71 @@ export default {
       id: 1,
       type: 'category',
       slug: 'cultura',
-      title: 'Cultura'
+      title: 'Cultura',
+      color: '#567453'
     },
     {
       id: 2,
       type: 'category',
       slug: 'parques',
-      title: 'Parques'
+      title: 'Parques',
+      color: '#012345'
     },
     {
       id: 3,
       type: 'category',
       slug: 'museos',
-      title: 'Museos'
+      title: 'Museos',
+      color: '#726453'
     },
     {
       id: 4,
       type: 'category',
       slug: 'ciencia',
-      title: 'Ciencia'
+      title: 'Ciencia',
+      color: '#294876'
     },
     {
       id: 5,
       type: 'category',
       slug: 'religioso',
-      title: 'Religioso'
+      title: 'Religioso',
+      color: '#000456'
     },
     {
       id: 6,
       type: 'category',
       slug: 'teatro',
-      title: 'Teatro'
+      title: 'Teatro',
+      color: '#875000'
     },
     {
       id: 7,
       type: 'category',
       slug: 'niños',
-      title: 'Niños'
+      title: 'Niños',
+      color: '#076423'
     },
     {
       id: 8,
       type: 'category',
       slug: 'en-bicicleta',
-      title: 'En bicicleta'
+      title: 'En bicicleta',
+      color: '#009387'
     },
     {
       id: 9,
       type: 'category',
       slug: 'danza',
-      title: 'Danza'
+      title: 'Danza',
+      color: '#094567'
     },
     {
       id: 10,
       type: 'category',
       slug: 'compras',
-      title: 'Compras'
+      title: 'Compras',
+      color: '#235692'
     }
   ],
   tags: [

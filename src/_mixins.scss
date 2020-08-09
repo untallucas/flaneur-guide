@@ -85,10 +85,10 @@
 @mixin text-preset-6 {
   font-family: $font-title;
   font-size: $font-scale-9;
-  font-weight: $font-weight-regular;
+  font-weight: $font-weight-semibold;
   line-height: $line-height-9;
-  letter-spacing: normal;
-  text-transform: none;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
 }
 
 // Heading level 6

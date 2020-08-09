@@ -54,7 +54,15 @@ export default [
     text: 'La sala cuenta con 2000 títulos para el público infantil y juvenil de autores cordobeses, nacionales e internacionales. Allí, docentes y padres pueden aprovechar este espacio para darle a la lectura el más pleno sentido, lúdico y creativo.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 10 a 15h',
-    info_more: '54 351 4285600 9213\n',
+    info_more:
+    {
+      tel: '54 351 4285600 9213',
+      email: 'salita@gmail.com',
+      whatsapp: '54 351 4285600 9213',
+      instagram: 'salitacba',
+      facebook: 'sala05',
+      twitter: 'salitacba2'
+    },
     lat: '-31.416441',
     lon: '-64.184224',
     highlight: 0,
@@ -75,7 +83,9 @@ export default [
     text: 'Posee cerca de 30 mil textos, especialmente libros referidos a Córdoba con abordajes desde diferentes disciplinas. Se pueden consultar material de letras, geografía, historia y arquitectura así como de usos y costumbres de Córdoba o monografías regionales.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: 'Lunes a viernes de 8 a 18:45h ',
-    info_more: '54 351 4221624\n',
+    info_more: {
+      tel: '54 351 4285600 9213'
+    },
     lat: '-31.415963',
     lon: '-64.184340',
     highlight: 0,
@@ -117,7 +127,10 @@ export default [
     text: 'Fue creado con los objetivos de reunir, ordenar, describir, conservar y difundir todos aquellos documentos de interés histórico referidos a la ciudad de Córdoba. Cuenta con documentación del antiguo Cabildo desde 1573 a 1824, como así también una serie de testimonios escritos de la vida de la ciudad en fechas posteriores.',
     info_tickets: '',
     info_timetable: 'Lunes, miércoles y viernes de 8 a 13:30h',
-    info_more: '54 351 4334371\nahmcdcba@hotmail.com\n',
+    info_more: {
+      tel: '54 351 4334371',
+      email: 'ahmcdcba@hotmail.com'
+    },
     lat: '-31.423370',
     lon: '-64.192931',
     highlight: 0,
@@ -138,7 +151,9 @@ export default [
     text: 'Reúne las actividades de la Academia de Música Municipal y los elencos artísticos del Municipio. Además se dictan cursos, seminarios y talleres relacionados con la música y la danza. Se organizan recitales, concursos y premios dedicados exclusivamente a la música.',
     info_tickets: '',
     info_timetable: 'Administración: Lunes a viernes de 8 a 16h\nAcademia: Lunes a viernes de 15 a 19h',
-    info_more: '54 351 4343199\n',
+    info_more: {
+      tel: '54 351 4285600 9213'
+    },
     lat: '-31.429852',
     lon: '-64.183197',
     highlight: 0,
@@ -159,7 +174,9 @@ export default [
     text: 'Se encuentra en un edificio reciclado que solía ser el Mercado de Frutas y Hortalizas de Alta Córdoba. Se destaca un subsuelo con bar cuya capacidad es de 250 personas, un auditorio con capacidad para 120 personas, 5 aulas temáticas para literatura, danzas, teatro, artes visuales y gastronomía, y un hall con áreas de exposición.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 7 a 22h',
-    info_more: '54 351 4336004\n',
+    info_more: {
+      tel: '54 351 4285600 9213'
+    },
     lat: '-31.395438',
     lon: '-64.190161',
     highlight: 1,
@@ -180,7 +197,10 @@ export default [
     text: 'Ocupa el edificio del antiguo Mercado Modelo, diseñado por el ingeniero Baltasar Ferrer. Fue restaurado por la comuna y transformado en centro cultural en 1982, y es actualmente escenario de distintas manifestaciones de arte.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 8 a 20h\nSábados de 8 a 16h\nDomingos de 15 a 19h',    
-    info_more: '54 351 4339104\nccgeneralpaz@cordoba.gov.ar',
+    info_more: {
+      tel: '54 351 4339104',
+      email: 'ccgeneralpaz@cordoba.gov.ar'
+    },
     lat: '-31.411654',
     lon: '-64.168037',
     highlight: 0,
@@ -201,7 +221,10 @@ export default [
     text: 'Cuenta con el primer Museo y fotogalería de Recuerdos Sanvicentinos realizado con los aportes de los vecinos. Ocupa el edifico del Mercado construído en 1886 por Samuel Palacios y Agustín Garzón, pioneros del progreso sanvicentino.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 8 a 21h',
-    info_more: '54 351 4338557\nccsanvicente@hotmail.com\n',
+    info_more: {
+      tel: '54 351 4338557',
+      email: 'ccsanvicente@hotmail.com'
+    },
     lat: '-31.423477',
     lon: '-64.147609',
     highlight: 0,
@@ -264,7 +287,9 @@ export default [
     text: 'La sala cuenta con 2000 títulos para el público infantil y juvenil de autores cordobeses, nacionales e internacionales. Allí, docentes y padres pueden aprovechar este espacio para darle a la lectura el más pleno sentido, lúdico y creativo.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 10 a 15h',
-    info_more: '54 351 4285600 9213\n',
+    info_more: {
+      tel: '54 351 4285600 9213'
+    },
     lat: '-31.416441',
     lon: '-64.184224',
     highlight: 0,
@@ -285,7 +310,9 @@ export default [
     text: 'Posee cerca de 30 mil textos, especialmente libros referidos a Córdoba con abordajes desde diferentes disciplinas. Se pueden consultar material de letras, geografía, historia y arquitectura así como de usos y costumbres de Córdoba o monografías regionales.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: 'Lunes a viernes de 8 a 18:45h ',
-    info_more: '54 351 4221624\n',
+    info_more: {
+      tel: '54 351 4285600 9213'
+    },
     lat: '-31.415963',
     lon: '-64.184340',
     highlight: 0,
@@ -327,7 +354,10 @@ export default [
     text: 'Fue creado con los objetivos de reunir, ordenar, describir, conservar y difundir todos aquellos documentos de interés histórico referidos a la ciudad de Córdoba. Cuenta con documentación del antiguo Cabildo desde 1573 a 1824, como así también una serie de testimonios escritos de la vida de la ciudad en fechas posteriores.',
     info_tickets: '',
     info_timetable: 'Lunes, miércoles y viernes de 8 a 13:30h',
-    info_more: '54 351 4334371\nahmcdcba@hotmail.com\n',
+    info_more: {
+      tel: '54 351 4334371',
+      email: 'ahmcdcba@hotmail.com'
+    },
     lat: '-31.423370',
     lon: '-64.192931',
     highlight: 0,
@@ -348,7 +378,9 @@ export default [
     text: 'Reúne las actividades de la Academia de Música Municipal y los elencos artísticos del Municipio. Además se dictan cursos, seminarios y talleres relacionados con la música y la danza. Se organizan recitales, concursos y premios dedicados exclusivamente a la música.',
     info_tickets: '',
     info_timetable: 'Administración: Lunes a viernes de 8 a 16h\nAcademia: Lunes a viernes de 15 a 19h',
-    info_more: '54 351 4343199\n',
+    info_more: {
+      tel: '54 351 4285600 9213'
+    },
     lat: '-31.429852',
     lon: '-64.183197',
     highlight: 0,
@@ -369,7 +401,9 @@ export default [
     text: 'Se encuentra en un edificio reciclado que solía ser el Mercado de Frutas y Hortalizas de Alta Córdoba. Se destaca un subsuelo con bar cuya capacidad es de 250 personas, un auditorio con capacidad para 120 personas, 5 aulas temáticas para literatura, danzas, teatro, artes visuales y gastronomía, y un hall con áreas de exposición.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 7 a 22h',
-    info_more: '54 351 4336004\n',
+    info_more: {
+      tel: '54 351 4285600 9213'
+    },
     lat: '-31.395438',
     lon: '-64.190161',
     highlight: 1,
