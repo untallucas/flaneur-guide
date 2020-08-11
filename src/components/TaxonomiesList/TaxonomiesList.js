@@ -1,4 +1,5 @@
 import React from 'react'
+
 import TaxonomiesListItem from '../TaxonomiesListItem/TaxonomiesListItem'
 
 import './TaxonomiesList.scss'
@@ -14,7 +15,7 @@ const TaxonomiesList = function (props) {
             return props.list.includes(taxonomy.id)
           })
           .map(function (taxonomy, i) {
-            return <TaxonomiesListItem content={ taxonomy.title } slug={ taxonomy.slug } color={ taxonomy.color } key={ i } />
+            return <TaxonomiesListItem taxonomy={ props.taxonomy } content={ taxonomy.title } slug={ taxonomy.slug } color={ taxonomy.color } key={ i } />
           })
         }
       </ul>

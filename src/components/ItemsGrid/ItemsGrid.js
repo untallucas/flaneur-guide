@@ -1,4 +1,5 @@
 import React from 'react'
+
 import ItemsGridSpot from '../ItemsGridSpot/ItemsGridSpot'
 
 import './ItemsGrid.scss'

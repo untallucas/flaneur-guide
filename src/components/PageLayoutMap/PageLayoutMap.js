@@ -26,10 +26,3 @@ const PageLayoutMap = props => {
 }
 
 export default PageLayoutMap
-
-/*
-  <div className="Card">
-    <h2>Ubicación</h2>
-    <p>{props.address} - Bº {props.hood}</p>
-  </div>
-*/

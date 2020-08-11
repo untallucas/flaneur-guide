@@ -12,7 +12,6 @@ import DataItems from '../data/DataItems.js'
 import DataTaxonomies from '../data/DataTaxonomies.js'
 
 const DataCategories = DataTaxonomies.categories
-// const DataTags = DataTaxonomies.tags
 
 const SingleSpot = props => {
   let Spot = DataItems.filter(function (spot) {
@@ -43,7 +42,7 @@ const SingleSpot = props => {
               <PageLayoutImage image={ Spot[0].poster } description={ Spot[0].title } />
               <PageLayoutMap address={ Spot[0].address } hood={ Spot[0].hood } lat={ Spot[0].lat } lon={ Spot[0].lon } title={ printname } />
             </div>
-            <TaxonomiesList list={ Spot[0].categories } title="Categorías" scope={ DataCategories } />
+            <TaxonomiesList title="Categorías" taxonomy="categoria" list={ Spot[0].categories } scope={ DataCategories } />
             <PageLayoutTextBlock title='Dirección' content={ address } />
             <PageLayoutTextBlock title='Entradas' content={ Spot[0].info_tickets } />
             <PageLayoutTextBlock title='Horarios' content={ Spot[0].info_timetable } />
