@@ -5,6 +5,7 @@ export default {
       type: 'category',
       slug: 'cultura',
       title: 'Cultura',
+      icon: 'architecture',
       color: '#567453'
     },
     {
@@ -12,6 +13,7 @@ export default {
       type: 'category',
       slug: 'parques',
       title: 'Parques',
+      icon: 'park',
       color: '#012345'
     },
     {
@@ -19,6 +21,7 @@ export default {
       type: 'category',
       slug: 'museos',
       title: 'Museos',
+      icon: 'museum',
       color: '#726453'
     },
     {
@@ -26,6 +29,7 @@ export default {
       type: 'category',
       slug: 'ciencia',
       title: 'Ciencia',
+      icon: 'science',
       color: '#294876'
     },
     {
@@ -33,6 +37,7 @@ export default {
       type: 'category',
       slug: 'religioso',
       title: 'Religioso',
+      icon: 'church',
       color: '#000456'
     },
     {
@@ -40,6 +45,7 @@ export default {
       type: 'category',
       slug: 'teatro',
       title: 'Teatro',
+      icon: 'theatre',
       color: '#875000'
     },
     {
@@ -47,6 +53,7 @@ export default {
       type: 'category',
       slug: 'niños',
       title: 'Niños',
+      icon: 'kids',
       color: '#076423'
     },
     {
@@ -54,6 +61,7 @@ export default {
       type: 'category',
       slug: 'en-bicicleta',
       title: 'En bicicleta',
+      icon: 'bike',
       color: '#009387'
     },
     {
@@ -61,6 +69,7 @@ export default {
       type: 'category',
       slug: 'danza',
       title: 'Danza',
+      icon: 'theatre',
       color: '#094567'
     },
     {
@@ -68,6 +77,7 @@ export default {
       type: 'category',
       slug: 'compras',
       title: 'Compras',
+      icon: 'shopping',
       color: '#235692'
     }
   ],

@@ -1,10 +1,13 @@
 @import './../../_theme.scss';
 
 .TaxonomiesListItem {
-  width: 160px;
-  height: 120px;
+  width: 88px;
+  height: 88px;
   border-radius: $border-radius-blunt;
   color: white;
+  display: inline-block;
+  padding: 20px;
+  box-sizing: border-box;
 
   font-size: 14px;
   font-weight: 600;
@@ -13,7 +16,6 @@
   line-height: 18px;
   text-transform: uppercase;
   display: inline-block;
-  padding: 20px;
   margin: 0 10px 20px 0;
 
   &:hover {
