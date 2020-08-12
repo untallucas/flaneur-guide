@@ -4,22 +4,48 @@
 .PageLayoutLinksBlock {
   padding: 64px 0 0;
 
-  h2 {
+  &__Title {
     @include text-preset-6()
     color: $color-text-tertiary-on-light;
     padding: 0 0 16px 0;
   }
 
-  ul {
-    padding: 0;
-  }
-
-  li {
+  &__Item {
     list-style: none;
     margin-bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 580px;
+    justify-content: space-between;
+    margin: $spacing-xl 0;
+
+    &:first-child {
+      margin-top: $spacing-md;
+    }
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &__Label {
+    }
+
+    &__Value {
+      &__Link {
+        transition: all $transition-normal cubic-bezier(.25,.8,.25,1);
+        color: $color-interactive-link-on-light;
+
+        &:hover {
+          color: darken($color-interactive-link-on-light, 10%);
+        }
+
+        &:after {
+          content: '>';
+          padding-left: $spacing-xs;
+          font-weight: $font-weight-medium;
+        }
+      }
     }
   }
 }

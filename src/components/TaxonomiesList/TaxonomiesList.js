@@ -7,7 +7,7 @@ import './TaxonomiesList.scss'
 const TaxonomiesList = function (props) {
   return (
     <div className='TaxonomiesList'>
-      <h2>{ props.title }</h2>
+      <h2 className='TaxonomiesList__Title'>{ props.title }</h2>
       <ul>
         {
           props.scope

@@ -5,48 +5,55 @@ import './PageLayoutLinksBlock.scss'
 const PageLayoutLinksBlock = props => {
   if (props.content) {
     return (
-      <div className="PageLayoutLinksBlock">
-        <h2>{ props.title }</h2>
+      <div className='PageLayoutLinksBlock'>
+        <h2 className='PageLayoutLinksBlock__Title'>{ props.title }</h2>
         <ul>
         { Boolean( props.content.web ) && (
-          <li>
-            <span>Sitio web:</span> <a href={ props.content.web }>{ props.content.web }</a>
+          <li className='PageLayoutLinksBlock__Item'>
+            <div className='PageLayoutLinksBlock__Item__Label'>Sitio web</div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ props.content.web }>{ props.content.web }</a></div>
           </li>
         )}
 
         { Boolean( props.content.tel ) && (
-          <li>
-            <span>Teléfono:</span> <a href={ 'tel:' + props.content.tel }>{ props.content.tel }</a>
+          <li className='PageLayoutLinksBlock__Item'>
+            <div className='PageLayoutLinksBlock__Item__Label'>Teléfono</div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'tel:' + props.content.tel }>{ props.content.tel }</a></div>
           </li>
         )}
 
         { Boolean( props.content.whatsapp ) && (
-          <li>
-            <span>WhatsApp:</span> <a href={ 'whatsapp:' + props.content.whatsapp }>{ props.content.whatsapp }</a>
+          <li className='PageLayoutLinksBlock__Item'>
+            <div className='PageLayoutLinksBlock__Item__Label'>WhatsApp</div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'whatsapp:' + props.content.whatsapp }>{ props.content.whatsapp }</a></div>
           </li>
         )}
 
         { Boolean( props.content.email ) && (
-          <li>
-            <span>Email:</span> <a href={ 'mailto:' + props.content.email }>{ props.content.email }</a>
+          <li className='PageLayoutLinksBlock__Item'>
+            <div className='PageLayoutLinksBlock__Item__Label'>Email</div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'mailto:' + props.content.email }>{ props.content.email }</a></div>
           </li>
         )}
 
         { Boolean( props.content.instagram ) && (
-          <li>
-            <span>Instagram:</span> <a href={ 'https://www.instagram.com/' + props.content.instagram }>{ props.content.instagram }</a>
+          <li className='PageLayoutLinksBlock__Item'>
+            <div className='PageLayoutLinksBlock__Item__Label'>Instagram</div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.instagram.com/' + props.content.instagram }>{ props.content.instagram }</a></div>
           </li>
         )}
 
         { Boolean( props.content.twitter ) && (
-          <li>
-            <span>Twitter:</span> <a href={ 'https://www.twitter.com/' + props.content.twitter }>{ props.content.twitter }</a>
+          <li className='PageLayoutLinksBlock__Item'>
+            <div className='PageLayoutLinksBlock__Item__Label'>Twitter</div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.twitter.com/' + props.content.twitter }>{ props.content.twitter }</a></div>
           </li>
         )}
 
         { Boolean( props.content.facebook ) && (
-          <li>
-            <span>Facebook:</span> <a href={ 'https://www.facebook.com/' + props.content.facebook }>{ props.content.facebook }</a>
+          <li className='PageLayoutLinksBlock__Item'>
+            <div className='PageLayoutLinksBlock__Item__Label'>Facebook</div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.facebook.com/' + props.content.facebook }>{ props.content.facebook }</a></div>
           </li>
         )}
         </ul>

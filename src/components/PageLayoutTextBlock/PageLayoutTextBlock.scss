@@ -4,17 +4,13 @@
 .PageLayoutTextBlock {
   padding: 64px 0 0;
 
-  h2 {
+  &__Title {
     @include text-preset-6()
     color: $color-text-tertiary-on-light;
     padding: 0 0 16px 0;
   }
 
-  ul {
-    padding: 0;
-  }
-
-  li {
+  &__Item {
     list-style: none;
     margin-bottom: 8px;
 

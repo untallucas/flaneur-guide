@@ -42,7 +42,11 @@
     }
   }
 
-  .MapOverlay {
+  .pigeon-attribution {
+    display: none;
+  }
+
+  &__Overlay {
     @include text-preset-11()
     color: white;
     background-color: $color-brand-primary;
@@ -68,19 +72,5 @@
       margin-left: -2px;
       background-color: $color-brand-primary;
     }
-  }
-
-  .pigeon-attribution {
-    display: none;
-  }
-
-  h2 {
-    @include text-preset-8()
-    padding: 16px 16px 8px;
-  }
-
-  p {
-    @include text-preset-9();
-    padding: 0 32px 12px 16px;
   }
 }

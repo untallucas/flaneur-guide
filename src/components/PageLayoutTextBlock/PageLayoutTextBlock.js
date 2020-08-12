@@ -6,11 +6,11 @@ const PageLayoutTextBlock = props => {
   if (props.content) {
     return (
       <div className="PageLayoutTextBlock">
-        <h2>{ props.title }</h2>
+        <h2 className='PageLayoutTextBlock__Title'>{ props.title }</h2>
         <ul>
           {
             props.content.split('\n').map((item, key) => {
-              return <li key={key}>{item}</li>
+              return <li className='PageLayoutTextBlock__Item' key={key}>{item}</li>
             })
           }
         </ul>

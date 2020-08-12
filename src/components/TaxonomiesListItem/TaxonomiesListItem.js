@@ -9,9 +9,9 @@ const TaxonomiesListItem = function (props) {
   let url = '../lugares/' + props.taxonomy +'/' + props.slug
   return (
     <div className='TaxonomiesListItem'>
-      <Link to={ url } className="TaxonomiesListItem--Link">
-        <Icon className="TaxonomiesListItem--Icon" name={ props.icon } color="#FFFFFF" style={{ 'backgroundColor' : props.color }} />
-        <h3 className="TaxonomiesListItem--Title">{ props.content }</h3>
+      <Link to={ url } className="TaxonomiesListItem__Link">
+        <Icon className="TaxonomiesListItem__Icon" name={ props.icon } color="#FFFFFF" style={{ 'backgroundColor' : props.color }} />
+        <h3 className="TaxonomiesListItem__Title">{ props.content }</h3>
       </Link>
     </div>
   )

@@ -4,12 +4,12 @@
 .PageLayoutHeading {
   padding: 120px 0;
 
-  h1 {
+  &__Title {
     @include text-preset-2()
     padding: 0 0 64px 0;
   }
 
-  p {
+  &__Blurb {
     @include text-preset-8()
     color: $color-text-tertiary-on-light;
     line-height: 56px;
