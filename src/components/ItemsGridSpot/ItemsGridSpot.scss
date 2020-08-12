@@ -11,7 +11,7 @@
   }
 
   h3 {
-    @include text-preset-5()
+    @include text-preset-5();
     color: $color-text-primary-on-light;
     margin: $spacing-md $spacing-lg $spacing-md $spacing-md;
     height: 48px;
@@ -22,7 +22,7 @@
   }
 
   p {
-    @include text-preset-11()
+    @include text-preset-11();
     color: $color-text-tertiary-on-light;
     padding: 0 $spacing-lg $spacing-md $spacing-md;
   }

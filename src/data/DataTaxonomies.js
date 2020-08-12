@@ -54,13 +54,13 @@ export default {
       slug: 'niños',
       title: 'Niños',
       icon: 'kids',
-      color: '#076423'
+      color: '#4F6CEF'
     },
     {
       id: 8,
       type: 'category',
-      slug: 'en-bicicleta',
-      title: 'En bicicleta',
+      slug: 'en-bici',
+      title: 'En bici',
       icon: 'bike',
       color: '#009387'
     },
