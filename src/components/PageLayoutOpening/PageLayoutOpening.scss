@@ -1,0 +1,10 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.PageLayoutOpening {
+  @include text-preset-8()
+  padding: $layout-lg 0 $layout-xl 0;
+  color: $color-text-tertiary-on-light;
+  text-align: center;
+  line-height: 56px;
+}

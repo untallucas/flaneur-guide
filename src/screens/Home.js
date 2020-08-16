@@ -1,13 +1,13 @@
 import React from 'react'
 
 import Navigation from '../components/Navigation/Navigation'
-// import HeroImage from '../../components/HeroImage/HeroImage'
-// import PageHeading from '../../components/PageHeading/PageHeading'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
+import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
 import PageLayoutSeparator from '../components/PageLayoutSeparator/PageLayoutSeparator'
 
-let PageHeadingTitle = 'Córdoba'
-let PageHeadingText = 'Córdoba se encuentra ubicada en la región central del país, a ambas orillas del río Suquía. Es la segunda ciudad más poblada después de Buenos Aires y la más extensa del país.'
+let PageTitle = 'Córdoba'
+let PageSubtitle = 'Capital nacional del cuarteto'
+let PageDescription = 'Córdoba se encuentra ubicada en la región central del país, a ambas orillas del río Suquía. Es la segunda ciudad más poblada después de Buenos Aires y la más extensa del país.'
 
 const Home = props => {
   return (
@@ -16,10 +16,14 @@ const Home = props => {
       <Navigation/>
 
       <div className="Page__Wrapper">
-        <PageLayoutHero image="https://picsum.photos/400/200" title="Córdoba" subtitle="Capital nacional del cuarteto" />
+        <PageLayoutHero image="https://4.bp.blogspot.com/-_qLOnzlz6ks/WIYW_KKbv9I/AAAAAAAACZw/9860q5Gz35kP7tGs1s-LowtAoOXKOVNdgCK4B/s1600/terminaldecordoba.jpg" title={ PageTitle } subtitle={ PageSubtitle } />
 
-        <h1>{ PageHeadingTitle }</h1>
-        <p>{ PageHeadingText }</p>
+        <div className="Layout Layout--Col-10">
+          <div></div>
+          <PageLayoutOpening text={ PageDescription } />
+          <div></div>
+        </div>
+
         <PageLayoutSeparator />
 
         <h2 className="text-level-2">
@@ -79,8 +83,3 @@ const Home = props => {
 }
 
 export default Home
-
-/*
-      <HeroImage image='https://picsum.photos/600/450' description='Córdoba' />
-      <PageHeading title={ PageHeadingTitle } text={ PageHeadingText } />
-*/

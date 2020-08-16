@@ -71,14 +71,14 @@ p {
     &:hover {
     }
   }
-}
 
-.headline {
-  @include text-preset-1()
-}
+  &.large {
+    @include text-preset-8();
+  }
 
-.eyebrow {
-  @include text-preset-11()
+  &.small {
+    @include text-preset-10();
+  }
 }
 
 a {
@@ -169,23 +169,27 @@ a {
   grid-auto-rows: auto;
 
   &--Col-1 {
-    grid-template-columns: repeat(1, minmax(10px, 1fr))
+    grid-template-columns: repeat(1, minmax(10px, 1fr));
   }
 
   &--Col-2 {
-    grid-template-columns: repeat(2, minmax(10px, 1fr))
+    grid-template-columns: repeat(2, minmax(10px, 1fr));
   }
 
   &--Col-3 {
-    grid-template-columns: repeat(3, minmax(10px, 1fr))
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
   }
 
   &--Col-6 {
-    grid-template-columns: repeat(6, minmax(10px, 1fr))
+    grid-template-columns: repeat(6, minmax(10px, 1fr));
+  }
+
+  &--Col-10 {
+    grid-template-columns: 8.3333% 1fr 8.3333%;
   }
 
   &--Col-12 {
-    grid-template-columns: repeat(12, minmax(10px, 1fr))
+    grid-template-columns: repeat(12, minmax(10px, 1fr));
   }
 
   &--Inset {

@@ -25,16 +25,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: linear-gradient( rgba(0,0,0,0), rgba(0,0,255,0.4) );
   }
 
   &__Title {
     @include text-preset-1();
     color: $color-text-primary-on-dark;
-    padding-bottom: $spacing-xs;
+    padding-top: $spacing-sm;
+    padding-bottom: $spacing-sm;
+    text-shadow: 0 0 50px rgba(0,0,0,0.6), 0 4px 10px rgba(0,0,0,0.4);
   }
 
   &__Subtitle {
     @include text-preset-12();
     color: $color-text-primary-on-dark;
+    text-shadow: 0 0 50px rgba(0,0,0,0.6), 0 4px 10px rgba(0,0,0,0.4);
   }  
 }
