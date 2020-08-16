@@ -31,9 +31,9 @@ const ItemsGridSpot = function ({ spot }) {
   return (
     <div className="ItemsGridSpot">
       <Link to={ url }>
-        <img src={ image } alt={ spot.printname } />
-        <h3>{ printname }</h3>
-        <p>{ spot.subtitle }</p>
+        <img className="ItemsGridSpot__Image" src={ image } alt={ spot.printname } />
+        <h3 className="ItemsGridSpot__Title">{ printname }</h3>
+        <p className="ItemsGridSpot__Subtitle">{ spot.hood }</p>
         { highlight }
       </Link>
     </div>

@@ -22,11 +22,9 @@ import './App.scss';
 const App = () => (
   <Router>
     <Switch>
-      <Route path='/test' component={Test} />
-
-      <Route path='/' component={Home} exact />
       <Route path='/inicio' component={Home} exact />
       <Route path='/acerca' component={About} exact />
+      <Route path='/test' component={Test} exact />
 
       <Route path='/lugares/:taxonomy/:filter' component={ListSpots} />
       <Route path='/lugares/:slug' component={SingleSpot} />
@@ -44,7 +42,7 @@ const App = () => (
       <Route path='/recorridos/:slug' component={SingleTrack} />
       <Route path='/recorridos' component={ListTracks} exact />
 
-      <Redirect to='/' />
+      <Redirect to='/inicio' />
     </Switch>
   </Router>
 )

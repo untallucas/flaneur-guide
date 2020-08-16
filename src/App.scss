@@ -87,16 +87,15 @@ a {
 
 
 // Pages
-.PageList {
-  background-color: $color-background-light-secondary;
-  min-height: 100%;
-  padding-bottom: $layout-xxl;
-}
-
-.PageSingle {
-  background-color: $color-background-light-primary;
-  min-height: 100%;
-  padding-bottom: $layout-xxl;
+.Page {
+  &__Wrapper {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $breakpoint-xxl;
+    padding-top: $layout-xxl;
+    padding-bottom: $layout-xxl;
+    transform: translateX( ($layout-lg + $spacing-xs + $spacing-xs) / 2 );
+  }
 }
 
 
@@ -166,7 +165,7 @@ a {
   max-width: $breakpoint-xxl;
   grid-column-gap: $layout-sm;
   grid-row-gap: $layout-md;
-  padding: 0 $layout-xs;
+  // padding: 0 $layout-xs;
   grid-auto-rows: auto;
 
   &--Col-1 {

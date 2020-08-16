@@ -1,18 +1,24 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 
+import Icon from '../Icon/Icon'
+
+import './Navigation.scss'
+
 class Navigation extends Component {
   render () {
     return (
-      <div className="Navigation">
-        <ul>
-          <li><NavLink to='/' activeClassName="selected">Inicio</NavLink></li>
-          <li><NavLink to='/lugares' activeClassName="selected">Todos los lugares</NavLink></li>
-          <li><NavLink to='/acerca' activeClassName="selected">Acerca</NavLink></li>
-          <li><NavLink to='/test' activeClassName="selected">Test</NavLink></li>
-        </ul>
-        <hr />
-      </div>
+        <div className="Navigation">
+          <NavLink to='/inicio' className="Navigation__Item" activeClassName="Navigation__Item--Selected">
+            <Icon name="home" color="#FFFFFF" width="32" height="32" />
+          </NavLink>
+          <NavLink to='/lugares' className="Navigation__Item" activeClassName="Navigation__Item--Selected">
+            <Icon name="layout-grid" color="#FFFFFF" width="32" height="32" />
+          </NavLink>
+          <NavLink to='/acerca' className="Navigation__Item" activeClassName="Navigation__Item--Selected">
+            <Icon name="information" color="#FFFFFF" width="32" height="32" />
+          </NavLink>
+        </div>
     )
   }
 }

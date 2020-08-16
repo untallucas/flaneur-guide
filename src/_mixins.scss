@@ -34,10 +34,10 @@
 @mixin text-preset-1 {
   font-family: $font-title;
   font-size: $font-scale-1;
-  font-weight: $font-weight-black;
+  font-weight: $font-weight-semibold;
   line-height: $line-height-1;
-  letter-spacing: normal;
-  text-transform: uppercase;
+  letter-spacing: -4px;
+  text-transform: none;
 }
 
 // Heading level 1
@@ -104,10 +104,10 @@
 // Body text large
 @mixin text-preset-8 {
   font-family: $font-text;
-  font-size: $font-scale-6;
+  font-size: $font-scale-7;
   font-weight: $font-weight-light;
-  line-height: $line-height-6;
-  letter-spacing: normal;
+  line-height: $line-height-7;
+  letter-spacing: 0.25px;
   text-transform: none;
 }
 
@@ -139,4 +139,15 @@
   line-height: $line-height-10;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+}
+
+// Subtitle serif
+@mixin text-preset-12 {
+  font-family: $font-accent;
+  font-size: $font-scale-7;
+  font-weight: $font-weight-thin;
+  font-style: oblique;
+  line-height: $line-height-7;
+  letter-spacing: 0.5px;
+  text-transform: none;
 }

@@ -1,0 +1,40 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.PageLayoutHero {
+  width: 100%;
+  border-radius: $border-radius-blunt;
+  overflow: hidden;
+  font-size: 0;
+  letter-spacing: 0;
+  line-height: 0;
+  position: relative;
+
+  &__Background {
+    width: 100%;
+    filter: saturate(1.2);
+  }
+
+  &__Content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__Title {
+    @include text-preset-1();
+    color: $color-text-primary-on-dark;
+    padding-bottom: $spacing-xs;
+  }
+
+  &__Subtitle {
+    @include text-preset-12();
+    color: $color-text-primary-on-dark;
+  }  
+}

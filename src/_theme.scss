@@ -7,7 +7,7 @@
 // Font Import
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 
 
@@ -38,7 +38,7 @@ $font-weight-black: 900;
 
 // Font Scale
 $font-scale-core: 8px;
-$font-scale-1: $font-scale-core * 12;
+$font-scale-1: $font-scale-core * 13;
 $font-scale-2: $font-scale-core * 9.5;
 $font-scale-3: $font-scale-core * 8;
 $font-scale-4: $font-scale-core * 6;

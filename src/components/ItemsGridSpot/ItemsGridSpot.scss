@@ -4,13 +4,13 @@
 .ItemsGridSpot {
   @include card();
 
-  img {
+  &__Image {
     width: 100%;
     filter: saturate(1.2);
     transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
   }
 
-  h3 {
+  &__Title {
     @include text-preset-5();
     color: $color-text-primary-on-light;
     margin: $spacing-md $spacing-lg $spacing-md $spacing-md;
@@ -21,14 +21,14 @@
     -webkit-box-orient: vertical;
   }
 
-  p {
+  &__Subtitle {
     @include text-preset-11();
     color: $color-text-tertiary-on-light;
     padding: 0 $spacing-lg $spacing-md $spacing-md;
   }
 
-  &:hover {
-    img {
+  &:hover & {
+    &__Image {
       filter: saturate(1.8);
     }
   }

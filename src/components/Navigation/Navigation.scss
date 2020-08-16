@@ -1,0 +1,22 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.Navigation {
+  height: 100%;
+  position: fixed;
+  background-color: $color-brand-primary;
+  width: $layout-lg + $spacing-xs + $spacing-xs;
+
+  &__Item {
+    width: $layout-lg;
+    height: $layout-lg;
+    margin: $spacing-xl $spacing-xs;
+    display: grid;
+    place-items: center;
+    border-radius: $border-radius-blunt;
+
+    &--Selected {
+      background-color: transparentize($color-background-dark-primary, 0.8);
+    }
+  }
+}

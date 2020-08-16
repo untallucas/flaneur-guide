@@ -6,7 +6,7 @@ const PageLayoutImage = props => {
   let fixture = 'https://picsum.photos/400/300'
   return (
     <div className="PageLayoutImage">
-      <img src={ fixture } alt={ props.description } />
+      <img className="PageLayoutImage__Image" src={ fixture } alt={ props.description } />
     </div>
   )
 }

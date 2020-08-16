@@ -26,29 +26,33 @@ const SingleSpot = props => {
   }
 
   return (
-    <div className="PageSingle">
-      <Navigation/>
-      <div className="Layout Layout--Col-1">
-        { /* No coincidence between URL slug and saved spots */ }
-        { Boolean(!Spot.length) && (
-          <h1>Ups, me parece que no hay nada con ese nombre por acá</h1>
-        )}
+    <div className="Page">
 
-        { /* Positive coincidence between URL slug and saved spots */ }
-        { Boolean(Spot.length) && (
-          <div>
-            <PageLayoutHeading title={ Spot[0].title } text={ Spot[0].text } />
-            <div className="Layout Layout--Col-2 Layout--Inset">
-              <PageLayoutImage image={ Spot[0].poster } description={ Spot[0].title } />
-              <PageLayoutMap address={ Spot[0].address } hood={ Spot[0].hood } lat={ Spot[0].lat } lon={ Spot[0].lon } title={ printname } />
+      <Navigation/>
+
+      <div className="Page__Wrapper">
+        <div className="Layout Layout--Col-1">
+          { /* No coincidence between URL slug and saved spots */ }
+          { Boolean(!Spot.length) && (
+            <h1>Ups, me parece que no hay nada con ese nombre por acá</h1>
+          )}
+
+          { /* Positive coincidence between URL slug and saved spots */ }
+          { Boolean(Spot.length) && (
+            <div>
+              <PageLayoutHeading title={ Spot[0].title } text={ Spot[0].text } />
+              <div className="Layout Layout--Col-2 Layout--Inset">
+                <PageLayoutImage image={ Spot[0].poster } description={ Spot[0].title } />
+                <PageLayoutMap address={ Spot[0].address } hood={ Spot[0].hood } lat={ Spot[0].lat } lon={ Spot[0].lon } title={ printname } />
+              </div>
+              <TaxonomiesList title="Categorías" taxonomy="categoria" list={ Spot[0].categories } scope={ DataCategories } />
+              <PageLayoutTextBlock title='Dirección' content={ address } />
+              <PageLayoutTextBlock title='Entradas' content={ Spot[0].info_tickets } />
+              <PageLayoutTextBlock title='Horarios' content={ Spot[0].info_timetable } />
+              <PageLayoutLinksBlock title='Más información' content={ Spot[0].info_more } />
             </div>
-            <TaxonomiesList title="Categorías" taxonomy="categoria" list={ Spot[0].categories } scope={ DataCategories } />
-            <PageLayoutTextBlock title='Dirección' content={ address } />
-            <PageLayoutTextBlock title='Entradas' content={ Spot[0].info_tickets } />
-            <PageLayoutTextBlock title='Horarios' content={ Spot[0].info_timetable } />
-            <PageLayoutLinksBlock title='Más información' content={ Spot[0].info_more } />
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </div>
   )

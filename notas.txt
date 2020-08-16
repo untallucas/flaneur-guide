@@ -4,6 +4,26 @@
 // Traer categorias en SingleSpot
 // Sliders en Home
 
+f9b62b  visual
+f99728  comida
+ed5844  teatro
+af3b1c  
+d61339  en bici
+cc2986  shopping
+7f63d3  ferias y artesanias
+673ca3  design
+2c2cc6  music
+206ed5  cines
+1daadb  museos
+27c7c6  ciencia
+1cb58a  sustainable
+19aa20  parks
+77bc13  books
+9cc929  kids
+8c7a13  food trucks
+664d38  arqui
+444d55  religioso
+000000  secretos
 
 // STATEFUL COMPONENT
 // COSAS MAS COMPLICADAS CON GESTION DE ESTADOS
