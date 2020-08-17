@@ -51,25 +51,27 @@
   color: $color-text-primary-on-light;
 }
 
-// Heading level 2
-@mixin text-preset-3 {
-  font-family: $font-title;
-  font-size: $font-scale-6;
-  font-weight: $font-weight-regular;
-  line-height: $line-height-6;
-  letter-spacing: normal;
-  text-transform: none;
-}
+          // Heading level 2
+          @mixin text-preset-3 {
+            font-family: $font-title;
+            font-size: $font-scale-6;
+            font-weight: $font-weight-regular;
+            line-height: $line-height-6;
+            letter-spacing: normal;
+            text-transform: none;
+            background-color: red;
+          }
 
-// Heading level 3
-@mixin text-preset-4 {
-  font-family: $font-title;
-  font-size: $font-scale-7;
-  font-weight: $font-weight-regular;
-  line-height: $line-height-7;
-  letter-spacing: normal;
-  text-transform: none;
-}
+          // Heading level 3
+          @mixin text-preset-4 {
+            font-family: $font-title;
+            font-size: $font-scale-7;
+            font-weight: $font-weight-regular;
+            line-height: $line-height-7;
+            letter-spacing: normal;
+            text-transform: none;
+            background-color: red;
+          }
 
 // Heading level 4
 @mixin text-preset-5 {
@@ -91,13 +93,13 @@
   text-transform: uppercase;
 }
 
-// Heading level 6
+// Body text xtra large
 @mixin text-preset-7 {
-  font-family: $font-title;
-  font-size: $font-scale-10;
-  font-weight: $font-weight-regular;
-  line-height: $line-height-10;
-  letter-spacing: normal;
+  font-family: $font-text;
+  font-size: $font-scale-6;
+  font-weight: $font-weight-light;
+  line-height: $line-height-6;
+  letter-spacing: 0.25px;
   text-transform: none;
 }
 

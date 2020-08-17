@@ -6,7 +6,10 @@ const PageLayoutHeading = props => {
   return (
     <div className="PageLayoutHeading">
       <h1 className='PageLayoutHeading__Title'>{ props.title }</h1>
-      <p className='PageLayoutHeading__Blurb'>{ props.text }</p>
+
+      { Boolean( props.text ) && (
+        <p className='PageLayoutHeading__Blurb'>{ props.text }</p>
+      )}
     </div>
   )
 }

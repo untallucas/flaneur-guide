@@ -23,9 +23,14 @@ const Home = props => {
           <PageLayoutOpening text={ PageDescription } />
           <div></div>
         </div>
+      </div>
+    </div>
+  )
+}
 
-        <PageLayoutSeparator />
+export default Home
 
+/*
         <h2 className="text-level-2">
           A dónde ir
         </h2>
@@ -77,9 +82,4 @@ const Home = props => {
         <p className="text-body">
           (Grid de Categorías)
         </p>
-      </div>
-    </div>
-  )
-}
-
-export default Home
+*/

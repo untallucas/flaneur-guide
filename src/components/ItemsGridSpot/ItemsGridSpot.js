@@ -30,7 +30,7 @@ const ItemsGridSpot = function ({ spot }) {
 
   return (
     <div className="ItemsGridSpot">
-      <Link to={ url }>
+      <Link to={ url } className="ItemsGridSpot__Link">
         <img className="ItemsGridSpot__Image" src={ image } alt={ spot.printname } />
         <h3 className="ItemsGridSpot__Title">{ printname }</h3>
         <p className="ItemsGridSpot__Subtitle">{ spot.hood }</p>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import ItemsGrid from '../components/ItemsGrid/ItemsGrid'
+import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
 import Navigation from '../components/Navigation/Navigation'
 
 import DataItems from '../data/DataItems.js'
@@ -139,7 +140,7 @@ class ListSpots extends React.Component {
 
         <div className="Page__Wrapper">
           <div className="Layout Layout--Col-1">
-            <h1>Lugares</h1>
+            <PageLayoutHeading title="Lugares" text="" />
           </div>
           <div className="Layout Layout--Col-1">
             <p>{ this.state.currentTaxonomyTitle } | { this.state.currentFilterTitle }</p>
