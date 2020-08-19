@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ItemsGridSpot from '../ItemsGridSpot/ItemsGridSpot'
+import SpotCard from '../SpotCard/SpotCard'
 
 import './ItemsGrid.scss'
 
@@ -9,7 +9,7 @@ const ItemsGrid = function (props) {
     <div className='ItemsGrid'>
       {
         props.items.map(function (spot, i) {
-          return <ItemsGridSpot key={i} spot={spot} />
+          return <SpotCard key={i} spot={spot} />
         })
       }
     </div>

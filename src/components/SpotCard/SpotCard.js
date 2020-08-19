@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 
 import HighlightBadge from '../HighlightBadge/HighlightBadge'
 
-import './ItemsGridSpot.scss'
+import './SpotCard.scss'
 
-const ItemsGridSpot = function ({ spot }) {
+const SpotCard = function ({ spot }) {
   if(!spot){
     spot = {
       id: 0,
       slug: 'marco-museo-arco-de-cordoba',
       title: 'MARCO - Museo Arco de Córdoba',
-      subtitle: 'Empalme',
+      hood: 'Empalme',
       poster: 'http://gideon.afterseven.com.ar/public/images/marco-museo-arco-de-cordoba-01.jpg',
       categories: [10, 9],
       tags: [5, 8, 9],
@@ -29,15 +29,15 @@ const ItemsGridSpot = function ({ spot }) {
   } 
 
   return (
-    <div className="ItemsGridSpot">
-      <Link to={ url } className="ItemsGridSpot__Link">
-        <img className="ItemsGridSpot__Image" src={ image } alt={ spot.printname } />
-        <h3 className="ItemsGridSpot__Title">{ printname }</h3>
-        <p className="ItemsGridSpot__Subtitle">{ spot.hood }</p>
+    <div className="SpotCard">
+      <Link to={ url } className="SpotCard__Link">
+        <img className="SpotCard__Image" src={ image } alt={ spot.printname } />
+        <h3 className="SpotCard__Title">{ printname }</h3>
+        <p className="SpotCard__Subtitle">{ spot.hood }</p>
         { highlight }
       </Link>
     </div>
   )
 }
 
-export default ItemsGridSpot
+export default SpotCard
