@@ -2,6 +2,7 @@ import React from 'react'
 import Slider from 'react-slick'
 
 import SpotCard from '../SpotCard/SpotCard'
+import HighlightCard from '../HighlightCard/HighlightCard'
 import Icon from '../Icon/Icon'
 
 import './SpotCardsSlider.scss'
@@ -15,6 +16,7 @@ const SpotCardsSlider = props => {
     slidesToShow: 4,
     slidesToScroll: 4,
     initialSlide: 0,
+    swipeToSlide: true,
     nextArrow: <div className="slick-arrow slick-next"><Icon name="carat-right" color="#000000" /></div>,
     prevArrow: <div className="slick-arrow slick-prev"><Icon name="carat-left" color="#000000" /></div>,
     responsive: [
@@ -47,9 +49,9 @@ const SpotCardsSlider = props => {
 
   return (
     <div className="SpotCardsSlider">
-      <h2>{ props.title }</h2>
+      <h2 className="SpotCardsSlider__Title">{ props.title }</h2>
       <Slider {...settings}>
-        <SpotCard />
+        <HighlightCard content="Acá va algo relacionado a los contenidos del slider" />
         <SpotCard />
         <SpotCard />
         <SpotCard />

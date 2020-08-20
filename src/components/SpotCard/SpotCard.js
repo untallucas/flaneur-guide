@@ -15,14 +15,15 @@ const SpotCard = function ({ spot }) {
       poster: 'http://gideon.afterseven.com.ar/public/images/marco-museo-arco-de-cordoba-01.jpg',
       categories: [10, 9],
       tags: [5, 8, 9],
-      author: [4, 6]
+      author: [4, 6],
+      highlight: false
     }
   }
 
   let url = '/lugares/' + spot.slug
   let printname = spot.shorttitle ? spot.shorttitle : spot.title
   // let image = { spot.poster }
-  let image = 'https://picsum.photos/400/300?random=' + spot.id
+  let image = 'https://picsum.photos/400/300?random=' + Math.random()
   let highlight 
   if(spot.highlight){
     highlight = <HighlightBadge/>

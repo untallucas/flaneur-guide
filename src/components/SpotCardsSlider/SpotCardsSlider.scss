@@ -2,6 +2,30 @@
 @import './../../_mixins.scss';
 
 .SpotCardsSlider {
+  margin-bottom: $layout-xl;
+
+  &__Title {
+    @include text-preset-8();
+    font-weight: $font-weight-regular;
+    text-align: center;
+    color: $color-text-secondary-on-light;
+    border-bottom: 1px solid $color-border-separator-on-light;
+    margin-bottom: $spacing-xxl;
+    padding-bottom: $spacing-xl;
+    position: relative;
+
+    &:after {
+      content: '';
+      width: $spacing-xxxl;
+      height: 3px;
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      margin-left: $spacing-xxxl / 2 * -1;
+      background-color: $color-brand-primary;
+    }
+  } 
+
   .slick-list,
   .slick-slider,
   .slick-track {
@@ -60,7 +84,7 @@
       min-height: 1px;
 
       > div {
-        padding: $spacing-md $spacing-md $spacing-xxxl $spacing-md;
+        padding: $spacing-xs $spacing-md $spacing-md $spacing-md;
       }
     }
 

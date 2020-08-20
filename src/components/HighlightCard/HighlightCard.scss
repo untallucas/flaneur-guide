@@ -1,0 +1,17 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.HighlightCard {
+  @include card();
+  @include text-preset-8();
+  background-color: $color-background-dark-secondary;
+  color: $color-text-primary-on-dark;
+  box-shadow: none;
+  padding: 24px;
+  height: 273px;
+
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
