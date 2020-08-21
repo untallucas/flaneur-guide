@@ -8,7 +8,6 @@ import Icon from '../Icon/Icon'
 import './SpotCardsSlider.scss'
 
 const SpotCardsSlider = props => {
-//const SpotCardsSlider = function ({ props, onClick }) {
   var settings = {
     dots: false,
     infinite: true,
@@ -51,14 +50,12 @@ const SpotCardsSlider = props => {
     <div className="SpotCardsSlider">
       <h2 className="SpotCardsSlider__Title">{ props.title }</h2>
       <Slider {...settings}>
-        <HighlightCard content="Acá va algo relacionado a los contenidos del slider" />
-        <SpotCard />
-        <SpotCard />
-        <SpotCard />
-        <SpotCard />
-        <SpotCard />
-        <SpotCard />
-        <SpotCard />
+        <HighlightCard content={ props.description } />
+        {
+          props.spots.map(function (spot, i) {
+            return <SpotCard key={ i } spot={ spot } />
+          })
+        }
       </Slider>
     </div>
   )

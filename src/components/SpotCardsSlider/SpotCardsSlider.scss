@@ -30,7 +30,7 @@
   .slick-slider,
   .slick-track {
     position: relative;
-    display: block;
+    display: flex;
   }
 
   .slick-loading .slick-slide,
@@ -84,6 +84,7 @@
       min-height: 1px;
 
       > div {
+        height: calc(100% - 8px - 16px);
         padding: $spacing-xs $spacing-md $spacing-md $spacing-md;
       }
     }

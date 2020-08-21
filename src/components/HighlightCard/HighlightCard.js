@@ -1,7 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-
-import HighlightBadge from '../HighlightBadge/HighlightBadge'
 
 import './HighlightCard.scss'
 

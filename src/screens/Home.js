@@ -4,8 +4,25 @@ import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
 import SpotCardsSlider from '../components/SpotCardsSlider/SpotCardsSlider'
-import PageLayoutSeparator from '../components/PageLayoutSeparator/PageLayoutSeparator'
+import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
 
+
+import DataItems from '../data/DataItems.js'
+import DataTaxonomies from '../data/DataTaxonomies.js'
+
+const DataCategories = DataTaxonomies.categories
+
+const poiItems = DataItems.filter(function (item) {
+  return item.categories.includes(6)
+})
+
+const restaurantsItems = DataItems.filter(function (item) {
+  return item.categories.includes(2)
+})
+
+const shoppingItems = DataItems.filter(function (item) {
+  return item.categories.includes(10)
+})
 
 let PageTitle = 'Córdoba'
 let PageSubtitle = 'Capital nacional del cuarteto'
@@ -26,22 +43,16 @@ const Home = props => {
           <div></div>
         </div>
 
-        <SpotCardsSlider title="A donde ir" spots="" />
+        <SpotCardsSlider title="A donde ir" description="Alguna información sobre esta categoría" spots={ poiItems } />
 
-        <SpotCardsSlider title="Dónde comer" spots="" />
+        <SpotCardsSlider title="Dónde comer" description="Detalle de color random del grupo" spots={ restaurantsItems } />
 
-        <SpotCardsSlider title="Dónde comprar" spots="" />
-
-        <SpotCardsSlider title="Qué hacer" spots="" />
-
-        <SpotCardsSlider title="Recorrer" spots="" />
+        <SpotCardsSlider title="Dónde comprar" description="Algo sobre las opciones que se muestran" spots={ shoppingItems } />
 
         <h2 className="text-level-2">
           Guía de viaje
         </h2>
-        <p className="text-body">
-          (Grid de Categorías)
-        </p>
+        <TaxonomiesList title=" " taxonomy="categoria" list={ [0,1,2,3,4,5,6,7,8,9,10] } scope={ DataCategories } />
       </div>
     </div>
   )
