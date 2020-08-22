@@ -65,7 +65,7 @@ export default {
       color: '#009387'
     },
     {
-      id: 9,
+      id: 11,
       type: 'category',
       slug: 'danza',
       title: 'Danza',

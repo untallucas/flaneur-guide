@@ -7,26 +7,46 @@ import SpotCardsSlider from '../components/SpotCardsSlider/SpotCardsSlider'
 import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
 
 
+import DataApp from '../data/DataApp.js'
 import DataItems from '../data/DataItems.js'
 import DataTaxonomies from '../data/DataTaxonomies.js'
 
+const PageTitle = DataApp.city.name
+const PageSubtitle = DataApp.city.subtitle
+const PageDescription = DataApp.city.description
 const DataCategories = DataTaxonomies.categories
 
-const poiItems = DataItems.filter(function (item) {
+// Carousels setup
+const Slider1 = []
+Slider1.Spots = DataItems.filter(function (item) {
   return item.categories.includes(6)
 })
+Slider1.Title = "A donde ir"
+Slider1.Description = "Alguna información sobre esta categoría"
 
-const restaurantsItems = DataItems.filter(function (item) {
+const Slider2 = []
+Slider2.Spots = DataItems.filter(function (item) {
   return item.categories.includes(2)
 })
+Slider2.Title = "Dónde comer"
+Slider2.Description = "Detalle de color random del grupo"
 
-const shoppingItems = DataItems.filter(function (item) {
-  return item.categories.includes(10)
+const Slider3 = []
+Slider3.Spots = DataItems.filter(function (item) {
+  return item.categories.includes(5)
 })
+Slider3.Title = "Dónde comprar"
+Slider3.Description = "Algo sobre las opciones que se muestran"
 
-let PageTitle = 'Córdoba'
-let PageSubtitle = 'Capital nacional del cuarteto'
-let PageDescription = 'Córdoba se encuentra ubicada en la región central del país, a ambas orillas del río Suquía. Es la segunda ciudad más poblada después de Buenos Aires y la más extensa del país.'
+// Taxonomies list setup
+const Taxonomies = []
+Taxonomies.Title = "Todas las opciones"
+Taxonomies.Scope = DataCategories
+Taxonomies.List = Taxonomies.Scope.map(function (filter, i) {
+  return (
+    filter.id
+  )
+})
 
 const Home = props => {
   return (
@@ -43,16 +63,21 @@ const Home = props => {
           <div></div>
         </div>
 
-        <SpotCardsSlider title="A donde ir" description="Alguna información sobre esta categoría" spots={ poiItems } />
+        { Boolean(Slider1.Spots.length) && (
+          <SpotCardsSlider title={ Slider1.Title } description={ Slider1.Description } spots={ Slider1.Spots } />
+        )}
 
-        <SpotCardsSlider title="Dónde comer" description="Detalle de color random del grupo" spots={ restaurantsItems } />
+        { Boolean(Slider2.Spots.length) && (
+          <SpotCardsSlider title={ Slider2.Title } description={ Slider2.Description } spots={ Slider2.Spots } />
+        )}
 
-        <SpotCardsSlider title="Dónde comprar" description="Algo sobre las opciones que se muestran" spots={ shoppingItems } />
+        { Boolean(Slider3.Spots.length) && (
+          <SpotCardsSlider title={ Slider3.Title } description={ Slider3.Description } spots={ Slider3.Spots } />
+        )}
 
-        <h2 className="text-level-2">
-          Guía de viaje
-        </h2>
-        <TaxonomiesList title=" " taxonomy="categoria" list={ [0,1,2,3,4,5,6,7,8,9,10] } scope={ DataCategories } />
+        { Boolean(Taxonomies.List.length) && (
+          <TaxonomiesList title={ Taxonomies.Title } taxonomy="categoria" list={ Taxonomies.List } scope={ Taxonomies.Scope } />
+        )}
       </div>
     </div>
   )

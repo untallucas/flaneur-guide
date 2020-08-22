@@ -116,6 +116,15 @@
       }
     }
 
+    .slick-slide,
+    .slick-list,
+    .slick-track {
+      transform: translate3d(0,0,0);
+      transform: translateZ(0);
+      perspective: 1000px;
+      backface-visibility: hidden;
+    }
+
     &.slick-initialized {
       .slick-slide {
         display: block;
