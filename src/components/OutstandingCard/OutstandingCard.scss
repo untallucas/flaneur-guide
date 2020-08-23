@@ -3,71 +3,120 @@
 
 .OutstandingCard {
   @include card();
-  width: 270px;
-  height: 420px;
+  width: 280px;
+  height: 400px;
+  display: block;
+  text-decoration: none;
   background-color: transparent;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: bottom;
 
-  &__Image {
+  &__Background {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
-    filter: saturate(1.2);
-    transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
-  }
 
-  &__Link {
-    text-decoration: none;
-  }
+    &__Image {
+      transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+      filter: saturate(1.2);
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform-origin: left top;
+      transform: perspective(500px) translate3d(-50%, -50%, 0);
+    }
 
-  &__Position {
-    @include text-preset-12();
-    font-style: normal;
-    color: $color-text-secondary-on-light;
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    line-height: 48px;
-    margin: 64px auto 0;
-
-    &:before {
+    &:after {
       content: '';
+      position: absolute;
       width: 100%;
       height: 100%;
-      background-color: $color-background-light-primary;
-      position: absolute;
-      border-radius: 8px;
-      transform: rotate(45deg);
       top: 0;
       left: 0;
-      z-index: -1;
+      background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), radial-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.3));
     }
   }
 
-  &__Title {
-    @include text-preset-5();
-    color: $color-text-primary-on-dark;
-    margin: $spacing-md $spacing-lg $spacing-md $spacing-md;
+  &__Content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     text-align: center;
-  }
 
-  &__Subtitle {
-    @include text-preset-11();
-    color: $color-text-tertiary-on-light;
-    padding: 0 $spacing-lg $spacing-md $spacing-md;
+    &__Position {
+      @include text-preset-13();
+      transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+      transition-delay: 0.1s;
+      color: $color-text-primary-on-light;
+      width: $spacing-xxxl;
+      height: $spacing-xxxl;
+      display: inline-block;
+      position: relative;
+      text-align: center;
+      line-height: $spacing-xxxl;
+      z-index: 1;
+      margin: 0 auto;
+
+      &:before {
+        content: '';
+        transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+        width: 100%;
+        height: 100%;
+        background-color: $color-background-light-primary;
+        position: absolute;
+        border-radius: 8px;
+        transform: rotate(45deg);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        box-shadow: $elevation-high;
+      }
+    }
+
+    &__TitleWrapper {
+      height: 60px;
+      display: flex;
+      place-items: center;
+      transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+      margin: $spacing-xl $spacing-lg $spacing-xxxl $spacing-lg;
+      text-align: center;
+    }
+
+    &__Title {
+      @include text-preset-12();
+      text-align: center;
+      width: 100%;
+      color: $color-text-primary-on-dark;
+      text-shadow: $elevation-high;
+    }
   }
 
   &:hover & {
-    &__Image {
-      filter: saturate(1.8);
+    &__Background {
+      &__Image {
+        filter: saturate(1.8);
+        transform: perspective(500px) translate3d(-50%, -50%, 100px);
+      }
+    }
+
+    &__Content {
+      &__Position {
+        transform: translateY(-16px);
+
+        &:before {
+          box-shadow: $elevation-higher;
+        }
+      }
+
+      &__TitleWrapper {
+        transform: translateY(-8px);
+      }
     }
   }
 }

@@ -1,44 +1,40 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-import HighlightBadge from '../HighlightBadge/HighlightBadge'
-
 import './OutstandingCard.scss'
 
-const OutstandingCard = function ({ spot }) {
-  if(!spot){
+
+const OutstandingCard = props => {
+  let spot
+  if(!props.spot){
     spot = {
       id: 0,
       slug: 'marco-museo-arco-de-cordoba',
       title: 'MARCO - Museo Arco de Córdoba',
-      hood: 'Empalme',
-      poster: 'http://gideon.afterseven.com.ar/public/images/marco-museo-arco-de-cordoba-01.jpg',
-      categories: [10, 9],
-      tags: [5, 8, 9],
-      author: [4, 6],
-      highlight: false
+      poster: 'http://gideon.afterseven.com.ar/public/images/marco-museo-arco-de-cordoba-01.jpg'
     }
+  }
+  else {
+    spot = props.spot
   }
 
   let url = '/lugares/' + spot.slug
   let printname = spot.shorttitle ? spot.shorttitle : spot.title
   // let image = { spot.poster }
-  let image = 'https://picsum.photos/400/300?random=' + Math.random()  
-  let highlight 
-  if(spot.highlight){
-    highlight = <HighlightBadge/>
-  } 
+  let image = 'https://picsum.photos/400/300?random=' + Math.random()
 
   return (
-    <div className="OutstandingCard">
-      <Link to={ url } className="OutstandingCard__Link">
-        <img className="OutstandingCard__Image" src={ image } alt={ spot.printname } />
-        <span className="OutstandingCard__Position">4</span>
-        <p className="OutstandingCard__Subtitle">{ spot.hood }</p>
-        <h3 className="OutstandingCard__Title">{ printname }</h3>
-        { highlight }
-      </Link>
-    </div>
+    <Link to={ url } className="OutstandingCard">
+      <div className="OutstandingCard__Background">
+        <img className="OutstandingCard__Background__Image" src={ image } alt={ printname } />
+      </div>
+      <div className="OutstandingCard__Content">
+        <span className="OutstandingCard__Content__Position">{ props.position + 1 }</span>
+        <div className="OutstandingCard__Content__TitleWrapper">
+          <h3 className="OutstandingCard__Content__Title">{ printname }</h3>
+        </div>
+      </div>
+    </Link>
   )
 }
 

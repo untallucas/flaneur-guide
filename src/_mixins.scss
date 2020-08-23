@@ -153,3 +153,14 @@
   letter-spacing: 0.5px;
   text-transform: none;
 }
+
+// Minor serif
+@mixin text-preset-13 {
+  font-family: $font-accent;
+  font-size: $font-scale-8;
+  font-weight: $font-weight-thin;
+  font-style: normal;
+  line-height: $line-height-8;
+  letter-spacing: 0.5px;
+  text-transform: none;
+}

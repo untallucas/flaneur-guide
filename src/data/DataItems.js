@@ -269,7 +269,7 @@ export default [
     info_more: '',
     lat: '-31.431245',
     lon: '-64.173426',
-    highlight: 0,
+    highlight: 1,
     categories: [6, 8],
     tags: [7, 1, 5],
     authors: [2]
@@ -383,7 +383,7 @@ export default [
     },
     lat: '-31.429852',
     lon: '-64.183197',
-    highlight: 0,
+    highlight: 1,
     categories: [10, 7, 3],
     tags: [3, 7, 8],
     authors: [5]

@@ -3,10 +3,8 @@ import React from 'react'
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
-import SpotCardsSlider from '../components/SpotCardsSlider/SpotCardsSlider'
 import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
-
-import OutstandingCard from '../components/OutstandingCard/OutstandingCard'
+import CardsSlider from '../components/CardsSlider/CardsSlider'
 
 import DataApp from '../data/DataApp.js'
 import DataItems from '../data/DataItems.js'
@@ -39,6 +37,13 @@ Slider3.Spots = DataItems.filter(function (item) {
 Slider3.Title = "Dónde comprar"
 Slider3.Description = "Algo sobre las opciones que se muestran"
 
+const Slider4 = []
+Slider4.Spots = DataItems.filter(function (item) {
+  return item.highlight == true
+})
+Slider4.Title = "Imperdibles"
+Slider4.Description = ""
+
 // Taxonomies list setup
 const Taxonomies = []
 Taxonomies.Title = "Todas las opciones"
@@ -50,6 +55,7 @@ Taxonomies.List = Taxonomies.Scope.map(function (filter, i) {
 })
 
 const Home = props => {
+  console.log(Slider4.Spots)
   return (
     <div className="Page">
 
@@ -65,22 +71,24 @@ const Home = props => {
         </div>
 
         { Boolean(Slider1.Spots.length) && (
-          <SpotCardsSlider title={ Slider1.Title } description={ Slider1.Description } spots={ Slider1.Spots } />
+          <CardsSlider type="spots" title={ Slider1.Title } description={ Slider1.Description } spots={ Slider1.Spots } />
         )}
 
         { Boolean(Slider2.Spots.length) && (
-          <SpotCardsSlider title={ Slider2.Title } description={ Slider2.Description } spots={ Slider2.Spots } />
+          <CardsSlider type="spots" title={ Slider2.Title } description={ Slider2.Description } spots={ Slider2.Spots } />
         )}
 
         { Boolean(Slider3.Spots.length) && (
-          <SpotCardsSlider title={ Slider3.Title } description={ Slider3.Description } spots={ Slider3.Spots } />
+          <CardsSlider type="spots" title={ Slider3.Title } description={ Slider3.Description } spots={ Slider3.Spots } />
+        )}
+
+        { Boolean(Slider4.Spots.length) && (
+          <CardsSlider type="ranking" title={ Slider4.Title } spots={ Slider4.Spots } />
         )}
 
         { Boolean(Taxonomies.List.length) && (
           <TaxonomiesList title={ Taxonomies.Title } taxonomy="categoria" list={ Taxonomies.List } scope={ Taxonomies.Scope } />
         )}
-
-        <OutstandingCard />
       </div>
     </div>
   )
