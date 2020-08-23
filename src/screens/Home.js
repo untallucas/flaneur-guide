@@ -6,6 +6,7 @@ import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening
 import SpotCardsSlider from '../components/SpotCardsSlider/SpotCardsSlider'
 import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
 
+import OutstandingCard from '../components/OutstandingCard/OutstandingCard'
 
 import DataApp from '../data/DataApp.js'
 import DataItems from '../data/DataItems.js'
@@ -78,6 +79,8 @@ const Home = props => {
         { Boolean(Taxonomies.List.length) && (
           <TaxonomiesList title={ Taxonomies.Title } taxonomy="categoria" list={ Taxonomies.List } scope={ Taxonomies.Scope } />
         )}
+
+        <OutstandingCard />
       </div>
     </div>
   )
