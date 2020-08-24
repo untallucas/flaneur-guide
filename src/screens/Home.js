@@ -39,7 +39,7 @@ Slider3.Description = "Algo sobre las opciones que se muestran"
 
 const Slider4 = []
 Slider4.Spots = DataItems.filter(function (item) {
-  return item.highlight == true
+  return item.highlight === 1
 })
 Slider4.Title = "Imperdibles"
 Slider4.Description = ""
@@ -55,7 +55,6 @@ Taxonomies.List = Taxonomies.Scope.map(function (filter, i) {
 })
 
 const Home = props => {
-  console.log(Slider4.Spots)
   return (
     <div className="Page">
 
