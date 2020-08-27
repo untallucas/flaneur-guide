@@ -1,84 +1,172 @@
 export default {
   categories: [
     {
-      id: 1,
-      type: 'category',
-      slug: 'cultura',
-      title: 'Cultura',
-      icon: 'architecture',
-      color: '#567453'
-    },
-    {
       id: 2,
-      type: 'category',
-      slug: 'parques',
-      title: 'Parques',
-      icon: 'park',
-      color: '#012345'
+      title: 'Arte',
+      slug: 'arte',
+      icon: 'visual-arts',
+      color: '#F9B62B'
     },
     {
       id: 3,
-      type: 'category',
-      slug: 'museos',
-      title: 'Museos',
-      icon: 'museum',
-      color: '#726453'
+      title: 'Sustentable',
+      slug: 'sustentable',
+      icon: 'sustainable',
+      color: '#1CB58A'
     },
     {
       id: 4,
-      type: 'category',
-      slug: 'ciencia',
-      title: 'Ciencia',
-      icon: 'science',
-      color: '#294876'
+      title: 'Gastronomía',
+      slug: 'comer-y-beber',
+      icon: 'eat-and-drink',
+      color: '#F99728'
     },
     {
       id: 5,
-      type: 'category',
-      slug: 'religioso',
-      title: 'Religioso',
-      icon: 'church',
-      color: '#000456'
+      title: 'Teatro',
+      slug: 'teatro',
+      icon: 'theatre',
+      color: '#ED5844'
     },
     {
       id: 6,
-      type: 'category',
-      slug: 'teatro',
-      title: 'Teatro',
-      icon: 'theatre',
-      color: '#875000'
+      title: 'Cine',
+      slug: 'cine',
+      icon: 'cinema',
+      color: '#206ED5'
     },
     {
       id: 7,
-      type: 'category',
-      slug: 'niños',
       title: 'Niños',
+      slug: 'niños',
       icon: 'kids',
-      color: '#4F6CEF'
+      color: '#9CC929'
     },
     {
       id: 8,
-      type: 'category',
-      slug: 'en-bici',
-      title: 'En bici',
-      icon: 'bike',
-      color: '#009387'
+      title: 'Ciencias',
+      slug: 'ciencias',
+      icon: 'science',
+      color: '#27C7C6'
     },
     {
-      id: 11,
-      type: 'category',
-      slug: 'danza',
-      title: 'Danza',
-      icon: 'theatre',
-      color: '#094567'
+      id: 9,
+      title: 'Diseño',
+      slug: 'diseño',
+      icon: 'design',
+      color: '#673CA3'
     },
     {
       id: 10,
-      type: 'category',
-      slug: 'compras',
+      title: 'Historia',
+      slug: 'historia',
+      icon: 'museum',
+      color: '#1DAADB'
+    },
+    {
+      id: 11,
       title: 'Compras',
+      slug: 'compras',
       icon: 'shopping',
-      color: '#235692'
+      color: '#CC2986'
+    },
+    {
+      id: 12,
+      title: 'Ferias',
+      slug: 'ferias',
+      icon: 'fair',
+      color: '#7F63D3'
+    },
+    {
+      id: 13,
+      title: 'Arquitectura',
+      slug: 'arquitectura',
+      icon: 'architecture',
+      color: '#664D38'
+    },
+    {
+      id: 14,
+      title: 'Religioso',
+      slug: 'religioso',
+      icon: 'church',
+      color: '#444D55'
+    },
+    {
+      id: 15,
+      title: 'Aire Libre',
+      slug: 'aire-libre',
+      icon: 'park',
+      color: '#19AA20'
+    },
+    {
+      id: 16,
+      title: 'En bici',
+      slug: 'en-bici',
+      icon: 'bike',
+      color: '#D61339'
+    },
+    {
+      id: 17,
+      title: 'Libros',
+      slug: 'libros',
+      icon: 'books',
+      color: '#77BC13'
+    },
+    {
+      id: 18,
+      title: 'Música',
+      slug: 'musica',
+      icon: 'music',
+      color: '#2C2CC6'
+    },
+    {
+      id: 19,
+      title: 'Café',
+      slug: 'cafe',
+      icon: 'coffee',
+      color: '#F9B62B'
+    },
+    {
+      id: 20,
+      title: 'Información',
+      slug: 'informacion',
+      icon: 'information',
+      color: '#1CB58A'
+    },
+    {
+      id: 21,
+      title: 'Food trucks',
+      slug: 'food-trucks',
+      icon: 'food-truck',
+      color: '#F99728'
+    },
+    {
+      id: 22,
+      title: 'Miradores',
+      slug: 'miradores',
+      icon: 'oriel',
+      color: ''
+    },
+    {
+      id: 24,
+      title: 'Bares',
+      slug: 'bares',
+      icon: 'bars',
+      color: ''
+    },
+    {
+      id: 23,
+      title: 'Noche',
+      slug: 'noche',
+      icon: 'bynight',
+      color: ''
+    },
+    {
+      id: 25,
+      title: 'Secretos',
+      slug: 'secretos',
+      icon: 'secrets',
+      color: ''
     }
   ],
   tags: [
