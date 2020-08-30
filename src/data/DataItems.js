@@ -1,35 +1,6 @@
 export default [
   {
-    id: 3000,
-    type: 'spot',
-    slug: 'sala-de-lectura-infantil-y-juvenil-malicha-leguizamon',
-    title: 'Sala de Lectura Infantil y Juvenil Malicha Leguizamón',
-    shorttitle: 'Sala de Lectura Infantil y Juvenil',
-    subtitle: 'Centro',
-    hood: 'Centro',
-    address: 'Independencia 33, Cabildo Histórico',
-    poster: 'http://gideon.afterseven.com.ar/public/images/sala-de-lectura-infantil-y-juvenil-malicha-leguizamon-01.jpg',
-    text: 'La sala cuenta con 2000 títulos para el público infantil y juvenil de autores cordobeses, nacionales e internacionales. Allí, docentes y padres pueden aprovechar este espacio para darle a la lectura el más pleno sentido, lúdico y creativo.',
-    info_tickets: '',
-    info_timetable: 'Lunes a viernes de 10 a 15h',
-    info_more:
-    {
-      tel: '54 351 4285600 9213',
-      email: 'salita@gmail.com',
-      whatsapp: '54 351 4285600 9213',
-      instagram: 'salitacba',
-      facebook: 'sala05',
-      twitter: 'salitacba2'
-    },
-    lat: '-31.416441',
-    lon: '-64.184224',
-    highlight: 0,
-    categories: [6, 7],
-    tags: [2, 6, 10],
-    authors: [2]
-  },
-  {
-    id: 1035, 
+    id: 1035,
     slug: '220-cultura-contemporanea',
     title: '220 Cultura Contemporánea',
     shorttitle: '',
@@ -39,15 +10,24 @@ export default [
     text: 'Nace con la voluntad de contribuir y estimular las creaciones actuales desde una perspectiva transdisciplinar, donde los distintos campos de acción y producción se interrelacionan. Sus ejes de acción son las artes visuales, el diseño y el pensamiento.',
     info_tickets: '',
     info_timetable: '',
-    info_more: 'http://www.220cultura.com',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: 'http://www.220cultura.com',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.405771',
     lon: '-64.196932',
-    categories: [2,9], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,9],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1097, 
+    id: 1097,
     slug: 'acic-asociacion-cultural-israelita-de-cordoba',
     title: 'Asociación Cultural Israelita de Córdoba',
     shorttitle: 'Asociación Cultural Israelita',
@@ -57,15 +37,24 @@ export default [
     text: 'ACIC pretende generar en Córdoba, un polo artístico, deportivo y cultural, donde tengan lugar todas las expresiones artísticas, trabajando conjuntamente con otras instituciones culturales del medio, a fin de brindar a la comunidad nuevos y mejores servicios.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 15 a 20h',
-    info_more: '54 351 4230210\nacic@acic.org.ar\nhttp://acicenobras.wordpress.com',
+    info_more:
+    {
+      tel: '54 351 4230210',
+      email: 'acic@acic.org.ar',
+      web: 'http://acicenobras.wordpress.com',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.413242',
     lon: '-64.178338',
-    categories: [5,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1036, 
+    id: 1036,
     slug: 'alianza-francesa',
     title: 'Alianza Francesa',
     shorttitle: '',
@@ -75,15 +64,24 @@ export default [
     text: 'Forma parte de una gran red mundial asociativa federada por la Alianza Francesa de París. Es una asociación sin fines de lucro cuyos objetivos son la enseñanza del francés, la difusión de la cultura francesa y el intercambio cultural entre Francia y Argentina.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 4221129\nhttp://www.alianzafrancesacba.org.ar',
+    info_more:
+    {
+      tel: '54 351 4221129',
+      email: '',
+      web: 'http://www.alianzafrancesacba.org.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.415056',
     lon: '-64.189714',
-    categories: [6,2], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [6,2],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1119, 
+    id: 1119,
     slug: 'almacen-de-meriendas',
     title: 'Almacén de Meriendas',
     shorttitle: '',
@@ -93,15 +91,24 @@ export default [
     text: 'Ofrece tés de autor, variedad de café Nespresso, aguas y jugos de frutas, verduras y especias, así como té frío. Gran variedad de pastelería artesanal que se presenta con los simpáticos formatos de “Merentabla”, con un surtido de especialidades de la casa para compartir y “Merencenas”, con opciones livianas y saludables para la tardecita.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 6216702',
+    info_more:
+    {
+      tel: '54 351 6216702',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.425735',
     lon: '-64.191926',
-    categories: [19,4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [19,4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1051, 
+    id: 1051,
     slug: 'almazenna-cultural',
     title: 'Almazenna Cultural',
     shorttitle: '',
@@ -111,15 +118,24 @@ export default [
     text: 'Es un espacio de arte, literatura y ecología, para una mejor calidad de vida de la comunidad. Se incentiva el desarrollo del análisis y el juicio crítico, las capacidades expresivas, reflexiva y productiva de los ciudadanos para el ejercicio de los derechos humanos y la construción de ciudadanía. Se promueve el desarrollo de las artes y la cultura para todos. Se fomenta la capacitación para artistas y docentes del medio.',
     info_tickets: '',
     info_timetable: 'Lunes a domingo de 17 a 21h',
-    info_more: '54 351 4845065\ndifusionalmazenna@gmail.com\nhttp://www.almazennacultural.com',
+    info_more:
+    {
+      tel: '54 351 4845065',
+      email: 'difusionalmazenna@gmail.com',
+      web: 'http://www.almazennacultural.com',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.398449',
     lon: '-64.236631',
-    categories: [5,6], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,6],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1050, 
+    id: 1050,
     slug: 'alquimia-teatro',
     title: 'Alquimia Teatro',
     shorttitle: '',
@@ -129,15 +145,24 @@ export default [
     text: 'Sala de teatro de la zona norte de Córdoba, en la que se realizan actividades e imparten clases de danza, canto y actuación.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 4818378\ninfo@alquimiateatro.com.ar\nhttp://www.alquimiateatro.com.ar',
+    info_more:
+    {
+      tel: '54 351 4818378',
+      email: 'info@alquimiateatro.com.ar',
+      web: 'http://www.alquimiateatro.com.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.352913',
     lon: '-64.237288',
-    categories: [5,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1063, 
+    id: 1063,
     slug: 'alta-gracia-bar-comedia',
     title: 'Alta Gracia – Bar & Comedia',
     shorttitle: '',
@@ -147,15 +172,24 @@ export default [
     text: 'Es el primer espacio de la ciudad de Córdoba enfocado en la presentación y producción de espectáculos de humor de diversos géneros. Ofrece una cartelera variada con los representantes más destacados del medio: stand up, improvisación, clown y propuestas humorísticas únicas e innovadoras. Además de los shows, se podrá disfrutar de una interesante propuesta de coctelería y gastronomía.',
     info_tickets: '',
     info_timetable: 'Jueves a domingos de 21 a 4h',
-    info_more: 'altagraciabarycomedia@gmail.com\nhttp://altagraciabarcomedia.wixsite.com/altagraciabarcomedia',
+    info_more:
+    {
+      tel: '',
+      email: 'altagraciabarycomedia@gmail.com',
+      web: 'http://altagraciabarcomedia.wixsite.com/altagraciabarcomedia',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.420792',
     lon: '-64.193728',
-    categories: [5,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1110, 
+    id: 1110,
     slug: 'apartamento',
     title: 'Apartamento',
     shorttitle: '',
@@ -165,15 +199,24 @@ export default [
     text: 'Apartamento quiere inspirar, ser un lugar donde se conecten personas que están apostando por ideas y producciones auténticas. Somos un resto bar que te invita a pasar.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 2089139\nbarapartamento@gmail.com',
+    info_more:
+    {
+      tel: '54 351 2089139',
+      email: 'barapartamento@gmail.com',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.424026',
     lon: '-64.192921',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1107, 
+    id: 1107,
     slug: 'aquiles',
     title: 'Aquiles',
     shorttitle: '',
@@ -183,15 +226,24 @@ export default [
     text: 'Café, té y bebidas take away. Espacio de coworking y pequeños eventos artísticos.',
     info_tickets: '',
     info_timetable: '',
-    info_more: 'consultas@aquilescafe.com',
+    info_more:
+    {
+      tel: '',
+      email: 'consultas@aquilescafe.com',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.424818',
     lon: '-64.183382',
-    categories: [19], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [19],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 978, 
+    id: 978,
     slug: 'archivo-historico-de-la-ciudad',
     title: 'Archivo Histórico de la Ciudad',
     shorttitle: '',
@@ -201,15 +253,24 @@ export default [
     text: 'Fue creado con los objetivos de reunir, ordenar, describir, conservar y difundir todos aquellos documentos de interés histórico referidos a la ciudad de Córdoba. Cuenta con documentación del antiguo Cabildo desde 1573 a 1824, como así también una serie de testimonios escritos de la vida de la ciudad en fechas posteriores.',
     info_tickets: '',
     info_timetable: 'Lunes, miércoles y viernes de 8 a 13:30h',
-    info_more: '54 351 4334371\nahmcdcba@hotmail.com',
+    info_more:
+    {
+      tel: '54 351 4334371',
+      email: 'ahmcdcba@hotmail.com',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.423370',
     lon: '-64.192931',
-    categories: [10,10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 998, 
+    id: 998,
     slug: 'archivo-historico-de-la-provincia-de-cordoba-monsenor-pablo-cabrera',
     title: 'Archivo Histórico de la Provincia de Córdoba Monseñor Pablo Cabrera',
     shorttitle: 'Archivo Histórico de la Provincia',
@@ -219,15 +280,24 @@ export default [
     text: 'Considerado el segundo archivo en importancia del país, alberga 23 mil volúmenes con documentos de Gobierno. Cuenta con una biblioteca de más de 5 mil volúmenes, especializada en historiografía nacional y provincial y posee un archivo fotográfico y hemeroteca con importantes colecciones de periódicos de fines del siglo XIX.',
     info_tickets: '',
     info_timetable: 'Lunes a jueves de 9 a 17h',
-    info_more: '54 351 4343517\narchivo.historico@cba.gov.ar',
+    info_more:
+    {
+      tel: '54 351 4343517',
+      email: 'archivo.historico@cba.gov.ar',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.427602',
     lon: '-64.182372',
-    categories: [17,10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17,10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1013, 
+    id: 1013,
     slug: 'archivo-provincial-de-la-memoria',
     title: 'Archivo Provincial de la Memoria',
     shorttitle: '',
@@ -237,15 +307,24 @@ export default [
     text: 'Se inauguró en el año 2006 en el edificio donde funcionó el Departamento de Inteligencia D-2 de la Policía de la Provincia de Córdoba, que fue uno de los Centros Clandestinos de Detención durante la última dictadura militar de la República Argentina. Se trata de un lugar abierto a la ciudadanía, donde permanentemente se exhiben muestras y expresiones artísticas.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: 'Martes a viernes de 10 a 18h',
-    info_more: '54 351 4342449',
+    info_more:
+    {
+      tel: '54 351 4342449',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416413',
     lon: '-64.184960',
-    categories: [10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1046, 
+    id: 1046,
     slug: 'auditorio-luis-gagliano-luz-y-fuerza',
     title: 'Auditorio Luis Gagliano – Luz y fuerza',
     shorttitle: '',
@@ -255,15 +334,24 @@ export default [
     text: 'Es un espacio de participación colectiva destinado a toda la sociedad, que promociona la cultura, el desarrollo de artistas, periodistas, promotores de la cultura, militantes sociales y educadores.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 4685923\ninfo@agendadelauditorio.com.ar\nhttp://www.agendadelauditorio.com.ar',
+    info_more:
+    {
+      tel: '54 351 4685923',
+      email: 'info@agendadelauditorio.com.ar',
+      web: 'http://www.agendadelauditorio.com.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.413819',
     lon: '-64.190663',
-    categories: [18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1037, 
+    id: 1037,
     slug: 'auditorio-radio-nacional',
     title: 'Auditorio Radio Nacional',
     shorttitle: '',
@@ -273,15 +361,24 @@ export default [
     text: '',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.411749',
     lon: '-64.185630',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1098, 
+    id: 1098,
     slug: 'babel-teatro',
     title: 'Babel Teatro',
     shorttitle: '',
@@ -291,15 +388,24 @@ export default [
     text: 'Crea un espacio para generar el desarrollo de actividades artísticas y culturales proponiendo la búsqueda de nuevos lenguajes estéticos para promover y difundir con idioma artístico ecología y conservación construyendo un código contemporáneo de comunicación entre el público, los artistas, la ciencia y la tecnología.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 153426686\nteatrobabel@gmail.com\nhttp://babelra.com.ar',
+    info_more:
+    {
+      tel: '54 351 153426686',
+      email: 'teatrobabel@gmail.com',
+      web: 'http://babelra.com.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.454075',
     lon: '-64.188871',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1126, 
+    id: 1126,
     slug: 'barrio',
     title: 'Barrio',
     shorttitle: '',
@@ -309,15 +415,24 @@ export default [
     text: 'Galería de compras. Espacio para el encuentro. Calle nueva en Güemes que invita a viajar por las mejores ciudades del mundo. Propuestas gastronómicas increíbles y las mejores marcas del barrio.',
     info_tickets: '',
     info_timetable: 'Martes a domingos de 16 a 22h',
-    info_more: 'mktgaleriabarrio@gmail.com',
+    info_more:
+    {
+      tel: '',
+      email: 'mktgaleriabarrio@gmail.com',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.424417',
     lon: '-64.191314',
-    categories: [11,9], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [11,9],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1068, 
+    id: 1068,
     slug: 'bataclana',
     title: 'Bataclana',
     shorttitle: '',
@@ -327,15 +442,24 @@ export default [
     text: 'Bataclana es un colectivo de trabajadores del arte y la cultura, con proyectos que abren el espacio cultural. Hasta el día de hoy se auto-gestiona con el aporte incansable de muchos compañeros, amigos y familiares.',
     info_tickets: '',
     info_timetable: '',
-    info_more: 'bataclanaespacio@gmail.com\nhttp://www.bataclanaespaciocultural.blogspot.com.ar',
+    info_more:
+    {
+      tel: '',
+      email: 'bataclanaespacio@gmail.com',
+      web: 'http://www.bataclanaespaciocultural.blogspot.com.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.425652',
     lon: '-64.197356',
-    categories: [5,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 996, 
+    id: 996,
     slug: 'biblioteca-cordoba',
     title: 'Biblioteca Córdoba',
     shorttitle: '',
@@ -345,15 +469,24 @@ export default [
     text: 'La Biblioteca Córdoba es una biblioteca pública creada en 1911. Al presente supera los 50.000 volúmenes entre libros, folletos y revistas. Dispone de una Sala de Lectura de ingreso libre y sin costo, una sala para presentaciones culturales y una Hemeroteca.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 8 a 20h',
-    info_more: '54 351 4332300 213\nbibliotecacordobaprovincial@gmail.com ',
+    info_more:
+    {
+      tel: '54 351 4332300 213',
+      email: 'bibliotecacordobaprovincial@gmail.com',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.415719',
     lon: '-64.189493',
-    categories: [17,17], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17,17],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1075, 
+    id: 1075,
     slug: 'biblioteca-los-39-escalones',
     title: 'Biblioteca Los 39 Escalones',
     shorttitle: '',
@@ -363,15 +496,24 @@ export default [
     text: 'Biblioteca especializada en cine, donde se puede encontrar material bibliográfico único en Argentina. Posee un catálogo de películas en DVD con más de 1400 títulos, además de contar con colecciones de grandes autores y una variedad de géneros imperdibles. También hay cortos cordobeses, películas en VHS y revistas a la venta.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 14 a 21h',
-    info_more: '54 351 4341240',
+    info_more:
+    {
+      tel: '54 351 4341240',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.420938',
     lon: '-64.186807',
-    categories: [17,6], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17,6],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1074, 
+    id: 1074,
     slug: 'biblioteca-mayor',
     title: 'Biblioteca Mayor',
     shorttitle: '',
@@ -381,15 +523,24 @@ export default [
     text: 'Biblioteca Mayor de la Universidad Nacional de Córdoba.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 4331072\nreferencia@bmayor.unc.edu.ar\nhttp://www.bmayor.unc.edu.ar',
+    info_more:
+    {
+      tel: '54 351 4331072',
+      email: 'referencia@bmayor.unc.edu.ar',
+      web: 'http://www.bmayor.unc.edu.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.418353',
     lon: '-64.186501',
-    categories: [17,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 976, 
+    id: 976,
     slug: 'biblioteca-municipal-arturo-capdevila',
     title: 'Biblioteca Municipal Arturo Capdevila',
     shorttitle: '',
@@ -399,15 +550,24 @@ export default [
     text: 'Posee cerca de 30 mil textos, especialmente libros referidos a Córdoba con abordajes desde diferentes disciplinas. Se pueden consultar material de letras, geografía, historia y arquitectura así como de usos y costumbres de Córdoba o monografías regionales.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: 'Lunes a viernes de 8 a 18:45h',
-    info_more: '54 351 4221624',
+    info_more:
+    {
+      tel: '54 351 4221624',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.415963',
     lon: '-64.184340',
-    categories: [17,17], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17,17],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1076, 
+    id: 1076,
     slug: 'biblioteca-popular-de-bella-vista',
     title: 'Biblioteca Popular de Bella Vista',
     shorttitle: '',
@@ -417,15 +577,24 @@ export default [
     text: 'Biblioteca popular cuya principal objetivo es el de difundir el conocimiento, especialmente entre quienes carecen de medios materiales o estímulos culturales para aproximarse a él.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 4690447\nfpm_ad@yahoo.com.ar\nhttp://www.fundacionpmilesi.org.ar',
+    info_more:
+    {
+      tel: '54 351 4690447',
+      email: 'fpm_ad@yahoo.com.ar',
+      web: 'http://www.fundacionpmilesi.org.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.432328',
     lon: '-64.201416',
-    categories: [17], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1038, 
+    id: 1038,
     slug: 'biblioteca-popular-velez-sarsfield',
     title: 'Biblioteca Popular Vélez Sarsfield',
     shorttitle: '',
@@ -435,15 +604,24 @@ export default [
     text: 'La Biblioteca Popular Vélez Sarsfield garantiza desde sus bases fundacionales el acceso igualitario de las personas a la información pertinente que les permita ser ciudadanos competentes, garantes de la memoria de la comunidad, mediante la creación de espacios de integración cultural y social posibilitando el acceso y uso de las nuevas tecnologías.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 4232460',
+    info_more:
+    {
+      tel: '54 351 4232460',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.413721',
     lon: '-64.170076',
-    categories: [17], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 997, 
+    id: 997,
     slug: 'biblioteca-provincial-para-discapacitados-visuales',
     title: 'Biblioteca Provincial para Discapacitados Visuales',
     shorttitle: '',
@@ -453,15 +631,24 @@ export default [
     text: 'Tiene por objetivo ofrecer servicios que posibiliten el acceso a la lectura, la capacitación especializada y la formación de los usuarios, mejorando las posibilidades de crecimiento personal e inclusión. Cuenta con más de 100 títulos en sistema Braille, 500 en soporte magnético y 600 digitales de producción propia.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 8 a 20h',
-    info_more: '54 351 4332304\nbibliodisc@yahoo.com.ar',
+    info_more:
+    {
+      tel: '54 351 4332304',
+      email: 'bibliodisc@yahoo.com.ar',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.415719',
     lon: '-64.189493',
-    categories: [17,17], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17,17],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1109, 
+    id: 1109,
     slug: 'bruncheria',
     title: 'Brunchería',
     shorttitle: '',
@@ -471,15 +658,24 @@ export default [
     text: 'Café, almacén y aperitivos. Un lugar donde te estén esperando con cosas ricas, con un chiste y buena onda, un lugar surtido y a buen precio. Como ir al almacén de barrio donde podamos combinar todo lo que está a la vista según se nos da la gana. La gente se encuentra, y nosotros estamos felices.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.424417',
     lon: '-64.191314',
-    categories: [4,19], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4,19],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1111, 
+    id: 1111,
     slug: 'capitan',
     title: 'Capitán',
     shorttitle: '',
@@ -489,15 +685,24 @@ export default [
     text: 'Birras que unen a la gente porque son auténticas. Somos amantes de la cerveza y de los productores apasionados por sus recetas. Así llegamos a esa cerveza que nos gusta, que disfrutamos, que revela quienes somos.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 2084204',
+    info_more:
+    {
+      tel: '54 351 2084204',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.424417',
     lon: '-64.191314',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1089, 
+    id: 1089,
     slug: 'casa-chula',
     title: 'Casa Chula',
     shorttitle: '',
@@ -507,15 +712,24 @@ export default [
     text: 'Podés encontrar piezas únicas y detalles exquisitos que hagan brillar todos tus espacios. Con pasión dedicamos nuestro tiempo a una búsqueda única y personal para ofrecerte los mejores objetos de diseño nacional e internacional que expresen un espíritu propio y exclusivo para tu hogar. Contamos también con fabricación propia.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 9:30 a 13:30h y de 16:30 a 20:30h\nSábados de 10 a 14h',
-    info_more: '54 351 4817785\ninfo@casachula.com.ar\nhttp://www.casachula.com.ar',
+    info_more:
+    {
+      tel: '54 351 4817785',
+      email: 'info@casachula.com.ar',
+      web: 'http://www.casachula.com.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.377657',
     lon: '-64.225245',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1090, 
+    id: 1090,
     slug: 'casa-chula-nueva-cordoba',
     title: 'Casa Chula Nueva Córdoba',
     shorttitle: '',
@@ -525,15 +739,24 @@ export default [
     text: 'Podés encontrar piezas únicas y detalles exquisitos que hagan brillar todos tus espacios. Con pasión dedicamos nuestro tiempo a una búsqueda única y personal para ofrecerte los mejores objetos de diseño nacional e internacional que expresen un espíritu propio y exclusivo para tu hogar. Contamos también con fabricación propia.',
     info_tickets: '',
     info_timetable: 'Todos los días de 10 a 19h',
-    info_more: '54 351 4601873\ninfo@casachula.com.ar\nhttp://www.casachula.com.ar',
+    info_more:
+    {
+      tel: '54 351 4601873',
+      email: 'info@casachula.com.ar',
+      web: 'http://www.casachula.com.ar',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.427973',
     lon: '-64.187101',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1088, 
+    id: 1088,
     slug: 'casa-de-cosos',
     title: 'Casa de Cosos',
     shorttitle: '',
@@ -543,15 +766,24 @@ export default [
     text: 'Tienda de productos de artistas. Sala de exposicion, talleres.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 15 a 20h',
-    info_more: '54 351 4089603\ncasadecosos@gmail.com\nhttp://www.tiendadearteylibros.com/casa-de-cosos',
+    info_more:
+    {
+      tel: '54 351 4089603',
+      email: 'casadecosos@gmail.com',
+      web: 'http://www.tiendadearteylibros.com/casa-de-cosos',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.388804',
     lon: '-64.186998',
-    categories: [9], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1000, 
+    id: 1000,
     slug: 'casa-de-la-historia-del-movimiento-obrero',
     title: 'Casa de la Historia del Movimiento Obrero',
     shorttitle: '',
@@ -561,15 +793,24 @@ export default [
     text: 'Funciona en el viejo edificio de la Central General de los Trabajadores (CGT). En esa misma casona, en la noche del 26 de mayo de 1969, se votó la realización del “paro activo” que desembocaría, tres días después, en el Cordobazo.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: 'Lunes a viernes de 10 a 14h',
-    info_more: '54 351 4276607',
+    info_more:
+    {
+      tel: '54 351 4276607',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416735',
     lon: '-64.187308',
-    categories: [10,10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1052, 
+    id: 1052,
     slug: 'casa-grote',
     title: 'Casa Grote',
     shorttitle: '',
@@ -579,15 +820,24 @@ export default [
     text: 'Un grupo de amigos fundaron Casa Grote en respuesta a la necesidad de espacios para la creación y difusión de espectáculos artísticos. Cuenta con dos salas para espectáculos teatrales y musicales, bar, patio y galería de arte. Ofreciendo una variada programación todos los fines de semana.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '54 351 6885301',
+    info_more:
+    {
+      tel: '54 351 6885301',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.394082',
     lon: '-64.167816',
-    categories: [5,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1139, 
+    id: 1139,
     slug: 'casa-naranja',
     title: 'Casa Naranja',
     shorttitle: '',
@@ -597,15 +847,24 @@ export default [
     text: 'Espacio cultural para muestras y exhibiciones en el edificio central de Tarjeta Naranja. Es un espacio abierto a la comunidad, en el moderno edificio inaugurado en el año 2016.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: 'Lunes a viernes de 9 a 20h',
-    info_more: 'http://www.tarjetanaranja.com',
+    info_more:
+    {
+      tel: '',
+      email: 'http://www.tarjetanaranja.com',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.407463',
     lon: '-64.187142',
-    categories: [2,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1140, 
+    id: 1140,
     slug: 'centro-civico',
     title: 'Centro Cívico',
     shorttitle: '',
@@ -615,11 +874,20 @@ export default [
     text: 'El Centro Cívico del Bicentenario es la sede del Gobierno de la Provincia de Córdoba. El edificio de la torre principal nace de una forma simple, un prisma al cual se le aplica una rotación; esto genera un volumen complejo sobre la base de fachadas triangulares que producen un juego de luces y sombras. El edificio se apoya sobre un gran espejo de agua que multiplica su imagen a través de su reflejo.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.418793',
     lon: '-64.173911',
-    categories: [13], 
-    highlight: 0, 
+    categories: [13],
+    highlight: 1,
     gallery: {
       title: 'Fotos',
       items: [
@@ -637,9 +905,9 @@ export default [
         }
       ]
     }
-  }, 
+  },
   {
-    id: 980, 
+    id: 980,
     slug: 'centro-cultural-alta-cordoba-efrain-bischoff',
     title: 'Centro Cultural Alta Córdoba – Efraín Bischoff',
     shorttitle: 'Centro Cultural Alta Córdoba',
@@ -649,15 +917,24 @@ export default [
     text: 'Se encuentra en un edificio reciclado que solía ser el Mercado de Frutas y Hortalizas de Alta Córdoba. Se destaca un subsuelo con bar cuya capacidad es de 250 personas, un auditorio con capacidad para 120 personas, 5 aulas temáticas para literatura, danzas, teatro, artes visuales y gastronomía, y un hall con áreas de exposición.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 7 a 22h',
-    info_more: '54 351 4336004',
+    info_more:
+    {
+      tel: '54 351 4336004',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.395438',
     lon: '-64.190161',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 993, 
+    id: 993,
     slug: 'centro-cultural-cabildo-historico',
     title: 'Centro Cultural Cabildo Histórico',
     shorttitle: '',
@@ -667,15 +944,24 @@ export default [
     text: 'Se ubica en el edificio histórico frente a la Plaza San Martín, que históricamente fue centro de la actividad civil de la ciudad. Cuenta con dos patios coloniales, 10 salas de exposición, una sala de conciertos, el Museo y la Tienda de la Ciudad. Su explanada es escenario de numerosas manifestaciones artísticas culturales.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: '',
-    info_more: '54 351 4285894',
+    info_more:
+    {
+      tel: '54 351 4285894',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416441',
     lon: '-64.184224',
-    categories: [10,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 983, 
+    id: 983,
     slug: 'centro-cultural-casa-de-pepino',
     title: 'Centro Cultural Casa de Pepino',
     shorttitle: '',
@@ -685,15 +971,24 @@ export default [
     text: 'Perteneció inicialmente a José Tucci, un inmigrante italiano que llegó al país a finales del siglo XIX e instaló en ella su almacén de ramos generales. La construcción recuerda la forma de un barco navegando en las aguas del arroyo La Cañada, en honor a la travesía de Tucci.',
     info_tickets: '',
     info_timetable: 'Martes a domingos de 9 a 19h',
-    info_more: '54 351 4343197\ncasadepepino@hotmail.com',
+    info_more:
+    {
+      tel: '54 351 4343197',
+      email: 'casadepepino@hotmail.com',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.425442',
     lon: '-64.192633',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 985, 
+    id: 985,
     slug: 'centro-cultural-casona-municipal',
     title: 'Centro Cultural Casona Municipal',
     shorttitle: '',
@@ -706,12 +1001,12 @@ export default [
     info_more: '54 351 4332766\ncasonamunicipalcordoba@gmail.com\nhttp://www.casonamunicipal.com.ar',
     lat: '-31.410778',
     lon: '-64.185000',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 999, 
+    id: 999,
     slug: 'centro-cultural-cordoba',
     title: 'Centro Cultural Córdoba',
     shorttitle: '',
@@ -724,12 +1019,12 @@ export default [
     info_more: '54 351 4343518\ncentroculturalcordoba@gmail.com',
     lat: '-31.427602',
     lon: '-64.182372',
-    categories: [6,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [6,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 995, 
+    id: 995,
     slug: 'centro-cultural-espana-cordoba',
     title: 'Centro Cultural España-Córdoba',
     shorttitle: '',
@@ -742,12 +1037,12 @@ export default [
     info_more: '54 351 4332721\nlavacaresponde@ccec.org.ar\nhttp://www.ccec.org.ar',
     lat: '-31.418479',
     lon: '-64.184534',
-    categories: [2,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 981, 
+    id: 981,
     slug: 'centro-cultural-general-paz',
     title: 'Centro Cultural General Paz',
     shorttitle: '',
@@ -760,12 +1055,12 @@ export default [
     info_more: '54 351 4339104\nccgeneralpaz@cordoba.gov.ar',
     lat: '-31.411654',
     lon: '-64.168037',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1039, 
+    id: 1039,
     slug: 'centro-cultural-graciela-carena',
     title: 'Centro Cultural Graciela Carena',
     shorttitle: '',
@@ -778,12 +1073,12 @@ export default [
     info_more: '54 351 4245402\nccgracielacarena@gmail.com\nhttp://www.programacionccgracielacarena.blogspot.com.ar',
     lat: '-31.415095',
     lon: '-64.180632',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 979, 
+    id: 979,
     slug: 'centro-cultural-manuel-de-falla',
     title: 'Centro Cultural Manuel de Falla',
     shorttitle: '',
@@ -796,12 +1091,12 @@ export default [
     info_more: '54 351 4343199',
     lat: '-31.429852',
     lon: '-64.183197',
-    categories: [18,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 984, 
+    id: 984,
     slug: 'centro-cultural-paseo-de-las-artes',
     title: 'Centro Cultural Paseo de las Artes',
     shorttitle: '',
@@ -814,12 +1109,12 @@ export default [
     info_more: '54 351 4334368\nlasartesdepaseo@gmail.com',
     lat: '-31.423740',
     lon: '-64.192015',
-    categories: [12,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [12,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 982, 
+    id: 982,
     slug: 'centro-cultural-san-vicente',
     title: 'Centro Cultural San Vicente',
     shorttitle: '',
@@ -832,12 +1127,12 @@ export default [
     info_more: '54 351 4338557\nccsanvicente@hotmail.com',
     lat: '-31.423477',
     lon: '-64.147609',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1008, 
+    id: 1008,
     slug: 'centro-de-arte-contemporaneo',
     title: 'Centro de Arte Contemporáneo',
     shorttitle: '',
@@ -850,12 +1145,12 @@ export default [
     info_more: '54 351 4858876\ninformacion.cac@gmail.com',
     lat: '-31.373595',
     lon: '-64.255561',
-    categories: [2,2], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,2],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1040, 
+    id: 1040,
     slug: 'cepia-centro-de-produccion-e-investigacion-en-artes',
     title: 'CePIA – Centro de Producción e Investigación en Artes',
     shorttitle: 'CePIA',
@@ -868,12 +1163,12 @@ export default [
     info_more: '54 351 5353630 56226\ncepia@artes.unc.edu.ar\nhttp://cepia.artes.unc.edu.ar',
     lat: '-31.436188',
     lon: '-64.191809',
-    categories: [6,2], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [6,2],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1048, 
+    id: 1048,
     slug: 'cineclub-la-quimera',
     title: 'Cineclub La Quimera',
     shorttitle: '',
@@ -886,12 +1181,12 @@ export default [
     info_more: 'http://laquimera.wordpress.com',
     lat: '-31.424932',
     lon: '-64.194672',
-    categories: [6], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [6],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 994, 
+    id: 994,
     slug: 'cineclub-municipal-hugo-del-carril',
     title: 'Cineclub Municipal Hugo del Carril',
     shorttitle: '',
@@ -904,12 +1199,12 @@ export default [
     info_more: '54 351 4332463\ninfo@cineclubmunicipal.com\nhttp://www.cineclubmunicipal.com',
     lat: '-31.420938',
     lon: '-64.186807',
-    categories: [6,17], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [6,17],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1055, 
+    id: 1055,
     slug: 'cirulaxia-teatro',
     title: 'Cirulaxia Teatro',
     shorttitle: '',
@@ -922,12 +1217,12 @@ export default [
     info_more: '54 351 4712921\ncirulaxiateatro@gmail.com',
     lat: '-31.405490',
     lon: '-64.177671',
-    categories: [5,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1041, 
+    id: 1041,
     slug: 'cocina-de-culturas',
     title: 'Cocina de Culturas',
     shorttitle: '',
@@ -940,12 +1235,12 @@ export default [
     info_more: '54 351 4862689\ninfo@cocinadeculturas.com.ar\nhttp://www.cocinadeculturas.com.ar',
     lat: '-31.428377',
     lon: '-64.197530',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1094, 
+    id: 1094,
     slug: 'cria-diseno',
     title: 'Cría Diseño',
     shorttitle: '',
@@ -958,12 +1253,12 @@ export default [
     info_more: 'info.cria.d@gmail.com',
     lat: '-31.425146',
     lon: '-64.192631',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1114, 
+    id: 1114,
     slug: 'dada-mini',
     title: 'Dadá Mini',
     shorttitle: '',
@@ -976,12 +1271,12 @@ export default [
     info_more: '54 351 4607270\ntiendabar@dadamini.com',
     lat: '-31.424441',
     lon: '-64.191417',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1093, 
+    id: 1093,
     slug: 'das-licht',
     title: 'Das Licht',
     shorttitle: '',
@@ -994,12 +1289,12 @@ export default [
     info_more: '54 351 9 3913434\ndaslichtiluminacion@gmail.com',
     lat: '-31.425041',
     lon: '-64.192557',
-    categories: [9], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1082, 
+    id: 1082,
     slug: 'diseno-negro',
     title: 'Diseño Negro',
     shorttitle: '',
@@ -1012,12 +1307,12 @@ export default [
     info_more: '54 351 2309581\nalemerino00@hotmail.com',
     lat: '-31.424394',
     lon: '-64.191363',
-    categories: [9], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1053, 
+    id: 1053,
     slug: 'documentaescenicas',
     title: 'Documenta/Escénicas',
     shorttitle: '',
@@ -1030,12 +1325,12 @@ export default [
     info_more: '54 351 4290280\ndocumentaescenicas@gmail.com\nhttp://www.documentaescenicas.org.ar',
     lat: '-31.413998',
     lon: '-64.177825',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1054, 
+    id: 1054,
     slug: 'el-cuenco',
     title: 'El Cuenco',
     shorttitle: '',
@@ -1048,12 +1343,12 @@ export default [
     info_more: '54 351 4714847\nelcuenco@gmail.com\nhttp://elcuencoteatro.blogspot.com.ar',
     lat: '-31.390122',
     lon: '-64.189258',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1121, 
+    id: 1121,
     slug: 'el-papagayo',
     title: 'El Papagayo',
     shorttitle: '',
@@ -1066,12 +1361,12 @@ export default [
     info_more: '54 351 4258689\ninfo@elpapagayo.com.ar\nhttp://www.elpapagayo.com.ar',
     lat: '-31.414435',
     lon: '-64.192418',
-    categories: [4,19], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4,19],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1062, 
+    id: 1062,
     slug: 'el-pasaje',
     title: 'El Pasaje',
     shorttitle: '',
@@ -1084,12 +1379,12 @@ export default [
     info_more: '54 351 4227164\nhttp://www.teatroespontaneo.com',
     lat: '-31.420973',
     lon: '-64.191259',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1042, 
+    id: 1042,
     slug: 'el-vecindario-espacio-de-cultura',
     title: 'El Vecindario – Espacio de Cultura',
     shorttitle: 'El Vecindario',
@@ -1102,12 +1397,12 @@ export default [
     info_more: '54 351 6664945\ninfo@espacioelvecindario.com.ar\nhttp://www.espacioelvecindario.com.ar',
     lat: '-31.424684',
     lon: '-64.193546',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1085, 
+    id: 1085,
     slug: 'elefante-rojo',
     title: 'Elefante Rojo',
     shorttitle: '',
@@ -1117,15 +1412,24 @@ export default [
     text: 'Este local reúne marcas de deco y diseño locales y de otras provincias. Hay objetos útiles e ingeniosos para embellecer cada ambiente de la casa, hacer regalos diferentes y dar una vuelta a cualquier entorno.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.383181',
     lon: '-64.236516',
-    categories: [9,9], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,9],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1010, 
+    id: 1010,
     slug: 'espacio-cultural-museo-de-las-mujeres',
     title: 'Espacio Cultural Museo de las Mujeres',
     shorttitle: '',
@@ -1138,12 +1442,12 @@ export default [
     info_more: '54 351 4297716',
     lat: '-31.414949',
     lon: '-64.185093',
-    categories: [2,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1043, 
+    id: 1043,
     slug: 'espacio-la-caracola',
     title: 'Espacio La Caracola',
     shorttitle: '',
@@ -1156,12 +1460,12 @@ export default [
     info_more: '54 351 2123838\nhttp://www.espaciolacaracola.blogspot.com.ar',
     lat: '-31.424219',
     lon: '-64.194411',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1066, 
+    id: 1066,
     slug: 'espacio-mascara',
     title: 'Espacio Máscara',
     shorttitle: '',
@@ -1174,12 +1478,12 @@ export default [
     info_more: '54 351 4256678\nespaciomascara@hotmail.com\nhttp://www.espaciomascara.blogspot.com.ar',
     lat: '-31.408045',
     lon: '-64.193578',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1099, 
+    id: 1099,
     slug: 'espacio-ramona',
     title: 'Espacio Ramona',
     shorttitle: '',
@@ -1192,12 +1496,12 @@ export default [
     info_more: '54 351 153898496\nespacioramonainfo@gmail.com\nhttp://espacioramona.wordpress.com',
     lat: '-31.427170',
     lon: '-64.199197',
-    categories: [5,7], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,7],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1100, 
+    id: 1100,
     slug: 'espacio-tres51',
     title: 'Espacio Tres51',
     shorttitle: '',
@@ -1210,12 +1514,12 @@ export default [
     info_more: '54 351 4803650\nespaciotres51@gmail.com\nhttp://www.espaciotres51.blogspot.com.ar',
     lat: '-31.413128',
     lon: '-64.223477',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1067, 
+    id: 1067,
     slug: 'espacio-urda',
     title: 'Espacio Urda',
     shorttitle: '',
@@ -1228,12 +1532,12 @@ export default [
     info_more: '54 351 4242110\nespaciourdacba@gmail.com',
     lat: '-31.411906',
     lon: '-64.193717',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1131, 
+    id: 1131,
     slug: 'faro-del-bicentenario',
     title: 'Faro del Bicentenario',
     shorttitle: '',
@@ -1243,15 +1547,24 @@ export default [
     text: 'Es un monumento de 80 metros de altura emplazado en el Parque Sarmiento, en homenaje al Bicentenario de Argentina. Forma parte del conjunto arquitectónico que se completa con el Centro Cultural Córdoba y el Archivo Histórico Provincial.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.428382',
     lon: '-64.182139',
-    categories: [15,15], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [15,15],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1047, 
+    id: 1047,
     slug: 'feria-artesanal-paseo-de-las-artes',
     title: 'Feria Artesanal Paseo de las Artes',
     shorttitle: '',
@@ -1261,15 +1574,24 @@ export default [
     text: 'Cada fin de semana, el visitante se pueden encontrar 200 artesanos destacados por sus obras. Además de espectáculos gratuitos y una variada oferta gastronómica en la zona.',
     info_tickets: '',
     info_timetable: 'Verano: Sábados, domingos y feriados de 18 a 23h\nInvierno: Sábados, domingos y feriados de 16 a 21h',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.423909',
     lon: '-64.193160',
-    categories: [12,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [12,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1118, 
+    id: 1118,
     slug: 'festo',
     title: 'Festo',
     shorttitle: '',
@@ -1282,12 +1604,12 @@ export default [
     info_more: '54 351 4838140\ncomunidadfesto@gmail.com',
     lat: '-31.407542',
     lon: '-64.190472',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1142, 
+    id: 1142,
     slug: 'galeria-caribu',
     title: 'Galería Caribú',
     shorttitle: '',
@@ -1297,15 +1619,24 @@ export default [
     text: 'Pequeña galería, decorada de forma rústica con maderas tipo pallets recicladas, plantas y estructuras de metal. Posee negocios de diseño, de comestibles regionales, de velas y esencias aromáticas; librerías, boutiques de ropa para mujeres y también para niños, un local de máscaras venecianas y una reconocida casa de té.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.425088',
     lon: '-64.192581',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1101, 
+    id: 1101,
     slug: 'galileo-multiespacio',
     title: 'Galileo Multiespacio',
     shorttitle: '',
@@ -1318,12 +1649,12 @@ export default [
     info_more: '54 03543 444090\nmultiespaciogalileo@hotmail.com\nhttp://www.galileocentrocultural.com',
     lat: '-31.356068',
     lon: '-64.250691',
-    categories: [5,17], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,17],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1077, 
+    id: 1077,
     slug: 'garabombo-casa-cultural',
     title: 'Garabombo Casa Cultural',
     shorttitle: '',
@@ -1336,12 +1667,12 @@ export default [
     info_more: '54 351 9 5167008',
     lat: '-31.423536',
     lon: '-64.192381',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1044, 
+    id: 1044,
     slug: 'goethe-institut',
     title: 'Goethe Institut',
     shorttitle: '',
@@ -1354,12 +1685,12 @@ export default [
     info_more: '54 351 5350535\ninfo@cordoba.goethe.org\nhttp://www.goethe.de/cordoba',
     lat: '-31.429705',
     lon: '-64.184530',
-    categories: [6,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [6,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1112, 
+    id: 1112,
     slug: 'gordo',
     title: 'Gordó',
     shorttitle: '',
@@ -1372,12 +1703,12 @@ export default [
     info_more: '54 351 9 2089186\ngordorestoran@gmail.com',
     lat: '-31.424417',
     lon: '-64.191314',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1116, 
+    id: 1116,
     slug: 'grabeat',
     title: 'Grabeat',
     shorttitle: '',
@@ -1390,12 +1721,12 @@ export default [
     info_more: '54 351 4280576\ngrabeatarg@gmail.com',
     lat: '-31.425944',
     lon: '-64.186987',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1115, 
+    id: 1115,
     slug: 'hoppers',
     title: 'Höppers',
     shorttitle: '',
@@ -1408,12 +1739,12 @@ export default [
     info_more: '54 351 4245001\nhoppers.restobar@gmail.com',
     lat: '-31.408838',
     lon: '-64.195146',
-    categories: [4,4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4,4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1129, 
+    id: 1129,
     slug: 'iglesia-catedral-de-cordoba',
     title: 'Iglesia Catedral de Córdoba',
     shorttitle: '',
@@ -1423,13 +1754,22 @@ export default [
     text: 'La Catedral es una de las joyas arquitectónicas sobresalientes de la época de la colonia que sobrevive hasta la actualidad. Ocupa la terreno frente a la Plaza San Martín, en el núcleo histórico de la ciudad. La primera capilla se construyo en 1577, y un derrumbe posterior obligó a las autoridades a construir una nueva iglesia, que es la que perdura hasta nuestros días.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416863',
     lon: '-64.184409',
-    categories: [10,14], 
-    highlight: 0, 
+    categories: [10,14],
+    highlight: 0,
     gallery: {
-      title: 'Fotos', 
+      title: 'Fotos',
       items: [
         { 
           source: 'http://gideon.afterseven.com.ar/public/images/iglesia-catedral-de-cordoba-sq-01.jpg'
@@ -1459,7 +1799,7 @@ export default [
     }
   },
   {
-    id: 1130, 
+    id: 1130,
     slug: 'iglesia-de-la-compania-de-jesus',
     title: 'Iglesia de la Compañía de Jesús',
     shorttitle: '',
@@ -1469,13 +1809,22 @@ export default [
     text: 'Forma parte de la Manzana Jesuítica, declarada Patrimonio de la Humanidad por UNESCO. En el año 1640, la orden de los Jesuitas comenzó la construcción de esta iglesia, considerado un ejemplar único de la arquitectura colonial. La austeridad de la fachada contrasta con la rica ornamentación del interior del templo. La carencia de maderas de dimensiones apropiadas definió una original forma constructiva para su bóveda, a modo de casco de barco invertido.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.417962',
     lon: '-64.186394',
-    categories: [10,14], 
-    highlight: 0, 
+    categories: [10,14],
+    highlight: 0,
     gallery: {
-      title: 'Fotos', 
+      title: 'Fotos',
       items: [
         {
           source: 'http://gideon.afterseven.com.ar/public/images/iglesia-de-la-compania-de-jesus-sq-01.jpg'
@@ -1505,7 +1854,7 @@ export default [
     }
   },
   {
-    id: 1133, 
+    id: 1133,
     slug: 'iglesia-del-sagrado-corazon-de-jesus-los-capuchinos',
     title: 'Iglesia del Sagrado Corazón de Jesús – Los Capuchinos',
     shorttitle: 'Iglesia Los Capuchinos',
@@ -1515,15 +1864,24 @@ export default [
     text: 'Su construcción comenzó en el año 1926 y fue finalizada en el año 1934. El arquitecto que se encargo del diseño de la iglesia fue Augusto Ferrari, quien realizó su trabajo en un estilo neogótico aprendido en Europa. El templo se destaca por su gran número de esculturas y pinturas. Su techo es especialmente llamativo, ya que está conformado por bóvedas, ornamentadas por distintos artistas.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.424799',
     lon: '-64.186008',
-    categories: [10,14], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,14],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1134, 
+    id: 1134,
     slug: 'iglesia-santa-teresa-y-monasterio-san-jose-las-teresas',
     title: 'Iglesia Santa Teresa y Monasterio San José – Las Teresas',
     shorttitle: 'Iglesia de Las Teresas',
@@ -1533,15 +1891,24 @@ export default [
     text: 'El Convento de las Carmelitas Descalzas de San José es un monasterio de clausura fundado en 1628. El conjunto arquitectónico que ha llegado a nuestros días data del siglo XVIII. Por la mañana se puede ingresar al templo y compartir con las monjas sus cantos de alabanzas. En uno de los patios del convento funciona el Museo de Arte Religioso Juan de Tejeda.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.417411',
     lon: '-64.184707',
-    categories: [10,14], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,14],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1029, 
+    id: 1029,
     slug: 'ingenium-museo-de-cultura-tecnologica',
     title: 'Ingenium – Museo de Cultura Tecnológica',
     shorttitle: '',
@@ -1554,12 +1921,12 @@ export default [
     info_more: '54 351 4225223',
     lat: '-31.405622',
     lon: '-64.187053',
-    categories: [8,8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1081, 
+    id: 1081,
     slug: 'isla-de-komodo-taller-paraiso',
     title: 'Isla de Komodo – Taller Paraíso',
     shorttitle: '',
@@ -1572,12 +1939,12 @@ export default [
     info_more: '54 351 9 8054910\ntiendita@isladekomodo.com.ar\nhttp://www.isladekomodo.com.ar',
     lat: '-31.425557',
     lon: '-64.191998',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1045, 
+    id: 1045,
     slug: 'istituto-italiano-di-cultura',
     title: 'Istituto Italiano di Cultura',
     shorttitle: '',
@@ -1590,12 +1957,12 @@ export default [
     info_more: '54 351 4213999\ninformazioni.iiccordoba@esteri.it\nhttp://www.iiccordoba.esteri.it',
     lat: '-31.415863',
     lon: '-64.190051',
-    categories: [2,17], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,17],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1086, 
+    id: 1086,
     slug: 'koi-tienda-de-autor',
     title: 'KOI Tienda de autor',
     shorttitle: '',
@@ -1608,12 +1975,12 @@ export default [
     info_more: '54 351 9 5320966\nkoitiendadeautor@gmail.com',
     lat: '-31.425146',
     lon: '-64.192631',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1102, 
+    id: 1102,
     slug: 'la-balsa',
     title: 'La balsa',
     shorttitle: '',
@@ -1626,12 +1993,12 @@ export default [
     info_more: '54 351 9 3090828\nlabalsaespacio@gmail.com',
     lat: '-31.408685',
     lon: '-64.191848',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1091, 
+    id: 1091,
     slug: 'la-bocheria',
     title: 'La Bochería',
     shorttitle: '',
@@ -1644,12 +2011,12 @@ export default [
     info_more: '54 351 4214830\nlabocheria@live.com.ar',
     lat: '-31.426392',
     lon: '-64.188353',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1138, 
+    id: 1138,
     slug: 'la-caja-cultural',
     title: 'La Caja Cultural',
     shorttitle: '',
@@ -1662,12 +2029,12 @@ export default [
     info_more: 'lacajacultural@cba.gov.ar',
     lat: '-31.413351',
     lon: '-64.184281',
-    categories: [2,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1057, 
+    id: 1057,
     slug: 'la-calle-teatro',
     title: 'La Calle Teatro',
     shorttitle: '',
@@ -1680,12 +2047,12 @@ export default [
     info_more: '54 351 4724083\nhttp://lacalleteatro.blogspot.com.ar',
     lat: '-31.400068',
     lon: '-64.192068',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1103, 
+    id: 1103,
     slug: 'la-casa-del-arte',
     title: 'La Casa del Arte',
     shorttitle: '',
@@ -1698,12 +2065,12 @@ export default [
     info_more: '54 351 4219457\nlacasadelarteteatro@yahoo.com.ar',
     lat: '-31.414226',
     lon: '-64.177042',
-    categories: [5,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1069, 
+    id: 1069,
     slug: 'la-casa-del-titere',
     title: 'La Casa del Títere',
     shorttitle: '',
@@ -1716,12 +2083,12 @@ export default [
     info_more: '54 351 4211638\nlacasadeltitere@yahoo.com.ar\nhttp://www.lacasadeltitere.com.ar',
     lat: '-31.408180',
     lon: '-64.193014',
-    categories: [5,7], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,7],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1056, 
+    id: 1056,
     slug: 'la-chacarita',
     title: 'La Chacarita',
     shorttitle: '',
@@ -1734,12 +2101,12 @@ export default [
     info_more: '54 351 4231159\nlachacaritateatro@gmail.com\nhttp://www.lachacaritateatro.wordpress.com',
     lat: '-31.400726',
     lon: '-64.170770',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1058, 
+    id: 1058,
     slug: 'la-cochera',
     title: 'La Cochera',
     shorttitle: '',
@@ -1752,12 +2119,12 @@ export default [
     info_more: 'lacocherateatro@yahoo.com.ar\nhttp://teatrolacochera.blogspot.com.ar',
     lat: '-31.424503',
     lon: '-64.195754',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1108, 
+    id: 1108,
     slug: 'la-galatea',
     title: 'La Galatea',
     shorttitle: '',
@@ -1770,12 +2137,12 @@ export default [
     info_more: '54 351 9 5905935\ngalateacafe@gmail.com',
     lat: '-31.389968',
     lon: '-64.183861',
-    categories: [4,19], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4,19],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1064, 
+    id: 1064,
     slug: 'la-nave-escenica',
     title: 'La nave escénica',
     shorttitle: '',
@@ -1788,12 +2155,12 @@ export default [
     info_more: 'lanaveescenica@gmail.com',
     lat: '-31.411985',
     lon: '-64.173221',
-    categories: [5,7], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,7],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1065, 
+    id: 1065,
     slug: 'la-parisina',
     title: 'La Parisina',
     shorttitle: '',
@@ -1806,12 +2173,12 @@ export default [
     info_more: '54 351 4807613\nlaparisinacasadearte@gmail.com',
     lat: '-31.407093',
     lon: '-64.204512',
-    categories: [5,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1135, 
+    id: 1135,
     slug: 'loteria-de-cordoba',
     title: 'Lotería de Córdoba',
     shorttitle: '',
@@ -1821,15 +2188,24 @@ export default [
     text: 'El edificio estilo ecléctico diseñado por el arquitecto Jaime Roca en 1929, se emplaza en pleno centro comercial y administrativo de la ciudad. Se destaca por un volumen neto que se curva sobre la esquina generando el acceso principal con un arco mixtilíneo. Esta esquina remata con una torre circular de dos cuerpos.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416397',
     lon: '-64.187151',
-    categories: [13,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [13,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1083, 
+    id: 1083,
     slug: 'luola',
     title: 'Luola',
     shorttitle: '',
@@ -1842,12 +2218,12 @@ export default [
     info_more: '54 351 4225520\ninfo@luolaig.com\nhttp://www.luolaig.com',
     lat: '-31.425782',
     lon: '-64.187188',
-    categories: [9], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1031, 
+    id: 1031,
     slug: 'manta-museo-de-arte-nativo-de-textiles-antiguos',
     title: 'MANTA – Museo de Arte Nativo de Textiles Antiguos',
     shorttitle: 'Museo de Arte Nativo',
@@ -1860,12 +2236,12 @@ export default [
     info_more: '54 351 4893623',
     lat: '-31.426470',
     lon: '-64.212835',
-    categories: [12,2], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [12,2],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 973, 
+    id: 973,
     slug: 'marco-museo-arco-de-cordoba',
     title: 'MARCO – Museo Arco de Córdoba',
     shorttitle: '',
@@ -1875,15 +2251,24 @@ export default [
     text: 'El Arco de Córdoba es una obra ubicada en el acceso sureste de la ciudad. Su origen se remonta al año 1942. MARCO fue pensado para exponer una línea histórica de Córdoba, la que se observa ilustrada en las paredes de ambas torres.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: 'Martes a sábados de 9 a 17h',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.438111',
     lon: '-64.128494',
-    categories: [10,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1124, 
+    id: 1124,
     slug: 'maria-antonieta',
     title: 'María Antonieta',
     shorttitle: '',
@@ -1896,12 +2281,12 @@ export default [
     info_more: '54 351 4818967\npedidos-mariaantonieta@hotmail.com',
     lat: '-31.365412',
     lon: '-64.237770',
-    categories: [19,19], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [19,19],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1059, 
+    id: 1059,
     slug: 'maria-castana',
     title: 'María Castaña',
     shorttitle: '',
@@ -1914,12 +2299,12 @@ export default [
     info_more: '54 351 4235529\nmcastana@onenet.com.ar\nhttp://www.mariacastana.org.ar',
     lat: '-31.411822',
     lon: '-64.186828',
-    categories: [5,2], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,2],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1060, 
+    id: 1060,
     slug: 'medida-x-medida',
     title: 'Medida x Medida',
     shorttitle: '',
@@ -1932,12 +2317,12 @@ export default [
     info_more: '54 351 4219022\nsala@mxm.com.ar\nhttp://www.mxm.com.ar',
     lat: '-31.418692',
     lon: '-64.198136',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 988, 
+    id: 988,
     slug: 'mia-museo-iberoamericano-de-artesanias-miguel-carlos-sahade',
     title: 'MIA – Museo Iberoamericano de Artesanías Miguel Carlos Sahade',
     shorttitle: 'Museo Iberoamericano de Artesanías',
@@ -1950,12 +2335,12 @@ export default [
     info_more: '54 351 4334283\nmuseoiberoamerianoartesanias@gmail.com',
     lat: '-31.423740',
     lon: '-64.192015',
-    categories: [12,10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [12,10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1113, 
+    id: 1113,
     slug: 'milk',
     title: 'Milk',
     shorttitle: '',
@@ -1968,12 +2353,12 @@ export default [
     info_more: '54 351 2086299',
     lat: '-31.423795',
     lon: '-64.189429',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1019, 
+    id: 1019,
     slug: 'moa-museo-del-observatorio-astronomico',
     title: 'MOA – Museo del Observatorio Astronómico',
     shorttitle: 'Museo del Observatorio Astronómico',
@@ -1986,12 +2371,12 @@ export default [
     info_more: 'http://moa.unc.edu.ar',
     lat: '-31.420042',
     lon: '-64.198757',
-    categories: [8,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1025, 
+    id: 1025,
     slug: 'museo-anatomico-pedro-ara',
     title: 'Museo Anatómico Pedro Ara',
     shorttitle: '',
@@ -2004,12 +2389,12 @@ export default [
     info_more: 'museoara@fcm.unc.edu.ar\nhttp://museoanatomicoara.webs.fcm.unc.edu.ar',
     lat: '-31.405140',
     lon: '-64.202307',
-    categories: [8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1070, 
+    id: 1070,
     slug: 'museo-barrilete',
     title: 'Museo Barrilete',
     shorttitle: '',
@@ -2022,12 +2407,12 @@ export default [
     info_more: '54 3543 421027\ninfo@museobarrilete.com\nhttp://www.museobarrilete.com',
     lat: '-31.347447',
     lon: '-64.269982',
-    categories: [7], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [7],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1018, 
+    id: 1018,
     slug: 'museo-botanico-cordoba',
     title: 'Museo Botánico Córdoba',
     shorttitle: '',
@@ -2040,12 +2425,12 @@ export default [
     info_more: '54 351 4331056\nmuseo@imbiv.unc.edu.ar\nhttp://museobotanico.unc.edu.ar',
     lat: '-31.418220',
     lon: '-64.187921',
-    categories: [8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1014, 
+    id: 1014,
     slug: 'museo-casa-de-la-reforma-universitaria',
     title: 'Museo Casa de la Reforma Universitaria',
     shorttitle: '',
@@ -2058,12 +2443,12 @@ export default [
     info_more: '54 351 4337060\nhttp://www.reformadel18.unc.edu.ar',
     lat: '-31.405157',
     lon: '-64.204751',
-    categories: [10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1020, 
+    id: 1020,
     slug: 'museo-catalina-de-maria',
     title: 'Museo Catalina de María',
     shorttitle: '',
@@ -2076,12 +2461,12 @@ export default [
     info_more: '54 351 3155790\nmcatalinademaria@gmail.com',
     lat: '-31.411168',
     lon: '-64.169271',
-    categories: [10,14], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,14],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1030, 
+    id: 1030,
     slug: 'museo-cientifico-tecnologico',
     title: 'Museo Científico-Tecnológico',
     shorttitle: '',
@@ -2094,12 +2479,12 @@ export default [
     info_more: '54 351 4334413\nmucyt@efn.uncor.edu',
     lat: '-31.434114',
     lon: '-64.194510',
-    categories: [8,8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 987, 
+    id: 987,
     slug: 'museo-cripta-jesuitica-del-noviciado-viejo',
     title: 'Museo Cripta Jesuitica del Noviciado Viejo',
     shorttitle: '',
@@ -2112,12 +2497,12 @@ export default [
     info_more: '54 351 4341228\ncryptajesuitica@hotmail.com',
     lat: '-31.413287',
     lon: '-64.184335',
-    categories: [10,14], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,14],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1015, 
+    id: 1015,
     slug: 'museo-de-antropologia',
     title: 'Museo de Antropología',
     shorttitle: '',
@@ -2130,12 +2515,12 @@ export default [
     info_more: '54 351 4331058\nmuseo@ffyh.unc.edu.ar\nhttp://www.museoantropologia.unc.edu.ar',
     lat: '-31.422702',
     lon: '-64.187768',
-    categories: [8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 990, 
+    id: 990,
     slug: 'museo-de-arte-religioso-juan-de-tejeda',
     title: 'Museo de Arte Religioso Juan de Tejeda',
     shorttitle: '',
@@ -2148,12 +2533,12 @@ export default [
     info_more: '54 351 4281540\ninfo@museotejeda.com\nhttp://www.museotejeda.com',
     lat: '-31.417387',
     lon: '-64.184636',
-    categories: [2,14], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,14],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 986, 
+    id: 986,
     slug: 'museo-de-la-ciudad',
     title: 'Museo de la Ciudad',
     shorttitle: '',
@@ -2163,15 +2548,24 @@ export default [
     text: 'Se emplaza en el edificio del Cabildo Histórico de la ciudad. El Museo tiene su sede aquí desde 1990 y tiene como objetivo contar desde sus salas la historia de la ciudad, de su arquitectura, de sus habitantes y las diversas instancias vividas por la urbe en más de cuatro siglos. ',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 9:30 a 12:30h y de 15 a 18h\nSábados, domingos y feriados de 9:30 a 13h y 15 a 19h',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416441',
     lon: '-64.184224',
-    categories: [10,2], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,2],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 992, 
+    id: 992,
     slug: 'museo-de-la-industria-brigadier-mayor-jose-ignacio-san-martin',
     title: 'Museo de la Industria Brigadier Mayor José Ignacio San Martín',
     shorttitle: 'Museo de la Industria',
@@ -2184,12 +2578,12 @@ export default [
     info_more: '54 351 4341613\nmuseodelaindustria@hotmail.com\nhttp://www.amicordoba.com.ar',
     lat: '-31.409104',
     lon: '-64.169983',
-    categories: [8,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1024, 
+    id: 1024,
     slug: 'museo-de-mineralogia-y-geologia-doctor-alfred-w-stelzner',
     title: 'Museo de Mineralogía y Geología Doctor Alfred W. Stelzner',
     shorttitle: 'Museo de Mineralogía y Geología',
@@ -2202,12 +2596,12 @@ export default [
     info_more: '54 351 5353800 29900\nmuseomineralogia@fcefyn.unc.edu.ar\nhttp://www.mineralogia.museo.efn.uncor.edu',
     lat: '-31.418129',
     lon: '-64.187875',
-    categories: [8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1026, 
+    id: 1026,
     slug: 'museo-de-paleontologia',
     title: 'Museo de Paleontología',
     shorttitle: '',
@@ -2220,12 +2614,12 @@ export default [
     info_more: '54 351 4332098 256\nmuseopaleounc@gmail.com\nhttp://www.paleontologia.museo.efn.uncor.edu',
     lat: '-31.418129',
     lon: '-64.187875',
-    categories: [8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1022, 
+    id: 1022,
     slug: 'museo-de-psicologia',
     title: 'Museo de Psicología',
     shorttitle: '',
@@ -2235,15 +2629,24 @@ export default [
     text: 'El museo reúne diversos objetos y material que hacen a la Historia de la Psicología, sus campos de investigación y desarrollo académico. Cuenta con una colección de tests para niños y con diversos fines psicométricos, instrumental de uso experimental y documentación de los programas de estudios.',
     info_tickets: '',
     info_timetable: 'Martes de 10 a 12h\nJueves de 12 a 14h',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.437444',
     lon: '-64.188609',
-    categories: [8,8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1017, 
+    id: 1017,
     slug: 'museo-de-zoologia',
     title: 'Museo de Zoología',
     shorttitle: '',
@@ -2256,12 +2659,12 @@ export default [
     info_more: '54 351 5353800 29901\nmuseozoologiaunc@yahoo.com\nhttp://www.zoologia.museo.efn.uncor.edu',
     lat: '-31.418129',
     lon: '-64.187875',
-    categories: [8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1027, 
+    id: 1027,
     slug: 'museo-del-teatro-y-de-la-musica-cristobal-de-aguilar',
     title: 'Museo del Teatro y de la Música Cristóbal de Aguilar',
     shorttitle: 'Museo del Teatro y de la Música',
@@ -2274,12 +2677,12 @@ export default [
     info_more: '54 351 4332324\neducación.teatrodellibertador@gmail.com',
     lat: '-31.419158',
     lon: '-64.188353',
-    categories: [10,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1034, 
+    id: 1034,
     slug: 'museo-eclesiastico-dean-gregorio-funes-oratorio-del-obispo-mercadillo',
     title: 'Museo Eclesiástico Dean Gregorio Funes – Oratorio del Obispo Mercadillo',
     shorttitle: 'Obispo Mercadillo',
@@ -2292,12 +2695,12 @@ export default [
     info_more: '54 351 4331542',
     lat: '-31.416124',
     lon: '-64.183562',
-    categories: [10,14], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,14],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1002, 
+    id: 1002,
     slug: 'museo-emilio-caraffa',
     title: 'Museo Emilio Caraffa',
     shorttitle: '',
@@ -2310,10 +2713,10 @@ export default [
     info_more: '54 351 4343348\ncomunicacion@museocaraffa.org.ar\nhttp://www.museocaraffa.org.ar',
     lat: '-31.428260',
     lon: '-64.183748',
-    categories: [2,13], 
-    highlight: 0, 
+    categories: [2,13],
+    highlight: 1,
     gallery: {
-      title: 'Fotos', 
+      title: 'Fotos',
       items: [
         { 
           source: 'http://gideon.afterseven.com.ar/public/images/museo-emilio-caraffa-sq-01.jpg'
@@ -2349,7 +2752,7 @@ export default [
     }
   },
   {
-    id: 1021, 
+    id: 1021,
     slug: 'museo-en-ciencias-de-la-salud',
     title: 'Museo en Ciencias de la Salud',
     shorttitle: '',
@@ -2362,12 +2765,12 @@ export default [
     info_more: '54 351 4337014 112\ncienciasdelasaludmuseo@fcm.unc.edu.ar',
     lat: '-31.406427',
     lon: '-64.203786',
-    categories: [8,8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1023, 
+    id: 1023,
     slug: 'museo-historico-de-anatomia-patologica',
     title: 'Museo Histórico de Anatomía Patológica',
     shorttitle: '',
@@ -2380,12 +2783,12 @@ export default [
     info_more: '54 351 4893455\nmedcabalier@hotmail.com',
     lat: '-31.406427',
     lon: '-64.203786',
-    categories: [8,8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1012, 
+    id: 1012,
     slug: 'museo-historico-de-la-universidad-nacional-de-cordoba-manzana-jesuitica',
     title: 'Museo Historico de la Universidad Nacional de Cordoba – Manzana Jesuítica',
     shorttitle: 'Manzana Jesuítica',
@@ -2395,15 +2798,24 @@ export default [
     text: 'Se encuentra ubicado en la sede del antiguo Rectorado de la Universidad Nacional de Córdoba. En él pueden apreciarse las principales manifestaciones del arte y la arquitectura jesuíticos, así como las salas de exposición de la Librería de la Orden y el Museo del Colegio Nacional de Monserrat.',
     info_tickets: 'Entrada general $10 (incluye visita guiada)\nMiércoles entrada libre y gratuita (sin guía)',
     info_timetable: 'Lunes a sábados de 9 a 18:30h\nVisitas guiadas a las 11 y 15h (español); 10 y 17h (inglés)',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.418280',
     lon: '-64.186505',
-    categories: [10,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1016, 
+    id: 1016,
     slug: 'museo-historico-del-colegio-monserrat',
     title: 'Museo Histórico del Colegio Monserrat',
     shorttitle: '',
@@ -2416,12 +2828,12 @@ export default [
     info_more: '54 351 4332079 103',
     lat: '-31.418928',
     lon: '-64.186790',
-    categories: [10,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1004, 
+    id: 1004,
     slug: 'museo-historico-provincial-marques-de-sobremonte',
     title: 'Museo Histórico Provincial Marqués de Sobremonte',
     shorttitle: 'Museo Marqués de Sobremonte',
@@ -2434,12 +2846,12 @@ export default [
     info_more: '54 351 4331661\nmuseosobremonte@gmail.com',
     lat: '-31.416858',
     lon: '-64.181303',
-    categories: [10,10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1028, 
+    id: 1028,
     slug: 'museo-horacio-alvarez',
     title: 'Museo Horacio Álvarez',
     shorttitle: '',
@@ -2452,12 +2864,12 @@ export default [
     info_more: '54 351 4811365\ninfo@museohoracioalvarez.com.ar\nhttp://www.museohoracioalvarez.com.ar',
     lat: '-31.363556',
     lon: '-64.237556',
-    categories: [2], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1033, 
+    id: 1033,
     slug: 'museo-meteorologico-nacional-benjamin-gould',
     title: 'Museo Meteorológico Nacional Benjamín Gould',
     shorttitle: '',
@@ -2470,12 +2882,12 @@ export default [
     info_more: '54 351 4342220\nmuseometcba@arnet.com.ar',
     lat: '-31.420466',
     lon: '-64.197551',
-    categories: [8,8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 989, 
+    id: 989,
     slug: 'museo-municipal-de-bellas-artes-doctor-genaro-perez',
     title: 'Museo Municipal de Bellas Artes Doctor Genaro Pérez',
     shorttitle: '',
@@ -2488,12 +2900,12 @@ export default [
     info_more: '54 351 4341646\ngenaroperezcomunicacion@gmail.com\nhttp://museogenaroperez.wordpress.com',
     lat: '-31.414783',
     lon: '-64.186606',
-    categories: [2,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [2,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 991, 
+    id: 991,
     slug: 'museo-obispo-fray-jose-antonio-de-san-alberto',
     title: 'Museo Obispo Fray José Antonio de San Alberto',
     shorttitle: 'Museo San Alberto',
@@ -2506,12 +2918,12 @@ export default [
     info_more: '54 351 4341616\ninfo@museosanalberto.com.ar\nhttp://www.museosanalberto.com.ar',
     lat: '-31.417705',
     lon: '-64.186751',
-    categories: [10,14], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,14],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1032, 
+    id: 1032,
     slug: 'museo-obispo-salguero',
     title: 'Museo Obispo Salguero',
     shorttitle: '',
@@ -2521,15 +2933,24 @@ export default [
     text: 'El Museo Obispo Salguero exhibe vida y obra de este destacado sacerdote, y de la Orden Religiosa del Huerto, arte religioso e historia de la medicina en Córdoba. Se ubica contiguo a la Iglesia de San Roque, de estilo toscano con influencias neoclásicas.',
     info_tickets: '',
     info_timetable: 'Martes a sábados de 11 a 19h\nDomingo de 14 a 20h',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.418630',
     lon: '-64.179175',
-    categories: [10,14], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,14],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1005, 
+    id: 1005,
     slug: 'museo-provincial-de-ciencias-naturales-doctor-arturo-umberto-illia',
     title: 'Museo Provincial de Ciencias Naturales Doctor Arturo Umberto Illía',
     shorttitle: 'Museo Provincial de Ciencias Naturales',
@@ -2542,12 +2963,12 @@ export default [
     info_more: '54 351 4344070\nmuseocienciasnaturalescba@gmail.com',
     lat: '-31.427139',
     lon: '-64.181444',
-    categories: [8,8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 972, 
+    id: 972,
     slug: 'museo-superior-de-bellas-artes-evita-palacio-ferreyra',
     title: 'Museo Superior de Bellas Artes Evita – Palacio Ferreyra',
     shorttitle: 'Palacio Ferreyra',
@@ -2560,10 +2981,10 @@ export default [
     info_more: '54 351 4343636\ninfomuseopalacioferreyra@gmail.com',
     lat: '-31.427331',
     lon: '-64.185309',
-    categories: [2,13], 
-    highlight: 0, 
+    categories: [2,13],
+    highlight: 1,
     gallery: {
-      title: 'Fotos', 
+      title: 'Fotos',
       items: [
         { 
           source: 'http://gideon.afterseven.com.ar/public/images/museo-superior-de-bellas-artes-evita-palacio-ferreyra-sq-01.jpg'
@@ -2605,7 +3026,7 @@ export default [
     }
   },
   {
-    id: 1096, 
+    id: 1096,
     slug: 'museo-universitario-de-tecnologia-aeroespacial',
     title: 'Museo Universitario de Tecnología Aeroespacial',
     shorttitle: '',
@@ -2618,12 +3039,12 @@ export default [
     info_more: '54 351 4333910 34336\nmuta@iua.edu.ar',
     lat: '-31.433486',
     lon: '-64.276760',
-    categories: [8,8], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [8,8],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1125, 
+    id: 1125,
     slug: 'muy-guemes',
     title: 'Muy Güemes',
     shorttitle: '',
@@ -2636,12 +3057,12 @@ export default [
     info_more: 'hola@muyguemes.com\nhttp://www.muyguemes.com',
     lat: '-31.425557',
     lon: '-64.191998',
-    categories: [11,9], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [11,9],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1072, 
+    id: 1072,
     slug: 'orfeo-superdomo',
     title: 'Orfeo Superdomo',
     shorttitle: '',
@@ -2654,12 +3075,12 @@ export default [
     info_more: '54 351 5261500\nhttp://www.orfeosuperdomo.com',
     lat: '-31.364082',
     lon: '-64.221001',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1106, 
+    id: 1106,
     slug: 'pabellon-argentina',
     title: 'Pabellón Argentina',
     shorttitle: '',
@@ -2672,12 +3093,12 @@ export default [
     info_more: '54 351 4334065 114',
     lat: '-31.438490',
     lon: '-64.188880',
-    categories: [6,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [6,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1001, 
+    id: 1001,
     slug: 'palacio-dionisi-museo-de-fotografia',
     title: 'Palacio Dionisi Museo de Fotografía',
     shorttitle: '',
@@ -2690,10 +3111,10 @@ export default [
     info_more: '54 351 4333411',
     lat: '-31.429398',
     lon: '-64.184770',
-    categories: [2,13], 
-    highlight: 0, 
+    categories: [2,13],
+    highlight: 0,
     gallery: {
-      title: 'Fotos', 
+      title: 'Fotos',
       items: [
         { 
           source: 'http://gideon.afterseven.com.ar/public/images/palacio-dionisi-museo-de-fotografia-sq-01.jpg'
@@ -2726,7 +3147,7 @@ export default [
     }
   },
   {
-    id: 1137, 
+    id: 1137,
     slug: 'parque-sarmiento',
     title: 'Parque Sarmiento',
     shorttitle: '',
@@ -2736,11 +3157,20 @@ export default [
     text: 'Es el espacio verde parquizado más grande de la ciudad. Está ubicado en su centro geográfico, a pocas cuadras del microcentro y en una de las zonas de mayor densidad demográfica. El diseño del parque es obra del urbanista francoargentino Carlos Thays. Dentro del predio encontramos el Jardín Zoológico, museos de artes y ciencias, el Rosedal, el Teatro Griego, lagunas y un sinnúmero de esculturas. ',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.430054',
     lon: '-64.180744',
-    categories: [15], 
-    highlight: 0, 
+    categories: [15],
+    highlight: 1,
     gallery: {
       title: 'Fotos',
       items: [
@@ -2763,7 +3193,7 @@ export default [
     }
   },
   {
-    id: 1128, 
+    id: 1128,
     slug: 'pasaje-santa-catalina',
     title: 'Pasaje Santa Catalina',
     shorttitle: '',
@@ -2773,15 +3203,24 @@ export default [
     text: 'Pintoresca callecita que discurre en adoquines entre los edificios históricos de la Catedral y el Cabildo. Testigo mudo de incontables acontecimientos de la historia de Córdoba.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416644',
     lon: '-64.184259',
-    categories: [10,13], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,13],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1141, 
+    id: 1141,
     slug: 'paseo-achaval',
     title: 'Paseo Achával',
     shorttitle: '',
@@ -2794,12 +3233,12 @@ export default [
     info_more: 'paseoachavalcordoba@gmail.com',
     lat: '-31.424592',
     lon: '-64.191108',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1132, 
+    id: 1132,
     slug: 'paseo-del-bicentenario',
     title: 'Paseo del Bicentenario',
     shorttitle: '',
@@ -2809,15 +3248,24 @@ export default [
     text: 'Se trata de un espacio verde ubicado frente a la Plaza España, en el Parque Sarmiento. En el paseo se erigieron 201 aros que representan los hitos más importantes que marcaron la historia argentina desde 1810. Cada aro tiene inscripto su año correspondiente y el 201 simboliza el futuro. ',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.429367',
     lon: '-64.183786',
-    categories: [15,15], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [15,15],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1009, 
+    id: 1009,
     slug: 'paseo-del-buen-pastor',
     title: 'Paseo del Buen Pastor',
     shorttitle: '',
@@ -2830,8 +3278,8 @@ export default [
     info_more: '54 351 4342727\npaseodelbuenpastor@gmail.com',
     lat: '-31.423889',
     lon: '-64.186865',
-    categories: [2,13], 
-    highlight: 0, 
+    categories: [2,13],
+    highlight: 0,
     gallery: {
       title: 'Fotos',
       items: [
@@ -2863,7 +3311,7 @@ export default [
     }
   },
   {
-    id: 1122, 
+    id: 1122,
     slug: 'penon-cerveceria',
     title: 'Peñon Cervecería',
     shorttitle: '',
@@ -2876,12 +3324,12 @@ export default [
     info_more: 'info@penoncerveceria.com\nhttp://www.penoncerveceria.com',
     lat: '-31.367547',
     lon: '-64.236311',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1123, 
+    id: 1123,
     slug: 'penon-cerveceria-guemes',
     title: 'Peñon Cervecería Güemes',
     shorttitle: '',
@@ -2894,12 +3342,12 @@ export default [
     info_more: 'info@penoncerveceria.com\nhttp://www.penoncerveceria.com',
     lat: '-31.425447',
     lon: '-64.192672',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1073, 
+    id: 1073,
     slug: 'plaza-de-la-musica',
     title: 'Plaza de la Música',
     shorttitle: '',
@@ -2912,12 +3360,12 @@ export default [
     info_more: '54 351 4262300\nhttp://www.plazadelamusica.com',
     lat: '-31.405809',
     lon: '-64.196822',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1127, 
+    id: 1127,
     slug: 'plaza-san-martin',
     title: 'Plaza San Martín',
     shorttitle: '',
@@ -2927,15 +3375,24 @@ export default [
     text: 'Durante la época colonial fue la Plaza Mayor de la ciudad de Córdoba, donde se realizaban ferias y fiestas patronales o cívicas. Desde el año 1916, José de San Martín tiene un monumento ecuestre de bronce en el centro de la misma. Rodean a la Plaza San Martín importantes edificios, algunos del tiempo de la Colonia.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416758',
     lon: '-64.183546',
-    categories: [15,10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [15,10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1136, 
+    id: 1136,
     slug: 'plazoleta-del-fundador',
     title: 'Plazoleta del Fundador',
     shorttitle: '',
@@ -2945,15 +3402,24 @@ export default [
     text: 'Se encuentra ubicada detrás de la Iglesia Catedral, a una cuadra de la tradicional Plaza San Martín. Construida en el año 1952, posee una escultura en homenaje al fundador de la ciudad de Córdoba, Don Jerónimo Luis de Cabrera, realizada por el escultor local Horacio Juárez.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416562',
     lon: '-64.185292',
-    categories: [15,10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [15,10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1080, 
+    id: 1080,
     slug: 'porquerias-utiles',
     title: 'Porquerías Útiles',
     shorttitle: '',
@@ -2966,12 +3432,12 @@ export default [
     info_more: '54 351 9 5922591\nporqueriasmuyguemes@gmail.com',
     lat: '-31.425557',
     lon: '-64.191998',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1104, 
+    id: 1104,
     slug: 'proyecto-rasante',
     title: 'Proyecto Rasante',
     shorttitle: '',
@@ -2984,12 +3450,12 @@ export default [
     info_more: '54 351 4818381',
     lat: '-31.374551',
     lon: '-64.226894',
-    categories: [5,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1095, 
+    id: 1095,
     slug: 'punapon',
     title: 'Punapon',
     shorttitle: '',
@@ -3002,12 +3468,12 @@ export default [
     info_more: 'http://punapon.wordpress.com',
     lat: '-31.421825',
     lon: '-64.190860',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1071, 
+    id: 1071,
     slug: 'quality-espacio',
     title: 'Quality Espacio',
     shorttitle: '',
@@ -3020,12 +3486,12 @@ export default [
     info_more: '54 351 4611523\nhttp://www.qualityespacio.com.ar',
     lat: '-31.443774',
     lon: '-64.195525',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1061, 
+    id: 1061,
     slug: 'quinto-deva',
     title: 'Quinto Deva',
     shorttitle: '',
@@ -3038,12 +3504,12 @@ export default [
     info_more: '54 351 5119854\nproductoraquintodeva@gmail.com\nhttp://quintodeva.blogspot.com.ar',
     lat: '-31.405545',
     lon: '-64.177553',
-    categories: [5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1117, 
+    id: 1117,
     slug: 'reparata',
     title: 'Reparata',
     shorttitle: '',
@@ -3056,12 +3522,12 @@ export default [
     info_more: '54 351 2150215',
     lat: '-31.411256',
     lon: '-64.169421',
-    categories: [4,4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4,4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1120, 
+    id: 1120,
     slug: 'republica-restaurant',
     title: 'República Restaurant',
     shorttitle: '',
@@ -3074,12 +3540,12 @@ export default [
     info_more: '54 351 4247133',
     lat: '-31.418076',
     lon: '-64.181238',
-    categories: [4], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [4],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 975, 
+    id: 975,
     slug: 'sala-de-lectura-infantil-y-juvenil-malicha-leguizamon',
     title: 'Sala de Lectura Infantil y Juvenil Malicha Leguizamón',
     shorttitle: 'Sala de Lectura Infantil y Juvenil',
@@ -3092,12 +3558,12 @@ export default [
     info_more: '54 351 4285600 9213',
     lat: '-31.416441',
     lon: '-64.184224',
-    categories: [17,7], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [17,7],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1003, 
+    id: 1003,
     slug: 'salon-de-los-gobernadores-constitucionales',
     title: 'Salón de los Gobernadores Constitucionales',
     shorttitle: '',
@@ -3107,15 +3573,24 @@ export default [
     text: 'Pretende contribuir a la memoria de quienes fueron mandatarios constitucionales de la provincia de Córdoba, y permitir a sus visitantes conocer y valorar las obras y legados de cada uno de nuestros gobernantes a lo largo de la historia.',
     info_tickets: 'Entrada libre y gratuita',
     info_timetable: 'Lunes a viernes de 9 a 15h',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.432681',
     lon: '-64.186424',
-    categories: [10,10], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [10,10],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1011, 
+    id: 1011,
     slug: 'teatro-ciudad-de-las-artes',
     title: 'Teatro Ciudad de las Artes',
     shorttitle: '',
@@ -3128,12 +3603,12 @@ export default [
     info_more: '54 351 4430380',
     lat: '-31.435307',
     lon: '-64.175641',
-    categories: [6,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [6,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1105, 
+    id: 1105,
     slug: 'teatro-cultural-canada',
     title: 'Teatro Cultural Cañada',
     shorttitle: '',
@@ -3146,12 +3621,12 @@ export default [
     info_more: '54 351 7580045\nteatroculturalc@gmail.com\nhttp://www.teatroculturalcañada.com',
     lat: '-31.421378',
     lon: '-64.190875',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1007, 
+    id: 1007,
     slug: 'teatro-del-libertador-general-san-martin',
     title: 'Teatro del Libertador General San Martín',
     shorttitle: '',
@@ -3164,12 +3639,12 @@ export default [
     info_more: '54 351 4332323\nlibertador.consultas@gmail.com',
     lat: '-31.419158',
     lon: '-64.188353',
-    categories: [18,5], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 974, 
+    id: 974,
     slug: 'teatro-griego',
     title: 'Teatro Griego',
     shorttitle: '',
@@ -3179,15 +3654,24 @@ export default [
     text: 'Inaugurado en el año 1932, aprovecha los desniveles y barrancas del Parque Sarmiento. Se utiliza habitualmente para espectáculos teatrales y musicales.',
     info_tickets: '',
     info_timetable: '',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.431245',
     lon: '-64.173426',
-    categories: [5,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1049, 
+    id: 1049,
     slug: 'teatro-la-luna',
     title: 'Teatro La Luna',
     shorttitle: '',
@@ -3200,12 +3684,12 @@ export default [
     info_more: '54 351 4608471\nteatrolaluna@gmail.com\nhttp://teatrolaluna.blogspot.com.ar',
     lat: '-31.424932',
     lon: '-64.194672',
-    categories: [5,6], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,6],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1006, 
+    id: 1006,
     slug: 'teatro-real',
     title: 'Teatro Real',
     shorttitle: '',
@@ -3218,12 +3702,12 @@ export default [
     info_more: '54 351 4331670\nvamosalteatroreal@gmail.com',
     lat: '-31.417427',
     lon: '-64.183553',
-    categories: [5,18], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [5,18],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1087, 
+    id: 1087,
     slug: 'the-bug-planet-store',
     title: 'The Bug Planet Store',
     shorttitle: '',
@@ -3236,12 +3720,12 @@ export default [
     info_more: 'shop@thebugplanetstore.com\nhttp://www.thebugplanetstore.com',
     lat: '-31.428456',
     lon: '-64.189189',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 977, 
+    id: 977,
     slug: 'tienda-de-la-ciudad',
     title: 'Tienda de la Ciudad',
     shorttitle: '',
@@ -3251,15 +3735,24 @@ export default [
     text: 'Con 15 años de trayectoria es, por excelencia, el lugar donde vecinos y visitantes pueden adquirir la obra literaria, artística, musical y científica de autores de Córdoba, material audiovisual y promocional de la ciudad y artesanías locales.',
     info_tickets: '',
     info_timetable: 'Lunes a viernes de 9 a 20h',
-    info_more: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
     lat: '-31.416441',
     lon: '-64.184224',
-    categories: [11,20], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [11,20],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1092, 
+    id: 1092,
     slug: 'tienda-diez-y-ocho',
     title: 'Tienda Diez y Ocho',
     shorttitle: '',
@@ -3272,12 +3765,12 @@ export default [
     info_more: '54 351 5218615\ntiendadiezyocho@gmail.com',
     lat: '-31.424987',
     lon: '-64.192429',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1079, 
+    id: 1079,
     slug: 'tienda-gusto',
     title: 'Tienda Gustó',
     shorttitle: '',
@@ -3290,12 +3783,12 @@ export default [
     info_more: '54 3543 441436\ninfo@tiendagusto.com.ar\nhttp://www.tiendagusto.com.ar',
     lat: '-31.347511',
     lon: '-64.266830',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1078, 
+    id: 1078,
     slug: 'tienda-gusto-nueva-cordoba',
     title: 'Tienda Gustó Nueva Córdoba',
     shorttitle: '',
@@ -3308,12 +3801,12 @@ export default [
     info_more: '54 351 4602939\ninfo@tiendagusto.com.ar\nhttp://www.tiendagusto.com.ar',
     lat: '-31.429159',
     lon: '-64.190976',
-    categories: [9,11], 
-    highlight: 0, 
-    gallery:{} 
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
   },
   {
-    id: 1084, 
+    id: 1084,
     slug: 'tintanegra-letterpress',
     title: 'Tintanegra Letterpress',
     shorttitle: '',
@@ -3326,8 +3819,1603 @@ export default [
     info_more: '54 351 9 6139665\nhola@tintanegraletterpress.com\nhttp://www.tintanegraletterpress.com',
     lat: '-31.400742',
     lon: '-64.180337',
-    categories: [9], 
+    categories: [9],
     highlight: 0,
-    gallery:{}
+    gallery: {}
+  },
+  {
+    id: 1676,
+    slug: '7-letras-cafe',
+    title: '7 Letras Café',
+    hood: 'Cofico',
+    address: 'Bedoya 402',
+    poster: 'http://gideon.afterseven.com.ar/public/images/7_letras_cafe.jpg',
+    text: 'Las maravillas del mundo, los colores de arco iris, las notas musicales, las bellas artes ¡y hasta los días de la semana! Todo eso representa el número 7. Pero aquí no es sólo un número de la suerte. Es un renacer, un comienzo. Vas a encontrarte con los más ricos desayunos y meriendas en un rinconcito del barrio Cofico.',
+    info_tickets: '',
+    info_timetable: 'Lunes, martes y miércoles de 8:30 a 14 y de 17 a 21h\nJueves de 8:30 a 14 y de 17 a 23h\nViernes de 8:30 a 14 y de 17 a 23:45h\nSábados de 8:30 a 13 y de 18:30 a 0h\nDomingos de 9:30 a 13h',
+    info_more: '54 351 471 9504',
+    lat: '-31.3990064',
+    lon: '-64.1829659',
+    categories: [19],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1593,
+    slug: 'amerindia-libros',
+    title: 'Amerindia Libros',
+    hood: 'Centro',
+    address: 'Caseros 253',
+    poster: 'http://gideon.afterseven.com.ar/public/images/amerindia_libros.jpg',
+    text: 'Cálida y sencilla librería especializada en publicaciones de artes aplicadas, diseño industrial y gráfico, arquitectura, plástica, fotografía y artes visuales. Todo lo que no se encuentra en otras librerías tradicionales sobre estos temas, seguramente está en este pequeño local. Se destaca por su excelente atención, prodigada por libreros de oficio y personas realmente conocedoras e interesadas en las temáticas del negocio.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 351 422 4839\namerindialibros@yahoo.com.ar',
+    lat: '-31.4172981',
+    lon: '-64.1885279',
+    categories: [17,13,9],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1655,
+    slug: 'barrio-kronfuss',
+    title: 'Barrio Kronfuss',
+    hood: 'San Vicente',
+    address: 'Agustín Garzón 1100 - 1500',
+    poster: 'http://gideon.afterseven.com.ar/public/images/barrio_kronffus.jpg',
+    text: 'En el año 1921, el Ministro de Obras Públicas de la Provincia, le encargó al arquitecto Johannes Kronfuss que ideara un barrio de 99 casas dentro del tradicional Barrio San Vicente, frente a los hornos de cal. El arquitecto dividió el terreno con un trazado irregular, con pasajes no siempre rectos. Estas casas contarían con baños, instalación eléctrica, cielos rasos, patios, balcones, desagües, aberturas de cedro, plazas y pérgolas, comodidades que en ese entonces sólo tenían las familias ricas. Se hicieron con un estilo neocolonial, con reminiscencias del barroco alemán. La construcción del barrio fue finalizada en el año 1926 y fue el primer plan de viviendas con todas las letras que se realizó en la ciudad de Córdoba. Actualmente las construcciones se encuentran deterioradas y no todas conservan sus características originales.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.42430017717832',
+    lon: '-64.16538119316101',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1679,
+    slug: 'cafe-de-la-plaza',
+    title: 'Café de la Plaza',
+    hood: 'Alta Córdoba',
+    address: 'Mariano Fragueiro 1969',
+    poster: 'http://gideon.afterseven.com.ar/public/images/cafe_de_la_plaza.jpg',
+    text: 'Un bar con casi 100 años, que con el correr del tiempo fue transformándose y reinventándose. Este paso de los años se ve en su carta, que incluye tanto platos clásicos como reversiones modernas. Fileteados en las ventanas, mozos de moñito y camisa blanca súper atentos y un excelente servicio de cafetería a toda hora.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 7 a 3h\nSábados y domingos de 8 a 3h',
+    info_more: '54 351 474 0612\ncafedelaplaza1935@gmail.com',
+    lat: '-31.3928166',
+    lon: '-64.18470070000001',
+    categories: [19,4],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1589,
+    slug: 'cafe-del-alba',
+    title: 'Café del Alba',
+    hood: 'Centro',
+    address: '9 de julio 482',
+    poster: 'http://gideon.afterseven.com.ar/public/images/cafe_del_alba.jpg',
+    text: 'Un bar-librería o una librería-bar, como se lo quiera ver. Las paredes del lugar están tapizadas de libros, con especial atención a ediciones y artistas locales, que se pueden ojear, leer y comprar. En el primer piso funciona un espacio en el que se organizan encuentros literarios, lecturas, presentaciones de libros y reuniones variopintas.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 8 a 20h\nSábados de 9 a 13h',
+    info_more: '54 351 425 9274\ncafedelalbacordoba@gmail.com',
+    lat: '-31.41291159999999',
+    lon: '-64.1899884',
+    categories: [17,19],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1658,
+    slug: 'calle-paso-de-los-andes',
+    title: 'Calle Paso de los Andes',
+    hood: 'Paso de los Andes',
+    address: 'Paso de los Andes 300 - 400',
+    poster: 'http://gideon.afterseven.com.ar/public/images/calle_paso_de_los_andes.jpg',
+    text: 'Se trata de un grupo de pintorescas y coloridas viviendas que conformaban un conjunto habitacional construido en 1925 por el arquitecto Ernesto Groppo. El conjunto resulta variado debido a las distintas soluciones adoptadas en cada caso, si bien mantiene el mismo estilo de líneas italianizantes, en una tipología tipo chalet. Algunos modelos de viviendas se repiten tal cual, pero alternadas entre sí. En otros casos, si bien difieren sus plantas y sus fachadas, se mantienen algunos elementos comunes, como molduras, arcos y balcones que permiten identificar el conjunto como una unidad. Hace aproximadamente una década uno de los vecinos decidió revalorizar su fachada, restaurándola con el diseño original y destacando sus líneas con colores. Por efecto contagio, el resto de los vecinos continuó con la idea; así fueron tiñiéndose una a una de colores distintos, conformando una pintoresca callecita con identidad propia.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.41449440790073',
+    lon: '-64.19994950294495',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1654,
+    slug: 'casa-eiffel',
+    title: 'Casa Eiffel',
+    hood: 'San Vicente',
+    address: 'San Jerónimo 3346',
+    poster: 'http://gideon.afterseven.com.ar/public/images/casa_eiffel.jpg',
+    text: 'Construido totalmente en hierro, fue enviado desde Francia al promediar la segunda década del siglo 20. Construida sobre pilotes de hierro, las casa posee paredes de doble chapa de acero y dispone de dos plantas y una galería. Estas casas venían curiosamente en cajas, y podían desarmarse y reconstruírse en otro sitio. Cuenta con un sistema de aireación y ventilación a partir de ranuras en los techos que la hace paradójicamente fresca en verano. Actualmente, es de propiedad privada y no puede ingresarse. Una estructura con las mismas características se encuentra en la ciudad de Villa María.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.4241233',
+    lon: '-64.1412355',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1488,
+    slug: 'casa-giratoria',
+    title: 'Casa Giratoria',
+    hood: 'General Paz',
+    address: 'Libertad 1108, Museo de la Industria',
+    poster: 'http://gideon.afterseven.com.ar/public/images/casa_giratoria.jpg',
+    text: 'Esta original casa fue construida por el inmigrante sirio Abdón Sahade alrededor del año 1950 en el barrio Nueva Córdoba. Su propósito fue aprovechar al máximo el sol, a través de un mecanismo de su inventiva que mediante una palanca da un giro de 360 grados a la construcción. En el año 2008, la Casa Giratoria fue puesta en marcha nuevamente en el parque exterior del Museo de la Industria, asegurándose tener el sol que buscó su creador.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.409453836126534',
+    lon: '-64.17002141475677',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1657,
+    slug: 'casa-pastrone',
+    title: 'Casa Pastrone',
+    hood: 'Nueva Córdoba',
+    address: 'Av. Hipólito Yrigoyen 670',
+    poster: 'http://gideon.afterseven.com.ar/public/images/casa_pastrone.jpg',
+    text: 'Antigua vivienda de Francisco Pastrone, un importante empresario italiano, frente al Parque Sarmiento. Diseñada por el arquitecto Johannes Kronfuss, la construcción refleja una síntesis entre el estilo barroco español y renacimiento, mezclando formas que aluden al colonial americano del Alto Perú. Las dos torres miradores que se ven desde el parque son los atributos relevantes del exterior. La propiedad es actualmente ocupada por dependencias judiciales y ha side declarada de interés municipal debido a su valor arquitectónico e histórico.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.43026262050464',
+    lon: '-64.18436050415039',
+    categories: [13,10],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1635,
+    slug: 'casona-pereyra',
+    title: 'Casona Pereyra',
+    hood: 'Cofico',
+    address: 'Roque Saenz Peña 1437',
+    poster: 'http://gideon.afterseven.com.ar/public/images/casona_pereyra.jpg',
+    text: 'Un espacio de culturas, que presenta talleres artísticos culturales interdisciplinarios, galería de arte, ferias de diseño de autor y biblioteca especializada.',
+    info_tickets: '',
+    info_timetable: 'Lunes a sábados de 10 a 12h y de 17 a 22h',
+    info_more: '54 351 631 2635\ncasonapereyra@gmail.com',
+    lat: '-31.4003113',
+    lon: '-64.1821122',
+    categories: [2,9,17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1629,
+    slug: 'castillo-bermann',
+    title: 'Castillo Bermann',
+    hood: 'Escobar',
+    address: 'Costanera Int. Ramón B. Mestre esq. Temístocles Castellano',
+    poster: 'http://gideon.afterseven.com.ar/public/images/castillo_bermann.jpg',
+    text: 'Castillo construído por un inmigrante alemán a mediados de 1920 de acuerdo a los planos de otro existente a orillas del Rhin. Allí funcionó un hospital neuropsiquiátrico hasta el año 1995, el Sanatorio Bermann. Actualmente el edificio se encuentra abandonado.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.392526131583026',
+    lon: '-64.22582745552063',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1476,
+    slug: 'cordoba-business-tower',
+    title: 'Córdoba Business Tower',
+    hood: 'Nueva Córdoba',
+    address: 'Av. Hipólito Yrigoyen esq. Obispo Trejo',
+    poster: 'http://gideon.afterseven.com.ar/public/images/cordoba_business_tower.jpg',
+    text: 'Moderno edificio de oficinas ubicado en pleno barrio de Nueva Córdoba y a metros del centro de la ciudad. Construido entre 1998 y 2000, el edificio conserva la fachada original de la tradicional casona sobre la cual se construyó.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.422194449486753',
+    lon: '-64.18800830841064',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1604,
+    slug: 'cordoba-shopping-center',
+    title: 'Córdoba Shopping Center',
+    hood: 'Villa Cabrera',
+    address: 'José Antonio de Goyechea 2851',
+    poster: 'http://gideon.afterseven.com.ar/public/images/cordoba_shopping.jpg',
+    text: 'Fue el primer centro comercial del interior del país, inaugurado en el año 1990. La constante innovación y la anticipada percepción de las tendencias lograron mantener a Córdoba Shopping en un nivel de vanguardia y exclusividad privilegiado que lo convirtieron en referente de la moda y el diseño. Sus dos niveles cuadrados girados 45° entre sí se distinguen por grandes espacios luminosos realzados por las luceras que constituyen su cubierta. Además de sus locales comerciales, ofrece salas de cine, estacionamiento, cajeros automáticos y una oferta gastronómica amplia y de primer nivel.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 10 a 22h',
+    info_more: '54 351 420 5001\nhttp://www.cordobashopping.com.ar',
+    lat: '-31.38016156448974',
+    lon: '-64.21434760093689',
+    categories: [11],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1579,
+    slug: 'cross-over-comics-store',
+    title: 'Cross Over Comics Store',
+    hood: 'Centro',
+    address: 'Av. Gral. Paz 174, Galería Gran Rex, Local 5',
+    poster: 'http://gideon.afterseven.com.ar/public/images/crossover.jpg',
+    text: 'Los mejores comics, nacionales, europeos, y japoneses editados en castellano. Los autores más leídos, los dibujantes más talentosos reunidos en un solo lugar.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 351 422 3500\ninfo@crossover-comics.com.ar\nhttps://www.crossover-comics.com.ar',
+    lat: '-31.4134626',
+    lon: '-64.1855152',
+    categories: [17,7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1728,
+    slug: 'dada-mini-jardin',
+    title: 'Dadá Mini Jardín',
+    hood: 'Jardín',
+    address: 'Av. Pablo Ricchieri 3331, Galería Gremio',
+    poster: 'http://gideon.afterseven.com.ar/public/images/dada_mini_jardin.jpg',
+    text: 'El bar de tus sueños, ahora en la zona sur de la ciudad.',
+    info_tickets: '',
+    info_timetable: 'Lunes de 9 a 17h\nMartes y miércoles de 9 a 0h\nJueves de 9 a 2h\nViernes de 9 a 3h\nSábados de 10 a 3h\nDomingos de 10 a 0h',
+    info_more: '54 351 208 4277\ndadaminimovil@gmail.com',
+    lat: '-31.4513966',
+    lon: '-64.17548069999998',
+    categories: [4],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1651,
+    slug: 'edificio-la-mundial',
+    title: 'Edificio La Mundial',
+    hood: 'Centro',
+    address: 'Av. Emilio Olmos esq. Rivadavia',
+    poster: 'http://gideon.afterseven.com.ar/public/images/edificio_la_mundial.jpg',
+    text: 'Es considerado el edifico más angosto de sudamérica. Cuando se produjo el ensanchamiento de la Av. Colón, se demolió gran parte de un edificio que estaba emplazado en esa esquina, quedando como resultado un espacio muy estrecho. El propietario del terreno vecino pretendió comprar la parte que había quedado del edificio demolido, pero el dueño original se resistió y persiguiendo el objetivo de reutilizar este lugar, contrató a un ingenioso arquitecto que decidió levantar un edificio de 20 metros de frente y tan solo 6 de ancho. Su amplia y bellísima fachada está plagada de lujosos detalles arquitectónicos. Esto hace aún más curiosa su delgadísima silueta al verlo de perfil.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.413957890779937',
+    lon: '-64.18176173743439',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1573,
+    slug: 'el-espejo-libros',
+    title: 'El Espejo Libros',
+    hood: 'Centro',
+    address: 'Dean Funes 163, Paseo Santa Catalina',
+    poster: 'http://gideon.afterseven.com.ar/public/images/el_espejo_libros.jpg',
+    text: 'Librería decidida a divulgar libros vinculados al conocimiento en las áreas de humanidades, especialmente aquellos destinados a los estudiantes y profesionales de la salud mental, de las ciencias sociales y de educación, así como las creaciones literarias que han marcado el desarrollo de sus diversos géneros.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 9:30 a 19:30h\nSábados de 9:30 a 13:30h',
+    info_more: '54 351 424 2420\nespejoventas@elespejolibros.com.ar\nhttps://www.elespejolibros.com.ar',
+    lat: '-31.415649654724216',
+    lon: '-64.18613612651825',
+    categories: [17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1805,
+    slug: 'elefante-espacio-cultural',
+    title: 'Elefante Espacio Cultural',
+    hood: 'General Paz',
+    address: 'Cnel. Juan P. Pringles 47',
+    poster: 'http://gideon.afterseven.com.ar/public/images/espacio_elefante.jpg',
+    text: 'Espacio cultural autogestionado, nacido en 2013. Aquí se dictan talleres de cocina, yoga, creatividad, pintura, canto, teatro, guitarra y piano, para niños y para adultos. Hogar de la Elefanteca Luis Paredes, biblioteca de libros infantiles.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 17 a 20h',
+    info_more: '54 351 451 0074\nelefanteespaciocultural@gmail.com',
+    lat: '-31.4157196',
+    lon: '-64.16666729999997',
+    categories: [2,7,17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1587,
+    slug: 'en-un-lugar-de-la-mancha',
+    title: 'En un lugar de La Mancha',
+    hood: 'Güemes',
+    address: 'Fructuoso Rivera 260, Galería Muy Guemes, Local 2',
+    poster: 'http://gideon.afterseven.com.ar/public/images/en_un_lugar_de_la_mancha.jpg',
+    text: 'Un espacio para el arte vinculado con la literatura, para las presentaciones de libros, para el encuentro con amigos, para el divertimiento de los más chicos y su relación con las palabras. Lleno de gente buena onda que te va a asesorar con tus consultas perfectamente y habituales talleres de cuentos, arte, expresión y manualidades para los más chicos.',
+    info_tickets: '',
+    info_timetable: 'Miércoles a domingos de 17 a 22h',
+    info_more: 'en1lugardelamancha@gmail.com',
+    lat: '-31.4254699',
+    lon: '-64.19196069999998',
+    categories: [17,7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1675,
+    slug: 'escuela-superior-de-comercio-dr-manuel-belgrano',
+    title: 'Escuela Superior de Comercio Dr. Manuel Belgrano',
+    hood: 'Alberdi',
+    address: 'La Rioja 1450',
+    poster: 'http://gideon.afterseven.com.ar/public/images/escuela_manuel_belgrano.jpg',
+    text: 'Creada en 1938, es una institución educativa de nivel preuniversitario, dependiente de la Universidad Nacional de Córdoba. Ofrece formación de nivel secundario y terciario para más de 2.700 alumnos. El edificio construido para la escuela en los años 60 es uno de los mayores ejemplos de arquitectura brutalista en la Argentina, nombre que viene del uso del hormigón armado dejado a la vista y usado en formas escultóricas y monumentales. Más allá de que el material predominante elegido sea el hormigón armado, dejado a la vista y en algunos casos coloreado, se usaron materiales regionales para muros de cerramiento, tales como piedra bola unida con mortero de cal y arena.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 351 433 7040\nhttp://www.mb.unc.edu.ar',
+    lat: '-31.4051871',
+    lon: '-64.20166019999999',
+    categories: [13,10],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1656,
+    slug: 'espacio-abasto',
+    title: 'Espacio Abasto',
+    hood: 'Abasto',
+    address: 'Pasaje Agustín Perez 6',
+    poster: 'http://gideon.afterseven.com.ar/public/images/espacio_abasto.jpg',
+    text: 'Espacio Abasto es un espacio de reunión y colaboración para emprendedores que tengan el propósito de contribuir a una mejor ciudad. Un laboratorio urbano, que nuclea y vincula a todos aquellos que trabajen de una u otra manera para resolver problemas de la ciudad, a través del emprendedurismo de impacto, la innovación social y ambiental, la tecnología, nuevos negocios inclusivos y diferentes soluciones creativas.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 9 351 744 2011\nhttp://www.distritoabasto.com.ar',
+    lat: '-31.405677837644326',
+    lon: '-64.17707922275389',
+    categories: [3],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1633,
+    slug: 'espacio-la-glorieta',
+    title: 'Espacio La Glorieta',
+    hood: 'Centro',
+    address: '9 de julio 54, piso 4',
+    poster: 'http://gideon.afterseven.com.ar/public/images/espacio_la_glorieta.jpg',
+    text: 'Una casa que reune artistas de diferentes disciplinas. Un espacio que se encuentra en el corazón de la ciudad, a una cuadra de la plaza San Martin, en un antiguo departamento que alberga la posibildad de formar artistas, darles un lugar para su producción, realizar castings y ensayar obras de diferentes grupos de teatro independiente.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 351 660 5388\nespaciolaglorieta@gmail.com\nhttp://www.espaciolaglorieta.com',
+    lat: '-31.4146714',
+    lon: '-64.18423790000003',
+    categories: [5,2],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1490,
+    slug: 'estadio-mario-alberto-kempes',
+    title: 'Estadio Mario Alberto Kempes',
+    hood: 'Chateau Carreras',
+    address: 'Av. Cárcano s/n',
+    poster: 'http://gideon.afterseven.com.ar/public/images/estadio_kempes.jpg',
+    text: 'Fue construido por el estado argentino con el objetivo de ser una de las sedes del Mundial de Fútbol de 1978. Es un estadio olímpico ubicado en el paraje Chateau Carreras, a unos 10 km del centro de la ciudad. Con una capacidad de 57.000 espectadores, es el segundo más grande del país, después del Estadio Monumental. En él se realizan campeonatos deportivos, recitales, actividades educativas, y visitas guiadas, entre otras.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.36880819934764',
+    lon: '-64.24615859985352',
+    categories: [13,15],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1470,
+    slug: 'festo-nueva-cordoba',
+    title: 'Festo Nueva Córdoba',
+    hood: 'Nueva Córdoba',
+    address: 'Av. Hipólito Yrigoyen 123',
+    poster: 'http://gideon.afterseven.com.ar/public/images/festo_nueva_cordoba.jpg',
+    text: 'Venis, elegis, comés. Productos naturales hechos especialmente para vos. También podes venir, elegir y comer allá... donde más te guste, al sol, en la sombra, solo, con amigos... sonrisa asegurada!',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: 'comunidadfesto@gmail.com\nhttp://comunidadfesto.tumblr.com/',
+    lat: '-31.4219376',
+    lon: '-64.18783539999998',
+    categories: [4],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1636,
+    slug: 'fresca-viruta-espacio',
+    title: 'Fresca Viruta Espacio',
+    hood: 'Pueyrredón',
+    address: 'Av. Patria 1526',
+    poster: 'http://gideon.afterseven.com.ar/public/images/fresca_viruta.jpg',
+    text: 'Este centro cultural destinado a los niños y sus familias funciona en una antigua casona y cuenta con una sala de teatro totalmente equipada para realizar funciones de títeres, teatro y otras manifestaciones artísticas como música y danza. Las dependencias de la casa se utilizan para otras actividades como talleres de formación, charlas, muestras, exposiciones y presentaciones de libros.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 351 453 3948\nfrescavirutatiteres@gmail.com\nhttp://www.frescaviruta.com.ar',
+    lat: '-31.39742390000001',
+    lon: '-64.16168290000002',
+    categories: [5,7,18],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1653,
+    slug: 'galeria-gremio',
+    title: 'Galería Gremio',
+    hood: 'Jardín',
+    address: 'Av. Pablo Ricchieri 3331',
+    poster: 'http://gideon.afterseven.com.ar/public/images/galeria_gremio.jpg',
+    text: 'Somos un gremio, no por dedicarnos a lo mismo, si por tener todos las mismas ganas de hacer. El estatuto dice: El arte, lo bueno, las ganas, lo rico o diferente podrán circular por nuestros patios con total libertad, haciéndose dueño de cualquier rincón o espacio que encuentre. Archívese, comuníquese y publíquese.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.4513966',
+    lon: '-64.17548069999998',
+    categories: [11,4,9],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1506,
+    slug: 'isla-de-los-patos',
+    title: 'Isla de los Patos',
+    hood: 'Alberdi',
+    address: 'Costanera Int. Ramón B. Mestre esq. La Tablada',
+    poster: 'http://gideon.afterseven.com.ar/public/images/isla_de_los_patos.jpg',
+    text: 'Esta isla artificial fue inaugurada en el año 1991 y se convirtió en uno de los puntos más lindos para visitar a lo largo del río Suquía. Se conecta a ambas márgenes del río a través de dos puentes peatonales. Cuenta con variada y frondosa vegetación; glorietas, una fuente circular, un teatrino y juegos son otras de las propuestas que ofrece este espacio verde. Los fines de semana se convierte en punto de encuentro de los miembros de las colectividad peruana que vive en la zona.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.40166627801206',
+    lon: '-64.20427322387695',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1480,
+    slug: 'jardin-botanico',
+    title: 'Jardín Botánico',
+    hood: 'Quebrada de las Rosas',
+    address: 'Yunyent 5491',
+    poster: 'http://gideon.afterseven.com.ar/public/images/jardin_botanico.jpg',
+    text: 'Es un espacio natural que cuenta con 6 hectáreas y tiene como principal función conservar la biodiversidad regional y generar programas educativos que promuevan la conservación de la flora autóctona y el respeto hacia los recursos naturales, en la población cordobesa. El espacio cuenta con un acuario, sala educativa, invernadero y el atractivo paseo de la selva, donde variadas especies nacionales e importadas (muchas de ellas en peligro de extinción) recrean el hábitat de la selva subtropical.',
+    info_tickets: 'Entrada libre y gratuita',
+    info_timetable: 'Lunes a viernes de 8 a 18h\nSábados, domingos y feriados de 8 a 18:30h (Otoño/Invierno)\nSábados, domingos y feriados de 8 a 19:30h (Primavera/Verano)',
+    info_more: '54 0351 433 7368\njardinbotanicocba@gmail.com\nhttps://ambiente.cordoba.gob.ar/jardin-botanico/',
+    lat: '-31.3859476',
+    lon: '-64.249909',
+    categories: [15,8],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1486,
+    slug: 'jardin-zoologico',
+    title: 'Jardín Zoológico',
+    hood: 'Nueva Córdoba',
+    address: 'Rondeau 798, Parque Sarmiento',
+    poster: 'http://gideon.afterseven.com.ar/public/images/jardin_zoologico.jpg',
+    text: 'En el corazón del Parque Sarmiento, se ubica el Zoo Córdoba. Cuenta en la actualidad con más de 120 especies autóctonas, 90 exóticas y 20 domésticas. Entre sus atracciones se encuentran el tren que recorre el predio, un Zoo Acuario, un Zoo Marino con espectáculo, los mundos Autóctono y Exótico, el Paseo de la Flora Nativa. Recomendados: el antiguo Serpentario y la Granja Zoo, donde es posible pasar una tarde rodeados de animales de granja, pasear en sulky o comer pan casero.',
+    info_tickets: 'Entrada General: $140\nIncluye ingreso zoo, granja y zoo marino\nMenores de 4 años gratis',
+    info_timetable: 'Martes a jueves de 10 a 17h\nViernes, sábados, domingos y feriados de 10 a 17:30h',
+    info_more: '54 0351 421 7648\ninfo@zoo-cordoba.com.ar\nhttp://www.zoo-cordoba.com.ar',
+    lat: '-31.425473613472768',
+    lon: '-64.17509883642197',
+    categories: [15,7,8],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1484,
+    slug: 'la-canada',
+    title: 'La Cañada',
+    hood: 'Centro',
+    address: 'Desde Av. Elpidio González hasta el río Suquía',
+    poster: 'http://gideon.afterseven.com.ar/public/images/la_cañada.jpg',
+    text: 'El encauzamiento del arroyo La Cañada atraviesa de sur a norte la ciudad de Córdoba. La construcción original de calicanto (es decir, cantos rodados y cal) data de 1671 y se ha convertido en un ícono de la ciudad. La construcción actual es mucho más reciente, del año 1944. Su característico diseño en piedra, surcado por numerosos puentes, es acompañado por enormes árboles, en su mayoría de la especie tipa, que adornan este singular paseo.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.415202293338783',
+    lon: '-64.19105529785156',
+    categories: [13,15],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1690,
+    slug: 'la-casa-del-titere-norte',
+    title: 'La Casa del Títere – Norte',
+    hood: 'Cerro de las Rosas',
+    address: 'Jimenez de Lorca esq. Gregorio Gavier',
+    poster: 'http://gideon.afterseven.com.ar/public/images/la_casa_del_titere_norte.jpg',
+    text: 'Se especializa en la promoción del arte de los muñecos y la animación de objetos. Capacita a docentes y profesionales del área educativa en general, interesados en implementar la herramienta títeres en sus prácticas educacionales. Produce espectáculos y música para obras infantiles.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 351 421 1638\nlacasadeltitere@yahoo.com.ar\nhttp://www.lacasadeltitere.com.ar',
+    lat: '-31.3666834',
+    lon: '-64.23332240000002',
+    categories: [5,7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1630,
+    slug: 'lani-el-parisino',
+    title: 'Lani El Parisino',
+    hood: 'Güemes',
+    address: 'Pasaje Escuti 758',
+    poster: 'http://gideon.afterseven.com.ar/public/images/lani_el_parisino.jpg',
+    text: 'Sala para eventos artísticos, con capacidad para 700 personas. Es un centro franco-argentino independiente, para la promoción, producción, formación y difusión artística y cultural, creado y dirigido por José Castro. Un espacio abierto a todo tipo de propuesta de la comunidad cordobesa, artistas, trabajadores sociales, gestores culturales, etc.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 9 a 13h y de 16 a 21h\nSábados de 9 a 16h',
+    info_more: '54 9 351 395 5650\njose.lakao@gmail.com',
+    lat: '-31.4231042',
+    lon: '-64.19386810000003',
+    categories: [18,2,5],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1596,
+    slug: 'libreria-1918',
+    title: 'Librería 1918',
+    hood: 'Ciudad Universitaria',
+    address: 'Av. Haya de la Torre s/n',
+    poster: 'http://gideon.afterseven.com.ar/public/images/libreria_1918.jpg',
+    text: 'Un espacio que se propone difundir diferentes publicaciones de la UNC, de otras universidades del país y de algunas editoriales independientes de nuestra ciudad. Emplazada frente al Pabellón Argentina, la librería se pretende como un espacio de encuentro, espacio público, propicio para diferentes actividades como la presentación de libros, conferencias y reuniones.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 9 a 15h',
+    info_more: '54 351 462 9526\nlibreria1918@gmail.com',
+    lat: '-31.438367713918826',
+    lon: '-64.18861448764801',
+    categories: [17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1575,
+    slug: 'libreria-del-palacio',
+    title: 'Librería del Palacio',
+    hood: 'Nueva Córdoba',
+    address: 'Ituzaingó 882',
+    poster: 'http://gideon.afterseven.com.ar/public/images/libreria_del_palacio.jpg',
+    text: 'Ocupa la planta baja del edificio de la Editorial Comunicarte. Su decoración está muy cuidada, con bibliotecas blancas todas repletas de libros, lugares para sentarse y una pequeña cafetería en donde sirven café a los clientes que la visitan. Cuenta con gran variedad de libros para niños y suele organizar muchas actividades literarias, como charlas debate, presentación de libros, firmas de ejemplares, talleres variados para niños, y los sábados de narraciones de cuentos y fábulas con entrada gratuita.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 8:30 a 21h\nSábados de 9 a 13:30h y de 17 a 21h',
+    info_more: 'info@libreriadelpalacio.com.ar',
+    lat: '-31.427177451735897',
+    lon: '-64.18584644794464',
+    categories: [17,7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1592,
+    slug: 'libreria-universitaria',
+    title: 'Librería Universitaria',
+    hood: 'General Paz',
+    address: 'Felix Frías 60',
+    poster: 'http://gideon.afterseven.com.ar/public/images/libreria_universitaria.jpg',
+    text: 'Librería dedicada a la difusión y venta de libros de editoriales universitarias.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 10:30 a 13h y de 16:30 a 20:30h\nSábados de 10 a 14h',
+    info_more: '54 351 426 5713\nlibreriauniversitaria.cba@gmail.com',
+    lat: '-31.4162185',
+    lon: '-64.16875440000001',
+    categories: [17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1577,
+    slug: 'llanto-de-mudo',
+    title: 'Llanto de Mudo',
+    hood: 'Centro',
+    address: 'Av. Colón 335, Galería Cinerama, Local 61',
+    poster: 'http://gideon.afterseven.com.ar/public/images/llanto_de_mudo.jpg',
+    text: 'Tienda de cómics especializada en material raro, agotado, descatalogado y clásicos. También hay espacio para ediciones de artistas y editoriales locales.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 14 a 20h\nSábados de 10:30 a 14h',
+    info_more: 'llantodemudolibreria@hotmail.com',
+    lat: '-31.4125339',
+    lon: '-64.18802619999997',
+    categories: [17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1472,
+    slug: 'luola-villa-belgrano',
+    title: 'Luola Villa Belgrano',
+    hood: 'Villa Belgrano',
+    address: 'Av. Simón Pedro Laplace 5442',
+    poster: 'http://gideon.afterseven.com.ar/public/images/luola_villa_belgrano.jpg',
+    text: 'Diseño de autor, mobiliario, objetos, indumentaria, accesorios.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 9 351 595 0655\ninfo@luolaig.com',
+    lat: '-31.361192',
+    lon: '-64.24841400000003',
+    categories: [9,11],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1628,
+    slug: 'mercado-norte',
+    title: 'Mercado Norte',
+    hood: 'Centro',
+    address: 'Oncativo 50',
+    poster: 'http://gideon.afterseven.com.ar/public/images/mercado_norte.jpg',
+    text: 'Córdoba constituía el centro comercial más importante del interior del país. El proceso de expansión de la ciudad y el importante tráfico comercial demandaba un mayor control de pesajes, calidad e higiene de los productos procedentes en su mayoría de zonas rurales. Fue construido en 1927 y su fachada neomanierista responde al modelo europeo de la época. Sus ingresos principales presentan pórticos y frisos de cabezas de vacuno y elementos vegetales. Los accesos secundarios presentan 2 óculos rodeados de frondas y una importante cabeza de carnero.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 7 a 19:30h\nSábados de 7 a 14:30h',
+    info_more: '54 351 434 2241\ninfo@mercadonortecordoba.com\nhttp://www.mercadonortecordoba.com',
+    lat: '-31.409595717188243',
+    lon: '-64.18055176734924',
+    categories: [11,4],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1632,
+    slug: 'mercado-sud',
+    title: 'Mercado Sud',
+    hood: 'Centro',
+    address: 'Bv. Arturo Illia 155',
+    poster: 'http://gideon.afterseven.com.ar/public/images/mercado_sud.jpg',
+    text: 'El tradicional Mercado Sur se encuentra ubicado en lo que se conocía como Corrales del Convento, y se comenzó a construir en el año 1858. El contemporáneo edificio del mercado se inauguró en el año 1934. Fue reformado por última vez en el año 1995, cuando se agregó en la parte posterior una estación terminal de buses con sus servicios relacionados.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 7:30 a 20h\nSábados de 7:30 a 13h',
+    info_more: '54 351 424 6775',
+    lat: '-31.421090701025857',
+    lon: '-64.18391410793458',
+    categories: [11],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1482,
+    slug: 'museo-arquitecto-francisco-tamburini',
+    title: 'Museo Arquitecto Francisco Tamburini',
+    hood: 'Centro',
+    address: 'San Jerónimo 166',
+    poster: 'http://gideon.afterseven.com.ar/public/images/museo_bancor.jpg',
+    text: 'Es uno de los primeros edificios construidos especialmente para una entidad financiera en América Latina y constituye una de las obras más relevantes del patrimonio arquitectónico de la provincia. En sus salas se exhiben colecciones de arte, numismática, objetos bancarios y libros históricos con la intención difundir entre las nuevas generaciones el valor de la conservación del patrimonio cultural y la memoria colectiva.',
+    info_tickets: 'Entrada libre y gratuita',
+    info_timetable: 'Lunes a viernes de 8:30 a 14:30h',
+    info_more: '54 0351 420 7207\nbiblioteca@bancor.com.ar\nhttps://www.bancor.com.ar',
+    lat: '-31.4178349',
+    lon: '-64.18235219999997',
+    categories: [10,13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1648,
+    slug: 'museo-de-la-pizza',
+    title: 'Museo de la Pizza – Pizzería Don Luis',
+    hood: 'Centro',
+    address: 'Av. General Paz 338',
+    poster: 'http://gideon.afterseven.com.ar/public/images/museo_de_la_pizza.jpg',
+    text: 'En este espacio se exponen los distintos elementos que se utilizaban antiguamente para elaborar muzzarelas, fainás y otras especialidades relacionadas al arte de la pizza. Funciona en la tradicional Pizzería Don Luis, donde ya fueron cocinadas más de 35 millones de porciones, desde el año 1952 hasta la actualidad. También se pueden observar delantales de época, con firmas de personajes reconocidos de la ciudad, cuadros, fotos, un tanque y la serpentina que generaba agua caliente al local, la histórica bicicleta de reparto, entre otros elementos de valor histórico. Se considera el primer Museo de la Pizza del mundo.',
+    info_tickets: '',
+    info_timetable: 'Lunes a jueves de 8 a 0h\nViernes, sábados y domingos de 8 a 1:30h',
+    info_more: '54 351 425 8061\ninfo@pizzeriadonluis.com\nhttp://www.pizzeriadonluis.com.ar/',
+    lat: '-31.411408720387048',
+    lon: '-64.18491840362549',
+    categories: [4,10],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1603,
+    slug: 'nuevocentro-shopping',
+    title: 'Nuevocentro Shopping',
+    hood: 'Quintas de Santa Ana',
+    address: 'Duarte Quirós 1400',
+    poster: 'http://gideon.afterseven.com.ar/public/images/nuevocentro_shopping.jpg',
+    text: 'Este centro comercial fue inaugurado en el año 1990. A partir de esa fecha, sucesivas ampliaciones permitieron conformar un complejo adecuado a las características de la demanda de los ciudadanos cordobeses, brindando gran variedad de bienes y servicios. El edificio se distingue por su estética moderna y minimalista de ladrillo visto, piedra y cristal. En este shopping se desarrollan múltiples propuestas comerciales, gastronómicas, de servicios y entretenimientos. Más de 140 comercios ofrecen infinitos productos; posee además 2 bancos, cajeros automáticos, una estación de radio propia, supermercado, cafeterías, restaurantes, heladerías, y todo tipo de servicios de primer nivel.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 10 a 22h',
+    info_more: '54 351 482 8193\ninfo@nuevocentro.com.ar\nhttp://www.nuevocentro.com.ar',
+    lat: '-31.4130601',
+    lon: '-64.2043521',
+    categories: [11,4,7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1072,
+    slug: 'orfeo-superdomo',
+    title: 'Orfeo Superdomo',
+    hood: 'Alto Verde',
+    address: 'Av. Cardeñosa 3450',
+    poster: 'http://gideon.afterseven.com.ar/public/images/orfeo-superdomo-01.jpg',
+    text: 'Primer espacio integral de Argentina concebido especialmente para el desarrollo de eventos sociales, espectáculos musicales, artísticos, culturales y deportivos; dotado de la más alta tecnología.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 351 5261500\nhttp://www.orfeosuperdomo.com',
+    lat: '-31.364082',
+    lon: '-64.221001',
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1650,
+    slug: 'parque-autoctono',
+    title: 'Parque Autóctono',
+    hood: 'Cerro de las Rosas',
+    address: 'Av. Sagrada Familia esq. Av. Fernando Fader',
+    poster: 'http://gideon.afterseven.com.ar/public/images/parque_autoctono_2.jpg',
+    text: 'A finales del siglo XVIII y principios del siglo XIX, el predio actualmente ocupado por el parque funcionó como lugar de potreros y de haciendas que abastecían a la ciudad de Córdoba. También en esta zona se libró la importante batalla de “La Tablada”, que tuvo como principal protagonista al ilustre cordobés Brigadier General José María Paz. Luego este espacio se recuperó como parque natural, teniendo en cuenta que su fisonomía original no se modificó con el paso del tiempo, como tampoco su vegetación. Sólo se añadió al espacio verde la escultura del General José María Paz.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.382719921641435',
+    lon: '-64.22456403757326',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1492,
+    slug: 'parque-de-la-canada',
+    title: 'Parque de La Cañada',
+    hood: 'Manantiales',
+    address: 'Av. Cruz Roja Argentina esq. Río Negro',
+    poster: 'http://gideon.afterseven.com.ar/public/images/parque_de_la_cañada.jpg',
+    text: 'Este nuevo paseo puesto en valor para los cordobeses en la zona sur es una bocanada de verde y aire fresco en medio de la ciudad. A sólo 10 minutos del centro, este parque lineal contará cuando se complete su recuperación más de 60 hectáreas a lo largo de siete kilómetros del arroyo. En él está ubicada la obra histórica conocida como Acueducto Las 7 Alcantarillas, que data de 1897 y consta de ocho arcos de ladrillo abovedado.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.455590408409932',
+    lon: '-64.24238204956055',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1494,
+    slug: 'parque-de-la-vida',
+    title: 'Parque de la Vida',
+    hood: 'Ampliación Rosedal',
+    address: 'Olivares 2700',
+    poster: 'http://gideon.afterseven.com.ar/public/images/parque_de_la_vida_2.jpg',
+    text: 'Fue inaugurado en el año 1992, en oportunidad de celebrarse el Día Mundial del Medio Ambiente. El predio posee 65 hectáreas de extensión e incluye además parte del arroyo La Cañada. Fue construido como un sitio de conservación y crecimiento ambiental para Córdoba; la idea fundacional fue disponer de un buen terreno para que los padres cordobeses plantasen un árbol honrando el nacimiento de sus hijos.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.443707838656728',
+    lon: '-64.22435760498047',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1496,
+    slug: 'parque-de-las-naciones',
+    title: 'Parque de las Naciones',
+    hood: 'Urca',
+    address: 'Av. Sagrada Familia esq. Mariano Larra',
+    poster: 'http://gideon.afterseven.com.ar/public/images/parque_de_las_naciones.jpg',
+    text: 'En las extensas lomadas de césped se jerarquiza una buena variedad de árboles, que dan una ecléctica imagen verde: palos borrachos, eucaliptos, paraísos, álamos, nísperos, lapachos, olmos, talas, jacarandás, algarrobos, aguaribayes, siempre verdes, moras y otros tantos que ofrecen generosa sombra a los concurrentes. Juegos infantiles, bancos, bebederos, pista para skaters y patinadores y módulos para realizar ejercicios físicos, se diseminan en los vericuetos del parque.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.38355969291313',
+    lon: '-64.22744750976562',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1498,
+    slug: 'parque-de-las-tejas',
+    title: 'Parque de las Tejas',
+    hood: 'Nueva Córdoba',
+    address: 'Bv. Chacabuco 1300',
+    poster: 'http://gideon.afterseven.com.ar/public/images/parque_de_las_tejas.jpg',
+    text: 'Parque ubicado en el sur del barrio Nueva Córdoba; es uno de los paseos más lindos que tiene La Docta, muy concurrido por los estudiantes de la zona. Forma parte del conjunto de espacios verdes que se completa con los terrenos de la Ciudad Universitaria, y el Parque Sarmiento. Se asienta en los terrenos que anteriormente ocupaba la Casa de Gobierno de la Provincia de Córdoba.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.43269515185757',
+    lon: '-64.18738603591919',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1500,
+    slug: 'parque-del-kempes',
+    title: 'Parque del Kempes',
+    hood: 'Chateau Carreras',
+    address: 'Av. Cárcano s/n',
+    poster: 'http://gideon.afterseven.com.ar/public/images/parque_del_kempes.jpg',
+    text: 'Ubicado en la zona noroeste de la ciudad, tiene un total de 80 hectáreas para la recreación, esparcimiento y entretenimiento de las familias cordobesas. Cuenta con árboles autóctonos y especies exóticas, estaciones aeróbicas, juegos infantiles, bike park y ciclovías. Este espacio verde constituye un lugar de encuentro para la familia, con múltiples alternativas para la recreación y disfrute del tiempo libre, en un entorno con abundante vegetación que colinda con el río Suquía. El predio tiene un bulevar central de 710 metros lineales, tres rotondas y en su ingreso el colorido “Perro con pelota”, una gran escultura del artista plástico Leonardo Cabral.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.36354754983078',
+    lon: '-64.24148082733154',
+    categories: [15,16],
+    highlight: 1,
+    gallery: {}
+  },
+  { 
+    id: 1659,
+    slug: 'paseo-de-la-fama-del-cuarteto',
+    title: 'Paseo de la Fama del Cuarteto',
+    hood: 'Centro',
+    address: 'San Martín 200 - 500',
+    poster: 'http://gideon.afterseven.com.ar/public/images/paseo_del_cuarteto.jpg',
+    text: 'Sector en una de las calles más transitadas de la ciudad destinado a homenajear a las figuras del cuarteto que realizaron una contribución a la cultura popular cordobesa. El espacio se encuentra en la peatonal San Martín, donde se colocaron esculturas y placas conmemorativas para honrar a diferentes referentes musicales.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.413169325853836',
+    lon: '-64.1828316450119',
+    categories: [15,18],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1605,
+    slug: 'paseo-del-jockey',
+    title: 'Paseo del Jockey',
+    hood: 'Jardín',
+    address: 'Elías Yofre 1050',
+    poster: 'http://gideon.afterseven.com.ar/public/images/paseo_del_jockey.jpg',
+    text: 'Inaugurado recientemente, es el primer shopping de la zona sur de la ciudad, un paseo de compras con opciones para toda la familia. Ofrece entre otros servicios WiFi, cajeros automáticos, estacionamiento cubierto y locales gastronómicos.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 10 a 22h',
+    info_more: '54 351 554 0300\npaseodeljockey@gmail.com\nhttp://paseodeljockey.com',
+    lat: '-31.4506379',
+    lon: '-64.180409',
+    categories: [11,4,19],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1612,
+    slug: 'paseo-libertad-general-paz',
+    title: 'Paseo Libertad General Paz',
+    hood: 'General Paz',
+    address: 'Libertad 1100',
+    poster: 'http://gideon.afterseven.com.ar/public/images/paseo_libertad_general_paz.jpg',
+    text: 'Paseo Libertad es la marca que agrupa a más de 15 centros comerciales en todo el país. Se caracterizan por una adecuada combinación de locales comerciales, variada oferta gastronómica y diferentes opciones de entretenimiento para toda la familia. En cada plaza, la propuesta se traduce en amplios espacios con un mix de marcas adecuado para que cada integrante de la familia encuentre todo lo que necesita en un mismo lugar.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 10 a 22h',
+    info_more: '54 351 429 8200\ninfo@paseolibertad.com.ar\nhttp://www.paseolibertad.com.ar',
+    lat: '-31.40884486722129',
+    lon: '-64.17015552520752',
+    categories: [11,4,19],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1614,
+    slug: 'paseo-libertad-lugones',
+    title: 'Paseo Libertad Lugones',
+    hood: 'Poeta Lugones',
+    address: 'Fray Luis Beltrán y Manuel Cardeñosa',
+    poster: 'http://gideon.afterseven.com.ar/public/images/paseo_libertad_lugones.jpg',
+    text: 'Paseo Libertad es la marca que agrupa a más de 15 centros comerciales en todo el país. Se caracterizan por una adecuada combinación de locales comerciales, variada oferta gastronómica y diferentes opciones de entretenimiento para toda la familia. En cada plaza, la propuesta se traduce en amplios espacios con un mix de marcas adecuado para que cada integrante de la familia encuentre todo lo que necesita en un mismo lugar.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 9 a 22h',
+    info_more: '54 351 474 7200\ninfo@paseolibertad.com.ar\nhttp://www.paseolibertad.com.ar',
+    lat: '-31.36379604599585',
+    lon: '-64.21837091445923',
+    categories: [11,4,7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1618,
+    slug: 'paseo-libertad-rivera',
+    title: 'Paseo Libertad Rivera',
+    hood: 'Villa Rivera Indarte',
+    address: 'Av. Bodereau esq. Ricardo Rojas',
+    poster: 'http://gideon.afterseven.com.ar/public/images/paseo_libertad_rivera.jpg',
+    text: 'Este centro comercial está rodeado por un paisaje de ensueño, además de contar con locales de ropa, cines, restaurantes y confiterías de primer nivel. Se encuentra emplazado dentro de un predio de 27 mil metros cuadrados y posee 85 locales comerciales, estacionamiento, hipermercado y salas de cine. En el lugar se erigen dos tradicionales obras arquitectónicas, la Casona Bodereau y el tradicional Hotel Sorrento, edificaciones que fueron integradas al centro comercial.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 10 a 22h',
+    info_more: '54 3543 402 500\ninfo@paseolibertad.com.ar\nhttp://www.paseolibertad.com.ar',
+    lat: '-31.335868754228883',
+    lon: '-64.28879499435425',
+    categories: [11,4],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1613,
+    slug: 'paseo-libertad-sabattini',
+    title: 'Paseo Libertad Sabattini',
+    hood: 'Ferroviario Mitre',
+    address: 'Av. Amadeo Sabattini 3250',
+    poster: 'http://gideon.afterseven.com.ar/public/images/paseo_libertad_sabattini.jpg',
+    text: 'Paseo Libertad es la marca que agrupa a más de 15 centros comerciales en todo el país. Se caracterizan por una adecuada combinación de locales comerciales, variada oferta gastronómica y diferentes opciones de entretenimiento para toda la familia. En cada plaza, la propuesta se traduce en amplios espacios con un mix de marcas adecuado para que cada integrante de la familia encuentre todo lo que necesita en un mismo lugar.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 9 a 22h',
+    info_more: '54 351 458 6800\ninfo@paseolibertad.com.ar\nhttp://www.paseolibertad.com.ar',
+    lat: '-31.433541359303863',
+    lon: '-64.14262533187866',
+    categories: [4,11],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1652,
+    slug: 'paseo-sobremonte',
+    title: 'Paseo Sobremonte',
+    hood: 'Centro',
+    address: 'Marcelo T. de Alvear esq. 27 de abril',
+    poster: 'http://gideon.afterseven.com.ar/public/images/paseo_sobremonte.jpg',
+    text: 'El Paseo Sobremonte fue por muchos años el orgullo estético de la ciudad de Córdoba. En sus primeros tiempos era conocido con el nombre de “La Alameda” y hoy continúa siendo un elemento valioso en el paisaje urbano y a la vez, un símbolo característico del centro cordobés. Su fuente central y su verja de hierro forjado, sus añosos plátanos y su ordenada vegetación otorgan al paseo una fisonomía incomparable.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.4154950026925',
+    lon: '-64.19211208820343',
+    categories: [15,10],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1606,
+    slug: 'patio-olmos-shopping',
+    title: 'Patio Olmos Shopping',
+    hood: 'Centro',
+    address: 'Av. Velez Sársfield esq. Bv. San Juan',
+    poster: 'http://gideon.afterseven.com.ar/public/images/patio_olmos.jpg',
+    text: 'Se ubica en un edificio de llamativo diseño arquitectónico y estilo parisino, obra del Arquitecto Güell. Con el paso del tiempo, funcionó como cárcel, mercado, aduana y escuela de varones. Los desperfectos edilicios producidos por un sismo ocurrido en año 1968 lo inhabilitaron y ofició, durante años, como depósito de utilería del vecino Teatro Libertador San Martín. Ofrece entre otros servicios WiFi, teléfonos públicos, cajeros automáticos, estacionamiento cubierto y patio de comidas.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 10 a 22h',
+    info_more: '54 351 570 4100\ninfo@patioolmos.com\nhttp://www.patioolmos.com',
+    lat: '-31.419933028400706',
+    lon: '-64.18836236000061',
+    categories: [11,4,7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1508,
+    slug: 'peatonales-de-cordoba',
+    title: 'Peatonales de Córdoba',
+    hood: 'Centro',
+    address: '9 de julio esq. Rivera Indarte',
+    poster: 'http://gideon.afterseven.com.ar/public/images/peatonales.jpg',
+    text: 'Es la primera peatonal de la Republica Argentina, iniciativa del intendente Hugo Taboada en el año 1969. La peatonal puede ser definida como un espacio de encuentro construido a escala humana, donde el vecino o turista puede caminar tranquilamente y disfrutar del entorno sin el obstáculo del tránsito. Es un espacio de contemplación, que invita al diálogo entre personas conocidas y no conocidas y como está emplazada en el corazón del centro histórico de la ciudad, se pueden realizar visitas guiadas recorriendo los principales edificios, iglesias, conventos y monumentos del microcentro.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.4145051',
+    lon: '-64.18487379999999',
+    categories: [15,11,13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1677,
+    slug: 'plaza-cielo-y-tierra',
+    title: 'Plaza Cielo y Tierra',
+    hood: 'Nueva Córdoba',
+    address: 'Bv. Chacabuco esq. Chile',
+    poster: 'http://gideon.afterseven.com.ar/public/images/plaza_cielo_y_tierra.jpg',
+    text: 'Es un espacio de encuentro, comunicación y aprendizaje acerca del mundo natural desde la perspectiva de la ciencia. En la Plaza Cielo y Tierra se habla de y sobre ciencia pero desde una perspectiva humanista, no cientificista. Presenta la ciencia como una poderosa y útil herramienta que debe ser utilizada para mejorar la calidad de vida de todos los ciudadanos. El complejo cuenta con Astroparque, Geoparque, Plaza Didáctica, Mirador de las estrellas, Microcine y el Planetario Julio Verne.',
+    info_tickets: '',
+    info_timetable: 'Miércoles, jueves y viernes de 11:30 a 16:30h\nSábados y domingos de 14 a 16:30h',
+    info_more: '54 351 433 3419\nplazacielotierra@gmail.com\nhttp://www.cieloytierra.unc.edu.ar',
+    lat: '-31.43154168843193',
+    lon: '-64.18558359146118',
+    categories: [15,8,13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1515,
+    slug: 'plaza-colon',
+    title: 'Plaza Colón',
+    hood: 'Alberdi',
+    address: 'Av. Colón esq. Nicolás Avellaneda',
+    poster: 'http://gideon.afterseven.com.ar/public/images/plaza_colon.jpg',
+    text: 'La Plaza Colón es una de las más bellas plazas de la ciudad. Fue construida en 1888 y remodelada en 1955. La fuente, las estatuas, columnas, los mástiles y macetones eran parte Pabellón Argentino en la Exposición Universal de París (1889) y fueron entregados a Córdoba por el presidente de la Nación Miguel Juárez Celman.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.409241181691126',
+    lon: '-64.19577598571777',
+    categories: [15,13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1517,
+    slug: 'plaza-de-la-intendencia-heroes-de-malvinas',
+    title: 'Plaza de la Intendencia – Héroes de Malvinas',
+    hood: 'Centro',
+    address: 'Marcelo T. de Alvear esq. Duarte Quirós',
+    poster: 'http://gideon.afterseven.com.ar/public/images/intendencia.jpg',
+    text: 'Rodeada del marco natural de La Cañada, frente al edificio de la Municipalidad de Córdoba y enmarcada por importantes edificios, esta Plaza conserva los añosos árboles de los patios interiores de las viejas casonas que fueron demolidas para permitir su construcción. En el centro de la misma existía una gran fuente de agua, cuyo espacio luego se utilizó para construir allí la Central de Semáforos Inteligentes, actualmente en desuso.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.417202598780484',
+    lon: '-64.1912055015564',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1511,
+    slug: 'plaza-espana',
+    title: 'Plaza España',
+    hood: 'Nueva Córdoba',
+    address: 'Bv. Chacabuco esq. José Manuel Estrada',
+    poster: 'http://gideon.afterseven.com.ar/public/images/plaza_españa.jpg',
+    text: 'Es un punto vial neurálgico de la ciudad ya que allí confluyen seis importantes avenidas. La plaza se caracteriza por sus estructuras de concreto, que elevan un ámbito irrelevante a la categoría de monumento y generan un recinto memorable escindido del flujo exterior vehicular. El diseño de la misma estuvo a cargo del arquitecto Miguel Ángel Roca, y se erige como puerta de ingreso al Parque Sarmiento, usando la vegetación y el agua como articulador. ',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.428578149248818',
+    lon: '-64.18483793735504',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1513,
+    slug: 'plaza-italia',
+    title: 'Plaza Italia',
+    hood: 'Centro',
+    address: 'Marcelo T. de Alvear esq. 27 de abril',
+    poster: 'http://gideon.afterseven.com.ar/public/images/plaza_italia.jpg',
+    text: 'La Plaza Italia fue concebida como un homenaje a los inmigrantes italianos y a la nación italiana por todo lo que representa en la historia de la humanidad. Una representación de los principales ríos de Italia convergen en el centro de la misma, donde algunos días de la semana se monta un paseo artesanal. La intervención arquitectónica fue realizada por el Arquitecto Miguel Ángel Roca.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.415856667729322',
+    lon: '-64.19035255908966',
+    categories: [13,15,12],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1581,
+    slug: 'portaculturas',
+    title: 'Portaculturas',
+    hood: 'Güemes',
+    address: 'Belgrano 884, Galería Caribú, Local 4',
+    poster: 'http://gideon.afterseven.com.ar/public/images/portaculturas.jpg',
+    text: 'Librería, objetos de autor con referencia exclusiva a la literatura y obras de arte de pequeño formato. Portaculturas es un proyecto que busca actuar en distintos planos de la actividad cultural: organización de eventos, editorial y difusión del arte contemporáneo emergente, entre otros. ',
+    info_tickets: '',
+    info_timetable: 'Martes a viernes de 15 a 20:30h\nSábados de 10 a 13h y de 16 a 22h\nDomingos de 16 a 22h',
+    info_more: '54 351 460 1601\njavier.folco@gmail.com\nhttps://www.portaculturas.com',
+    lat: '-31.42517809999999',
+    lon: '-64.19263360000002',
+    categories: [17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1597,
+    slug: 'quade-nueva-cordoba',
+    title: 'Quade Nueva Córdoba',
+    hood: 'Nueva Córdoba',
+    address: 'Bolivia 257',
+    poster: 'http://gideon.afterseven.com.ar/public/images/quade_nueva_cordoba.jpg',
+    text: 'Un espacio donde el libro es protagonista. Un ambiente cálido y acogedor, donde uno seguramente encuentra el libro que busca. Un lugar muy tranquilo que aisla a la perfección del movimiento y el bullicio que proviene del exterior.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 9 a 20:30h\nSábados de 10 a 13h',
+    info_more: '54 351 460 5479\nventas@quade.com.ar\nhttp://www.quade.com.ar',
+    lat: '-31.43177329999999',
+    lon: '-64.1869714',
+    categories: [17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1600,
+    slug: 'quade-paseo-del-jockey',
+    title: 'Quade Paseo del Jockey',
+    hood: 'Jardín',
+    address: 'Elías Yofre 1050, Paseo del Jockey',
+    poster: 'http://gideon.afterseven.com.ar/public/images/quade_paseo_del_jockey.jpg',
+    text: 'Un espacio donde el libro es protagonista. Un ambiente cálido y acogedor, donde uno seguramente encuentra el libro que busca. Un lugar muy tranquilo que aisla a la perfección del movimiento y el bullicio que proviene del exterior.',
+    info_tickets: '',
+    info_timetable: 'Lunes a domingos de 10 a 22h',
+    info_more: '54 351 460 5479\nventas@quade.com.ar\nhttp://www.quade.com.ar',
+    lat: '-31.4506379',
+    lon: '-64.180409',
+    categories: [17],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1502,
+    slug: 'reserva-natural-urbana-general-san-martin',
+    title: 'Reserva Natural Urbana General San Martín',
+    hood: 'Chateau Carreras',
+    address: 'Miguel Lillo s/n',
+    poster: 'http://gideon.afterseven.com.ar/public/images/reserva_san_martin.jpg',
+    text: 'Se encuentra ubicada al noroeste de la ciudad, abarcando una superficie de 114 hectáreas enmarcadas por el Río Suquía y el Canal Maestro Sur. Es la única área protegida de la ciudad y se constituye como una zona de gran importancia biológica, ya que corresponde a una zona de transición entre el Espinal y el Chaco Serrano, albergando ecosistemas nativos representativos. Cuenta con una gran diversidad de especies tanto animales como vegetales, conservando la última muestra del Espinal dentro de la ciudad de Córdoba.',
+    info_tickets: 'Entrada libre y gratuita',
+    info_timetable: 'Lunes a viernes de 8 a 20h\nSábados, domingos y feriados de 7 a 19h',
+    info_more: '54 0351 433 8409\nrnusanmartin@hotmail.com.ar\nhttps://ambiente.cordoba.gob.ar/reserva-natural-urbana-general-san-martin/',
+    lat: '-31.35691463523587',
+    lon: '-64.26817417144775',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1504,
+    slug: 'rio-suquia-y-costanera',
+    title: 'Río Suquía y Costanera',
+    hood: 'Alberdi',
+    address: 'Atraviesa la ciudad de noroeste a este',
+    poster: 'http://gideon.afterseven.com.ar/public/images/rio_suquia.jpg',
+    text: 'El río Suquía atraviesa no sólo la ciudad, sino su historia, ya que fue a su vera que Jerónimo Luis de Cabrera la fundó. Destinada a estar dividida por sus aguas y reunida por sus puentes, la ciudad se recrea hoy en su Costanera, considerada un parque lineal donde es posible practicar deportes, pasear, pasar una tarde de picnic, tomar sol y disfrutar del verde. Aún cuando goza de todos los beneficios naturales, no está permitido ingresar al agua.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.405365240158062',
+    lon: '-64.19800758361816',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1583,
+    slug: 'ruben-libros',
+    title: 'Rubén Libros',
+    hood: 'Centro',
+    address: 'Deán Funes 163, Paseo Santa Catalina, Local 1',
+    poster: 'http://gideon.afterseven.com.ar/public/images/ruben_libros.jpg',
+    text: 'Rubén Libros es una de las librerías más interesantes del centro cordobés y constituye un gran escondite en el medio de la locura que es esa zona de la ciudad. Se caracteriza por estar atendida por su dueño, y porque la mayoría de los empleados son personas relacionadas con la literatura local de alguna manera. Esto asegura que casi siempre puedan dar respuesta a las consultas, buenas recomendaciones y una atención que no es fácil encontrar en el rubro.',
+    info_tickets: '',
+    info_timetable: 'Lunes a viernes de 9 a 20h\nSábados de 9 a 13h',
+    info_more: '54 351 424 8355\nrubenlibros@fibertel.com.ar',
+    lat: '-31.415490424645125',
+    lon: '-64.18658137321472',
+    categories: [17,11],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1478,
+    slug: 'rueda-eiffel',
+    title: 'Rueda Eiffel',
+    hood: 'Nueva Córdoba',
+    address: 'Av. Deodoro Roca s/n, Jardín Zoológico, Parque Sarmiento',
+    poster: 'http://gideon.afterseven.com.ar/public/images/rueda_eiffel_2.jpg',
+    text: 'Antigua noria de diversiones, actualmente transformada en emblemática escultura. Realizada casi totalmente en hierro forjado, tiene 27 metros de diámetro y 20 cabinas de 6 plazas cada una. Es un ejemplo de la típica ingeniería en hierro de fines de siglo XIX. Se atribuye su construcción a los célebres talleres franceses de Gustave Eiffel.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: 'http://www.zoo-cordoba.com.ar',
+    lat: '-31.42578174326189',
+    lon: '-64.17700052261353',
+    categories: [13,15],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1670,
+    slug: 'skatepark',
+    title: 'Skatepark',
+    hood: 'Nueva Córdoba',
+    address: 'Av. Deodoro Roca s/n, Parque Sarmiento',
+    poster: 'http://gideon.afterseven.com.ar/public/images/skatepark.jpg',
+    text: 'Ubicado en el pulmón verde del Parque Sarmiento, se constituye en el skate park más grande del país y uno de los más importantes de Latinoamérica. Posee 3000 metros cuadrados y su diseño estuvo a cargo de arquitectos de la Asociación Cordobesa de Skateboarding.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.429329628048276',
+    lon: '-64.17551189661032',
+    categories: [15,16],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1602,
+    slug: 'sr-espacio',
+    title: 'Sr. Espacio',
+    hood: 'Güemes',
+    address: 'Ayacucho 538',
+    poster: 'http://gideon.afterseven.com.ar/public/images/sr_espacio.jpg',
+    text: 'Sr. Espacio es una Arty Fashion Gallery, donde el diseño, las artes y la moda tienen un lugar exclusivo para expresarse de manera tangible y en todos sus soportes: indumentaria, desfiles, muestras, objetos, comidas, arte, encuentro. Alberga 7 locales comerciales, 4 oficinas y una Tienda bar, todo articulado por un gran patio interior donde la circulación de aire, la luz natural y la vegetación aportan una energía especial al entorno, rematando en un ambiente sencillo, luminoso, con superficies amplias que transmiten serenidad.',
+    info_tickets: '',
+    info_timetable: 'Lunes a sábados de 11 a 2h',
+    info_more: '54 351 422 3416\nhttp://www.srespacio.com.ar',
+    lat: '-31.4208444',
+    lon: '-64.19218039999998',
+    categories: [4,11,9],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1678,
+    slug: 'standard-69',
+    title: 'Standard 69',
+    hood: 'Güemes',
+    address: 'Achaval Rodriguez 244, Galería Barrio',
+    poster: 'http://gideon.afterseven.com.ar/public/images/standard_69.jpg',
+    text: 'Un espacio relajado y con una ambientación pensada desde el diseño de interior, este lugar propone una experiencia nocturna de gastronomía de producto, con platos para compartir con amigos entre buena música y risas. Comida rica y simple, servida en pequeños platos y con precios moderados.',
+    info_tickets: '',
+    info_timetable: 'Miércoles a domingos de 19 a 2h',
+    info_more: '54 9 351 771 9507\nhttp://www.elpapagayo.com.ar',
+    lat: '-31.424272',
+    lon: '-64.19137999999998',
+    categories: [4],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1631,
+    slug: 'studio-theater',
+    title: 'Studio Theater',
+    hood: 'Centro',
+    address: 'Rosario de Santa Fe 272',
+    poster: 'http://gideon.afterseven.com.ar/public/images/studio_theatre.jpg',
+    text: 'Es el teatro más antiguo en funcionamiento de la ciudad de Córdoba y se ha convertido en sede de importantes eventos tras una importante restauración. Además, tal como sucedía en la década de los ochenta, ha vuelto a funcionar como disco y sede de eventos y fiestas. Es muestra de que la arquitectura post-colonial del siglo XIX y la tecnología pueden amalgamarse perfectamente.',
+    info_tickets: '',
+    info_timetable: 'Viernes, sábados y domingos de 0 a 6h',
+    info_more: '54 351 398 7790\nstudiodisco@hotmail.com',
+    lat: '-31.417271268214296',
+    lon: '-64.18040692806244',
+    categories: [18,5],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1627,
+    slug: 'super-park',
+    title: 'Super Park',
+    hood: 'Nueva Córdoba',
+    address: 'Amado J. Roldán s/n, Parque Sarmiento',
+    poster: 'http://gideon.afterseven.com.ar/public/images/super_park.jpg',
+    text: 'Parque de atracciones mecánicas ubicado en el tradicional Parque Sarmiento y con 42 años de trayectoria. Super Park se enorgullece de haber dado a tres generaciones de familias cordobesas un sin fin de soleadas tardes de diversión. A pesar del paso de loa años, sigue siendo el mayor parque de atracciones de la ciudad y es visitado por más de 550.000 personas por año.',
+    info_tickets: '',
+    info_timetable: 'Jueves y viernes de 16 a 0h\nSábado de 11 a 0h\nDomingos de 11:30 a 0h',
+    info_more: '54 351 460 1222\ninfo@super-park.com.ar\nhttp://www.super-park.com.ar',
+    lat: '-31.428548109999664',
+    lon: '-64.18099164962769',
+    categories: [7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1474,
+    slug: 'torre-angela',
+    title: 'Torre Ángela',
+    hood: 'Centro',
+    address: '27 de Abril 370',
+    poster: 'http://gideon.afterseven.com.ar/public/images/torre_angela.jpg',
+    text: 'Edificio de viviendas y oficinas terminado en 1983. Durante 25 años ostentó el privilegio de ser el edificio más alto de la ciudad. La característica silueta de la Torre Ángela se ha convertido en un hito referencial e icono de la ciudad, que se puede identificar fácilmente desde diversos puntos de la ciudad.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more:
+    {
+      tel: '',
+      email: '',
+      web: '',
+      whatsapp: '',
+      instagram: '',
+      facebook: '',
+      twitter: ''
+    },
+    lat: '-31.4155808',
+    lon: '-64.18939139999998',
+    categories: [13],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1634,
+    slug: 'tungue-lele-escuela-de-artes',
+    title: 'Tungue Lelé Escuela de Artes',
+    hood: 'Argüello',
+    address: 'Pasaje Ingeniero Taravella 6124',
+    poster: 'http://gideon.afterseven.com.ar/public/images/tungue_lele.jpg',
+    text: 'La Escuela de Música y Expresión Artística, inicia sus actividades como escuela de música en el año 2005, siempre involucrando a las familias en los procesos de aprendizaje y buscando siempre la difusión del arte y la cultura. Concebido inicialmente como una casa de formación en la ejecución de instrumentos, su propuesta formativa se fue ampliando también a otras disciplinas artísticas como la danza, teatro, plástica y fotografía.',
+    info_tickets: '',
+    info_timetable: 'Lunes a jueves de 16 a 21h',
+    info_more: '54 3543 420 383\nescuelatunguelele@gmail.com',
+    lat: '-31.349966865472915',
+    lon: '-64.25023555755615',
+    categories: [5,18,7],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1519,
+    slug: 'universidad-libre-del-ambiente',
+    title: 'Universidad Libre del Ambiente',
+    hood: 'Quebrada de las Rosas',
+    address: 'Av. del Piamonte s/n',
+    poster: 'http://gideon.afterseven.com.ar/public/images/ula.jpg',
+    text: 'Se encuentra ubicada en un sector aledaño a la Quebrada del Infiernillo, una reserva natural de 22 hectáreas situada en la zona oeste de la capital cordobesa. Es un centro de educación ambiental no formal, que depende de la Municipalidad de Córdoba. Desde aquí se genera un espacio de educación y participación en el que se comparten experiencias, materiales e información que promueve la construcción de una ciudadanía ambiental para trabajar entre todos por el cuidado de nuestro ambiente.',
+    info_tickets: '',
+    info_timetable: '',
+    info_more: '54 351 433 7114\nuniversidadlibredelambiente@gmail.com\nhttps://ambiente.cordoba.gob.ar/universidad-libre-del-ambiente',
+    lat: '-31.3840155',
+    lon: '-64.24980749999997',
+    categories: [15,8],
+    highlight: 0,
+    gallery: {}
+  },
+  { 
+    id: 1585,
+    slug: 'volcan-azul-libros',
+    title: 'Volcán Azul Libros',
+    hood: 'Güemes',
+    address: 'Achaval Rodriguez 244, Galería Barrio',
+    poster: 'http://gideon.afterseven.com.ar/public/images/volcan_azul.jpg',
+    text: 'Creemos que el arte es motor generador de cambios. Moviliza, sacude estructuras, nos hace detenernos en las pequeñas y grandes cosas de la vida. El arte, por sobre todo, nos hace más felices. Por eso, creamos Volcán Azul, un espacio abierto donde la palabra es generadora de un mundo de expresiones que van desde la música hasta la pintura.',
+    info_tickets: '',
+    info_timetable: 'Martes a viernes de 10 a 13:30h y de 17 a 22h\nSábados y domingos de 17 a 22h',
+    info_more: '54 9 351 15 620 9926\ncontacto@volcanazullibros.com\nhttp://www.volcanazullibros.com',
+    lat: '-31.424353',
+    lon: '-64.19129299999997',
+    categories: [17],
+    highlight: 0,
+    gallery: {}
   }
 ]
