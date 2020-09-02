@@ -4,10 +4,13 @@ import Navigation from '../components/Navigation/Navigation'
 import Icon from '../components/Icon/Icon'
 
 class Test extends React.Component {
-  state = {
-    isLoading: true,
-    spotsData: [],
-    error: null
+  constructor (props) {
+    super(props)
+    this.state = {
+      isLoading: true,
+      spotsData: [],
+      error: null
+    }
   }
 
   fetchUsers() {

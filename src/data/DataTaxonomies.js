@@ -38,7 +38,7 @@ export default {
     {
       id: 7,
       title: 'Niños',
-      slug: 'niños',
+      slug: 'ninos',
       icon: 'kids',
       color: '#9CC929'
     },
