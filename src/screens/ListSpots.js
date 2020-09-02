@@ -186,10 +186,6 @@ class ListSpots extends React.Component {
       .catch(categoriesError => this.setState({ categoriesError, categoriesLoading: false }))
   }
 
-  fetchCategoriesData() {
-    console.log('HOLA')
-  }
-
   componentDidMount() {
     this.fetchSpotsData();
     this.fetchCategoriesData();
@@ -229,7 +225,7 @@ class ListSpots extends React.Component {
           }
 
           { 
-            this.state.categoriesLoading ? <h3>Cargando categorias...</h3> : <p>SE CARGARON LAS CATS</p> 
+            this.state.categoriesLoading ? <h3>Cargando categorias...</h3> : <p>SE CARGARON LAS CATEGORIAS!</p> 
           }
 
           <hr/>
