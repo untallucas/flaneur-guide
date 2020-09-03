@@ -87,6 +87,7 @@ a {
 //FiltersList
 .FiltersList {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   margin: 24px auto 32px;
   max-width: $breakpoint-xxl;
