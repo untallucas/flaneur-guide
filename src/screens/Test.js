@@ -3,61 +3,36 @@ import React from 'react'
 import Navigation from '../components/Navigation/Navigation'
 import Icon from '../components/Icon/Icon'
 
+import AppData from '../contexts/AppData'
+
 class Test extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      isLoading: true,
-      spotsData: [],
-      error: null
-    }
-  }
-
-  fetchUsers() {
-    fetch('https://notion-api.splitbee.io/v1/table/06a53a97c7704fac82906509da256483?v=68cac7916d3f43a08f824ea21fda8fbf')
-      .then(response => response.json())
-      .then(getSpotsData =>
-        this.setState({
-          spotsData: getSpotsData.filter(spot => spot.published === 1),
-          isLoading: false,
-        })
-      )
-      .catch(error => this.setState({ error, isLoading: false }))
-  }
-
-  componentDidMount() {
-    this.fetchUsers();
-  }
-
   render(){
-    const { isLoading, spotsData, error } = this.state;
     return (
       <div className="Page">
         <Navigation/>
 
         <div className="Page__Wrapper">
-
-          { error ? <div style={{ backgroundColor: '#ffb0c0', borderRadius: 8, padding: 12, margin: 24, width: 'auto' }}>{ error.message }</div> : null }
-
-          { !isLoading ? (
-            spotsData.map(user => {
-              const { title, slug, id, text, poster_url } = user;
-              return (
-                <div key={ id } style={{ backgroundColor: '#c0b0ff', borderRadius: 8, padding: 12, margin: 24, width: 'auto' }}>
-                  <a href={ '/lugares/' + slug } style={{ textDecoration: 'none' }}>
-                    <h3>{ id } </h3>
-                    <h1>{ title }</h1>
-                    <p>{ text }</p>
-                    <img src={ 'https://www.notion.so/image/' + encodeURIComponent(poster_url[0].url) } alt='Chupala React' />
-                  </a>
-                </div>
-              );
-            })
-          ) : (
-            <div style={{ backgroundColor: '#b0ffc0', borderRadius: 8, padding: 12, margin: 24, width: 'auto' }}>
-              <h3>Loading...</h3>
-            </div>
-          )}
+          <AppData.Consumer>
+            { taxonomiesData => taxonomiesData && (
+              <dl>
+                <ul>
+                {
+                  taxonomiesData.map(taxonomy =>
+                  <li key={ taxonomy.id } onClick={() => this.triggerFilter('categorias', 'Categorías', taxonomy.slug, '\xa0\xa0·\xa0\xa0' + taxonomy.title)} >
+                    { taxonomy.title }
+                  </li>
+                )
+                }
+                </ul>
+                <dt>Title:</dt>
+                <dd>{ taxonomiesData[0].title }</dd>
+                <dt>Artist:</dt>
+                <dd>{ taxonomiesData[0].slug }</dd>
+                <dt>Genre:</dt>
+                <dd>{ taxonomiesData[0].icon }</dd>
+              </dl>
+            )}
+          </AppData.Consumer>
 
           <Icon name="visual-arts" color="#44DD00" width="24" height="24" />
           <Icon name="cinema" color="#44DD00" width="24" height="24" />

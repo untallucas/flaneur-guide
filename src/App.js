@@ -14,37 +14,45 @@ import ListEvents from './screens/ListEvents'
 import SingleEvent from './screens/SingleEvent'
 import ListTracks from './screens/ListTracks'
 import SingleTrack from './screens/SingleTrack'
-
 import Test from './screens/Test'
+
+import AppData from './contexts/AppData'
+import { AppDataProvider } from './contexts/AppData'
 
 import './App.scss';
 
-const App = () => (
-  <Router>
-    <Switch>
-      <Route path='/inicio' component={Home} exact />
-      <Route path='/acerca' component={About} exact />
-      <Route path='/test' component={Test} exact />
+class App extends React.Component {
+  render() {
+    return (
+      <AppDataProvider>
+        <Router>
+          <Switch>
+            <Route path='/inicio' component={ Home } exact />
+            <Route path='/acerca' component={ About } exact />
+            <Route path='/test' component={ Test } exact />
 
-      <Route path='/lugares/:taxonomy/:filter' component={ListSpots} />
-      <Route path='/lugares/:slug' component={SingleSpot} />
-      <Route path='/lugares' component={ListSpots} exact />
+            <Route path='/lugares/:taxonomy/:filter' component={ ListSpots } />
+            <Route path='/lugares/:slug' component={ SingleSpot } />
+            <Route path='/lugares' component={ ListSpots } exact />
 
-      <Route path='/restaurantes/tipo/:filter' component={ListSpots} />
-      <Route path='/restaurantes/:slug' component={SingleSpot} />
-      <Route path='/restaurantes' component={ListSpots} exact />
+            <Route path='/restaurantes/tipo/:filter' component={ ListSpots } />
+            <Route path='/restaurantes/:slug' component={ SingleSpot } />
+            <Route path='/restaurantes' component={ ListSpots } exact />
 
-      <Route path='/eventos/tipo/:filter' component={ListEvents} />
-      <Route path='/eventos/:slug' component={SingleEvent} />
-      <Route path='/eventos' component={ListEvents} exact />
+            <Route path='/eventos/tipo/:filter' component={ ListEvents } />
+            <Route path='/eventos/:slug' component={ SingleEvent } />
+            <Route path='/eventos' component={ ListEvents } exact />
 
-      <Route path='/recorridos/tipo/:filter' component={ListTracks} />
-      <Route path='/recorridos/:slug' component={SingleTrack} />
-      <Route path='/recorridos' component={ListTracks} exact />
+            <Route path='/recorridos/tipo/:filter' component={ ListTracks } />
+            <Route path='/recorridos/:slug' component={ SingleTrack } />
+            <Route path='/recorridos' component={ ListTracks } exact />
 
-      <Redirect to='/inicio' />
-    </Switch>
-  </Router>
-)
+            <Redirect to='/inicio' />
+          </Switch>
+        </Router>
+      </AppDataProvider>
+    );
+  }
+}
 
 export default App
