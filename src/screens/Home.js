@@ -8,10 +8,6 @@ import CardsSlider from '../components/CardsSlider/CardsSlider'
 
 import AppData from '../contexts/AppData'
 
-const PageTitle = 'Córdoba'
-const PageSubtitle = 'Capital mundial del fernét'
-const PageDescription = 'Córdoba se encuentra ubicada en la región central del país, a ambas orillas del río Suquía. Es la segunda ciudad más poblada después de Buenos Aires y la más extensa del país.'
-
 let Slider1 = { 
   type: 'spots',
   filter: 'ninos',
@@ -47,13 +43,19 @@ const Home = props => {
       <Navigation/>
 
       <div className="Page__Wrapper">
-        <PageLayoutHero image="https://4.bp.blogspot.com/-_qLOnzlz6ks/WIYW_KKbv9I/AAAAAAAACZw/9860q5Gz35kP7tGs1s-LowtAoOXKOVNdgCK4B/s1600/terminaldecordoba.jpg" title={ PageTitle } subtitle={ PageSubtitle } />
 
-        <div className="Layout Layout--Col-10">
-          <div></div>
-          <PageLayoutOpening text={ PageDescription } />
-          <div></div>
-        </div>
+        <AppData.Consumer>
+          { AppData => AppData.city && (
+            <div>
+              <PageLayoutHero image={ AppData.city[0].image[0].url } title={ AppData.city[0].name } subtitle={ AppData.city[0].subtitle } />              
+              <div className="Layout Layout--Col-10">
+                <div></div>
+                <PageLayoutOpening text={ AppData.city[0].description } />
+                <div></div>
+              </div>
+            </div>
+          )}
+        </AppData.Consumer>
 
         { Boolean(Slider1.filter) && (
           <AppData.Consumer>
