@@ -16,7 +16,6 @@ import ListTracks from './screens/ListTracks'
 import SingleTrack from './screens/SingleTrack'
 import Test from './screens/Test'
 
-import AppData from './contexts/AppData'
 import { AppDataProvider } from './contexts/AppData'
 
 import './App.scss';

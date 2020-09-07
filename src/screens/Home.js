@@ -3,56 +3,42 @@ import React from 'react'
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
-import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
+
 import CardsSlider from '../components/CardsSlider/CardsSlider'
 
-import DataApp from '../data/DataApp.js'
-import DataItems from '../data/DataItems.js'
-import DataTaxonomies from '../data/DataTaxonomies.js'
+import AppData from '../contexts/AppData'
 
-const PageTitle = DataApp.city.name
-const PageSubtitle = DataApp.city.subtitle
-const PageDescription = DataApp.city.description
-const DataCategories = DataTaxonomies.categories
+const PageTitle = 'Córdoba'
+const PageSubtitle = 'Capital mundial del fernét'
+const PageDescription = 'Córdoba se encuentra ubicada en la región central del país, a ambas orillas del río Suquía. Es la segunda ciudad más poblada después de Buenos Aires y la más extensa del país.'
 
-// Carousels setup
-const Slider1 = []
-Slider1.Spots = DataItems.filter(function (item) {
-  return item.categories.includes(6)
-})
-Slider1.Title = "A donde ir"
-Slider1.Description = "Alguna información sobre esta categoría"
+let Slider1 = { 
+  type: 'spots',
+  filter: 'ninos',
+  title: 'A donde ir',
+  description: 'Alguna información sobre esta categoría'
+}
 
-const Slider2 = []
-Slider2.Spots = DataItems.filter(function (item) {
-  return item.categories.includes(2)
-})
-Slider2.Title = "Dónde comer"
-Slider2.Description = "Detalle de color random del grupo"
+let Slider2 = {
+  type: 'spots',
+  filter: 'teatro',
+  title: 'Dónde comer',
+  description: 'Detalle de color random del grupo'
+}
 
-const Slider3 = []
-Slider3.Spots = DataItems.filter(function (item) {
-  return item.categories.includes(5)
-})
-Slider3.Title = "Dónde comprar"
-Slider3.Description = "Algo sobre las opciones que se muestran"
+let Slider3 = {
+  type: 'spots',
+  filter: 'compras',
+  title: 'Dónde comprar',
+  description: 'Algo sobre las opciones que se muestran'
+}
 
-const Slider4 = []
-Slider4.Spots = DataItems.filter(function (item) {
-  return item.highlight === 1
-})
-Slider4.Title = "Imperdibles"
-Slider4.Description = ""
-
-// Taxonomies list setup
-const Taxonomies = []
-Taxonomies.Title = "Todas las opciones"
-Taxonomies.Scope = DataCategories
-Taxonomies.List = Taxonomies.Scope.map(function (filter, i) {
-  return (
-    filter.id
-  )
-})
+let Slider4 = {
+  type: 'ranking',
+  filter: '',
+  title: 'Imperdibles',
+  description: ''
+}
 
 const Home = props => {
   return (
@@ -69,24 +55,72 @@ const Home = props => {
           <div></div>
         </div>
 
-        { Boolean(Slider1.Spots.length) && (
-          <CardsSlider type="spots" title={ Slider1.Title } description={ Slider1.Description } spots={ Slider1.Spots } />
+        { Boolean(Slider1.filter) && (
+          <AppData.Consumer>
+            { AppData => AppData.spots && (
+              <CardsSlider 
+                type = { Slider1.type }
+                title = { Slider1.title } 
+                description = { Slider1.description } 
+                spots = { 
+                  AppData.spots.filter(function(item){ 
+                    return item.categories.includes(Slider1.filter)
+                  }) 
+                }
+              />
+            )}
+          </AppData.Consumer>
         )}
 
-        { Boolean(Slider2.Spots.length) && (
-          <CardsSlider type="spots" title={ Slider2.Title } description={ Slider2.Description } spots={ Slider2.Spots } />
+        { Boolean(Slider2.filter) && (
+          <AppData.Consumer>
+            { AppData => AppData.spots && (
+              <CardsSlider 
+                type = { Slider2.type }
+                title = { Slider2.title } 
+                description = { Slider2.description } 
+                spots = { 
+                  AppData.spots.filter(function(item){ 
+                    return item.categories.includes(Slider2.filter)
+                  }) 
+                }
+              />
+            )}
+          </AppData.Consumer>
         )}
 
-        { Boolean(Slider3.Spots.length) && (
-          <CardsSlider type="spots" title={ Slider3.Title } description={ Slider3.Description } spots={ Slider3.Spots } />
+        { Boolean(Slider3.filter) && (
+          <AppData.Consumer>
+            { AppData => AppData.spots && (
+              <CardsSlider
+                type = { Slider3.type }
+                title = { Slider3.title }
+                description = { Slider3.description } 
+                spots = { 
+                  AppData.spots.filter(function(item){ 
+                    return item.categories.includes(Slider3.filter)
+                  }) 
+                }
+              />
+            )}
+          </AppData.Consumer>
         )}
 
-        { Boolean(Slider4.Spots.length) && (
-          <CardsSlider type="ranking" title={ Slider4.Title } spots={ Slider4.Spots } />
-        )}
-
-        { Boolean(Taxonomies.List.length) && (
-          <TaxonomiesList title={ Taxonomies.Title } taxonomy="categoria" list={ Taxonomies.List } scope={ Taxonomies.Scope } />
+        { Boolean(Slider4.title) && (
+          <AppData.Consumer>
+            { AppData => AppData.spots && (
+              <CardsSlider 
+                type = { Slider4.type }
+                title = { Slider4.title }
+                description = { Slider4.description }
+                spots = {
+                  AppData.spots.filter(function(item){
+                    return item.highlight === 1
+                  })
+                }
+              />
+            )}
+          </AppData.Consumer>
         )}
       </div>
     </div>
