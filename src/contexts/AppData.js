@@ -4,8 +4,9 @@ const AppData = React.createContext({ })
 
 class AppDataProvider extends React.Component {
   state = {
-    spots: null,
-    taxonomies: null
+    city: null,
+    taxonomies: null,
+    spots: null
   }
 
   fetchCityData() {
