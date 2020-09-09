@@ -8,23 +8,9 @@ import PageLayoutLinksBlock from '../components/PageLayoutLinksBlock/PageLayoutL
 import PageLayoutMap from '../components/PageLayoutMap/PageLayoutMap'
 import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
 
-import DataItems from '../data/DataItems.js'
-import DataTaxonomies from '../data/DataTaxonomies.js'
-
-const DataCategories = DataTaxonomies.categories
+import AppData from '../contexts/AppData'
 
 const SingleSpot = props => {
-  let Spot = DataItems.filter(function (spot) {
-    return spot.slug === props.match.params.slug
-  })
-
-  let printname
-  let address
-  if(Spot.length){
-    printname = Spot[0].shorttitle ? Spot[0].shorttitle : Spot[0].title
-    address = Spot[0].address + '\n' + Spot[0].hood
-  }
-
   return (
     <div className="Page">
 
@@ -32,26 +18,29 @@ const SingleSpot = props => {
 
       <div className="Page__Wrapper">
         <div className="Layout Layout--Col-1">
-          { /* No coincidence between URL slug and saved spots */ }
-          { Boolean(!Spot.length) && (
-            <h1>Ups, me parece que no hay nada con ese nombre por acá</h1>
-          )}
-
-          { /* Positive coincidence between URL slug and saved spots */ }
-          { Boolean(Spot.length) && (
-            <div>
-              <PageLayoutHeading title={ Spot[0].title } text={ Spot[0].text } />
-              <div className="Layout Layout--Col-2 Layout--Inset">
-                <PageLayoutImage image={ Spot[0].poster } description={ Spot[0].title } />
-                <PageLayoutMap address={ Spot[0].address } hood={ Spot[0].hood } lat={ Spot[0].lat } lon={ Spot[0].lon } title={ printname } />
+          <AppData.Consumer>
+            { AppData => AppData.spots && (
+              <div>
+              {
+                AppData.spots.filter(function(spot){ 
+                  return spot.slug === props.match.params.slug
+                }).map(spot =>
+                  <div key={ spot.id }>
+                    <PageLayoutHeading title={ spot.title } text={ spot.text } />
+                    <div className="Layout Layout--Col-2 Layout--Inset">
+                      <PageLayoutImage image={ spot.poster } description={ spot.title } />
+                      <PageLayoutMap address={ spot.address } hood={ spot.hood } lat={ spot.lat } lon={ spot.lon } title={ spot.shorttitle ? spot.shorttitle : spot.title } />
+                    </div>
+                    <TaxonomiesList title="Categorías" taxonomy="categoria" list={ spot.categories } />
+                    <PageLayoutTextBlock title='Dirección' content={ spot.address + '\n' + spot.hood } />
+                    <PageLayoutTextBlock title='Entradas' content={ spot.info_tickets } />
+                    <PageLayoutTextBlock title='Horarios' content={ spot.info_timetable } />
+                    <PageLayoutLinksBlock title='Más información' content={ spot.info_more } />
+                  </div>
+                )}
               </div>
-              <TaxonomiesList title="Categorías" taxonomy="categoria" list={ Spot[0].categories } scope={ DataCategories } />
-              <PageLayoutTextBlock title='Dirección' content={ address } />
-              <PageLayoutTextBlock title='Entradas' content={ Spot[0].info_tickets } />
-              <PageLayoutTextBlock title='Horarios' content={ Spot[0].info_timetable } />
-              <PageLayoutLinksBlock title='Más información' content={ Spot[0].info_more } />
-            </div>
-          )}
+            )}
+          </AppData.Consumer>
         </div>
       </div>
     </div>

@@ -9,6 +9,18 @@ import Icon from '../Icon/Icon'
 import './CardsSlider.scss'
 
 const CardsSlider = props => {
+  const NextArrow = ({currentSlide, slideCount, ...props}: CustomArrowProps) => (
+    <div className="slick-arrow slick-next" {...props}>
+      <Icon name="carat-right" color="#000000" />
+    </div>
+  )
+
+  const PrevArrow = ({currentSlide, slideCount, ...props}: CustomArrowProps) => (
+    <div className="slick-arrow slick-prev" {...props}>
+      <Icon name="carat-left" color="#000000" />
+    </div>
+  )
+
   var settings = {
     dots: false,
     infinite: true,
@@ -17,8 +29,8 @@ const CardsSlider = props => {
     slidesToScroll: 4,
     initialSlide: 0,
     swipeToSlide: true,
-    nextArrow: <div className="slick-arrow slick-next"><Icon name="carat-right" color="#000000" /></div>,
-    prevArrow: <div className="slick-arrow slick-prev"><Icon name="carat-left" color="#000000" /></div>,
+    nextArrow: <NextArrow/>,
+    prevArrow: <PrevArrow/>,
     responsive: [
       {
         breakpoint: 1024,
