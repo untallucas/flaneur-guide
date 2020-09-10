@@ -20,8 +20,7 @@ const OutstandingCard = props => {
 
   let url = '/lugares/' + spot.slug
   let printname = spot.shorttitle ? spot.shorttitle : spot.title
-  // let image = { spot.poster }
-  let image = 'https://picsum.photos/400/300?random=' + Math.random()
+  let image = spot.poster_url ? spot.poster_url[0].url : ''
 
   return (
     <Link to={ url } className="OutstandingCard">

@@ -28,7 +28,7 @@ class AppDataProvider extends React.Component {
       .then(taxonomiesResponse => taxonomiesResponse.json())
       .then(getTaxonomiesData =>
         this.setState({
-          taxonomies: getTaxonomiesData
+          taxonomies: getTaxonomiesData.filter(taxonomy => taxonomy.published === 1)
         }),
       )
   }
@@ -40,8 +40,7 @@ class AppDataProvider extends React.Component {
       .then(spotsResponse => spotsResponse.json())
       .then(getSpotsData =>
         this.setState({
-          spots: getSpotsData
-          // spots: getSpotsData.filter(spot => spot.published === 1)
+          spots: getSpotsData.filter(spot => spot.published === 1)
         })
       )
   }

@@ -22,8 +22,7 @@ const SpotCard = function ({ spot }) {
 
   let url = '/lugares/' + spot.slug
   let printname = spot.shorttitle ? spot.shorttitle : spot.title
-  //let image = 'https://www.notion.so/image/' + encodeURIComponent(spot.poster_url[0].url)
-  let image = 'https://picsum.photos/400/300?random=' + Math.random()  
+  let image = spot.poster_url ? spot.poster_url[0].url : ''
   let highlight 
   if(spot.highlight){
     highlight = <HighlightBadge/>
@@ -42,3 +41,8 @@ const SpotCard = function ({ spot }) {
 }
 
 export default SpotCard
+
+// ?table=block
+// &id=805cbfc4-8c52-4ef2-8a7f-8c8fe53d387b
+// &width=600
+// &userId=1471dd7c-5d5e-427b-ae7d-cd9d129246f9

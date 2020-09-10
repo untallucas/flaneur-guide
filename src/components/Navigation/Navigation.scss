@@ -6,6 +6,7 @@
   position: fixed;
   background-color: $color-brand-primary;
   width: $layout-lg + $spacing-xs + $spacing-xs;
+  z-index: 1;
 
   &__Item {
     width: $layout-lg;
