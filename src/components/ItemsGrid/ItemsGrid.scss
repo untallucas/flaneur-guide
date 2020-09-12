@@ -7,6 +7,11 @@
   max-width: $breakpoint-xxl;
   grid-column-gap: $layout-sm;
   grid-row-gap: $layout-md;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-auto-rows: auto;
+
+  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
+    padding-left: $layout-xs;
+    padding-right: $layout-xs;
+  }
 }

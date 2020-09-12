@@ -53,5 +53,10 @@
         border-color: darken($color-support-error-area, 10%);
       }
     }
-  }  
+  }
+
+  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
+    padding-left: $layout-xs;
+    padding-right: $layout-xs;
+  }
 }
