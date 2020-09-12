@@ -18,10 +18,10 @@ body {
 }
 
 body {
-  @include text-preset-9()
+  @include text-body-sm()
   color: $color-text-primary-on-light;
   padding: 0;
-  margin: 0;
+  margin: 0; 
 }
 
 #root {
@@ -77,21 +77,22 @@ p {
     margin: 0 auto;
     width: 100%;
     max-width: $breakpoint-xl;
-    padding-top: $layout-xxl;
+    // padding-top: $layout-xxl;
     padding-bottom: $layout-xxl;
-    transform: translateX(40px);
+    // transform: translateX(40px);
   }
 
-  @media (max-width: $breakpoint-xl + $layout-lg + $spacing-xs + $spacing-xs + $layout-lg + $spacing-xs + $spacing-xs + $layout-lg + $spacing-xs + $spacing-xs) {
+  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
     &__Wrapper {
-      transform: none;
+      width: auto;
+      max-width: none;
     }
   }
 
   @media (max-width: $breakpoint-md) {
     &__Wrapper {
-      padding-top: $layout-sm;
-      padding-bottom: $layout-xl;
+      padding-top: 0;
+      padding-bottom: $layout-xxl;
     }
   }
 }
@@ -133,61 +134,21 @@ p {
   }
 
   &--Inset {
-    padding: 0;
+    padding: 0 !important;
   }
 
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
     padding-left: $layout-xs;
     padding-right: $layout-xs;
+
+    &--Col-2 {
+      grid-template-columns: 1fr;
+      grid-column-gap: 0;
+    }
+
+    &--Col-10 {
+      grid-template-columns: 0 1fr 0;
+      grid-column-gap: 0;
+    }
   }
-}
-
-
-// Test
-.test-text-1 {
-  @include text-preset-1();
-}
-
-.test-text-2 {
-  @include text-preset-2();
-}
-
-.test-text-3 {
-  @include text-preset-3();
-}
-
-.test-text-4 {
-  @include text-preset-4();
-}
-
-.test-text-5 {
-  @include text-preset-5();
-}
-
-.test-text-6 {
-  @include text-preset-6();
-}
-
-.test-text-7 {
-  @include text-preset-7();
-}
-
-.test-text-8 {
-  @include text-preset-8();
-}
-
-.test-text-9 {
-  @include text-preset-9();
-}
-
-.test-text-10 {
-  @include text-preset-10();
-}
-
-.test-text-11 {
-  @include text-preset-11();
-}
-
-.test-text-12 {
-  @include text-preset-12();
 }

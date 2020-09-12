@@ -5,10 +5,9 @@
   margin-bottom: $layout-xl;
 
   &__Title {
-    @include text-preset-8();
-    font-weight: $font-weight-regular;
-    text-align: center;
+    @include text-heading-md();
     color: $color-text-secondary-on-light;
+    text-align: center;
     border-bottom: 1px solid $color-border-separator-on-light;
     margin-bottom: $spacing-xxl;
     padding-bottom: $spacing-xl;

@@ -29,112 +29,117 @@
 }
 
 
-// Text presets
-// Headline
-@mixin text-preset-1 {
+// Text - Display
+@mixin text-display {
   font-family: $font-title;
   font-size: $font-scale-1;
   font-weight: $font-weight-semibold;
   line-height: $line-height-1;
   letter-spacing: -4px;
-  text-transform: none;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-scale-4;
+    line-height: $line-height-4;
+    letter-spacing: -1px;
+  }
 }
 
-// Heading level 1
-@mixin text-preset-2 {
+// Text - Heading LG
+@mixin text-heading-lg {
   font-family: $font-title;
   font-size: $font-scale-4;
   font-weight: $font-weight-light;
   line-height: $line-height-4;
-  letter-spacing: 0.2px;
-  text-transform: none;
-  color: $color-text-primary-on-light;
+  letter-spacing: 0.25px;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-scale-5;
+    line-height: $line-height-5;
+    letter-spacing: -0.125px;
+  }
 }
 
-          // Heading level 2
-          @mixin text-preset-3 {
-            font-family: $font-title;
-            font-size: $font-scale-6;
-            font-weight: $font-weight-regular;
-            line-height: $line-height-6;
-            letter-spacing: normal;
-            text-transform: none;
-            background-color: red;
-          }
-
-          // Heading level 3
-          @mixin text-preset-4 {
-            font-family: $font-title;
-            font-size: $font-scale-7;
-            font-weight: $font-weight-regular;
-            line-height: $line-height-7;
-            letter-spacing: normal;
-            text-transform: none;
-            background-color: red;
-          }
-
-// Heading level 4
-@mixin text-preset-5 {
+// Text - Heading MD
+@mixin text-heading-md {
   font-family: $font-title;
-  font-size: $font-scale-8;
+  font-size: $font-scale-6;
   font-weight: $font-weight-regular;
-  line-height: $line-height-8;
-  letter-spacing: normal;
-  text-transform: none;
+  line-height: $line-height-6;
+  letter-spacing: 0.25px;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-scale-7;
+    line-height: $line-height-7;
+    letter-spacing: -0.125px;
+  }
 }
 
-// Heading level 5
-@mixin text-preset-6 {
+// Text - Heading SM
+@mixin text-heading-sm {
   font-family: $font-title;
   font-size: $font-scale-9;
-  font-weight: $font-weight-semibold;
+  font-weight: $font-weight-medium;
   line-height: $line-height-9;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
 }
 
-// Body text xtra large
-@mixin text-preset-7 {
+// Text - Body LG
+@mixin text-body-lg {
   font-family: $font-text;
   font-size: $font-scale-6;
   font-weight: $font-weight-light;
   line-height: $line-height-6;
   letter-spacing: 0.25px;
-  text-transform: none;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-scale-7;
+    line-height: $line-height-7;
+    letter-spacing: 0.25px;
+  }
 }
 
-// Body text large
-@mixin text-preset-8 {
+// Text - Body MD
+@mixin text-body-md {
   font-family: $font-text;
   font-size: $font-scale-7;
   font-weight: $font-weight-light;
   line-height: $line-height-7;
   letter-spacing: 0.25px;
-  text-transform: none;
+  
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-scale-8;
+    line-height: $line-height-8;
+    letter-spacing: 0;
+  }
 }
 
-// Body text medium
-@mixin text-preset-9 {
+// Text - Body SM
+@mixin text-body-sm {
   font-family: $font-text;
   font-size: $font-scale-8;
   font-weight: $font-weight-regular;
   line-height: $line-height-8;
-  letter-spacing: 0.2px;
-  text-transform: none;
+  letter-spacing: 0.25px;
 }
 
-// Body text small
-@mixin text-preset-10 {
+// Text - Body XS
+@mixin text-body-xs {
   font-family: $font-text;
   font-size: $font-scale-9;
   font-weight: $font-weight-regular;
   line-height: $line-height-9;
-  letter-spacing: normal;
-  text-transform: none;
+  letter-spacing: 0.25px;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-scale-10;
+    line-height: $line-height-10;
+    letter-spacing: 0;
+  }
 }
 
-// Eyebrow
-@mixin text-preset-11 {
+// Text - Detail 1 - Legend
+@mixin text-detail-legend {
   font-family: $font-text;
   font-size: $font-scale-10;
   font-weight: $font-weight-semibold;
@@ -143,24 +148,27 @@
   text-transform: uppercase;
 }
 
-// Subtitle serif
-@mixin text-preset-12 {
+// Text - Detail 2 - Accent
+@mixin text-detail-accent {
   font-family: $font-accent;
   font-size: $font-scale-7;
-  font-weight: $font-weight-thin;
+  font-weight: $font-weight-regular;
   font-style: oblique;
   line-height: $line-height-7;
   letter-spacing: 0.5px;
-  text-transform: none;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-scale-8;
+    line-height: $line-height-8;
+    letter-spacing: 0.25px;
+  }  
 }
 
-// Minor serif
-@mixin text-preset-13 {
+// Text - Detail 3 - Rank
+@mixin text-detail-rank {
   font-family: $font-accent;
   font-size: $font-scale-8;
-  font-weight: $font-weight-thin;
-  font-style: normal;
+  font-weight: $font-weight-regular;
   line-height: $line-height-8;
-  letter-spacing: 0.5px;
-  text-transform: none;
+  letter-spacing: 0;
 }

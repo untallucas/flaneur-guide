@@ -47,7 +47,7 @@
   }
 
   &__Overlay {
-    @include text-preset-11()
+    @include text-detail-legend()
     color: white;
     background-color: $color-brand-primary;
     box-sizing: border-box;

@@ -50,7 +50,7 @@
     text-align: center;
 
     &__Position {
-      @include text-preset-13();
+      @include text-detail-rank();
       transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
       color: $color-text-primary-on-light;
       width: $spacing-xxxl;
@@ -88,7 +88,7 @@
     }
 
     &__Title {
-      @include text-preset-12();
+      @include text-detail-accent();
       text-align: center;
       width: 100%;
       color: $color-text-primary-on-dark;

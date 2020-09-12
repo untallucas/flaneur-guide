@@ -2,9 +2,8 @@
 @import './../../_mixins.scss';
 
 .PageLayoutOpening {
-  @include text-preset-7()
+  @include text-body-lg()
   padding: $layout-lg 0 $layout-xl 0;
   color: $color-text-tertiary-on-light;
   text-align: center;
-  line-height: 64px;
 }

@@ -9,6 +9,7 @@
   letter-spacing: 0;
   line-height: 0;
   position: relative;
+  margin-top: $layout-xl;
 
   &__Background {
     width: 100%;
@@ -29,7 +30,7 @@
   }
 
   &__Title {
-    @include text-preset-1();
+    @include text-display();
     color: $color-text-primary-on-dark;
     padding-top: $spacing-sm;
     padding-bottom: $spacing-sm;
@@ -37,8 +38,13 @@
   }
 
   &__Subtitle {
-    @include text-preset-12();
+    @include text-detail-accent();
     color: $color-text-primary-on-dark;
     text-shadow: 0 0 50px rgba(0,0,0,0.6), 0 4px 10px rgba(0,0,0,0.4);
-  }  
+  }
+
+  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
+    margin-top: 0;
+    border-radius: 0;
+  }
 }

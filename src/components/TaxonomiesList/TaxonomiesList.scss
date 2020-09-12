@@ -6,7 +6,7 @@
   margin: 0;
 
   &__Title {
-    @include text-preset-6()
+    @include text-heading-sm()
     color: $color-text-tertiary-on-light;
     padding: 0 0 16px 0;
   }

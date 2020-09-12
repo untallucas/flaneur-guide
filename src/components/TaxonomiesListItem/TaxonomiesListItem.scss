@@ -27,12 +27,16 @@
   }
 
   &__Title {
-    @include text-preset-10();
+    @include text-body-xs();
     text-align: center;
     letter-spacing: 0.1px;
     color: $color-text-tertiary-on-light;
     margin-top: $spacing-sm;
     display: block;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   &:hover & {

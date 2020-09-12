@@ -15,10 +15,11 @@
   }
 
   &__Title {
-    @include text-preset-5();
+    @include text-body-sm();
     color: $color-text-primary-on-light;
     margin: $spacing-md $spacing-lg $spacing-md $spacing-md;
-    height: 48px;
+    line-height: 24px;
+    height: 50px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -26,7 +27,7 @@
   }
 
   &__Subtitle {
-    @include text-preset-11();
+    @include text-detail-legend();
     color: $color-text-tertiary-on-light;
     padding: 0 $spacing-lg $spacing-md $spacing-md;
   }

@@ -3,7 +3,6 @@
 
 .HighlightCard {
   @include card();
-  @include text-preset-8();
   background-color: $color-brand-primary;
   color: $color-text-primary-on-dark;
   box-shadow: none;
@@ -17,6 +16,6 @@
   }
 
   &__Content {
-    @include text-preset-5();
+    @include text-body-sm();
   }
 }

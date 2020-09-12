@@ -41,8 +41,3 @@ const SpotCard = function ({ spot }) {
 }
 
 export default SpotCard
-
-// ?table=block
-// &id=805cbfc4-8c52-4ef2-8a7f-8c8fe53d387b
-// &width=600
-// &userId=1471dd7c-5d5e-427b-ae7d-cd9d129246f9
