@@ -9,31 +9,36 @@ import CardsSlider from '../components/CardsSlider/CardsSlider'
 import AppData from '../contexts/AppData'
 
 let Slider1 = { 
+  count: 0,
   type: 'spots',
   filter: 'ninos',
   title: 'A donde ir',
-  description: 'Alguna información sobre esta categoría'
+  description: 'Alguna información sobre esta categoría',
+  url: 'lugares/categoria/ninos'
 }
 
 let Slider2 = {
+  count: 0,
   type: 'spots',
   filter: 'teatro',
   title: 'Dónde comer',
-  description: 'Detalle de color random del grupo'
+  description: 'Detalle de color random del grupo',
+  url: 'lugares/categoria/teatro'
 }
 
 let Slider3 = {
+  count: 0,
   type: 'spots',
   filter: 'compras',
   title: 'Dónde comprar',
-  description: 'Algo sobre las opciones que se muestran'
+  description: 'Algo sobre las opciones que se muestran',
+  url: 'lugares/categoria/compras'
 }
 
 let Slider4 = {
+  count: 0,
   type: 'ranking',
-  filter: '',
   title: 'Imperdibles',
-  description: ''
 }
 
 const Home = props => {
@@ -47,7 +52,7 @@ const Home = props => {
         <AppData.Consumer>
           { AppData => AppData.city && (
             <div>
-              <PageLayoutHero image={ AppData.city[0].image[0].url } title={ AppData.city[0].name } subtitle={ AppData.city[0].subtitle } />              
+              <PageLayoutHero image={ AppData.city[0].image[0].url } title={ AppData.city[0].name } subtitle={ AppData.city[0].subtitle } />
               <div className="Layout Layout--Col-10">
                 <div></div>
                 <PageLayoutOpening text={ AppData.city[0].description } />
@@ -60,14 +65,15 @@ const Home = props => {
         { Boolean(Slider1.filter) && (
           <AppData.Consumer>
             { AppData => AppData.spots && (
-              <CardsSlider 
+              <CardsSlider
                 type = { Slider1.type }
-                title = { Slider1.title } 
-                description = { Slider1.description } 
-                spots = { 
-                  AppData.spots.filter(function(item){ 
-                    return item.categories.includes(Slider1.filter)
-                  }) 
+                title = { Slider1.title }
+                description = { Slider1.description }
+                url = { Slider1.url }
+                spots = {
+                  AppData.spots.filter(function(item){
+                    return item.categories.includes(Slider1.filter) && Slider1.count++ < 6
+                  })
                 }
               />
             )}
@@ -77,13 +83,14 @@ const Home = props => {
         { Boolean(Slider2.filter) && (
           <AppData.Consumer>
             { AppData => AppData.spots && (
-              <CardsSlider 
+              <CardsSlider
                 type = { Slider2.type }
                 title = { Slider2.title } 
                 description = { Slider2.description } 
+                url = { Slider2.url } 
                 spots = { 
                   AppData.spots.filter(function(item){ 
-                    return item.categories.includes(Slider2.filter)
+                    return item.categories.includes(Slider2.filter) && Slider2.count++ < 6
                   }) 
                 }
               />
@@ -98,9 +105,10 @@ const Home = props => {
                 type = { Slider3.type }
                 title = { Slider3.title }
                 description = { Slider3.description } 
+                url = { Slider3.url } 
                 spots = { 
                   AppData.spots.filter(function(item){ 
-                    return item.categories.includes(Slider3.filter)
+                    return item.categories.includes(Slider3.filter) && Slider3.count++ < 6
                   }) 
                 }
               />
@@ -114,10 +122,9 @@ const Home = props => {
               <CardsSlider 
                 type = { Slider4.type }
                 title = { Slider4.title }
-                description = { Slider4.description }
                 spots = {
                   AppData.spots.filter(function(item){
-                    return item.highlight === 1
+                    return item.highlight === 1 && Slider4.count++ < 6
                   })
                 }
               />

@@ -3,7 +3,6 @@
 
 .OutstandingCard {
   @include card();
-  width: 280px;
   height: 400px;
   display: block;
   text-decoration: none;

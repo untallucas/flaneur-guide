@@ -25,7 +25,7 @@
     }
   }
 
-  @media (max-width: $breakpoint-xl + $layout-lg + $spacing-xs + $spacing-xs + $layout-lg + $spacing-xs + $spacing-xs + $layout-lg + $spacing-xs + $spacing-xs) {
+  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
     height: $layout-lg + $spacing-xs + $spacing-xs;
     width: 100%;
     bottom: 0;

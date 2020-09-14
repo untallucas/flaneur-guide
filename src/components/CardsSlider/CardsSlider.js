@@ -4,6 +4,7 @@ import Slider from 'react-slick'
 import SpotCard from '../SpotCard/SpotCard'
 import OutstandingCard from '../OutstandingCard/OutstandingCard'
 import HighlightCard from '../HighlightCard/HighlightCard'
+import LinkCard from '../LinkCard/LinkCard'
 import Icon from '../Icon/Icon'
 
 import './CardsSlider.scss'
@@ -22,7 +23,8 @@ const CardsSlider = props => {
   )
 
   var settings = {
-    dots: false,
+    arrows: false,
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 4,
@@ -33,22 +35,28 @@ const CardsSlider = props => {
     prevArrow: <PrevArrow/>,
     responsive: [
       {
-        breakpoint: 992,
+        breakpoint: 1500,
         settings: {
+          arrows: false,
+          dots: true,
           slidesToShow: 3,
           slidesToScroll: 3
         }
       },
       {
-        breakpoint: 576,
+        breakpoint: 768,
         settings: {
+          arrows: false,
+          dots: true,
           slidesToShow: 2,
           slidesToScroll: 2
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
+          arrows: false,
+          dots: true,
           slidesToShow: 1,
           slidesToScroll: 1
         }
@@ -62,12 +70,12 @@ const CardsSlider = props => {
         <div className="CardsSlider">
           <h2 className="CardsSlider__Title">{ props.title }</h2>
           <Slider {...settings}>
-            <HighlightCard content={ props.description } />
             {
               props.spots.map(function (spot, i) {
                 return <SpotCard key={ i } spot={ spot } />
               })
             }
+            <LinkCard url={ props.url } />
           </Slider>
         </div>
       )

@@ -32,9 +32,6 @@
     }
 
     &__Value {
-      width: 100%;
-      overflow: hidden;
-      text-overflow: ellipsis;
       color: $color-interactive-link-on-light;
 
       &__Link {
@@ -58,6 +55,12 @@
   @media (max-width: $breakpoint-md) {
     &__Item {
       flex-direction: column;
+
+      &__Value {
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
     }
   }
 }

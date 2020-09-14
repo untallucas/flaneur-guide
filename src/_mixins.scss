@@ -97,6 +97,12 @@
     line-height: $line-height-7;
     letter-spacing: 0.25px;
   }
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-scale-8;
+    line-height: $line-height-8;
+    letter-spacing: 0.25px;
+  }  
 }
 
 // Text - Body MD
@@ -121,6 +127,12 @@
   font-weight: $font-weight-regular;
   line-height: $line-height-8;
   letter-spacing: 0.25px;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: $font-scale-9;
+    line-height: $line-height-9;
+    letter-spacing: 0;
+  }
 }
 
 // Text - Body XS

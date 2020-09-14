@@ -1,0 +1,39 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.LinkCard {
+  @include card();
+  background-color: $color-background-light-secondary;
+  color: $color-text-primary-on-light;
+  box-shadow: none;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 24px;
+  display: flex;
+
+  &:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  &__Link {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__Content {
+    @include text-body-sm();
+    color: $color-brand-primary;
+    margin-right: $spacing-xs;
+  }
+
+  &__Icon {
+    color: $color-brand-primary;
+    fill: $color-brand-primary;
+  }
+}

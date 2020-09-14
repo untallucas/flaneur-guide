@@ -12,7 +12,7 @@
   }
 
   &__Blurb {
-    @include text-body-md()
+    @include text-body-lg()
     color: $color-text-tertiary-on-light;
     padding: 0  0 120px 0;
   }

@@ -79,11 +79,12 @@ p {
     max-width: $breakpoint-xl;
     // padding-top: $layout-xxl;
     padding-bottom: $layout-xxl;
-    // transform: translateX(40px);
+    transform: translateX(40px);
   }
 
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
     &__Wrapper {
+      transform: none;
       width: auto;
       max-width: none;
     }
