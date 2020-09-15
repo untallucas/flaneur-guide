@@ -153,3 +153,49 @@ p {
     }
   }
 }
+
+
+//Test
+.test-text-1 {
+  @include text-display();
+}
+
+.test-text-2 {
+  @include text-heading-lg();
+}
+
+.test-text-3 {
+  @include text-heading-md();
+}
+
+.test-text-4 {
+  @include text-heading-sm();
+}
+
+.test-text-5 {
+  @include text-body-lg();
+}
+
+.test-text-6 {
+  @include text-body-md();
+}
+
+.test-text-7 {
+  @include text-body-sm();
+}
+
+.test-text-8 {
+  @include text-body-xs();
+}
+
+.test-text-9 {
+  @include text-detail-legend();
+}
+
+.test-text-10 {
+  @include text-detail-accent();
+}
+
+.test-text-11 {
+  @include text-detail-rank();
+}
