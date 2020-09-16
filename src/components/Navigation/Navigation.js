@@ -18,9 +18,6 @@ class Navigation extends Component {
           <NavLink to='/acerca' className="Navigation__Item" activeClassName="Navigation__Item--Selected">
             <Icon name="information" color="#FFFFFF" width="32" height="32" />
           </NavLink>
-          <NavLink to='/test' className="Navigation__Item" activeClassName="Navigation__Item--Selected">
-            <Icon name="cross" color="#FFFFFF" width="32" height="32" />
-          </NavLink>
         </div>
     )
   }
