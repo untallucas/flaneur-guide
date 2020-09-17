@@ -14,16 +14,20 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
 
     &__Image {
-      transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
-      filter: saturate(1.2);
+      width: auto;
       height: 100%;
+      position: absolute;
+      filter: saturate(1.2);
+      opacity: 0;
       top: 50%;
       left: 50%;
-      position: absolute;
       transform-origin: left top;
       transform: perspective(500px) translate3d(-50%, -50%, 0);
+      transition: opacity .3s;
+      transition-delay: 0.3s;
     }
 
     &:after {
@@ -34,6 +38,12 @@
       top: 0;
       left: 0;
       background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%), radial-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.3));
+    }
+
+    &.lazy-load-image-loaded {
+      .OutstandingCard__Background__Image {
+        opacity: 1;
+      }
     }
   }
 

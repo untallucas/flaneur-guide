@@ -25,7 +25,7 @@
     filter: saturate(1.2);
     opacity: 0;
     transition: opacity .3s;
-    transition-delay: 1s;
+    transition-delay: 0.3s;
   }
 
   &__Link {
@@ -56,9 +56,3 @@
     }
   }
 }
-
-// @keyframes GracefulImageBis {
-//   0%   { opacity: 0; }
-//   50%  { opacity: 0.5; }
-//   100% { opacity: 1; }
-// }

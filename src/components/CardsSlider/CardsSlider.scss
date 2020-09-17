@@ -195,5 +195,10 @@
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
     padding-left: $layout-xs;
     padding-right: $layout-xs;
+
+    .slick-slider { 
+      margin-left: 0;
+      margin-right: 0;
+    }    
   }
 }

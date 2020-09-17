@@ -128,11 +128,11 @@
   line-height: $line-height-8;
   letter-spacing: 0.25px;
 
-  @media (max-width: $breakpoint-sm) {
-    font-size: $font-scale-9;
-    line-height: $line-height-9;
-    letter-spacing: 0;
-  }
+  // @media (max-width: $breakpoint-sm) {
+  //   font-size: $font-scale-9;
+  //   line-height: $line-height-9;
+  //   letter-spacing: 0;
+  // }
 }
 
 // Text - Body XS

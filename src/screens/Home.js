@@ -72,7 +72,7 @@ const Home = props => {
                 url = { Slider1.url }
                 spots = {
                   AppData.spots.filter(function(item){
-                    return item.categories.includes(Slider1.filter) && Slider1.count++ < 6
+                    return item.categories.includes(Slider1.filter) && Slider1.count++ < 5
                   })
                 }
               />
@@ -90,7 +90,7 @@ const Home = props => {
                 url = { Slider2.url } 
                 spots = { 
                   AppData.spots.filter(function(item){ 
-                    return item.categories.includes(Slider2.filter) && Slider2.count++ < 6
+                    return item.categories.includes(Slider2.filter) && Slider2.count++ < 5
                   }) 
                 }
               />
@@ -108,7 +108,7 @@ const Home = props => {
                 url = { Slider3.url } 
                 spots = { 
                   AppData.spots.filter(function(item){ 
-                    return item.categories.includes(Slider3.filter) && Slider3.count++ < 6
+                    return item.categories.includes(Slider3.filter) && Slider3.count++ < 5
                   }) 
                 }
               />
