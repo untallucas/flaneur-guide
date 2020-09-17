@@ -11,7 +11,7 @@
   grid-auto-rows: auto;
 
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
-    padding-left: $layout-xs;
-    padding-right: $layout-xs;
+    padding-left: $layout-xs + $layout-xxs;
+    padding-right: $layout-xs + $layout-xxs;
   }
 }
