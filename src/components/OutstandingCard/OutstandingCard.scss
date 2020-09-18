@@ -26,8 +26,8 @@
       left: 50%;
       transform-origin: left top;
       transform: perspective(500px) translate3d(-50%, -50%, 0);
-      transition: opacity .3s;
-      transition-delay: 0.3s;
+      transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+      // transition-delay: 0.3s;
     }
 
     &:after {
@@ -109,7 +109,7 @@
     &__Background {
       &__Image {
         filter: saturate(1.8);
-        transform: perspective(500px) translate3d(-50%, -50%, 100px);
+        transform: perspective(500px) translate3d(-50%, -50%, 50px);
       }
     }
 
@@ -123,7 +123,7 @@
       }
 
       &__TitleWrapper {
-        transform: translateY(-8px);
+        transform: translateY(-4px);
       }
     }
   }
