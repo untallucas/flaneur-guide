@@ -2,17 +2,17 @@
 @import './../../_mixins.scss';
 
 .PageLayoutTextBlock {
-  padding: 64px 0 0;
+  padding: $layout-lg 0 0;
 
   &__Title {
     @include text-heading-sm()
     color: $color-text-tertiary-on-light;
-    padding: 0 0 16px 0;
+    padding: 0 0 $spacing-md 0;
   }
 
   &__Item {
     list-style: none;
-    margin-bottom: 8px;
+    margin-bottom: $spacing-xs;
 
     &:last-child {
       margin-bottom: 0;

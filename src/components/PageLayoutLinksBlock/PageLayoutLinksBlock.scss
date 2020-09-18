@@ -7,12 +7,12 @@
   &__Title {
     @include text-heading-sm()
     color: $color-text-tertiary-on-light;
-    padding: 0 0 16px 0;
+    padding: 0 0 $spacing-md 0;
   }
 
   &__Item {
     list-style: none;
-    margin-bottom: 8px;
+    margin-bottom: $spacing-xs;
     display: flex;
     flex-direction: row;
     width: 100%;

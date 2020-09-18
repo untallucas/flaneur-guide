@@ -11,19 +11,19 @@ import AppData from '../contexts/AppData'
 let Slider1 = { 
   count: 0,
   type: 'spots',
-  filter: 'ninos',
-  title: 'A donde ir',
-  description: 'Alguna información sobre esta categoría',
-  url: 'lugares/categoria/ninos'
+  filter: 'aire-libre',
+  title: 'Al aire libre',
+  description: '',
+  url: 'lugares/categoria/aire-libre'
 }
 
 let Slider2 = {
   count: 0,
   type: 'spots',
-  filter: 'teatro',
+  filter: 'comer-y-beber',
   title: 'Dónde comer',
-  description: 'Detalle de color random del grupo',
-  url: 'lugares/categoria/teatro'
+  description: '',
+  url: 'lugares/categoria/comer-y-beber'
 }
 
 let Slider3 = {
@@ -31,14 +31,14 @@ let Slider3 = {
   type: 'spots',
   filter: 'compras',
   title: 'Dónde comprar',
-  description: 'Algo sobre las opciones que se muestran',
+  description: '',
   url: 'lugares/categoria/compras'
 }
 
 let Slider4 = {
   count: 0,
   type: 'ranking',
-  title: 'Imperdibles',
+  title: 'Imperdibles'
 }
 
 const Home = props => {

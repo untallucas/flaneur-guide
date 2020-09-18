@@ -27,7 +27,6 @@
       transform-origin: left top;
       transform: perspective(500px) translate3d(-50%, -50%, 0);
       transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
-      // transition-delay: 0.3s;
     }
 
     &:after {
@@ -78,7 +77,7 @@
         height: 100%;
         background-color: $color-background-light-primary;
         position: absolute;
-        border-radius: 8px;
+        border-radius: $border-radius-blunt;
         transform: rotate(45deg);
         top: 0;
         left: 0;
@@ -88,7 +87,7 @@
     }
 
     &__TitleWrapper {
-      height: 60px;
+      height: $spacing-xxxl;
       display: flex;
       place-items: center;
       transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
@@ -115,7 +114,7 @@
 
     &__Content {
       &__Position {
-        transform: translateY(-16px);
+        transform: translateY($spacing-md * -1);
 
         &:before {
           box-shadow: $elevation-higher;
@@ -123,7 +122,7 @@
       }
 
       &__TitleWrapper {
-        transform: translateY(-4px);
+        transform: translateY($spacing-xxs * -1);
       }
     }
   }

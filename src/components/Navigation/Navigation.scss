@@ -26,8 +26,8 @@
   }
 
   &__Icon {
-    width: 32px;
-    height: 32px;
+    width: $spacing-xl;
+    height: $spacing-xl;
   }
 
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
@@ -46,8 +46,8 @@
     }
 
     &__Icon {
-      width: 24px;
-      height: 24px;
+      width: $spacing-lg;
+      height: $spacing-lg;
     }
   }
 }

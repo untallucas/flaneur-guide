@@ -2,12 +2,12 @@
 @import './../../_mixins.scss';
 
 .TaxonomiesList {
-  padding: 120px 0 0;
+  padding: $layout-xxl 0 0;
   margin: 0;
 
   &__Title {
     @include text-heading-sm()
     color: $color-text-tertiary-on-light;
-    padding: 0 0 16px 0;
+    padding: 0 0 $spacing-md 0;
   }
 }

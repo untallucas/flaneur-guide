@@ -14,7 +14,7 @@
   &__Blurb {
     @include text-body-lg()
     color: $color-text-tertiary-on-light;
-    padding: 0  0 120px 0;
+    padding: 0  0 $layout-xl 0;
   }
 
   @media (max-width: $breakpoint-md) {

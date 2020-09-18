@@ -2,7 +2,7 @@
 @import './../../_mixins.scss';
 
 .TaxonomiesListItem {
-  width: 88px;
+  width: $layout-xl;
   display: inline-block;
   margin-right: $spacing-md;
   position: relative;
@@ -16,12 +16,12 @@
 
   &__Icon {
     transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
-    width: 88px;
-    height: 88px;
+    width: $layout-xl;
+    height: $layout-xl;
     border-radius: $border-radius-blunt;
     color: $color-text-primary-on-dark;
     display: block;
-    padding: 20px;
+    padding: $spacing-md;
     box-sizing: border-box;
     background-color: $color-brand-primary;
   }
@@ -42,7 +42,7 @@
   &:hover & {
     &__Icon {
       box-shadow: $elevation-high;
-      transform: translateY(-4px);
+      transform: translateY($spacing-xxs * -1);
       filter: brightness(1.05);
     }
   }
