@@ -47,16 +47,16 @@ const Home = props => {
 
       <Navigation/>
 
-      <div className="Page__Wrapper">
+      <div className="Page__Wrapper Page__Wrapper--BottomPadding">
 
         <AppData.Consumer>
           { AppData => AppData.city && (
             <div>
               <PageLayoutHero image={ AppData.city[0].image[0].url } title={ AppData.city[0].name } subtitle={ AppData.city[0].subtitle } />
-              <div className="Layout Layout--Col-10">
-                <div></div>
-                <PageLayoutOpening text={ AppData.city[0].description } />
-                <div></div>
+              <div className="Grid Grid--Col-10">
+                <div className="Grid__Content">
+                  <PageLayoutOpening text={ AppData.city[0].description } />
+                </div>
               </div>
             </div>
           )}

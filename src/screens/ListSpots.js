@@ -57,38 +57,49 @@ class ListSpots extends React.Component {
 
         <Navigation/>
 
-        <div className="Page__Wrapper">
-          <div className="Layout Layout--Col-1">
-            <PageLayoutHeading title={ 'Lugares' + this.state.currentFilterTitle } />
+        <div className="Page__Wrapper Page__Wrapper--BottomPadding">
+
+          <div className="Grid Grid--Col-12">
+            <div className="Grid__Content">
+              <PageLayoutHeading title={ 'Lugares' + this.state.currentFilterTitle } />
+            </div>
           </div>
 
-          <AppData.Consumer>
-            { AppData => AppData.taxonomies && (
-              <FiltersList>
-                { AppData.taxonomies.map(taxonomy =>
-                  <li key={ taxonomy.id } onClick={() => this.triggerFilter('categorias', 'Categorías', taxonomy.slug, '\xa0\xa0·\xa0\xa0' + taxonomy.title, taxonomy.id)} className={ this.state.currentFilterSlug === taxonomy.slug ? 'FiltersListItem FiltersListItem__Active' : 'FiltersListItem' }>
-                    { taxonomy.title }
-                  </li>
+          <div className="Grid Grid--Col-12">
+            <div className="Grid__Content">
+              <AppData.Consumer>
+                { AppData => AppData.taxonomies && (
+                  <FiltersList>
+                    { AppData.taxonomies.map(taxonomy =>
+                      <li key={ taxonomy.id } onClick={() => this.triggerFilter('categorias', 'Categorías', taxonomy.slug, '\xa0\xa0·\xa0\xa0' + taxonomy.title, taxonomy.id)} className={ this.state.currentFilterSlug === taxonomy.slug ? 'FiltersListItem FiltersListItem__Active' : 'FiltersListItem' }>
+                        { taxonomy.title }
+                      </li>
+                    )}
+                    <li onClick={() => this.triggerFilter(null, null, null, '', null)} className={ this.state.currentFilterSlug ? 'FiltersListItem FiltersListItem--Clear' : 'FiltersListItem FiltersListItem--Clear FiltersListItem--Clear__Hidden' }>
+                      × Quitar filtros
+                    </li>
+                  </FiltersList>
                 )}
-                <li onClick={() => this.triggerFilter(null, null, null, '', null)} className={ this.state.currentFilterSlug ? 'FiltersListItem FiltersListItem--Clear' : 'FiltersListItem FiltersListItem--Clear FiltersListItem--Clear__Hidden' }>
-                  × Quitar filtros
-                </li>
-              </FiltersList>
-            )}
-          </AppData.Consumer>
+              </AppData.Consumer>
+            </div>
+          </div>
 
-          <AppData.Consumer>
-            { AppData => AppData.spots && (
-              <ItemsGrid
-                items = { 
-                  AppData.spots.filter(function(item){ 
-                    // Customize query for different taxonomies
-                    return filterSlug ? item.categories.includes( filterSlug ) : item
-                  }) 
-                }
-              />
-            )}
-          </AppData.Consumer>
+          <div className="Grid Grid--Col-12">
+            <div className="Grid__Content">
+              <AppData.Consumer>
+                { AppData => AppData.spots && (
+                  <ItemsGrid
+                    items = { 
+                      AppData.spots.filter(function(item){ 
+                        // Customize query for different taxonomies
+                        return filterSlug ? item.categories.includes( filterSlug ) : item
+                      }) 
+                    }
+                  />
+                )}
+              </AppData.Consumer>
+            </div>
+          </div>
 
         </div>
       </div>

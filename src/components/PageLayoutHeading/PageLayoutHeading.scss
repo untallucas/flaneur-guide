@@ -3,10 +3,10 @@
 
 .PageLayoutHeading {
   padding: 0;
-
+  
   &__Title {
     @include text-heading-lg()
-    padding: $layout-xl 0 $layout-lg 0;
+    padding: $layout-xxxl 0 $layout-md 0;
     overflow: hidden;
     width: 100%;
   }
@@ -14,7 +14,7 @@
   &__Blurb {
     @include text-body-lg()
     color: $color-text-tertiary-on-light;
-    padding: 0  0 $layout-xl 0;
+    padding: 0  0 $layout-xxl 0;
   }
 
   @media (max-width: $breakpoint-md) {

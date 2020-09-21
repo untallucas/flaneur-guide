@@ -6,7 +6,7 @@
 
 // Font Import
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
 
@@ -41,7 +41,7 @@ $font-scale-core: 8px;
 $font-scale-1: $font-scale-core * 13;
 $font-scale-2: $font-scale-core * 9.5;
 $font-scale-3: $font-scale-core * 8;
-$font-scale-4: $font-scale-core * 6;
+$font-scale-4: $font-scale-core * 5;
 $font-scale-5: $font-scale-core * 4;
 $font-scale-6: $font-scale-core * 3.5;
 $font-scale-7: $font-scale-core * 3;
@@ -105,7 +105,7 @@ $color-support-warning-text: darken(#FFFF00, 40%);
 
 // Background Colors
 $color-background-light-primary: #FFFFFF;
-$color-background-light-secondary: #F8F8F8;
+$color-background-light-secondary: #F7F7F7;
 $color-background-dark-primary: #000000;
 $color-background-dark-secondary: #AAAAAA;
 
@@ -113,7 +113,7 @@ $color-background-dark-secondary: #AAAAAA;
 // Text Colors
 $color-text-primary-on-light: #333333;
 $color-text-secondary-on-light: #666666;
-$color-text-tertiary-on-light: #AAAAAA;
+$color-text-tertiary-on-light: #999999;
 $color-text-primary-on-dark: #FFFFFF;
 $color-text-secondary-on-dark: #DDDDDD;
 $color-text-tertiary-on-dark: #BBBBBB;
@@ -153,6 +153,7 @@ $layout-md: $layout-core * 3;
 $layout-lg: $layout-core * 4;
 $layout-xl: $layout-core * 6;
 $layout-xxl: $layout-core * 10;
+$layout-xxxl: $layout-core * 15;
 
 
 // Border Width

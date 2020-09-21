@@ -4,7 +4,6 @@
   display: grid;
   justify-content: center;
   margin: 0 auto;
-  max-width: $breakpoint-xxl;
   grid-column-gap: $layout-sm;
   grid-row-gap: $layout-md;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));

@@ -9,9 +9,10 @@ const About = props => {
 
       <Navigation/>
 
-      <div className="Page__Wrapper">
-        <div className="Layout Layout--Col-1">
-          <div>
+      <div className="Page__Wrapper Page__Wrapper--BottomPadding">
+
+        <div className="Grid Grid--Col-12">
+          <div className="Grid__Content">
             <PageLayoutHeading title="Acerca" />
             <p className='PageLayoutHeading__Blurb'>
               Hola, mi nombre es Lucas. Soy diseñador y programador, y este es un experimento personal para practicar diseño, React y SCSS.
@@ -23,6 +24,7 @@ const About = props => {
             </p>
           </div>
         </div>
+
       </div>
     </div>
   )

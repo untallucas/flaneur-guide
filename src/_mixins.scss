@@ -50,7 +50,7 @@
   font-size: $font-scale-4;
   font-weight: $font-weight-light;
   line-height: $line-height-4;
-  letter-spacing: 0.25px;
+  letter-spacing: -0.25px;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-5;
