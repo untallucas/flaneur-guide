@@ -35,12 +35,12 @@
   font-size: $font-scale-1;
   font-weight: $font-weight-semibold;
   line-height: $line-height-1;
-  letter-spacing: -4px;
+  letter-spacing: $letter-space-tight;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-4;
     line-height: $line-height-4;
-    letter-spacing: -1px;
+    letter-spacing: $letter-space-extraclose;
   }
 }
 
@@ -50,12 +50,12 @@
   font-size: $font-scale-4;
   font-weight: $font-weight-light;
   line-height: $line-height-4;
-  letter-spacing: -0.25px;
+  letter-spacing: $letter-space-extraclose;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-5;
     line-height: $line-height-5;
-    letter-spacing: -0.125px;
+    letter-spacing: $letter-space-close;
   }
 }
 
@@ -65,12 +65,12 @@
   font-size: $font-scale-6;
   font-weight: $font-weight-regular;
   line-height: $line-height-6;
-  letter-spacing: 0.25px;
+  letter-spacing: $letter-space-loose;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-7;
     line-height: $line-height-7;
-    letter-spacing: -0.125px;
+    letter-spacing: $letter-space-close;
   }
 }
 
@@ -78,9 +78,9 @@
 @mixin text-heading-sm {
   font-family: $font-title;
   font-size: $font-scale-9;
-  font-weight: $font-weight-medium;
+  font-weight: $font-weight-semibold;
   line-height: $line-height-9;
-  letter-spacing: 0.5px;
+  letter-spacing: $letter-space-cozy;
   text-transform: uppercase;
 }
 
@@ -90,18 +90,18 @@
   font-size: $font-scale-6;
   font-weight: $font-weight-light;
   line-height: $line-height-6;
-  letter-spacing: 0.25px;
+  letter-spacing: $letter-space-cozy;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-7;
     line-height: $line-height-7;
-    letter-spacing: 0.25px;
+    letter-spacing: $letter-space-loose;
   }
 
   @media (max-width: $breakpoint-sm) {
     font-size: $font-scale-8;
     line-height: $line-height-8;
-    letter-spacing: 0.25px;
+    letter-spacing: $letter-space-loose;
   }  
 }
 
@@ -111,12 +111,12 @@
   font-size: $font-scale-7;
   font-weight: $font-weight-light;
   line-height: $line-height-7;
-  letter-spacing: 0.25px;
+  letter-spacing: $letter-space-loose;
   
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-8;
     line-height: $line-height-8;
-    letter-spacing: 0;
+    letter-spacing: $letter-space-normal;
   }
 }
 
@@ -126,13 +126,7 @@
   font-size: $font-scale-8;
   font-weight: $font-weight-regular;
   line-height: $line-height-8;
-  letter-spacing: 0.25px;
-
-  // @media (max-width: $breakpoint-sm) {
-  //   font-size: $font-scale-9;
-  //   line-height: $line-height-9;
-  //   letter-spacing: 0;
-  // }
+  letter-spacing: $letter-space-cozy;
 }
 
 // Text - Body XS
@@ -141,12 +135,12 @@
   font-size: $font-scale-9;
   font-weight: $font-weight-regular;
   line-height: $line-height-9;
-  letter-spacing: 0.25px;
+  letter-spacing: $letter-space-cozy;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-10;
     line-height: $line-height-10;
-    letter-spacing: 0;
+    letter-spacing: $letter-space-normal;
   }
 }
 
@@ -156,7 +150,7 @@
   font-size: $font-scale-10;
   font-weight: $font-weight-semibold;
   line-height: $line-height-10;
-  letter-spacing: 0.5px;
+  letter-spacing: $letter-space-extraloose;
   text-transform: uppercase;
 }
 
@@ -167,12 +161,12 @@
   font-weight: $font-weight-regular;
   font-style: oblique;
   line-height: $line-height-7;
-  letter-spacing: 0.5px;
+  letter-spacing: $letter-space-extraloose;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-8;
     line-height: $line-height-8;
-    letter-spacing: 0.25px;
+    letter-spacing: $letter-space-loose;
   }  
 }
 
@@ -182,5 +176,5 @@
   font-size: $font-scale-8;
   font-weight: $font-weight-regular;
   line-height: $line-height-8;
-  letter-spacing: 0;
+  letter-spacing: $letter-space-normal;
 }

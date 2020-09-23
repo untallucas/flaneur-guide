@@ -59,7 +59,7 @@ $line-height-3: $line-height-core * 8 + 6;
 $line-height-4: $line-height-core * 6 + 6;
 $line-height-5: $line-height-core * 4.5 + 6;
 $line-height-6: $line-height-core * 6 + 6;
-$line-height-7: $line-height-core * 4 + 6;
+$line-height-7: $line-height-core * 3 + 6;
 $line-height-8: $line-height-core * 3.5 + 6;
 $line-height-9: $line-height-core * 2 + 6;
 $line-height-10: $line-height-core * 1.5 + 6;
@@ -67,10 +67,13 @@ $line-height-11: $line-height-core * 1 + 6;
 
 
 // Letterspacing
-$letter-space-tight: -0.4px;
+$letter-space-tight: -1px;
+$letter-space-extraclose: -0.25px;
+$letter-space-close: -0.12px;
 $letter-space-normal: 0;
-$letter-space-cozy: 0.2px;
-$letter-space-loose: 0.8px;
+$letter-space-cozy: 0.12px;
+$letter-space-loose: 0.25px;
+$letter-space-extraloose: 0.50px;
 
 
 // Brand Colors
@@ -111,9 +114,9 @@ $color-background-dark-secondary: #AAAAAA;
 
 
 // Text Colors
-$color-text-primary-on-light: #333333;
-$color-text-secondary-on-light: #666666;
-$color-text-tertiary-on-light: #999999;
+$color-text-primary-on-light: #222222;
+$color-text-secondary-on-light: #555555;
+$color-text-tertiary-on-light: #888888;
 $color-text-primary-on-dark: #FFFFFF;
 $color-text-secondary-on-dark: #DDDDDD;
 $color-text-tertiary-on-dark: #BBBBBB;
@@ -168,7 +171,7 @@ $elevation-low: 0 0 0 1px rgba(0,0,0,0.08), 0 1px 2px rgba(0, 0, 0, 0.2);
 $elevation-medium: 0 4px 8px rgba(0,0,0,0.15);
 $elevation-high: 0 10px 16px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.2);
 $elevation-higher: 0 16px 24px rgba(0, 0, 0, 0.20);
-$elevation-highest: 0 20px 32px rgba(0,0,0,0.22);
+$elevation-highest: 0 20px 32px rgba(0,0,0,0.08);
 
 
 // Border Radius

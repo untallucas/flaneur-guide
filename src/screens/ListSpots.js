@@ -1,7 +1,8 @@
 import React from 'react'
 
-import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
+import Header from '../components/Header/Header'
 import Navigation from '../components/Navigation/Navigation'
+import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
 import FiltersList from '../components/FiltersList/FiltersList'
 import ItemsGrid from '../components/ItemsGrid/ItemsGrid'
 
@@ -56,6 +57,7 @@ class ListSpots extends React.Component {
       <div className="Page">
 
         <Navigation/>
+        <Header/>
 
         <div className="Page__Wrapper Page__Wrapper--BottomPadding">
 
@@ -71,11 +73,11 @@ class ListSpots extends React.Component {
                 { AppData => AppData.taxonomies && (
                   <FiltersList>
                     { AppData.taxonomies.map(taxonomy =>
-                      <li key={ taxonomy.id } onClick={() => this.triggerFilter('categorias', 'Categorías', taxonomy.slug, '\xa0\xa0·\xa0\xa0' + taxonomy.title, taxonomy.id)} className={ this.state.currentFilterSlug === taxonomy.slug ? 'FiltersListItem FiltersListItem__Active' : 'FiltersListItem' }>
+                      <li key={ taxonomy.id } onClick={() => this.triggerFilter('categorias', 'Categorías', taxonomy.slug, '\xa0\xa0·\xa0\xa0' + taxonomy.title, taxonomy.id)} className={ this.state.currentFilterSlug === taxonomy.slug ? 'FiltersList__Item FiltersList__Item__Active' : 'FiltersList__Item' }>
                         { taxonomy.title }
                       </li>
                     )}
-                    <li onClick={() => this.triggerFilter(null, null, null, '', null)} className={ this.state.currentFilterSlug ? 'FiltersListItem FiltersListItem--Clear' : 'FiltersListItem FiltersListItem--Clear FiltersListItem--Clear__Hidden' }>
+                    <li onClick={() => this.triggerFilter(null, null, null, '', null)} className={ this.state.currentFilterSlug ? 'FiltersList__Item FiltersList__Item--Clear' : 'FiltersList__Item FiltersList__Item--Clear FiltersList__Item--Clear__Hidden' }>
                       × Quitar filtros
                     </li>
                   </FiltersList>

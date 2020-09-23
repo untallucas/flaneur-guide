@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Header from '../components/Header/Header'
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
@@ -46,8 +47,9 @@ const Home = props => {
     <div className="Page">
 
       <Navigation/>
+      <Header/>
 
-      <div className="Page__Wrapper Page__Wrapper--BottomPadding">
+      <div className="Page__Wrapper Page__Wrapper--BottomPaddingLess">
 
         <AppData.Consumer>
           { AppData => AppData.city && (
@@ -63,73 +65,89 @@ const Home = props => {
         </AppData.Consumer>
 
         { Boolean(Slider1.filter) && (
-          <AppData.Consumer>
-            { AppData => AppData.spots && (
-              <CardsSlider
-                type = { Slider1.type }
-                title = { Slider1.title }
-                description = { Slider1.description }
-                url = { Slider1.url }
-                spots = {
-                  AppData.spots.filter(function(item){
-                    return item.categories.includes(Slider1.filter) && Slider1.count++ < 5
-                  })
-                }
-              />
-            )}
-          </AppData.Consumer>
+          <div className="Grid Grid--Col-12">
+            <div className="Grid__Content">
+              <AppData.Consumer>
+                { AppData => AppData.spots && (
+                  <CardsSlider
+                    type = { Slider1.type }
+                    title = { Slider1.title }
+                    description = { Slider1.description }
+                    url = { Slider1.url }
+                    spots = {
+                      AppData.spots.filter(function(item){
+                        return item.categories.includes(Slider1.filter) && Slider1.count++ < 5
+                      })
+                    }
+                  />
+                )}
+              </AppData.Consumer>
+            </div>
+          </div>
         )}
 
         { Boolean(Slider2.filter) && (
-          <AppData.Consumer>
-            { AppData => AppData.spots && (
-              <CardsSlider
-                type = { Slider2.type }
-                title = { Slider2.title } 
-                description = { Slider2.description } 
-                url = { Slider2.url } 
-                spots = { 
-                  AppData.spots.filter(function(item){ 
-                    return item.categories.includes(Slider2.filter) && Slider2.count++ < 5
-                  }) 
-                }
-              />
-            )}
-          </AppData.Consumer>
+          <div className="Grid Grid--Col-12">
+            <div className="Grid__Content">
+              <AppData.Consumer>
+                { AppData => AppData.spots && (
+                  <CardsSlider
+                    type = { Slider2.type }
+                    title = { Slider2.title } 
+                    description = { Slider2.description } 
+                    url = { Slider2.url } 
+                    spots = { 
+                      AppData.spots.filter(function(item){ 
+                        return item.categories.includes(Slider2.filter) && Slider2.count++ < 5
+                      }) 
+                    }
+                  />
+                )}
+              </AppData.Consumer>
+            </div>
+          </div>
         )}
 
         { Boolean(Slider3.filter) && (
-          <AppData.Consumer>
-            { AppData => AppData.spots && (
-              <CardsSlider
-                type = { Slider3.type }
-                title = { Slider3.title }
-                description = { Slider3.description } 
-                url = { Slider3.url } 
-                spots = { 
-                  AppData.spots.filter(function(item){ 
-                    return item.categories.includes(Slider3.filter) && Slider3.count++ < 5
-                  }) 
-                }
-              />
-            )}
-          </AppData.Consumer>
+          <div className="Grid Grid--Col-12">
+            <div className="Grid__Content">
+              <AppData.Consumer>
+                { AppData => AppData.spots && (
+                  <CardsSlider
+                    type = { Slider3.type }
+                    title = { Slider3.title }
+                    description = { Slider3.description } 
+                    url = { Slider3.url } 
+                    spots = { 
+                      AppData.spots.filter(function(item){ 
+                        return item.categories.includes(Slider3.filter) && Slider3.count++ < 5
+                      }) 
+                    }
+                  />
+                )}
+              </AppData.Consumer>
+            </div>
+          </div>
         )}
 
         { Boolean(Slider4.title) && (
-          <AppData.Consumer>
-            { AppData => AppData.spots && (
-              <CardsSlider 
-                type = { Slider4.type }
-                title = { Slider4.title }
-                spots = {
-                  AppData.spots.filter(function(item){
-                    return item.highlight === 1 && Slider4.count++ < 6
-                  })
-                }
-              />
-            )}
-          </AppData.Consumer>
+          <div className="Grid Grid--Col-12">
+            <div className="Grid__Content">
+              <AppData.Consumer>
+                { AppData => AppData.spots && (
+                  <CardsSlider 
+                    type = { Slider4.type }
+                    title = { Slider4.title }
+                    spots = {
+                      AppData.spots.filter(function(item){
+                        return item.highlight === 1 && Slider4.count++ < 6
+                      })
+                    }
+                  />
+                )}
+              </AppData.Consumer>
+            </div>
+          </div>
         )}
       </div>
     </div>

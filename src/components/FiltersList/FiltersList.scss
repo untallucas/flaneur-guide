@@ -8,7 +8,7 @@
   margin: $spacing-lg auto $spacing-xl;
   max-width: $breakpoint-xxl;
 
-  &Item {
+  &__Item {
     $filterColor: $color-brand-secondary;
     font-family: $font-title;
     font-size: 14px;
@@ -53,10 +53,5 @@
         border-color: darken($color-support-error-area, 10%);
       }
     }
-  }
-
-  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
-    padding-left: $layout-xs;
-    padding-right: $layout-xs;
   }
 }

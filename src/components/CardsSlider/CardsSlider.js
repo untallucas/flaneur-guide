@@ -12,18 +12,18 @@ import './CardsSlider.scss'
 const CardsSlider = props => {
   const NextArrow = ({currentSlide, slideCount, ...props}: CustomArrowProps) => (
     <div className="slick-arrow slick-next" {...props}>
-      <Icon name="carat-right" color="#000000" />
+      <Icon name="carat-right" width="32" height="32" />
     </div>
   )
 
   const PrevArrow = ({currentSlide, slideCount, ...props}: CustomArrowProps) => (
     <div className="slick-arrow slick-prev" {...props}>
-      <Icon name="carat-left" color="#000000" />
+      <Icon name="carat-left" width="32" height="32" />
     </div>
   )
 
   var settings = {
-    arrows: false,
+    arrows: true,
     dots: true,
     infinite: true,
     speed: 500,
@@ -37,7 +37,7 @@ const CardsSlider = props => {
       {
         breakpoint: 1500,
         settings: {
-          arrows: false,
+          arrows: true,
           dots: true,
           slidesToShow: 3,
           slidesToScroll: 3

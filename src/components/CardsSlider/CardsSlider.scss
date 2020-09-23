@@ -3,6 +3,7 @@
 
 .CardsSlider {
   margin-bottom: $layout-xl;
+  width: 100%;
 
   &__Title {
     @include text-heading-md();
@@ -25,10 +26,6 @@
     }
   }
 
-  &:last-child {
-    margin-bottom: 0;
-  }
-
   .slick-list,
   .slick-slider,
   .slick-track {
@@ -44,8 +41,6 @@
   .slick-slider { 
     box-sizing: border-box;
     user-select: none;
-    margin-left: $spacing-md * -1;
-    margin-right: $spacing-md * -1;
     padding-bottom: $layout-md;
 
     .slick-list,
@@ -98,26 +93,42 @@
       transition: all $transition-fast linear;
       display: inline-block;
       position: absolute;
-      width: $spacing-xxxl;
-      height: $spacing-xxxl;
+      width: $layout-lg;
+      height: $layout-lg;
       top: 50%;
-      margin-top: $spacing-xxl * -1;
+      margin-top: $layout-lg * -1;
       z-index: 1;
       cursor: pointer;
-      opacity: 0.2;
+      opacity: 1;
+      background-color: white;
+      border-radius: $border-radius-circle;
+      box-shadow: $elevation-high;
+      box-sizing: border-box;
+      padding: $spacing-md;
+
+      > * {
+        transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
+        fill: $color-text-tertiary-on-light;
+        opacity: 0.4;
+      }
 
       &.slick-next {
         right: 0;
-        margin-right: $spacing-xxxl * -1.5;
+        margin-right: $layout-lg * -0.25;
       }
 
       &.slick-prev {
         left: 0;
-        margin-left: $spacing-xxxl * -1.5;
+        margin-left: $layout-lg * -0.25;
       }
 
       &:hover {
-        opacity: 1;
+        box-shadow: $elevation-higher;
+
+        > * {
+          fill: $color-text-primary-on-light;
+          opacity: 1;
+        }
       }
     }
 
@@ -190,15 +201,5 @@
         display: block;
       }
     }
-  }
-
-  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
-    padding-left: $layout-xs;
-    padding-right: $layout-xs;
-
-    .slick-slider { 
-      margin-left: 0;
-      margin-right: 0;
-    }    
   }
 }

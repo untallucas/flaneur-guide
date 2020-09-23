@@ -16,6 +16,7 @@ body {
   min-height: 100%;
   min-width: 100%;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -87,11 +88,14 @@ p {
     &--BottomPadding {
       padding-bottom: $layout-xxl;
     }
+
+    &--BottomPaddingLess {
+      padding-bottom: $layout-lg;
+    }
   }
 
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
     &__Wrapper {
-      width: 100%;
       max-width: none;
     }
   }
@@ -112,6 +116,8 @@ p {
 
   &__Content {
     grid-area: content;
+    min-width: 0;
+    width: 100%;
   }
 
   &--Col-8 {
@@ -127,63 +133,6 @@ p {
   &--Col-12 {
     grid-template-columns: 1fr;
     grid-template-areas: "content";
-  }
-
-  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
-    padding-left: $layout-xs;
-    padding-right: $layout-xs;
-
-    &--Col-2 {
-      background-color: red;
-      grid-template-columns: 1fr;
-      grid-column-gap: 0;
-    }
-
-    &--Col-10 {
-      background-color: lime;
-      grid-template-columns: 0 1fr 0;
-      grid-column-gap: 0;
-    }
-  }
-}
-
-.Layout {
-  display: grid;
-  background-color: lime !important;
-  justify-content: flex-start;
-  margin: 0 auto;
-  width: auto;
-  max-width: $breakpoint-xxl;
-  grid-column-gap: $layout-sm;
-  grid-row-gap: $layout-md;
-  grid-auto-rows: auto;
-
-  &--Col-1 {
-    grid-template-columns: repeat(1, minmax(10px, 1fr));
-  }
-
-  &--Col-2 {
-    grid-template-columns: repeat(2, minmax(10px, 1fr));
-  }
-
-  &--Col-3 {
-    grid-template-columns: repeat(3, minmax(10px, 1fr));
-  }
-
-  &--Col-6 {
-    grid-template-columns: repeat(6, minmax(10px, 1fr));
-  }
-
-  &--Col-10 {
-    grid-template-columns: 8.3333% 1fr 8.3333%;
-  }
-
-  &--Col-12 {
-    grid-template-columns: repeat(12, minmax(10px, 1fr));
-  }
-
-  &--Inset {
-    padding: 0 !important;
   }
 
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {

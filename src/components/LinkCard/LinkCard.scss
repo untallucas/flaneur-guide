@@ -3,7 +3,7 @@
 
 .LinkCard {
   @include card();
-  background-color: $color-background-light-secondary;
+  background-color: $color-background-light-primary;
   color: $color-text-primary-on-light;
   box-shadow: none;
   box-sizing: border-box;
@@ -13,7 +13,7 @@
 
   &:hover {
     transform: none;
-    box-shadow: none;
+    // box-shadow: none;
   }
 
   &__Link {

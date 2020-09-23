@@ -8,9 +8,4 @@
   grid-row-gap: $layout-md;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-auto-rows: auto;
-
-  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
-    padding-left: $layout-xs + $layout-xxs;
-    padding-right: $layout-xs + $layout-xxs;
-  }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Header from '../components/Header/Header'
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutImage from '../components/PageLayoutImage/PageLayoutImage'
 import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
@@ -15,6 +16,7 @@ const SingleSpot = props => {
     <div className="Page">
 
       <Navigation/>
+      <Header/>
 
       <div className="Page__Wrapper Page__Wrapper--BottomPadding">
           <AppData.Consumer>

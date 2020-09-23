@@ -1,13 +1,15 @@
 import React from 'react'
 
-import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
+import Header from '../components/Header/Header'
 import Navigation from '../components/Navigation/Navigation'
+import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
 
 const About = props => {
   return (
     <div className="Page">
 
       <Navigation/>
+      <Header/>
 
       <div className="Page__Wrapper Page__Wrapper--BottomPadding">
 

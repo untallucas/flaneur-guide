@@ -5,8 +5,9 @@
   width: 100%;
   height: $layout-md + $spacing-lg + $spacing-lg;
   background-color: $color-background-light-primary;
+  box-shadow: $elevation-highest;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   left: 0;
   top: 0;
   display: flex;
@@ -32,11 +33,11 @@
     transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
 
     &:hover {
-      color: $color-text-primary-on-light;
+      color: $color-brand-primary;
     }
 
     &--Selected {
-      color: $color-text-primary-on-light;
+      color: $color-brand-primary;
     }
   }
 
@@ -53,6 +54,17 @@
   }
   
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
+    &__Brand {
+      padding-left: $layout-xs;
+    }
+
+    &__Menu {
+      padding-right: $layout-xs;
+    }
+  }
+
+  @media (max-width: $breakpoint-md) {
+    background-color: $color-brand-primary;
     height: $layout-md + $spacing-xs + $spacing-xs;
     bottom: 0;
     top: auto;
@@ -63,13 +75,13 @@
 
     &__Menu {
       width: 100%;
-      background-color: red;
-      justify-content: space-between;
+      padding: 0;
+      justify-content: space-around;
+      position: absolute;
+      bottom: $spacing-xs;
     }
 
     &__Item {
-      // width: $layout-md;
-      // height: $layout-md;
       margin: 0;
     }
 
@@ -81,6 +93,7 @@
       display: block;
       width: $spacing-lg;
       height: $spacing-lg;
+      padding: $spacing-sm;
     }
   }
 }

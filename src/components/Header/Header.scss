@@ -1,0 +1,45 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.Header {
+  display: none;
+  width: 100%;
+  height: $layout-md + $spacing-xs + $spacing-xs;
+  background-color: $color-brand-primary;
+  box-shadow: $elevation-highest;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__Content {
+    width: auto;
+    display: grid;
+    grid-template-columns: $spacing-xxl 1fr $spacing-xxl;
+    height: 100%;
+    padding-left: $layout-xs;
+    padding-right: $layout-xs;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+
+  &__Icon {
+    justify-self: start;
+    width: $spacing-lg;
+    height: $spacing-lg;
+  }
+
+  &__Title {
+    @include text-detail-legend();
+    color: white;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    display: block;
+  }
+}
