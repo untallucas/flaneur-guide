@@ -1,14 +1,15 @@
 @import './../../_theme.scss';
+@import './../../_mixins.scss';
 
 .HighlightBadge {
-  width: $layout-lg;
-  height: $layout-lg;
-  background-color: $color-background-light-primary;
+  @include text-detail-legend();
   position: absolute;
-  top: $spacing-xs;
-  right: $spacing-xs;
-  border-radius: $border-radius-circle;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: $spacing-sm;
+  right: 0;
+  border-radius: $border-radius-subtle 0 0 $border-radius-subtle;
+  display: block;
+  padding: $spacing-xs $spacing-sm;
+  background-color: $color-brand-secondary;
+  color: $color-text-primary-on-dark;
+  box-shadow: $elevation-medium;
 }
