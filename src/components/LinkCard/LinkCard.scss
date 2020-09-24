@@ -28,12 +28,11 @@
 
   &__Content {
     @include text-body-sm();
-    color: $color-brand-primary;
+    color: $color-brand-secondary;
     margin-right: $spacing-xs;
   }
 
   &__Icon {
-    color: $color-brand-primary;
-    fill: $color-brand-primary;
+    fill: $color-brand-secondary;
   }
 }

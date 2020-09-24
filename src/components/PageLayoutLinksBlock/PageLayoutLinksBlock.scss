@@ -32,15 +32,15 @@
     }
 
     &__Value {
-      color: $color-interactive-link-on-light;
+      color: $color-interactive-on-light;
 
       &__Link {
         transition: all $transition-normal cubic-bezier(.25,.8,.25,1);
-        color: $color-interactive-link-on-light;
+        color: $color-interactive-on-light;
         text-decoration: none;
 
         &:hover {
-          color: darken($color-interactive-link-on-light, 10%);
+          color: darken($color-interactive-on-light, 10%);
         }
 
         &:after {

@@ -38,32 +38,32 @@ $font-weight-black: 900;
 
 // Font Scale
 $font-scale-core: 8px;
-$font-scale-1: $font-scale-core * 13;
-$font-scale-2: $font-scale-core * 9.5;
-$font-scale-3: $font-scale-core * 8;
-$font-scale-4: $font-scale-core * 5;
-$font-scale-5: $font-scale-core * 4;
-$font-scale-6: $font-scale-core * 3.5;
-$font-scale-7: $font-scale-core * 3;
-$font-scale-8: $font-scale-core * 2.5;
-$font-scale-9: $font-scale-core * 2;
-$font-scale-10: $font-scale-core * 1.5;
-$font-scale-11: $font-scale-core * 1;
+$font-scale-1: $font-scale-core * 13;           // 104
+$font-scale-2: $font-scale-core * 9.5;          // 76
+$font-scale-3: $font-scale-core * 8;            // 64
+$font-scale-4: $font-scale-core * 5;            // 40
+$font-scale-5: $font-scale-core * 4;            // 32
+$font-scale-6: $font-scale-core * 3.5;          // 28
+$font-scale-7: $font-scale-core * 3;            // 24
+$font-scale-8: $font-scale-core * 2.5;          // 20
+$font-scale-9: $font-scale-core * 2;            // 16
+$font-scale-10: $font-scale-core * 1.5;         // 12
+$font-scale-11: $font-scale-core * 1;           // 8
 
 
 // Lineheight scale
 $line-height-core: 8px;
-$line-height-1: $line-height-core * 13 + 6;
-$line-height-2: $line-height-core * 9.5 + 6;
-$line-height-3: $line-height-core * 8 + 6;
-$line-height-4: $line-height-core * 6 + 6;
-$line-height-5: $line-height-core * 4.5 + 6;
-$line-height-6: $line-height-core * 6 + 6;
-$line-height-7: $line-height-core * 3 + 6;
-$line-height-8: $line-height-core * 3.5 + 6;
-$line-height-9: $line-height-core * 2 + 6;
-$line-height-10: $line-height-core * 1.5 + 6;
-$line-height-11: $line-height-core * 1 + 6;
+$line-height-1: $line-height-core * 13 + 6;     // 110
+$line-height-2: $line-height-core * 9.5 + 6;    // 82
+$line-height-3: $line-height-core * 8 + 6;      // 70
+$line-height-4: $line-height-core * 6 + 6;      // 54
+$line-height-5: $line-height-core * 4.5 + 6;    // 42
+$line-height-6: $line-height-core * 6 + 6;      // 54
+$line-height-7: $line-height-core * 3 + 6;      // 30
+$line-height-8: $line-height-core * 3.5 + 6;    // 34
+$line-height-9: $line-height-core * 2 + 6;      // 22
+$line-height-10: $line-height-core * 1.5 + 6;   // 18
+$line-height-11: $line-height-core * 1 + 6;     // 14
 
 
 // Letterspacing
@@ -77,86 +77,72 @@ $letter-space-extraloose: 0.50px;
 
 
 // Brand Colors
-$color-brand-primary: #3444E3;
-$color-brand-secondary: #00C6CF;
-$color-brand-tertiary: #00FF00;
+$color-brand-primary: #DD1369;
+$color-brand-secondary: #6930F2;
 
 
-// Neutral Colors
-$color-neutrals-01: #FFFFFF;
-$color-neutrals-02: #F9F9F9;
-$color-neutrals-03: #DDDDDD;
-$color-neutrals-04: #CCCCCC;
-$color-neutrals-05: #BBBBBB;
-$color-neutrals-06: #000000;
-
-
-// Support Colors
-$color-support-error-background: lighten(#FF0000, 40%);
-$color-support-error-area: #DE0000;
-$color-support-error-text: darken(#FF0000, 40%);
-$color-support-info-background: lighten(#0000FF, 40%);
-$color-support-info-area: #0000FF;
-$color-support-info-text: darken(#0000FF, 40%);
-$color-support-sucess-background: lighten(#00FF00, 40%);
-$color-support-sucess-area: #00FF00;
-$color-support-sucess-text: darken(#00FF00, 40%);
-$color-support-warning-background: lighten(#FFFF00, 40%);
-$color-support-warning-area: #FFFF00;
-$color-support-warning-text: darken(#FFFF00, 40%);
-
-
-// Background Colors
+// UI Colors - Light
 $color-background-light-primary: #FFFFFF;
-$color-background-light-secondary: #F7F7F7;
-$color-background-dark-primary: #000000;
-$color-background-dark-secondary: #AAAAAA;
-
-
-// Text Colors
+$color-background-light-secondary: #FAFAFA;
 $color-text-primary-on-light: #222222;
 $color-text-secondary-on-light: #555555;
 $color-text-tertiary-on-light: #888888;
-$color-text-primary-on-dark: #FFFFFF;
-$color-text-secondary-on-dark: #DDDDDD;
-$color-text-tertiary-on-dark: #BBBBBB;
-
-
-// Interactive Colors
-$color-interactive-on-light: darken($color-brand-secondary, 15%);
-$color-interactive-on-dark: lighten($color-brand-secondary, 15%);
-$color-interactive-link-on-light: darken($color-brand-secondary, 10%);
-$color-interactive-link-on-dark: lighten($color-brand-secondary, 10%);
-
-
-// Border Colors
+$color-interactive-on-light: $color-brand-primary;
 $color-border-separator-on-light: #DEDEDE;
-$color-border-separator-on-dark: #AAAAAA;
+
+
+// UI Colors - Dark
+$color-background-dark-primary: #2C3235;
+$color-background-dark-secondary: #383D40;
+$color-text-primary-on-dark: #FFFFFF;
+$color-text-secondary-on-dark: #CCCCCC;
+$color-text-tertiary-on-dark: #999999;
+$color-interactive-on-light: $color-brand-primary;
+$color-border-separator-on-dark: #484C4F;
+
+
+// Support Colors
+$color-support-error: #DE0000;
+$color-support-error-background: lighten($color-support-error, 40%);
+$color-support-error-area: $color-support-error;
+$color-support-error-text: darken($color-support-error, 40%);
+$color-support-info: #0055DD;
+$color-support-info-background: lighten($color-support-info, 40%);
+$color-support-info-area: $color-support-info;
+$color-support-info-text: darken($color-support-info, 40%);
+$color-support-sucess: #00DD55;
+$color-support-sucess-background: lighten($color-support-sucess, 40%);
+$color-support-sucess-area: $color-support-sucess;
+$color-support-sucess-text: darken($color-support-sucess, 40%);
+$color-support-warning: #FFFF00;
+$color-support-warning-background: lighten($color-support-warning, 40%);
+$color-support-warning-area: $color-support-warning;
+$color-support-warning-text: darken($color-support-warning, 40%);
 
 
 // Spacing
 $spacing-core: 16px;
-$spacing-xxxs: $spacing-core * 0.125;
-$spacing-xxs: $spacing-core * 0.25;
-$spacing-xs: $spacing-core * 0.50;
-$spacing-sm: $spacing-core * 0.75;
-$spacing-md: $spacing-core * 1;
-$spacing-lg: $spacing-core * 1.50;
-$spacing-xl: $spacing-core * 2;
-$spacing-xxl: $spacing-core * 2.50;
-$spacing-xxxl: $spacing-core * 3;
+$spacing-xxxs: $spacing-core * 0.125;           // 2
+$spacing-xxs: $spacing-core * 0.25;             // 4
+$spacing-xs: $spacing-core * 0.50;              // 8
+$spacing-sm: $spacing-core * 0.75;              // 12
+$spacing-md: $spacing-core * 1;                 // 16
+$spacing-lg: $spacing-core * 1.50;              // 24
+$spacing-xl: $spacing-core * 2;                 // 32
+$spacing-xxl: $spacing-core * 2.50;             // 40
+$spacing-xxxl: $spacing-core * 3;               // 48
 
 
 // Layout
 $layout-core: 16px;
-$layout-xxs: $layout-core * 1;
-$layout-xs: $layout-core * 1.50;
-$layout-sm: $layout-core * 2;
-$layout-md: $layout-core * 3;
-$layout-lg: $layout-core * 4;
-$layout-xl: $layout-core * 6;
-$layout-xxl: $layout-core * 10;
-$layout-xxxl: $layout-core * 15;
+$layout-xxs: $layout-core * 1;                  // 16
+$layout-xs: $layout-core * 1.50;                // 24
+$layout-sm: $layout-core * 2;                   // 32
+$layout-md: $layout-core * 3;                   // 48
+$layout-lg: $layout-core * 4;                   // 64
+$layout-xl: $layout-core * 6;                   // 96
+$layout-xxl: $layout-core * 10;                 // 160
+$layout-xxxl: $layout-core * 15;                // 240
 
 
 // Border Width
@@ -186,13 +172,13 @@ $border-radius-circle: 50%;
 
 // Icon Size
 $icon-core: 16px;
-$icon-xs: $icon-core * 0.5;
-$icon-sm: $icon-core * 1;
-$icon-md: $icon-core * 1.5;
-$icon-lg: $icon-core * 2;
-$icon-xl: $icon-core * 3;
-$icon-xxl: $icon-core * 4;
-$icon-xxxl: $icon-core * 6;
+$icon-xs: $icon-core * 0.5;         // 8
+$icon-sm: $icon-core * 1;           // 16
+$icon-md: $icon-core * 1.5;         // 24
+$icon-lg: $icon-core * 2;           // 32
+$icon-xl: $icon-core * 3;           // 48
+$icon-xxl: $icon-core * 4;          // 64
+$icon-xxxl: $icon-core * 6;         // 96
 
 
 // Transition Time
@@ -208,8 +194,6 @@ $breakpoint-md: 768px;
 $breakpoint-lg: 992px;
 $breakpoint-xl: 1200px;
 $breakpoint-xxl: 1500px;
-
-
 $xs-min-width: $breakpoint-xs;
 $xs-max-width: $breakpoint-sm - 1;
 $sm-min-width: $breakpoint-sm;

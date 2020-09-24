@@ -11,77 +11,77 @@ const PageLayoutLinksBlock = props => {
         { Boolean( props.web ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>Sitio web</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ props.web }>{ props.web }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'http://' + props.web }>{ props.web }</a></div>
           </li>
         )}
 
         { Boolean( props.tel ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>Teléfono</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'tel:' + props.tel }>{ props.tel }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'tel:' + props.tel }>{ props.tel }</a></div>
           </li>
         )}
 
         { Boolean( props.whatsapp ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>WhatsApp</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'whatsapp:' + props.whatsapp }>{ props.whatsapp }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'whatsapp:' + props.whatsapp }>{ props.whatsapp }</a></div>
           </li>
         )}
 
         { Boolean( props.email ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>Email</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'mailto:' + props.email }>{ props.email }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'mailto:' + props.email }>{ props.email }</a></div>
           </li>
         )}
 
         { Boolean( props.instagram ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>Instagram</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.instagram.com/' + props.instagram }>{ props.instagram }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'https://www.instagram.com/' + props.instagram }>{ props.instagram }</a></div>
           </li>
         )}
 
         { Boolean( props.twitter ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>Twitter</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.twitter.com/' + props.twitter }>{ props.twitter }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'https://www.twitter.com/' + props.twitter }>{ props.twitter }</a></div>
           </li>
         )}
 
         { Boolean( props.facebook ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>Facebook</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.facebook.com/' + props.facebook }>{ props.facebook }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'https://www.facebook.com/' + props.facebook }>{ props.facebook }</a></div>
           </li>
         )}
 
         { Boolean( props.foursquare ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>foursquare</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.foursquare.com/' + props.foursquare }>{ props.foursquare }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'https://www.foursquare.com/' + props.foursquare }>{ props.foursquare }</a></div>
           </li>
         )}
 
         { Boolean( props.yelp ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>yelp</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.yelp.com/' + props.yelp }>{ props.yelp }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'https://www.yelp.com/' + props.yelp }>{ props.yelp }</a></div>
           </li>
         )}
 
         { Boolean( props.swarm ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>swarm</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.swarm.com/' + props.swarm }>{ props.swarm }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'https://www.swarm.com/' + props.swarm }>{ props.swarm }</a></div>
           </li>
         )}
 
         { Boolean( props.tripadvisor ) && (
           <li className='PageLayoutLinksBlock__Item'>
             <div className='PageLayoutLinksBlock__Item__Label'>tripadvisor</div>
-            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' href={ 'https://www.tripadvisor.com/' + props.tripadvisor }>{ props.tripadvisor }</a></div>
+            <div className='PageLayoutLinksBlock__Item__Value'><a className='PageLayoutLinksBlock__Item__Value__Link' target="_blank" href={ 'https://www.tripadvisor.com/' + props.tripadvisor }>{ props.tripadvisor }</a></div>
           </li>
         )}
         </ul>

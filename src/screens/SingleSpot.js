@@ -34,11 +34,9 @@ const SingleSpot = props => {
                       </div>
                     </div>
 
-                    <div className="Grid Grid--Col-12">
-                      <div className="Grid__Content">
-                          <PageLayoutImage image={ spot.poster_url ? spot.poster_url[0].url : '' } description={ spot.title } />
-                          <PageLayoutMap address={ spot.address } hood={ spot.hood } lat={ spot.lat } lon={ spot.lon } title={ spot.shorttitle ? spot.shorttitle : spot.title } />
-                      </div>
+                    <div className="Grid Grid--Col-6">
+                      <PageLayoutImage image={ spot.poster_url ? spot.poster_url[0].url : '' } description={ spot.title } />
+                      <PageLayoutMap address={ spot.address } hood={ spot.hood } lat={ spot.lat } lon={ spot.lon } title={ spot.shorttitle ? spot.shorttitle : spot.title } />
                     </div>
 
                     <div className="Grid Grid--Col-12">

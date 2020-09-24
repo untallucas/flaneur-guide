@@ -109,7 +109,7 @@
       > * {
         transition: all $transition-slow cubic-bezier(.25,.8,.25,1);
         fill: $color-text-tertiary-on-light;
-        opacity: 0.4;
+        opacity: 1;
       }
 
       &.slick-next {
@@ -126,7 +126,7 @@
         box-shadow: $elevation-higher;
 
         > * {
-          fill: $color-text-primary-on-light;
+          fill: $color-brand-primary;
           opacity: 1;
         }
       }
@@ -161,16 +161,23 @@
 
           &:after {
             content: '';
-            transition: all $transition-fast cubic-bezier(.25,.8,.25,1);
+            transition: all $transition-normal cubic-bezier(.25,.8,.25,1);
             width: $spacing-sm;
             height: $spacing-sm;
             border-radius: $border-radius-circle;
             background-color: $color-text-tertiary-on-light;
-            opacity: 0.4;
+            opacity: 0.3;
             display: block;
             position: absolute;
             top: ($layout-sm / 2) - ($spacing-sm / 2);
             left: $layout-sm / 2 - ($spacing-sm / 2);
+          }
+
+          &:hover {
+            &:after {
+              background-color: $color-brand-primary;
+              opacity: 1;
+            }
           }
         }
 
