@@ -8,12 +8,10 @@ import './TaxonomiesListItem.scss'
 const TaxonomiesListItem = function (props) {
   let url = '../lugares/' + props.taxonomy +'/' + props.slug
   return (
-    <div className='TaxonomiesListItem'>
-      <Link to={ url } className="TaxonomiesListItem__Link">
-        <Icon className="TaxonomiesListItem__Icon" name={ props.icon } color="#FFFFFF" style={{ 'backgroundColor' : props.color }} />
-        <h3 className="TaxonomiesListItem__Title">{ props.content }</h3>
-      </Link>
-    </div>
+    <Link to={ url } className="TaxonomiesListItem" style={{ 'backgroundColor' : props.color }}>
+      <Icon className="TaxonomiesListItem__Icon" name={ props.icon } color="#FFFFFF" />
+      <h3 className="TaxonomiesListItem__Title">{ props.content }</h3>
+    </Link>
   )
 }
 

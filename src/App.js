@@ -6,6 +6,8 @@ import {
   Redirect
 } from 'react-router-dom'
 
+import ScrollToTop from './components/ScrollToTop/ScrollToTop'
+
 import Home from './screens/Home'
 import About from './screens/About'
 import ListSpots from './screens/ListSpots'
@@ -25,6 +27,7 @@ class App extends React.Component {
     return (
       <AppDataProvider>
         <Router>
+          <ScrollToTop />
           <Switch>
             <Route path='/inicio' component={ Home } exact />
             <Route path='/acerca' component={ About } exact />

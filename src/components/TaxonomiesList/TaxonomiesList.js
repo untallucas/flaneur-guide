@@ -12,7 +12,7 @@ const TaxonomiesList = function (props) {
       <h2 className='TaxonomiesList__Title'>{ props.title }</h2>
       <AppData.Consumer>
         { AppData => AppData.taxonomies && (
-          <div>
+          <div className='TaxonomiesList__Wrapper'>
             {
               AppData.taxonomies
               .filter(function (taxonomy) {
