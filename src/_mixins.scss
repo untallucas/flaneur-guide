@@ -32,10 +32,11 @@
 // Text - Display
 @mixin text-display {
   font-family: $font-title;
-  font-size: $font-scale-1;
-  font-weight: $font-weight-semibold;
-  line-height: $line-height-1;
+  font-size: $font-scale-2;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-2;
   letter-spacing: $letter-space-tight;
+  text-transform: uppercase;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-4;
