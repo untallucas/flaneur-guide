@@ -121,7 +121,7 @@ p {
   }
 
   &--Col-6 {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-column-gap: $spacing-lg;
   }

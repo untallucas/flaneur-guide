@@ -1,27 +1,40 @@
 import React from 'react'
-
-import Map from 'pigeon-maps'
-import Marker from 'pigeon-marker'
-import Overlay from 'pigeon-overlay'
+import Mapbox from 'mapbox-gl';
+// import MapGL, {NavigationControl, Marker,Popup} from ‘react-map-gl’;
 
 import './PageLayoutMap.scss'
 
-const PageLayoutMap = props => {
-  if (props) {
-    let lat = parseFloat(props.lat)
-    let lon = parseFloat(props.lon)
+Mapbox.accessToken = '';
 
+class PageLayoutMap extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      lng: props.lon,
+      lat: props.lat,
+      zoom: 14
+    }
+  }
+
+  componentDidMount() {
+    const map = new Mapbox.Map({
+      container: this.mapContainer,
+      style: 'mapbox://styles/mapbox/light-v10',
+      center: [ this.state.lng, this.state.lat ],
+      zoom: 14
+    })
+
+    var marker = new Mapbox.Marker()
+      .setLngLat([ this.state.lng, this.state.lat ])
+      .addTo(map)
+  }
+
+  render(){
     return (
       <div className="PageLayoutMap">
-        <Map center={ [lat + 0.005, lon] } zoom={ 14 } height={ 438 }>
-          <Marker className='PageLayoutMap__Marker' anchor={ [lat, lon] } payload={ 1 } onClick={ ({ event, anchor, payload }) => {  } } />
-          <Overlay className='PageLayoutMap__Overlay' anchor={ [lat, lon] } offset={ [80, 220] }>{ props.title }</Overlay>
-        </Map>
+        <div ref={el => this.mapContainer = el} className="PageLayoutMap__Canvas" />
       </div>
     )
-  }
-  else {
-    return null
   }
 }
 

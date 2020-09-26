@@ -1,14 +1,42 @@
 import React from 'react'
+// import Mapbox from 'mapbox-gl';
 
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
 import Icon from '../components/Icon/Icon'
+import Map from '../components/Map/Map'
+
+// Mapbox.accessToken = '';
 
 class Test extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      lng: 5,
+      lat: 34,
+      zoom: 2
+    }
+  }
+
+  // componentDidMount() {
+  //   const map = new Mapbox.Map({
+  //   container: this.mapContainer,
+  //   style: 'mapbox://styles/mapbox/streets-v11',
+  //   center: [this.state.lng, this.state.lat],
+  //   zoom: this.state.zoom
+  //   });
+
+  //   var marker = new Mapbox.Marker()
+  //   .setLngLat([12.550343, 55.665957])
+  //   .addTo(map)
+  // }
+
   render(){
     return (
       <div className="Page">
+
+        {/* <Map/> */}
 
         <Navigation/>
 
@@ -21,6 +49,8 @@ class Test extends React.Component {
               <div></div>
             </div>
           </div>
+
+          <div ref={el => this.mapContainer = el} style={{ 'position': 'absolute', 'top': '0', 'right': '0', 'left': '0', 'bottom': '0' }} />
 
           <div>
             <p className="test-text-1" style={{ 'marginBottom' : '40px' }} >Text Preset 1 · Display</p>
