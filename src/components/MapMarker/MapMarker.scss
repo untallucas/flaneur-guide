@@ -1,0 +1,44 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.MapMarker {
+  border-radius: $border-radius-circle;
+  width: $spacing-xl;
+  height: $spacing-xl;
+  background-color: $color-brand-primary;
+  box-shadow: $elevation-high;
+  display: block;
+
+  &__Title {
+    @include text-detail-legend();
+    width: $layout-xxl;
+    height: $layout-xxl;
+    position: absolute;
+    top: $layout-xxl * -1;
+    left: 50%;
+    margin-top: $layout-xxl * -0.5;
+    margin-left: $layout-xxl * -0.5;
+    color: $color-text-primary-on-dark;
+    background-color: $color-brand-primary;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    border-radius: $border-radius-circle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: $elevation-higher;
+
+    &:after {
+      content: '';
+      width: $spacing-xxxs;
+      height: $layout-xl;
+      display: block;
+      position: absolute;
+      bottom: $layout-xl * -1;
+      left: 50%;
+      margin-left: $spacing-xxxs * -0.5;
+      background-color: $color-brand-primary;
+    }
+  }
+}

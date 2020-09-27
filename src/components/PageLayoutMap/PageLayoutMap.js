@@ -1,6 +1,8 @@
 import React from 'react'
+import ReactDOM from 'react-dom'
 import Mapbox from 'mapbox-gl';
-// import MapGL, {NavigationControl, Marker,Popup} from ‘react-map-gl’;
+
+import MapMarker from '../MapMarker/MapMarker'
 
 import './PageLayoutMap.scss'
 
@@ -10,8 +12,10 @@ class PageLayoutMap extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      id: props.id,
       lng: props.lon,
       lat: props.lat,
+      title: props.title,
       zoom: 14
     }
   }
@@ -20,11 +24,16 @@ class PageLayoutMap extends React.Component {
     const map = new Mapbox.Map({
       container: this.mapContainer,
       style: 'mapbox://styles/mapbox/light-v10',
-      center: [ this.state.lng, this.state.lat ],
+      center: [ this.state.lng, this.state.lat + 0.0045 ],
       zoom: 14
     })
 
-    var marker = new Mapbox.Marker()
+    map.addControl(new Mapbox.NavigationControl(), 'bottom-right');
+
+    const markerNode = document.createElement('div')
+    ReactDOM.render(<MapMarker id={ 'marker_' + this.state.id } title={ this.state.title } />, markerNode)
+
+    var marker = new Mapbox.Marker(markerNode)
       .setLngLat([ this.state.lng, this.state.lat ])
       .addTo(map)
   }
