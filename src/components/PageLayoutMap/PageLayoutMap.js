@@ -6,7 +6,7 @@ import MapMarker from '../MapMarker/MapMarker'
 
 import './PageLayoutMap.scss'
 
-Mapbox.accessToken = process.env.MAPBOX_ACCESS_TOKEN
+Mapbox.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN
 
 class PageLayoutMap extends React.Component {
   constructor(props) {
