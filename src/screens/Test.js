@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
 import Icon from '../components/Icon/Icon'
-import Map from '../components/Map/Map'
+// import Map from '../components/Map/Map'
 
 // Mapbox.accessToken = '';
 
