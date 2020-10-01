@@ -145,11 +145,20 @@ p {
     padding-left: $layout-xs;
     padding-right: $layout-xs;
 
+    &--FullOnMobile {
+      padding: 0;
+    }
+
     &--Col-2 {
       grid-template-columns: 1fr;
       grid-column-gap: 0;
     }
 
+    &--Col-6 {
+      grid-template-columns: 1fr;
+      grid-column-gap: 0;
+    }
+  
     &--Col-10 {
       grid-template-columns: 0 1fr 0;
       grid-column-gap: 0;

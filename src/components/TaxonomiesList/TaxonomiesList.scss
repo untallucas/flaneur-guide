@@ -13,6 +13,11 @@
 
   &__Wrapper {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: $layout-lg 0 0;
   }
 }

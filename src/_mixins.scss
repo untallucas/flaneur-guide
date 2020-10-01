@@ -54,8 +54,8 @@
   letter-spacing: $letter-space-extraclose;
 
   @media (max-width: $breakpoint-md) {
-    font-size: $font-scale-5;
-    line-height: $line-height-5;
+    font-size: $font-scale-7;
+    line-height: $line-height-7;
     letter-spacing: $letter-space-close;
   }
 }
@@ -100,7 +100,7 @@
   }
 
   @media (max-width: $breakpoint-sm) {
-    font-size: $font-scale-8;
+    font-size: $font-scale-9;
     line-height: $line-height-8;
     letter-spacing: $letter-space-loose;
   }  
@@ -128,6 +128,12 @@
   font-weight: $font-weight-regular;
   line-height: $line-height-8;
   letter-spacing: $letter-space-cozy;
+
+  @media (max-width: $breakpoint-md) {
+    font-size: $font-scale-9;
+    line-height: $line-height-9;
+    letter-spacing: $letter-space-normal;
+  }
 }
 
 // Text - Body XS

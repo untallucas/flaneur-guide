@@ -47,7 +47,7 @@ const Home = props => {
     <div className="Page">
 
       <Navigation/>
-      <Header/>
+      {/* <Header/> */}
 
       <div className="Page__Wrapper Page__Wrapper--BottomPaddingLess">
 

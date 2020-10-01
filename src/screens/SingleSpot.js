@@ -37,7 +37,7 @@ class SingleSpot extends React.Component {
                           </div>
                         </div>
 
-                        <div className="Grid Grid--Col-6">
+                        <div className="Grid Grid--Col-6 Grid--FullOnMobile">
                           <PageLayoutImage image={ spot.poster_url ? spot.poster_url[0].url : '' } description={ spot.title } />
                           <PageLayoutMap id={ spot.id } address={ spot.address } hood={ spot.hood } lat={ spot.lat } lon={ spot.lon } title={ spot.shorttitle ? spot.shorttitle : spot.title } />
                         </div>

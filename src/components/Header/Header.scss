@@ -5,9 +5,10 @@
   display: none;
   width: 100%;
   height: $layout-md + $spacing-xs + $spacing-xs;
-  background-color: $color-brand-primary;
-  box-shadow: $elevation-highest;
-  position: fixed;
+  // background-color: $color-brand-primary;
+  background-color: white;
+  // box-shadow: $elevation-low;
+  // position: fixed;
   z-index: 2;
   left: 0;
   top: 0;
@@ -32,6 +33,7 @@
     justify-self: start;
     width: $spacing-lg;
     height: $spacing-lg;
+    fill: black;
   }
 
   &__Title {

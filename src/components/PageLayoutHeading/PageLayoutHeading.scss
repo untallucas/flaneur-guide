@@ -14,17 +14,16 @@
   &__Blurb {
     @include text-body-lg()
     color: $color-text-tertiary-on-light;
-    padding: 0  0 $layout-xxl 0;
+    padding: 0 0 $layout-xxl 0;
   }
 
   @media (max-width: $breakpoint-md) {
     &__Title {
-      padding: $layout-xxl 0 $layout-xs 0;
+      padding: $layout-lg 0 0 0;
     }
 
     &__Blurb {
-      padding-top: $layout-xs;
-      padding-bottom: $layout-sm;
+      padding: $layout-xxs 0 $layout-md 0;
     }
   }
 }

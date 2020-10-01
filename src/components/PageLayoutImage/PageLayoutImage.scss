@@ -13,4 +13,8 @@
     width: 100%;
     filter: saturate(1.2);
   }
+
+  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
+    border-radius: 0;
+  }
 }

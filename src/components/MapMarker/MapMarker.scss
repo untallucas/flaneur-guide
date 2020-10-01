@@ -41,4 +41,21 @@
       background-color: $color-brand-secondary;
     }
   }
+
+  @media (max-width: $breakpoint-md) {
+    &__Title {
+      width: $layout-xl + $layout-sm;
+      height: $layout-xl + $layout-sm;
+      margin-top: ($layout-xl + $layout-sm) * -0.5;
+      margin-left: ($layout-xl + $layout-sm) * -0.5;
+      top: ($layout-xl + $layout-sm) * -1;
+      line-height: 16px;
+      padding: $spacing-xs;
+
+      &:after {
+        height: $layout-lg;
+        bottom: $layout-lg * -1;
+      }
+    }
+  }
 }

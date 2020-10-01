@@ -15,6 +15,7 @@
   color: $color-text-primary-on-dark;
   text-decoration: none;
   margin-right: $spacing-sm;
+  margin-bottom: $spacing-sm;
 
   &__Icon {
     background-color: transparent !important;
@@ -33,5 +34,13 @@
     box-shadow: $elevation-high;
     transform: translateY($spacing-xxs * -1);
     filter: brightness(1.05);
+  }
+
+  @media (max-width: $breakpoint-md) {
+    padding: $spacing-xs $spacing-sm;
+
+    &__Icon {
+      margin-right: $spacing-xs;
+    }
   }
 }

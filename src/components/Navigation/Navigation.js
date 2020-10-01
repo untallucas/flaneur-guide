@@ -16,15 +16,15 @@ class Navigation extends Component {
             <div className="Navigation__Menu">
               <NavLink to='/inicio' className="Navigation__Item" activeClassName="Navigation__Item--Selected">
                 <span className="Navigation__Text">Inicio</span>
-                <Icon className="Navigation__Icon" name="home" color="#FFFFFF" width="32" height="32" />
+                <Icon className="Navigation__Icon" name="home" width="32" height="32" />
               </NavLink>
               <NavLink to='/lugares' className="Navigation__Item" activeClassName="Navigation__Item--Selected">
                 <span className="Navigation__Text">Lugares</span>
-                <Icon className="Navigation__Icon" name="layout-grid" color="#FFFFFF" width="32" height="32" />
+                <Icon className="Navigation__Icon" name="layout-grid" width="32" height="32" />
               </NavLink>
               <NavLink to='/acerca' className="Navigation__Item" activeClassName="Navigation__Item--Selected">
                 <span className="Navigation__Text">Acerca</span>
-                <Icon className="Navigation__Icon" name="information" color="#FFFFFF" width="32" height="32" />
+                <Icon className="Navigation__Icon" name="information" width="32" height="32" />
               </NavLink>
             </div>
           </div>
