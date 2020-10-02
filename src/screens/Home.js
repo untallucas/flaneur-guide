@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Header from '../components/Header/Header'
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
@@ -47,7 +46,6 @@ const Home = props => {
     <div className="Page">
 
       <Navigation/>
-      {/* <Header/> */}
 
       <div className="Page__Wrapper Page__Wrapper--BottomPaddingLess">
 

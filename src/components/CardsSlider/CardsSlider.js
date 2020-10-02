@@ -3,7 +3,7 @@ import Slider from 'react-slick'
 
 import SpotCard from '../SpotCard/SpotCard'
 import OutstandingCard from '../OutstandingCard/OutstandingCard'
-import HighlightCard from '../HighlightCard/HighlightCard'
+// import HighlightCard from '../HighlightCard/HighlightCard'
 import LinkCard from '../LinkCard/LinkCard'
 import Icon from '../Icon/Icon'
 
