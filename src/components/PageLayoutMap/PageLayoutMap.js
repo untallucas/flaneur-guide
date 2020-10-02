@@ -32,6 +32,10 @@ class PageLayoutMap extends React.Component {
 
     const markerNode = document.createElement('div')
     ReactDOM.render(<MapMarker id={ 'marker_' + this.state.id } title={ this.state.title } />, markerNode)
+
+    new Mapbox.Marker(markerNode)
+      .setLngLat([ this.state.lng, this.state.lat ])
+      .addTo(map)
   }
 
   render(){
