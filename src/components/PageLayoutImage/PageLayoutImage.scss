@@ -1,4 +1,5 @@
 @import './../../_theme.scss';
+@import './../../_mixins.scss';
 
 .PageLayoutImage {
   width: 100%;
@@ -8,10 +9,63 @@
   letter-spacing: 0;
   line-height: 0;
   box-shadow: 0 0 0 1px rgba(0,0,0,0.05);
+  position: relative;
+
+  &__Info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    z-index: 2;
+    width: $spacing-lg + $spacing-sm + $spacing-sm;
+    height: $spacing-lg + $spacing-sm + $spacing-sm;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+ 
+    &:hover {
+      overflow: visible;
+      width: auto;
+    }
+  }
+
+  &__Icon {
+    fill: $color-text-primary-on-dark;
+    padding: $spacing-sm;
+    cursor: pointer;
+  }
+
+  &__Text {
+    @include text-body-xs();
+    font-size: 12px;
+    line-height: $spacing-lg + $spacing-sm + $spacing-sm;
+    color: $color-text-primary-on-dark;
+    text-decoration: none;
+    position: absolute;
+    display: inline-block;
+    bottom: 0;
+    width: auto;
+    left: $spacing-lg + $spacing-sm + $spacing-sm;
+    white-space: nowrap;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  }
 
   &__Image {
     width: 100%;
     filter: saturate(1.2);
+  }
+
+  &:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    position: absolute;
+    background: linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,0.4) 100%);
+    top: 0;
+    left: 0;
   }
 
   @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
