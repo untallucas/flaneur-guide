@@ -53,17 +53,17 @@ $font-scale-11: $font-scale-core * 1;           // 8
 
 // Lineheight scale
 $line-height-core: 8px;
-$line-height-1: $line-height-core * 13 + 6;     // 110
-$line-height-2: $line-height-core * 9.5 + 6;    // 82
-$line-height-3: $line-height-core * 8 + 6;      // 70
-$line-height-4: $line-height-core * 6 + 6;      // 54
-$line-height-5: $line-height-core * 4.5 + 6;    // 42
-$line-height-6: $line-height-core * 6 + 6;      // 54
-$line-height-7: $line-height-core * 3.5 + 6;    // 34
-$line-height-8: $line-height-core * 3.5 + 6;    // 34
-$line-height-9: $line-height-core * 2.5 + 6;    // 26
-$line-height-10: $line-height-core * 1.5 + 6;   // 18
-$line-height-11: $line-height-core * 1 + 6;     // 14
+$line-height-1: $font-scale-core * 13 * 1.8; // $line-height-core * 13 + 6;     // 110  187.2 
+$line-height-2: $font-scale-core * 9.5 * 1.8; // $line-height-core * 9.5 + 6;    // 82  136.8
+$line-height-3: $font-scale-core * 8 * 1.8; // $line-height-core * 8 + 6;      // 70    115.2
+$line-height-4: $font-scale-core * 5 * 1.8; // $line-height-core * 6 + 6;      // 54     72.0
+$line-height-5: $font-scale-core * 4 * 1.8; // $line-height-core * 4.5 + 6;    // 42     57.6
+$line-height-6: $font-scale-core * 3.5 * 1.8; // $line-height-core * 6 + 6;      // 54   50.4
+$line-height-7: $font-scale-core * 3 * 1.8; // $line-height-core * 3.5 + 6;    // 34     43.2
+$line-height-8: $font-scale-core * 2.5 * 1.8; // $line-height-core * 3.5 + 6;    // 34   36.0
+$line-height-9: $font-scale-core * 2 * 1.8; // $line-height-core * 2.5 + 6;    // 26     28.8
+$line-height-10: $font-scale-core * 1.5 * 1.8; // $line-height-core * 1.5 + 6;   // 18   21.6
+$line-height-11: $font-scale-core * 1 * 1.8; // $line-height-core * 1 + 6;     // 14     14.4
 
 
 // Letterspacing

@@ -33,8 +33,8 @@
 @mixin text-display {
   font-family: $font-title;
   font-size: $font-scale-2;
-  font-weight: $font-weight-bold;
   line-height: $line-height-2;
+  font-weight: $font-weight-bold;
   letter-spacing: $letter-space-tight;
   text-transform: uppercase;
 
@@ -49,8 +49,8 @@
 @mixin text-heading-lg {
   font-family: $font-title;
   font-size: $font-scale-4;
-  font-weight: $font-weight-light;
   line-height: $line-height-4;
+  font-weight: $font-weight-light;
   letter-spacing: $letter-space-extraclose;
 
   @media (max-width: $breakpoint-md) {
@@ -63,8 +63,8 @@
 // Text - Heading MD
 @mixin text-heading-md {
   font-family: $font-title;
-  font-size: $font-scale-6;
   font-weight: $font-weight-regular;
+  font-size: $font-scale-6;
   line-height: $line-height-6;
   letter-spacing: $letter-space-loose;
 
@@ -79,8 +79,8 @@
 @mixin text-heading-sm {
   font-family: $font-title;
   font-size: $font-scale-9;
-  font-weight: $font-weight-semibold;
   line-height: $line-height-9;
+  font-weight: $font-weight-semibold;
   letter-spacing: $letter-space-cozy;
   text-transform: uppercase;
 }
@@ -89,8 +89,8 @@
 @mixin text-body-lg {
   font-family: $font-text;
   font-size: $font-scale-6;
-  font-weight: $font-weight-light;
   line-height: $line-height-6;
+  font-weight: $font-weight-light;
   letter-spacing: $letter-space-cozy;
 
   @media (max-width: $breakpoint-md) {
@@ -101,7 +101,7 @@
 
   @media (max-width: $breakpoint-sm) {
     font-size: $font-scale-9;
-    line-height: $line-height-8;
+    line-height: $line-height-9; //
     letter-spacing: $letter-space-loose;
   }  
 }
@@ -110,8 +110,8 @@
 @mixin text-body-md {
   font-family: $font-text;
   font-size: $font-scale-7;
-  font-weight: $font-weight-light;
   line-height: $line-height-7;
+  font-weight: $font-weight-light;
   letter-spacing: $letter-space-loose;
   
   @media (max-width: $breakpoint-md) {
@@ -125,8 +125,8 @@
 @mixin text-body-sm {
   font-family: $font-text;
   font-size: $font-scale-8;
-  font-weight: $font-weight-regular;
   line-height: $line-height-8;
+  font-weight: $font-weight-regular;
   letter-spacing: $letter-space-cozy;
 
   @media (max-width: $breakpoint-md) {
@@ -140,8 +140,8 @@
 @mixin text-body-xs {
   font-family: $font-text;
   font-size: $font-scale-9;
-  font-weight: $font-weight-regular;
   line-height: $line-height-9;
+  font-weight: $font-weight-regular;
   letter-spacing: $letter-space-cozy;
 
   @media (max-width: $breakpoint-md) {
@@ -155,8 +155,8 @@
 @mixin text-detail-legend {
   font-family: $font-text;
   font-size: $font-scale-10;
-  font-weight: $font-weight-semibold;
   line-height: $line-height-10;
+  font-weight: $font-weight-semibold;
   letter-spacing: $letter-space-extraloose;
   text-transform: uppercase;
 }
@@ -165,14 +165,14 @@
 @mixin text-detail-accent {
   font-family: $font-accent;
   font-size: $font-scale-7;
+  line-height: $line-height-7 - 10px;
   font-weight: $font-weight-regular;
   font-style: oblique;
-  line-height: $line-height-7;
   letter-spacing: $letter-space-extraloose;
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-8;
-    line-height: $line-height-8;
+    line-height: $line-height-8 - 8px;
     letter-spacing: $letter-space-loose;
   }  
 }
@@ -181,7 +181,7 @@
 @mixin text-detail-rank {
   font-family: $font-accent;
   font-size: $font-scale-8;
-  font-weight: $font-weight-regular;
   line-height: $line-height-8;
+  font-weight: $font-weight-regular;
   letter-spacing: $letter-space-normal;
 }
