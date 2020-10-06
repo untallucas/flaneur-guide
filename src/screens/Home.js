@@ -44,6 +44,10 @@ let Slider4 = {
 class Home extends React.Component {
   componentDidMount() {
     this.setState({})
+    Slider1.count = 0
+    Slider2.count = 0
+    Slider3.count = 0
+    Slider4.count = 0
   }
 
   render(){
