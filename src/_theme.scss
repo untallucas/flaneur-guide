@@ -56,7 +56,7 @@ $line-height-core: 8px;
 $line-height-1: $font-scale-core * 13 * 1.8; // $line-height-core * 13 + 6;     // 110  187.2 
 $line-height-2: $font-scale-core * 9.5 * 1.8; // $line-height-core * 9.5 + 6;    // 82  136.8
 $line-height-3: $font-scale-core * 8 * 1.8; // $line-height-core * 8 + 6;      // 70    115.2
-$line-height-4: $font-scale-core * 5 * 1.8; // $line-height-core * 6 + 6;      // 54     72.0
+$line-height-4: $font-scale-core * 4.5 * 1.8; // $line-height-core * 6 + 6;      // 54   64.8
 $line-height-5: $font-scale-core * 4 * 1.8; // $line-height-core * 4.5 + 6;    // 42     57.6
 $line-height-6: $font-scale-core * 3.5 * 1.8; // $line-height-core * 6 + 6;      // 54   50.4
 $line-height-7: $font-scale-core * 3 * 1.8; // $line-height-core * 3.5 + 6;    // 34     43.2
@@ -83,7 +83,7 @@ $color-brand-secondary: #6930F2;
 
 // UI Colors - Light
 $color-background-light-primary: #FFFFFF;
-$color-background-light-secondary: #FEFEFE;
+$color-background-light-secondary: #FAFAFA;
 $color-text-primary-on-light: #222222;
 $color-text-secondary-on-light: #555555;
 $color-text-tertiary-on-light: #888888;
@@ -156,9 +156,8 @@ $border-width-thick: $border-width-core * 2;
 $elevation-low: 0 0 0 1px rgba(0,0,0,0.08), 0 1px 2px rgba(0, 0, 0, 0.2);
 $elevation-medium: 0 4px 8px rgba(0,0,0,0.15);
 $elevation-high: 0 10px 16px rgba(0,0,0,0.18), 0 2px 6px rgba(0,0,0,0.2);
-$elevation-higher: 0 16px 24px rgba(0, 0, 0, 0.20);
-$elevation-highest: 0 20px 32px rgba(0,0,0,0.08);
-
+$elevation-higher: 0 16px 24px rgba(0,0,0,0.20);
+$elevation-highest: 0 0 30px rgba(0,0,0,0.10);
 
 // Border Radius
 $border-radius-core: 4px;
@@ -166,7 +165,7 @@ $border-radius-sharp: 0;
 $border-radius-subtle: $border-radius-core * 0.50;
 $border-radius-normal: $border-radius-core * 1;
 $border-radius-blunt: $border-radius-core * 2;
-$border-radius-round: $border-radius-core * 2.5;
+$border-radius-round: $border-radius-core * 5;
 $border-radius-circle: 50%;
 
 
