@@ -19,7 +19,8 @@
 
   @media (max-width: $breakpoint-md) {
     &__Title {
-      padding: $layout-lg 0 0 0;
+      margin-top: $spacing-lg;
+      padding: $layout-xl 0 0 0;
       width: 100%;
     }
 

@@ -39,7 +39,7 @@
   &__Text {
     @include text-body-xs();
     font-size: 12px;
-    line-height: $spacing-lg + $spacing-sm + $spacing-sm;
+    line-height: $spacing-lg + $spacing-sm + $spacing-sm !important;
     color: $color-text-primary-on-dark;
     text-decoration: none;
     position: absolute;

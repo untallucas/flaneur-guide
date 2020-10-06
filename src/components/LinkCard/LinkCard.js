@@ -10,7 +10,7 @@ const LinkCard = function (props) {
     <div className="LinkCard">
       <Link to={ props.url } className="LinkCard__Link">
         <p className="LinkCard__Content">Ver todos</p>
-        <Icon name="carat-right" className="LinkCard__Icon" width='24' height="24" />
+        <Icon name="arrow-right" className="LinkCard__Icon" width='24' height="24" />
       </Link>
     </div>
   )

@@ -6,4 +6,8 @@
   padding: $layout-lg 0 $layout-xl 0;
   color: $color-text-tertiary-on-light;
   text-align: center;
+
+  @media (max-width: $breakpoint-xl + $layout-xs + $layout-xs) {
+    padding: $layout-md 0 $layout-lg 0;
+  } 
 }

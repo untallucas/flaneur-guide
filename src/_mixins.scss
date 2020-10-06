@@ -55,7 +55,7 @@
 
   @media (max-width: $breakpoint-md) {
     font-size: $font-scale-7;
-    line-height: $line-height-7;
+    line-height: $line-height-7 - 10px;
     letter-spacing: $letter-space-close;
   }
 }
@@ -69,8 +69,8 @@
   letter-spacing: $letter-space-loose;
 
   @media (max-width: $breakpoint-md) {
-    font-size: $font-scale-7;
-    line-height: $line-height-7;
+    font-size: $font-scale-8;
+    line-height: $line-height-8;
     letter-spacing: $letter-space-close;
   }
 }
@@ -174,7 +174,7 @@
     font-size: $font-scale-8;
     line-height: $line-height-8 - 8px;
     letter-spacing: $letter-space-loose;
-  }  
+  }
 }
 
 // Text - Detail 3 - Rank
