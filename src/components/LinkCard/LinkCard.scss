@@ -10,7 +10,7 @@
   height: 100%;
   padding: $spacing-lg;
   display: flex;
-  border: 1px solid $color-brand-secondary;
+  border: 1px solid $color-brand-primary;
 
   &:hover {
     transform: none;
@@ -29,11 +29,11 @@
 
   &__Content {
     @include text-body-sm();
-    color: $color-brand-secondary;
+    color: $color-brand-primary;
     margin-right: $spacing-sm;
   }
 
   &__Icon {
-    fill: $color-brand-secondary;
+    fill: $color-brand-primary;
   }
 }

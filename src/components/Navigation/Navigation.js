@@ -11,7 +11,9 @@ class Navigation extends Component {
         <div className="Navigation">
           <div className="Page__Wrapper">
             <div className="Navigation__Brand">
-              GIDEON&nbsp;&nbsp;·&nbsp;&nbsp;CORDOBA
+              <Icon name="track" className="Navigation__Brand__Icon" width="40" height="40" />
+              Maapu<br/>
+              Córdoba
             </div>
             <div className="Navigation__Menu">
               <NavLink to='/inicio' className="Navigation__Item" activeClassName="Navigation__Item--Selected">

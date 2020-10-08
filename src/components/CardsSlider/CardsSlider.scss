@@ -22,7 +22,7 @@
       bottom: -1px;
       left: 50%;
       margin-left: $spacing-xxxl / 2 * -1;
-      background-color: $color-brand-primary;
+      background-color: $color-brand-secondary;
     }
   }
 
@@ -126,7 +126,7 @@
         box-shadow: $elevation-higher;
 
         > * {
-          fill: $color-brand-primary;
+          fill: $color-brand-secondary;
           opacity: 1;
         }
       }
@@ -175,7 +175,7 @@
 
           &:hover {
             &:after {
-              background-color: $color-brand-primary;
+              background-color: $color-brand-secondary;
               opacity: 1;
             }
           }
@@ -186,7 +186,7 @@
             outline: none;
 
             &:after {
-              background-color: $color-brand-primary;
+              background-color: $color-brand-secondary;
               opacity: 1;
             }
           }
