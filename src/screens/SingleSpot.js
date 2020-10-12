@@ -3,6 +3,7 @@ import React from 'react'
 import Header from '../components/Header/Header'
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutImage from '../components/PageLayoutImage/PageLayoutImage'
+import PageLayoutAlert from '../components/PageLayoutAlert/PageLayoutAlert'
 import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
 import PageLayoutTextBlock from '../components/PageLayoutTextBlock/PageLayoutTextBlock'
 import PageLayoutLinksBlock from '../components/PageLayoutLinksBlock/PageLayoutLinksBlock'
@@ -33,6 +34,7 @@ class SingleSpot extends React.Component {
                         <div className="Grid Grid--Col-12">
                           <div className="Grid__Content">
                             <PageLayoutHeading title={ spot.title } text={ spot.text } />
+                            <PageLayoutAlert/>
                           </div>
                         </div>
 

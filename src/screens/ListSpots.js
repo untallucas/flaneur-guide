@@ -2,7 +2,7 @@ import React from 'react'
 
 import Header from '../components/Header/Header'
 import Navigation from '../components/Navigation/Navigation'
-import PageLayoutHeading from '../components/PageLayoutHeading/PageLayoutHeading'
+import PageLayoutTitle from '../components/PageLayoutTitle/PageLayoutTitle'
 import FiltersList from '../components/FiltersList/FiltersList'
 import ItemsGrid from '../components/ItemsGrid/ItemsGrid'
 
@@ -64,7 +64,7 @@ class ListSpots extends React.Component {
 
           <div className="Grid Grid--Col-12">
             <div className="Grid__Content">
-              <PageLayoutHeading title={ 'Lugares' + this.state.currentFilterTitle } />
+              <PageLayoutTitle title={ 'Lugares' + this.state.currentFilterTitle } />
             </div>
           </div>
 

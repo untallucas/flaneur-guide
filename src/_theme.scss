@@ -103,20 +103,27 @@ $color-border-separator-on-dark: #484C4F;
 
 // Support Colors
 $color-support-error: #DE0000;
-$color-support-error-background: lighten($color-support-error, 40%);
 $color-support-error-area: $color-support-error;
-$color-support-error-text: darken($color-support-error, 40%);
+$color-support-error-background: lighten($color-support-error, 53%);
+$color-support-error-border: lighten($color-support-error, 40%);
+$color-support-error-text: darken($color-support-error, 3%);
+
 $color-support-info: #0055DD;
-$color-support-info-background: lighten($color-support-info, 40%);
 $color-support-info-area: $color-support-info;
+$color-support-info-background: lighten($color-support-info, 40%);
+$color-support-info-border: lighten($color-support-info, 10%);
 $color-support-info-text: darken($color-support-info, 40%);
+
 $color-support-sucess: #00DD55;
-$color-support-sucess-background: lighten($color-support-sucess, 40%);
 $color-support-sucess-area: $color-support-sucess;
+$color-support-sucess-background: lighten($color-support-sucess, 40%);
+$color-support-sucess-border: lighten($color-support-sucess, 10%);
 $color-support-sucess-text: darken($color-support-sucess, 40%);
+
 $color-support-warning: #FFFF00;
-$color-support-warning-background: lighten($color-support-warning, 40%);
 $color-support-warning-area: $color-support-warning;
+$color-support-warning-background: lighten($color-support-warning, 40%);
+$color-support-warning-border: lighten($color-support-warning, 10%);
 $color-support-warning-text: darken($color-support-warning, 40%);
 
 

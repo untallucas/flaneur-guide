@@ -1,7 +1,7 @@
 @import './../../_theme.scss';
 @import './../../_mixins.scss';
 
-.PageLayoutHeading {
+.PageLayoutTitle {
   padding: 0;
   
   &__Title {
@@ -11,21 +11,11 @@
     width: 75%;
   }
 
-  &__Blurb {
-    @include text-body-lg()
-    color: $color-text-tertiary-on-light;
-    padding: 0 0 $layout-md 0;
-  }
-
   @media (max-width: $breakpoint-md) {
     &__Title {
       margin-top: $spacing-lg;
       padding: $layout-xl 0 0 0;
       width: 100%;
-    }
-
-    &__Blurb {
-      padding: $layout-xxs 0 $layout-xs 0;
     }
   }
 }

@@ -1,0 +1,16 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.PageLayoutAlert {
+  @include text-body-xs()
+  border-radius: $border-radius-blunt;
+  background-color: $color-support-error-background;
+  border: 1px solid $color-support-error-border;
+  color: $color-support-error-text;
+  padding: $layout-xxs;
+  margin-bottom: $layout-xl;
+
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: $layout-sm;
+  }
+}
