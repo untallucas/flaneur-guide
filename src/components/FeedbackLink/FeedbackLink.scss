@@ -1,0 +1,29 @@
+@import './../../_theme.scss';
+@import './../../_mixins.scss';
+
+.FeedbackLink {
+  z-index: 11;
+  right: $spacing-xl;
+  bottom: $spacing-xl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: $color-brand-primary;
+  border-radius: $border-radius-blunt $border-radius-circle $border-radius-circle $border-radius-circle;
+  padding: $spacing-md;
+  box-shadow: $elevation-higher;
+  cursor: pointer;
+
+  &__Icon {
+    fill: $color-text-primary-on-dark;
+    margin: 0;
+    color: $color-text-primary-on-dark;
+    width: $spacing-xl;
+    height: $spacing-xl;
+  }
+
+  @media (max-width: $breakpoint-md) {
+    bottom: $layout-xl;
+  }
+}

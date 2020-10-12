@@ -5,6 +5,7 @@ import Navigation from '../components/Navigation/Navigation'
 import PageLayoutTitle from '../components/PageLayoutTitle/PageLayoutTitle'
 import FiltersList from '../components/FiltersList/FiltersList'
 import ItemsGrid from '../components/ItemsGrid/ItemsGrid'
+import FeedbackLink from '../components/FeedbackLink/FeedbackLink'
 
 import AppData from '../contexts/AppData'
 
@@ -57,6 +58,7 @@ class ListSpots extends React.Component {
     return (
       <div className="Page">
 
+        <FeedbackLink />
         <Navigation/>
         <Header title={ 'Lugares' + this.state.currentFilterTitle } history={ this.props.history } />
 

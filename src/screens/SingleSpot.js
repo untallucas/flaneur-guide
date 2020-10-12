@@ -9,6 +9,7 @@ import PageLayoutTextBlock from '../components/PageLayoutTextBlock/PageLayoutTex
 import PageLayoutLinksBlock from '../components/PageLayoutLinksBlock/PageLayoutLinksBlock'
 import PageLayoutMap from '../components/PageLayoutMap/PageLayoutMap'
 import TaxonomiesList from '../components/TaxonomiesList/TaxonomiesList'
+import FeedbackLink from '../components/FeedbackLink/FeedbackLink'
 
 import AppData from '../contexts/AppData'
 
@@ -26,6 +27,7 @@ class SingleSpot extends React.Component {
                 }).map(spot =>
                   <div className="Page">
 
+                    <FeedbackLink/>
                     <Navigation/>
                     <Header title={ spot.shorttitle ? spot.shorttitle : spot.title } history={ this.props.history } />
           

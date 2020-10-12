@@ -27,11 +27,14 @@
     color: $color-brand-primary;
 
     &__Icon {
-      padding: $spacing-xs;
+      padding: $spacing-sm;
       background-color: $color-brand-primary;
       margin-right: $spacing-sm;
       fill: $color-text-primary-on-dark;
       border-radius: $border-radius-blunt;
+      color: $color-text-primary-on-dark;
+      width: $spacing-xl;
+      height: $spacing-xl;
     }
   }
 

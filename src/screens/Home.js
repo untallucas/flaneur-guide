@@ -3,6 +3,7 @@ import React from 'react'
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
+import FeedbackLink from '../components/FeedbackLink/FeedbackLink'
 
 import CardsSlider from '../components/CardsSlider/CardsSlider'
 
@@ -54,6 +55,7 @@ class Home extends React.Component {
     return (
       <div className="Page">
 
+        <FeedbackLink />
         <Navigation/>
 
         <div className="Page__Wrapper Page__Wrapper--BottomPaddingLess">

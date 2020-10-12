@@ -11,7 +11,7 @@ class Navigation extends Component {
         <div className="Navigation">
           <div className="Page__Wrapper">
             <div className="Navigation__Brand">
-              <Icon name="map-pin" className="Navigation__Brand__Icon" width="40" height="40" />
+              <Icon name="map-pin" className="Navigation__Brand__Icon" />
               Maapu<br/>
               Córdoba
             </div>
