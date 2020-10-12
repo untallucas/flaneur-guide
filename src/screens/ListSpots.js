@@ -17,7 +17,8 @@ class ListSpots extends React.Component {
     let initTaxonomySlug = props.match.params.taxonomy
 
     this.state = {
-      currentFilterTitle: '',
+      // This is a total shit, but I have to do it
+      currentFilterTitle: initFilterSlug ? '\xa0\xa0·\xa0\xa0' + (initFilterSlug.charAt(0).toUpperCase() + initFilterSlug.slice(1)).split('-').join(' ') : '',
       currentFilterSlug: initFilterSlug,
       currentTaxonomyTitle: null,
       currentTaxonomySlug: initTaxonomySlug,
@@ -57,7 +58,7 @@ class ListSpots extends React.Component {
       <div className="Page">
 
         <Navigation/>
-        <Header/>
+        <Header title={ 'Lugares' + this.state.currentFilterTitle } history={ this.props.history } />
 
         <div className="Page__Wrapper Page__Wrapper--BottomPadding">
 
@@ -69,6 +70,7 @@ class ListSpots extends React.Component {
 
           <div className="Grid Grid--Col-12">
             <div className="Grid__Content">
+
               <AppData.Consumer>
                 { AppData => AppData.taxonomies && (
                   <FiltersList>

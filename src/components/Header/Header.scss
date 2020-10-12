@@ -19,7 +19,7 @@
   &__Content {
     width: auto;
     display: grid;
-    grid-template-columns: $spacing-xxl 1fr $spacing-xxl;
+    grid-template-columns: $spacing-xxxl 1fr $spacing-xxxl;
     height: 100%;
     padding-left: $layout-xs;
     padding-right: $layout-xs;
@@ -37,7 +37,12 @@
 
   &__Title {
     @include text-detail-legend();
-    color: white;
+    color: $color-text-primary-on-light;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
   }
 
   @media (max-width: $breakpoint-md) {

@@ -15,22 +15,21 @@ class SingleSpot extends React.Component {
   render(){
     let url = this.props.match.params.slug
     return (
-      <div className="Page">
+      <AppData.Consumer>
+        { 
+          AppData => AppData.spots && (
+            <div>
+              {
+                AppData.spots.filter(function(spot){
+                  return spot.slug === url
+                }).map(spot =>
+                  <div className="Page">
 
-        <Navigation/>
-        <Header/>
-
-        <div className="Page__Wrapper Page__Wrapper--BottomPadding">
-          <AppData.Consumer>
-            { 
-              AppData => AppData.spots && (
-                <div>
-                  {
-                    AppData.spots.filter(function(spot){
-                      return spot.slug === url
-                    }).map(spot =>
+                    <Navigation/>
+                    <Header title={ spot.shorttitle ? spot.shorttitle : spot.title } history={ this.props.history } />
+          
+                    <div className="Page__Wrapper Page__Wrapper--BottomPadding">
                       <div key={ spot.id }>
-
                         <div className="Grid Grid--Col-12">
                           <div className="Grid__Content">
                             <PageLayoutHeading title={ spot.title } text={ spot.text } />
@@ -65,15 +64,14 @@ class SingleSpot extends React.Component {
                           </div>
                         </div>
                       </div>
-                    )
-                  }
-                </div>
-              )
-            }
-          </AppData.Consumer>
-        </div>
-
-      </div>
+                    </div>
+                  </div>
+                )
+              }
+            </div>
+          )
+        }
+      </AppData.Consumer>
     )
   }
 }

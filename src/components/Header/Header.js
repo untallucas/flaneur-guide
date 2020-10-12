@@ -1,23 +1,20 @@
-import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import React from 'react'
 
 import Icon from '../Icon/Icon'
 
 import './Header.scss'
 
-class Header extends Component {
-  render () {
-    return (
-        <div className="Header">
-          <div className="Header__Content">
-            <NavLink to='/' className="Header__Icon">
-              <Icon className="Header__Icon" name="arrow-left" color="#FFFFFF" width="32" height="32" />
-            </NavLink>
-            <span className="Header__Title">*****</span>
-          </div>
+const Header = props => {
+  return (
+    <div className="Header">
+      <div className="Header__Content">
+        <div className="Header__Icon" onClick={ props.history.goBack } >
+          <Icon className="Header__Icon" name="arrow-left" color="#FFFFFF" width="32" height="32" />
         </div>
-    )
-  }
+        <span className="Header__Title">{ props.title }</span>
+      </div>
+    </div>
+  )
 }
 
 export default Header

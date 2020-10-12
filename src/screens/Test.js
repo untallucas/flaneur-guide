@@ -1,13 +1,9 @@
 import React from 'react'
-// import Mapbox from 'mapbox-gl';
 
 import Navigation from '../components/Navigation/Navigation'
 import PageLayoutHero from '../components/PageLayoutHero/PageLayoutHero'
 import PageLayoutOpening from '../components/PageLayoutOpening/PageLayoutOpening'
 import Icon from '../components/Icon/Icon'
-// import Map from '../components/Map/Map'
-
-// Mapbox.accessToken = '';
 
 class Test extends React.Component {
   constructor(props) {
@@ -19,24 +15,9 @@ class Test extends React.Component {
     }
   }
 
-  // componentDidMount() {
-  //   const map = new Mapbox.Map({
-  //   container: this.mapContainer,
-  //   style: 'mapbox://styles/mapbox/streets-v11',
-  //   center: [this.state.lng, this.state.lat],
-  //   zoom: this.state.zoom
-  //   });
-
-  //   var marker = new Mapbox.Marker()
-  //   .setLngLat([12.550343, 55.665957])
-  //   .addTo(map)
-  // }
-
   render(){
     return (
       <div className="Page">
-
-        {/* <Map/> */}
 
         <Navigation/>
 
