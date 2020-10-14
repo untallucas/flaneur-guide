@@ -3,11 +3,27 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#4667F2" />
-    <meta
-      name="Maapu Córdoba"
-      content="Maapu es una guía urbana, que contiene toda la oferta de actividades culturales, recreativas y gastronómicas de la ciudad. Arte, música, museos, teatros, patrimonio arquitectónico, paseos de compras, bares y restaurantes, todo en el mismo lugar."
-    />
+
+    <!-- TITLES -->
+    <title>Maapu Córdoba</title>
+    <meta name="keywords" content="guía, guia, guia urbana, guía urbana, actividades culturales, cultura, actividades recreativas, recreación, recreacion, gastronomía, gastronomia, comer, beber, donde comer, dónde comer, donde ir en cordoba, dónde ir en córdoba, adonde ir en cordoba, adonde ir en córdoba, gastronómicas, gastronomicas, arte, arte en córdoba, arte en cordoba, artisticas en cordoba, artísticas en córdoba, música, musica, música en córdoba, musica en cordoba, museos, museos en córdoba, museos en cordoba, teatros, teatros en cordoba, teatros en córdoba, teatro en córdoba, teatro en cordoba, arquitectura en córdoba, arquitectura, arquitectura en cordoba, paseos de compras, lugares de compras, shopping, shopping center, shoping, shoping center, shopping en córdoba, shopping en cordoba, shoppings en córdoba, shoppings en cordoba, bares en córdoba, bares en cordoba, bares, córdoba, cordoba, restaurantes, restaurantes en córdoba, restaurantes en cordoba, restos, restó">
+    <meta name="description" content="Maapu Córdoba es una guía urbana, que contiene toda la oferta de actividades culturales, recreativas y gastronómicas de la ciudad. Arte, música, museos, teatros, patrimonio arquitectónico, paseos de compras, bares y restaurantes, todo en el mismo lugar.">
+    <meta name="author" content="Lucas Di Mattia | hola@untallucas.com | untallucas.com">
+  
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Maapu Córdoba">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cordoba.maapu.com/share_facebook.jpg">
+    <meta property="og:site_name" content="Maapu Córdoba">
+    <meta property="og:url" content="https://cordoba.maapu.com">
+    <meta property="og:description" content="Maapu Córdoba es una guía urbana, que contiene toda la oferta de actividades culturales, recreativas y gastronómicas de la ciudad. Arte, música, museos, teatros, patrimonio arquitectónico, paseos de compras, bares y restaurantes, todo en el mismo lugar.">
+  
+    <!-- TWITTER -->
+    <meta itemprop="name" content="Maapu Córdoba">
+    <meta itemprop="description" content="Maapu Córdoba es una guía urbana, que contiene toda la oferta de actividades culturales, recreativas y gastronómicas de la ciudad. Arte, música, museos, teatros, patrimonio arquitectónico, paseos de compras, bares y restaurantes, todo en el mismo lugar.">
+    <meta itemprop="image" content="https://cordoba.maapu.com/share_google.jpg">
+  
+    <!-- ICONS -->
     <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/apple-touch-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/apple-touch-icon-72x72.png">
@@ -23,17 +39,23 @@
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/android-chrome-192x192.png" sizes="192x192">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta name="theme-color" content="#4667F2" />
 
     <!-- ANALYTICS -->
-    <!-- OPEN GRAPH -->
-    <!-- TWITTER CARD -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180581375-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-180581375-1');
+    </script>
 
-    <title>Maapu Córdoba</title>
+    <!-- MAPBOX -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
   </head>
 
   <body>
-    <noscript>Mmmm, necesitás JavaScript activado para poder ver este sitio.</noscript>
+    <noscript>Mmmm, sorry pero necesitás tener JavaScript activado para poder ver este sitio.</noscript>
     <div id="root"></div>
   </body>
 </html>
