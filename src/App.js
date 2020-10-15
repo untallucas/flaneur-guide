@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom'
 
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
-
 import Home from './screens/Home'
 import About from './screens/About'
 import ListSpots from './screens/ListSpots'
@@ -16,7 +15,6 @@ import ListEvents from './screens/ListEvents'
 import SingleEvent from './screens/SingleEvent'
 import ListTracks from './screens/ListTracks'
 import SingleTrack from './screens/SingleTrack'
-import Test from './screens/Test'
 
 import { AppDataProvider } from './contexts/AppData'
 
@@ -31,7 +29,6 @@ class App extends React.Component {
           <Switch>
             <Route path='/inicio' component={ Home } exact />
             <Route path='/acerca' component={ About } exact />
-            <Route path='/test' component={ Test } exact />
 
             <Route path='/lugares/:taxonomy/:filter' component={ ListSpots } />
             <Route path='/lugares/:slug' component={ SingleSpot } />

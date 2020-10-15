@@ -4,25 +4,11 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import './OutstandingCard.scss'
 
-
 const OutstandingCard = props => {
-  let spot
-  if(!props.spot){
-    spot = {
-      id: 0,
-      slug: 'marco-museo-arco-de-cordoba',
-      title: 'MARCO - Museo Arco de Córdoba',
-      poster: 'http://gideon.afterseven.com.ar/public/images/marco-museo-arco-de-cordoba-01.jpg'
-    }
-  }
-  else {
-    spot = props.spot
-  }
-
-  let url = '/lugares/' + spot.slug
-  let printname = spot.shorttitle ? spot.shorttitle : spot.title
-  let image = spot.poster_url ? spot.poster_url[0].url : ''
-  let posterColor = spot.poster_color ? spot.poster_color : '#CCCCCC'
+  let url = '/lugares/' + props.spot.slug
+  let printname = props.spot.shorttitle ? props.spot.shorttitle : props.spot.title
+  let image = props.spot.poster_url ? props.spot.poster_url[0].url : ''
+  let posterColor = props.spot.poster_color ? props.spot.poster_color : '#CCCCCC'
 
   return (
     <Link to={ url } className="OutstandingCard">
